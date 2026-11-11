@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа 1: Прямоугольник и алгорифмы Маркова: Исходный файл markov/MarkovProgram.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 1: Прямоугольник и алгорифмы Маркова
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_markov_program_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MarkovProgram.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_markov_program_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef LAB_MARKOV_PROGRAM_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define LAB_MARKOV_PROGRAM_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_alphabet_8h.html">Alphabet.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_markov_rule_8h.html">MarkovRule.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelab.html">lab</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classlab_1_1_markov_program.html">   33</a></span><span class="keyword">class </span><a class="code hl_function" href="classlab_1_1_markov_program.html#a62f75d9c3eadfc1c209d3b12d75f1568">MarkovProgram</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classlab_1_1_markov_program.html#a62f75d9c3eadfc1c209d3b12d75f1568">   36</a></span>    <a class="code hl_function" href="classlab_1_1_markov_program.html#a62f75d9c3eadfc1c209d3b12d75f1568">MarkovProgram</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#a62f75d9c3eadfc1c209d3b12d75f1568">MarkovProgram</a>(<span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_alphabet.html">Alphabet</a>&amp; <a class="code hl_function" href="classlab_1_1_markov_program.html#aea3d54a5d5d8b36c193d5343ae8ae58a">alphabet</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_alphabet.html">Alphabet</a>&amp; <a class="code hl_function" href="classlab_1_1_markov_program.html#aea3d54a5d5d8b36c193d5343ae8ae58a">alphabet</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#a6a2c5abbca59aa31e230c28fa4194c15">setAlphabet</a>(<span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_alphabet.html">Alphabet</a>&amp; <a class="code hl_function" href="classlab_1_1_markov_program.html#aea3d54a5d5d8b36c193d5343ae8ae58a">alphabet</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::size_t <a class="code hl_function" href="classlab_1_1_markov_program.html#aa8d2e3e6eb35c254c71312f602728382">size</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#a92efc1fe4520a1edcdf667cd79c75d8a">empty</a>() <span class="keyword">const</span>;       </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#aecef267d538a414713a7643686ff1be8">addRule</a>(<span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_rule.html">MarkovRule</a>&amp; rule);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#a423036a5ba9dffb5477951a2f224a76e">insertRule</a>(std::size_t pos, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_rule.html">MarkovRule</a>&amp; rule);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#a8c83ca0dfa1ed20378497711bac1477b">removeRule</a>(std::size_t pos);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#af292574d84d6bde6ab2eb089a57059ae">clear</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_rule.html">MarkovRule</a>&amp; <a class="code hl_function" href="classlab_1_1_markov_program.html#a6edd315b904c453b65b03f81b4ebc9d6">operator[]</a>(std::size_t pos) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    std::optional&lt;std::size_t&gt; <a class="code hl_function" href="classlab_1_1_markov_program.html#ae2143a00ab5c9e8ef8a939ea5d889e8b">findApplicable</a>(<span class="keyword">const</span> std::string&amp; text) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#a00ab37f53e3604926894eb271f1e19d5">load</a>(std::istream&amp; in, std::string* tape = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlab_1_1_markov_program.html#ac8594e6ffd88f60c2fd1bcaaebae7c5f">validate</a>(<span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_rule.html">MarkovRule</a>&amp; rule) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classlab_1_1_markov_program.html#a3bacc425d256b7cce267e9d584db4504">  103</a></span>    <a class="code hl_class" href="classlab_1_1_alphabet.html">Alphabet</a> <a class="code hl_variable" href="classlab_1_1_markov_program.html#a3bacc425d256b7cce267e9d584db4504">alphabet_</a>;            </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classlab_1_1_markov_program.html#ac6f02ac913de5c5ef39d1c7ee79fb0ff">  104</a></span>    std::vector&lt;MarkovRule&gt; <a class="code hl_variable" href="classlab_1_1_markov_program.html#ac6f02ac913de5c5ef39d1c7ee79fb0ff">rules_</a>; </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>};</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacelab.html#a22290e45066f60f06addb84827063a60">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_program.html">MarkovProgram</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_program.html">MarkovProgram</a>&amp; b);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacelab.html#ab2f77f2923d2508015758f61b3a34bad">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_program.html">MarkovProgram</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_program.html">MarkovProgram</a>&amp; b);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>std::ostream&amp; <a class="code hl_function" href="namespacelab.html#ad36a123512992a0cd590029c5081cdde">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_markov_program.html">MarkovProgram</a>&amp; p);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>std::istream&amp; <a class="code hl_function" href="namespacelab.html#ad9063bfbd5418747b310d21969c9f3da">operator&gt;&gt;</a>(std::istream&amp; in, <a class="code hl_class" href="classlab_1_1_markov_program.html">MarkovProgram</a>&amp; p);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>} <span class="comment">// namespace lab</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_alphabet_8h_html"><div class="ttname"><a href="_alphabet_8h.html">Alphabet.h</a></div><div class="ttdoc">Алфавит нормального алгорифма Маркова.</div></div>
+<div class="ttc" id="a_markov_rule_8h_html"><div class="ttname"><a href="_markov_rule_8h.html">MarkovRule.h</a></div><div class="ttdoc">Правило (формула подстановки) нормального алгорифма Маркова.</div></div>
+<div class="ttc" id="aclasslab_1_1_alphabet_html"><div class="ttname"><a href="classlab_1_1_alphabet.html">lab::Alphabet</a></div><div class="ttdoc">Множество допустимых символов.</div><div class="ttdef"><b>Определения</b> Alphabet.h:20</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html"><div class="ttname"><a href="classlab_1_1_markov_program.html">lab::MarkovProgram</a></div><div class="ttdoc">Алфавит и упорядоченный список правил.</div><div class="ttdef"><b>Определения</b> MarkovProgram.h:33</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_a00ab37f53e3604926894eb271f1e19d5"><div class="ttname"><a href="classlab_1_1_markov_program.html#a00ab37f53e3604926894eb271f1e19d5">lab::MarkovProgram::load</a></div><div class="ttdeci">void load(std::istream &amp;in, std::string *tape=nullptr)</div><div class="ttdoc">Загружает программу из потока (формат см. в описании класса).</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:64</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_a3bacc425d256b7cce267e9d584db4504"><div class="ttname"><a href="classlab_1_1_markov_program.html#a3bacc425d256b7cce267e9d584db4504">lab::MarkovProgram::alphabet_</a></div><div class="ttdeci">Alphabet alphabet_</div><div class="ttdoc">алфавит</div><div class="ttdef"><b>Определения</b> MarkovProgram.h:103</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_a423036a5ba9dffb5477951a2f224a76e"><div class="ttname"><a href="classlab_1_1_markov_program.html#a423036a5ba9dffb5477951a2f224a76e">lab::MarkovProgram::insertRule</a></div><div class="ttdeci">void insertRule(std::size_t pos, const MarkovRule &amp;rule)</div><div class="ttdoc">Вставляет правило перед позицией pos (pos == size() — в конец).</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:37</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_a62f75d9c3eadfc1c209d3b12d75f1568"><div class="ttname"><a href="classlab_1_1_markov_program.html#a62f75d9c3eadfc1c209d3b12d75f1568">lab::MarkovProgram::MarkovProgram</a></div><div class="ttdeci">MarkovProgram()=default</div><div class="ttdoc">Программа с пустым алфавитом и без правил.</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_a6a2c5abbca59aa31e230c28fa4194c15"><div class="ttname"><a href="classlab_1_1_markov_program.html#a6a2c5abbca59aa31e230c28fa4194c15">lab::MarkovProgram::setAlphabet</a></div><div class="ttdeci">void setAlphabet(const Alphabet &amp;alphabet)</div><div class="ttdoc">Заменяет алфавит.</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:23</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_a6edd315b904c453b65b03f81b4ebc9d6"><div class="ttname"><a href="classlab_1_1_markov_program.html#a6edd315b904c453b65b03f81b4ebc9d6">lab::MarkovProgram::operator[]</a></div><div class="ttdeci">const MarkovRule &amp; operator[](std::size_t pos) const</div><div class="ttdoc">Просмотр правила.</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:52</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_a8c83ca0dfa1ed20378497711bac1477b"><div class="ttname"><a href="classlab_1_1_markov_program.html#a8c83ca0dfa1ed20378497711bac1477b">lab::MarkovProgram::removeRule</a></div><div class="ttdeci">void removeRule(std::size_t pos)</div><div class="ttdoc">Удаляет правило.</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:44</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_a92efc1fe4520a1edcdf667cd79c75d8a"><div class="ttname"><a href="classlab_1_1_markov_program.html#a92efc1fe4520a1edcdf667cd79c75d8a">lab::MarkovProgram::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:30</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_aa8d2e3e6eb35c254c71312f602728382"><div class="ttname"><a href="classlab_1_1_markov_program.html#aa8d2e3e6eb35c254c71312f602728382">lab::MarkovProgram::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:29</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_ac6f02ac913de5c5ef39d1c7ee79fb0ff"><div class="ttname"><a href="classlab_1_1_markov_program.html#ac6f02ac913de5c5ef39d1c7ee79fb0ff">lab::MarkovProgram::rules_</a></div><div class="ttdeci">std::vector&lt; MarkovRule &gt; rules_</div><div class="ttdoc">правила по приоритету</div><div class="ttdef"><b>Определения</b> MarkovProgram.h:104</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_ac8594e6ffd88f60c2fd1bcaaebae7c5f"><div class="ttname"><a href="classlab_1_1_markov_program.html#ac8594e6ffd88f60c2fd1bcaaebae7c5f">lab::MarkovProgram::validate</a></div><div class="ttdeci">void validate(const MarkovRule &amp;rule) const</div><div class="ttdoc">Проверка принадлежности правила алфавиту.</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:18</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_ae2143a00ab5c9e8ef8a939ea5d889e8b"><div class="ttname"><a href="classlab_1_1_markov_program.html#ae2143a00ab5c9e8ef8a939ea5d889e8b">lab::MarkovProgram::findApplicable</a></div><div class="ttdeci">std::optional&lt; std::size_t &gt; findApplicable(const std::string &amp;text) const</div><div class="ttdoc">Ищет первое по порядку правило, применимое к строке.</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:58</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_aea3d54a5d5d8b36c193d5343ae8ae58a"><div class="ttname"><a href="classlab_1_1_markov_program.html#aea3d54a5d5d8b36c193d5343ae8ae58a">lab::MarkovProgram::alphabet</a></div><div class="ttdeci">const Alphabet &amp; alphabet() const</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:16</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_aecef267d538a414713a7643686ff1be8"><div class="ttname"><a href="classlab_1_1_markov_program.html#aecef267d538a414713a7643686ff1be8">lab::MarkovProgram::addRule</a></div><div class="ttdeci">void addRule(const MarkovRule &amp;rule)</div><div class="ttdoc">Добавляет правило в конец списка.</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:32</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_program_html_af292574d84d6bde6ab2eb089a57059ae"><div class="ttname"><a href="classlab_1_1_markov_program.html#af292574d84d6bde6ab2eb089a57059ae">lab::MarkovProgram::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Удаляет все правила (алфавит сохраняется).</div><div class="ttdef"><b>Определения</b> MarkovProgram.cpp:50</div></div>
+<div class="ttc" id="aclasslab_1_1_markov_rule_html"><div class="ttname"><a href="classlab_1_1_markov_rule.html">lab::MarkovRule</a></div><div class="ttdoc">Формула подстановки «образец -&gt; замена» (обычная) или «образец -&gt;. замена» (заключительная).</div><div class="ttdef"><b>Определения</b> MarkovRule.h:19</div></div>
+<div class="ttc" id="anamespacelab_html"><div class="ttname"><a href="namespacelab.html">lab</a></div><div class="ttdef"><b>Определения</b> Rectangle.cpp:12</div></div>
+<div class="ttc" id="anamespacelab_html_a22290e45066f60f06addb84827063a60"><div class="ttname"><a href="namespacelab.html#a22290e45066f60f06addb84827063a60">lab::operator==</a></div><div class="ttdeci">bool operator==(const Point &amp;a, const Point &amp;b)</div><div class="ttdoc">Сравнение точек.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:14</div></div>
+<div class="ttc" id="anamespacelab_html_ab2f77f2923d2508015758f61b3a34bad"><div class="ttname"><a href="namespacelab.html#ab2f77f2923d2508015758f61b3a34bad">lab::operator!=</a></div><div class="ttdeci">bool operator!=(const Point &amp;a, const Point &amp;b)</div><div class="ttdoc">Точки не равны (см. operator==(const Point&amp;, const Point&amp;)).</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:15</div></div>
+<div class="ttc" id="anamespacelab_html_ad36a123512992a0cd590029c5081cdde"><div class="ttname"><a href="namespacelab.html#ad36a123512992a0cd590029c5081cdde">lab::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const Rectangle &amp;r)</div><div class="ttdoc">Вывод в поток в формате &quot;(l, b)-(r, t)&quot;.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:129</div></div>
+<div class="ttc" id="anamespacelab_html_ad9063bfbd5418747b310d21969c9f3da"><div class="ttname"><a href="namespacelab.html#ad9063bfbd5418747b310d21969c9f3da">lab::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;in, Rectangle &amp;r)</div><div class="ttdoc">Ввод из потока: четыре целых &quot;x1 y1 x2 y2&quot;.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:134</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_440cfb0b54e184a4b61bf32f8daff889.html">markov</a></li><li class="navelem"><a href="_markov_program_8h.html">MarkovProgram.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

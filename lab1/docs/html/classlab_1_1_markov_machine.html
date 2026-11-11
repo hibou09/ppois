@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа 1: Прямоугольник и алгорифмы Маркова: Класс lab::MarkovMachine</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 1: Прямоугольник и алгорифмы Маркова
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classlab_1_1_markov_machine.html','','classlab_1_1_markov_machine-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс lab::MarkovMachine</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Машина = программа + лента (строка) + состояние выполнения.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_markov_machine_8h_source.html">MarkovMachine.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a974f187fb85e4f900caef4d2723965bd" id="r_a974f187fb85e4f900caef4d2723965bd"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a974f187fb85e4f900caef4d2723965bd">MarkovMachine</a> ()=default</td></tr>
+<tr class="memdesc:a974f187fb85e4f900caef4d2723965bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Машина с пустой программой и пустой лентой.  <br /></td></tr>
+<tr class="memitem:a464d2d573a4553faa70348c30e23aca7" id="r_a464d2d573a4553faa70348c30e23aca7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a464d2d573a4553faa70348c30e23aca7">MarkovMachine</a> (const <a class="el" href="classlab_1_1_markov_program.html">MarkovProgram</a> &amp;program, const std::string &amp;tape=&quot;&quot;)</td></tr>
+<tr class="memdesc:a464d2d573a4553faa70348c30e23aca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Машина с программой и начальной лентой.  <br /></td></tr>
+<tr class="memitem:a97a1d088d8ef64edd497101a25ad0641" id="r_a97a1d088d8ef64edd497101a25ad0641"><td class="memItemLeft">const <a class="el" href="classlab_1_1_markov_program.html">MarkovProgram</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a97a1d088d8ef64edd497101a25ad0641">program</a> () const</td></tr>
+<tr class="memitem:ad98138428baf2fe74e1e243ce18d520a" id="r_ad98138428baf2fe74e1e243ce18d520a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad98138428baf2fe74e1e243ce18d520a">setProgram</a> (const <a class="el" href="classlab_1_1_markov_program.html">MarkovProgram</a> &amp;program)</td></tr>
+<tr class="memdesc:ad98138428baf2fe74e1e243ce18d520a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменяет программу, сохраняя ленту; сбрасывает выполнение.  <br /></td></tr>
+<tr class="memitem:a09c5c1e8ae683d5c4bd586aa71a1934a" id="r_a09c5c1e8ae683d5c4bd586aa71a1934a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a09c5c1e8ae683d5c4bd586aa71a1934a">addRule</a> (const <a class="el" href="classlab_1_1_markov_rule.html">MarkovRule</a> &amp;rule)</td></tr>
+<tr class="memdesc:a09c5c1e8ae683d5c4bd586aa71a1934a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет правило в конец программы.  <br /></td></tr>
+<tr class="memitem:a7a49ebfcc87866a052322efb2fa55f17" id="r_a7a49ebfcc87866a052322efb2fa55f17"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7a49ebfcc87866a052322efb2fa55f17">removeRule</a> (std::size_t index)</td></tr>
+<tr class="memdesc:a7a49ebfcc87866a052322efb2fa55f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет правило по индексу.  <br /></td></tr>
+<tr class="memitem:a13ffd7d01e278c781535cc640f34ac5e" id="r_a13ffd7d01e278c781535cc640f34ac5e"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a13ffd7d01e278c781535cc640f34ac5e">tape</a> () const</td></tr>
+<tr class="memitem:adc2c1228f113448b7804d87c8d8f43f1" id="r_adc2c1228f113448b7804d87c8d8f43f1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adc2c1228f113448b7804d87c8d8f43f1">setTape</a> (const std::string &amp;tape)</td></tr>
+<tr class="memdesc:adc2c1228f113448b7804d87c8d8f43f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задаёт новую ленту и сбрасывает выполнение.  <br /></td></tr>
+<tr class="memitem:afd94dbb75f5fb0dd3d76b4f2bb0a733c" id="r_afd94dbb75f5fb0dd3d76b4f2bb0a733c"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#afd94dbb75f5fb0dd3d76b4f2bb0a733c">operator[]</a> (std::size_t pos) const</td></tr>
+<tr class="memdesc:afd94dbb75f5fb0dd3d76b4f2bb0a733c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Читает символ ленты.  <br /></td></tr>
+<tr class="memitem:a7dc3b636b6f8901cf2f6c2da8aba8b65" id="r_a7dc3b636b6f8901cf2f6c2da8aba8b65"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7dc3b636b6f8901cf2f6c2da8aba8b65">setSymbol</a> (std::size_t pos, char c)</td></tr>
+<tr class="memdesc:a7dc3b636b6f8901cf2f6c2da8aba8b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет символ ленты.  <br /></td></tr>
+<tr class="memitem:affed48913162208738870e563f0f868f" id="r_affed48913162208738870e563f0f868f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#affed48913162208738870e563f0f868f">isHalted</a> () const</td></tr>
+<tr class="memitem:a71bef82b2feb3feb5206ff8435807e3c" id="r_a71bef82b2feb3feb5206ff8435807e3c"><td class="memItemLeft">std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#a71bef82b2feb3feb5206ff8435807e3c">stepsDone</a> () const</td></tr>
+<tr class="memitem:a50c3d3966ea58a9e7f633a11f7fd93b3" id="r_a50c3d3966ea58a9e7f633a11f7fd93b3"><td class="memItemLeft">std::optional&lt; std::size_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a50c3d3966ea58a9e7f633a11f7fd93b3">lastRule</a> () const</td></tr>
+<tr class="memdesc:a50c3d3966ea58a9e7f633a11f7fd93b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс правила, применённого на последнем шаге.  <br /></td></tr>
+<tr class="memitem:addd40b7b39826ab58f94515fbaddde24" id="r_addd40b7b39826ab58f94515fbaddde24"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#addd40b7b39826ab58f94515fbaddde24">step</a> ()</td></tr>
+<tr class="memdesc:addd40b7b39826ab58f94515fbaddde24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет один шаг.  <br /></td></tr>
+<tr class="memitem:a438d31e9a2bcb49d575bd49d13b2b2e5" id="r_a438d31e9a2bcb49d575bd49d13b2b2e5"><td class="memItemLeft">std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#a438d31e9a2bcb49d575bd49d13b2b2e5">run</a> (std::size_t maxSteps=1000000)</td></tr>
+<tr class="memdesc:a438d31e9a2bcb49d575bd49d13b2b2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет программу до остановки или до лимита шагов.  <br /></td></tr>
+<tr class="memitem:a9e4f838231d7f4d846e3c195330a21dd" id="r_a9e4f838231d7f4d846e3c195330a21dd"><td class="memItemLeft"><a class="el" href="#a974f187fb85e4f900caef4d2723965bd">MarkovMachine</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9e4f838231d7f4d846e3c195330a21dd">operator++</a> ()</td></tr>
+<tr class="memdesc:a9e4f838231d7f4d846e3c195330a21dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Префиксный ++ — один шаг.  <br /></td></tr>
+<tr class="memitem:a2e918c9d34a5e2102ec53ba5078b4789" id="r_a2e918c9d34a5e2102ec53ba5078b4789"><td class="memItemLeft"><a class="el" href="#a974f187fb85e4f900caef4d2723965bd">MarkovMachine</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2e918c9d34a5e2102ec53ba5078b4789">operator++</a> (int)</td></tr>
+<tr class="memdesc:a2e918c9d34a5e2102ec53ba5078b4789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Постфиксный ++ — один шаг.  <br /></td></tr>
+<tr class="memitem:aacdd093fd228937ceead689dcdc14b3c" id="r_aacdd093fd228937ceead689dcdc14b3c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aacdd093fd228937ceead689dcdc14b3c">load</a> (std::istream &amp;in)</td></tr>
+<tr class="memdesc:aacdd093fd228937ceead689dcdc14b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает программу и ленту из потока.  <br /></td></tr>
+<tr class="memitem:ae6190614283cc9dac677d41c9c636247" id="r_ae6190614283cc9dac677d41c9c636247"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ae6190614283cc9dac677d41c9c636247">describe</a> () const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:acb47eff97bbafc5c82d00bf9dcd0f6bc" id="r_acb47eff97bbafc5c82d00bf9dcd0f6bc"><td class="memItemLeft"><a class="el" href="classlab_1_1_markov_program.html">MarkovProgram</a>&#160;</td><td class="memItemRight"><a class="el" href="#acb47eff97bbafc5c82d00bf9dcd0f6bc">program_</a></td></tr>
+<tr class="memdesc:acb47eff97bbafc5c82d00bf9dcd0f6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">программа  <br /></td></tr>
+<tr class="memitem:a1e4f8411841f2455fd08c9cd3fb24e84" id="r_a1e4f8411841f2455fd08c9cd3fb24e84"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a1e4f8411841f2455fd08c9cd3fb24e84">tape_</a></td></tr>
+<tr class="memdesc:a1e4f8411841f2455fd08c9cd3fb24e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">лента  <br /></td></tr>
+<tr class="memitem:aa9329634852e8590bbd91c272c5204d5" id="r_aa9329634852e8590bbd91c272c5204d5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa9329634852e8590bbd91c272c5204d5">halted_</a> = false</td></tr>
+<tr class="memdesc:aa9329634852e8590bbd91c272c5204d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">остановлена ли машина  <br /></td></tr>
+<tr class="memitem:ad723615901002de197f5696d35de4e4b" id="r_ad723615901002de197f5696d35de4e4b"><td class="memItemLeft">std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#ad723615901002de197f5696d35de4e4b">steps_</a> = 0</td></tr>
+<tr class="memdesc:ad723615901002de197f5696d35de4e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">число шагов  <br /></td></tr>
+<tr class="memitem:a73108bfaf763897d3e536d57737a85f0" id="r_a73108bfaf763897d3e536d57737a85f0"><td class="memItemLeft">std::optional&lt; std::size_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a73108bfaf763897d3e536d57737a85f0">lastRule_</a></td></tr>
+<tr class="memdesc:a73108bfaf763897d3e536d57737a85f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">последнее применённое правило  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Машина = программа + лента (строка) + состояние выполнения. </p>
+<p>Шаг алгорифма: берётся первое по порядку применимое правило, в строке заменяется самое левое вхождение образца. Работа заканчивается, если применена заключительная подстановка или ни одно правило не применимо.</p>
+<p>Класс не взаимодействует с консолью: вывод состояния идёт в потоки, а построчный лог формирует вызывающий код. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a974f187fb85e4f900caef4d2723965bd" name="a974f187fb85e4f900caef4d2723965bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974f187fb85e4f900caef4d2723965bd">&#9670;&#160;</a></span>MarkovMachine() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lab::MarkovMachine::MarkovMachine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Машина с пустой программой и пустой лентой. </p>
+
+</div>
+</div>
+<a id="a464d2d573a4553faa70348c30e23aca7" name="a464d2d573a4553faa70348c30e23aca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464d2d573a4553faa70348c30e23aca7">&#9670;&#160;</a></span>MarkovMachine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lab::MarkovMachine::MarkovMachine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlab_1_1_markov_program.html">MarkovProgram</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>tape</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Машина с программой и начальной лентой. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>если лента содержит символы вне алфавита </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a09c5c1e8ae683d5c4bd586aa71a1934a" name="a09c5c1e8ae683d5c4bd586aa71a1934a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c5c1e8ae683d5c4bd586aa71a1934a">&#9670;&#160;</a></span>addRule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lab::MarkovMachine::addRule </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlab_1_1_markov_rule.html">MarkovRule</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rule</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет правило в конец программы. </p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classlab_1_1_markov_program.html#aecef267d538a414713a7643686ff1be8" title="Добавляет правило в конец списка.">MarkovProgram::addRule</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae6190614283cc9dac677d41c9c636247" name="ae6190614283cc9dac677d41c9c636247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6190614283cc9dac677d41c9c636247">&#9670;&#160;</a></span>describe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lab::MarkovMachine::describe </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>строка вида "step N: tape" для лога </dd></dl>
+
+</div>
+</div>
+<a id="affed48913162208738870e563f0f868f" name="affed48913162208738870e563f0f868f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affed48913162208738870e563f0f868f">&#9670;&#160;</a></span>isHalted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lab::MarkovMachine::isHalted </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>true, если машина остановилась </dd></dl>
+
+</div>
+</div>
+<a id="a50c3d3966ea58a9e7f633a11f7fd93b3" name="a50c3d3966ea58a9e7f633a11f7fd93b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c3d3966ea58a9e7f633a11f7fd93b3">&#9670;&#160;</a></span>lastRule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::size_t &gt; lab::MarkovMachine::lastRule </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Индекс правила, применённого на последнем шаге. </p>
+
+</div>
+</div>
+<a id="aacdd093fd228937ceead689dcdc14b3c" name="aacdd093fd228937ceead689dcdc14b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacdd093fd228937ceead689dcdc14b3c">&#9670;&#160;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lab::MarkovMachine::load </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает программу и ленту из потока. </p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classlab_1_1_markov_program.html#a00ab37f53e3604926894eb271f1e19d5" title="Загружает программу из потока (формат см. в описании класса).">MarkovProgram::load</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9e4f838231d7f4d846e3c195330a21dd" name="a9e4f838231d7f4d846e3c195330a21dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4f838231d7f4d846e3c195330a21dd">&#9670;&#160;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a974f187fb85e4f900caef4d2723965bd">MarkovMachine</a> &amp; lab::MarkovMachine::operator++ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Префиксный ++ — один шаг. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>ссылка на себя </dd></dl>
+
+</div>
+</div>
+<a id="a2e918c9d34a5e2102ec53ba5078b4789" name="a2e918c9d34a5e2102ec53ba5078b4789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e918c9d34a5e2102ec53ba5078b4789">&#9670;&#160;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a974f187fb85e4f900caef4d2723965bd">MarkovMachine</a> lab::MarkovMachine::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Постфиксный ++ — один шаг. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>копия до шага </dd></dl>
+
+</div>
+</div>
+<a id="afd94dbb75f5fb0dd3d76b4f2bb0a733c" name="afd94dbb75f5fb0dd3d76b4f2bb0a733c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd94dbb75f5fb0dd3d76b4f2bb0a733c">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char lab::MarkovMachine::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Читает символ ленты. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>если позиция вне ленты </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a97a1d088d8ef64edd497101a25ad0641" name="a97a1d088d8ef64edd497101a25ad0641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a1d088d8ef64edd497101a25ad0641">&#9670;&#160;</a></span>program()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classlab_1_1_markov_program.html">MarkovProgram</a> &amp; lab::MarkovMachine::program </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>программа </dd></dl>
+
+</div>
+</div>
+<a id="a7a49ebfcc87866a052322efb2fa55f17" name="a7a49ebfcc87866a052322efb2fa55f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a49ebfcc87866a052322efb2fa55f17">&#9670;&#160;</a></span>removeRule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lab::MarkovMachine::removeRule </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет правило по индексу. </p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classlab_1_1_markov_program.html#a8c83ca0dfa1ed20378497711bac1477b" title="Удаляет правило.">MarkovProgram::removeRule</a> </dd></dl>
+
+</div>
+</div>
+<a id="a438d31e9a2bcb49d575bd49d13b2b2e5" name="a438d31e9a2bcb49d575bd49d13b2b2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438d31e9a2bcb49d575bd49d13b2b2e5">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t lab::MarkovMachine::run </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>maxSteps</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1000000</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет программу до остановки или до лимита шагов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxSteps</td><td>защита от зацикливания </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>число выполненных в этом вызове шагов </dd></dl>
+
+</div>
+</div>
+<a id="ad98138428baf2fe74e1e243ce18d520a" name="ad98138428baf2fe74e1e243ce18d520a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98138428baf2fe74e1e243ce18d520a">&#9670;&#160;</a></span>setProgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lab::MarkovMachine::setProgram </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlab_1_1_markov_program.html">MarkovProgram</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Заменяет программу, сохраняя ленту; сбрасывает выполнение. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>если лента не соответствует новому алфавиту </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7dc3b636b6f8901cf2f6c2da8aba8b65" name="a7dc3b636b6f8901cf2f6c2da8aba8b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc3b636b6f8901cf2f6c2da8aba8b65">&#9670;&#160;</a></span>setSymbol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lab::MarkovMachine::setSymbol </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменяет символ ленты. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>если позиция вне ленты </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>если символа нет в алфавите </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adc2c1228f113448b7804d87c8d8f43f1" name="adc2c1228f113448b7804d87c8d8f43f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc2c1228f113448b7804d87c8d8f43f1">&#9670;&#160;</a></span>setTape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lab::MarkovMachine::setTape </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>tape</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Задаёт новую ленту и сбрасывает выполнение. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>если есть символы вне алфавита </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="addd40b7b39826ab58f94515fbaddde24" name="addd40b7b39826ab58f94515fbaddde24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd40b7b39826ab58f94515fbaddde24">&#9670;&#160;</a></span>step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lab::MarkovMachine::step </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет один шаг. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если правило применено; false, если машина остановлена (остановка фиксируется и на «пустом» шаге) </dd></dl>
+
+</div>
+</div>
+<a id="a71bef82b2feb3feb5206ff8435807e3c" name="a71bef82b2feb3feb5206ff8435807e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71bef82b2feb3feb5206ff8435807e3c">&#9670;&#160;</a></span>stepsDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t lab::MarkovMachine::stepsDone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>число выполненных шагов </dd></dl>
+
+</div>
+</div>
+<a id="a13ffd7d01e278c781535cc640f34ac5e" name="a13ffd7d01e278c781535cc640f34ac5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ffd7d01e278c781535cc640f34ac5e">&#9670;&#160;</a></span>tape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; lab::MarkovMachine::tape </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>текущее содержимое ленты </dd></dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="aa9329634852e8590bbd91c272c5204d5" name="aa9329634852e8590bbd91c272c5204d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9329634852e8590bbd91c272c5204d5">&#9670;&#160;</a></span>halted_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lab::MarkovMachine::halted_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>остановлена ли машина </p>
+
+</div>
+</div>
+<a id="a73108bfaf763897d3e536d57737a85f0" name="a73108bfaf763897d3e536d57737a85f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73108bfaf763897d3e536d57737a85f0">&#9670;&#160;</a></span>lastRule_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;std::size_t&gt; lab::MarkovMachine::lastRule_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>последнее применённое правило </p>
+
+</div>
+</div>
+<a id="acb47eff97bbafc5c82d00bf9dcd0f6bc" name="acb47eff97bbafc5c82d00bf9dcd0f6bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb47eff97bbafc5c82d00bf9dcd0f6bc">&#9670;&#160;</a></span>program_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlab_1_1_markov_program.html">MarkovProgram</a> lab::MarkovMachine::program_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>программа </p>
+
+</div>
+</div>
+<a id="ad723615901002de197f5696d35de4e4b" name="ad723615901002de197f5696d35de4e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad723615901002de197f5696d35de4e4b">&#9670;&#160;</a></span>steps_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t lab::MarkovMachine::steps_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>число шагов </p>
+
+</div>
+</div>
+<a id="a1e4f8411841f2455fd08c9cd3fb24e84" name="a1e4f8411841f2455fd08c9cd3fb24e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4f8411841f2455fd08c9cd3fb24e84">&#9670;&#160;</a></span>tape_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lab::MarkovMachine::tape_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>лента </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>markov/<a class="el" href="_markov_machine_8h_source.html">MarkovMachine.h</a></li>
+<li>markov/<a class="el" href="_markov_machine_8cpp.html">MarkovMachine.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacelab.html">lab</a></li><li class="navelem"><a href="classlab_1_1_markov_machine.html">MarkovMachine</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа 1: Прямоугольник и алгорифмы Маркова: Члены классов</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 1: Прямоугольник и алгорифмы Маркова
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('functions.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div><br/>
+<div class="qindex"><a class="qindex" href="#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="#index_y">Y</a></div>
+
+
+<h3 class="doxsection"><a id="index_a" name="index_a"></a>- a -</h3><ul>
+<li>add()&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#a1fbf3075ffecf7f72831240d3e064311">lab::Alphabet</a></li>
+<li>addRule()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a09c5c1e8ae683d5c4bd586aa71a1934a">lab::MarkovMachine</a>, <a class="el" href="classlab_1_1_markov_program.html#aecef267d538a414713a7643686ff1be8">lab::MarkovProgram</a></li>
+<li>Alphabet()&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#a8835642a12ef579e7c8672ff0f52a8a5">lab::Alphabet</a></li>
+<li>alphabet()&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#aea3d54a5d5d8b36c193d5343ae8ae58a">lab::MarkovProgram</a></li>
+<li>alphabet_&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#a3bacc425d256b7cce267e9d584db4504">lab::MarkovProgram</a></li>
+<li>apply()&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#af358273df67ece3217ec3329902d6bc3">lab::MarkovRule</a></li>
+<li>area()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#ad62fb01d36a307347096ea2fdafb4b52">lab::Rectangle</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_b" name="index_b"></a>- b -</h3><ul>
+<li>bottom()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a7aac338bce1972fb19a8d3ef6b695537">lab::Rectangle</a></li>
+<li>bottom_&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#ade663d823e24c5e8797881b599b99637">lab::Rectangle</a></li>
+<li>bottomLeft()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#af497e9e4cdcde3a324480182372f8a19">lab::Rectangle</a></li>
+<li>bottomRight()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#ade16768ec9b4ff6bc1457acb2287ff68">lab::Rectangle</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>clear()&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#af292574d84d6bde6ab2eb089a57059ae">lab::MarkovProgram</a></li>
+<li>contains()&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#abf8b83769f0ee3bdd2ab2dfbfb268e4d">lab::Alphabet</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>describe()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#ae6190614283cc9dac677d41c9c636247">lab::MarkovMachine</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_e" name="index_e"></a>- e -</h3><ul>
+<li>empty()&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#a610f3b63d661b5c700c3f628e50d242c">lab::Alphabet</a>, <a class="el" href="classlab_1_1_markov_program.html#a92efc1fe4520a1edcdf667cd79c75d8a">lab::MarkovProgram</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>findApplicable()&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#ae2143a00ab5c9e8ef8a939ea5d889e8b">lab::MarkovProgram</a></li>
+<li>fromSize()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a5cef45462f83e27e1e3355a9e3fc48ba">lab::Rectangle</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_h" name="index_h"></a>- h -</h3><ul>
+<li>halted_&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#aa9329634852e8590bbd91c272c5204d5">lab::MarkovMachine</a></li>
+<li>height()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a8b8e99bb09f5b96061911278c81c0085">lab::Rectangle</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_i" name="index_i"></a>- i -</h3><ul>
+<li>insertRule()&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#a423036a5ba9dffb5477951a2f224a76e">lab::MarkovProgram</a></li>
+<li>intersects()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a569c5b1d254c461ddf1648f38187b369">lab::Rectangle</a></li>
+<li>isHalted()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#affed48913162208738870e563f0f868f">lab::MarkovMachine</a></li>
+<li>isTerminal()&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#acd3afedb5e521e95f3a612e54207a454">lab::MarkovRule</a></li>
+<li>isValidSymbol()&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#a7451bab728071adb83d66e823432ed71">lab::Alphabet</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>lastRule()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a50c3d3966ea58a9e7f633a11f7fd93b3">lab::MarkovMachine</a></li>
+<li>lastRule_&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a73108bfaf763897d3e536d57737a85f0">lab::MarkovMachine</a></li>
+<li>left()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a7907cc574442e60a63f48ffef5fb8f27">lab::Rectangle</a></li>
+<li>left_&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#aa409d89ebed79b7d2e10ece3141344a9">lab::Rectangle</a></li>
+<li>load()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#aacdd093fd228937ceead689dcdc14b3c">lab::MarkovMachine</a>, <a class="el" href="classlab_1_1_markov_program.html#a00ab37f53e3604926894eb271f1e19d5">lab::MarkovProgram</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>MarkovMachine()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a974f187fb85e4f900caef4d2723965bd">lab::MarkovMachine</a></li>
+<li>MarkovProgram()&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#a62f75d9c3eadfc1c209d3b12d75f1568">lab::MarkovProgram</a></li>
+<li>MarkovRule()&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#ad45a17d3ded2c5fea302c5ea4fb51184">lab::MarkovRule</a></li>
+<li>matches()&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#ac13925ca713c4ccdd822b52558872608">lab::MarkovRule</a></li>
+<li>move()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#ace2396b6f2c8836e39d823ed1cf75ede">lab::Rectangle</a></li>
+<li>moveTo()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a884bc8781e02abe45551f0ac8909f95d">lab::Rectangle</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_o" name="index_o"></a>- o -</h3><ul>
+<li>operator++()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a9e4f838231d7f4d846e3c195330a21dd">lab::MarkovMachine</a>, <a class="el" href="classlab_1_1_rectangle.html#a8d1ba7ed3a92ee447131cdda5dfcd070">lab::Rectangle</a></li>
+<li>operator+=()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#ae30d28190994f819e522350888dc3568">lab::Rectangle</a></li>
+<li>operator--()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#abaee90603b497e9e45decdbe4fd62f37">lab::Rectangle</a></li>
+<li>operator-=()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a9a2fec2adf20da76345bb55c5e577342">lab::Rectangle</a></li>
+<li>operator=()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#ace7e445f7c7e7d230994ede188eef880">lab::Rectangle</a></li>
+<li>operator[]()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#afd94dbb75f5fb0dd3d76b4f2bb0a733c">lab::MarkovMachine</a>, <a class="el" href="classlab_1_1_markov_program.html#a6edd315b904c453b65b03f81b4ebc9d6">lab::MarkovProgram</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>parse()&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#ac2acdd8f3fbada1544452ea320f30f65">lab::MarkovRule</a></li>
+<li>pattern()&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#a1107754edbb056624355b2b11bcab9b2">lab::MarkovRule</a></li>
+<li>pattern_&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#a575bb005c51c03a28fd63d6d1b8edf55">lab::MarkovRule</a></li>
+<li>program()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a97a1d088d8ef64edd497101a25ad0641">lab::MarkovMachine</a></li>
+<li>program_&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#acb47eff97bbafc5c82d00bf9dcd0f6bc">lab::MarkovMachine</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>Rectangle()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">lab::Rectangle</a></li>
+<li>remove()&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#a258ca995b5a2c380f931883a89dcfdd9">lab::Alphabet</a></li>
+<li>removeRule()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a7a49ebfcc87866a052322efb2fa55f17">lab::MarkovMachine</a>, <a class="el" href="classlab_1_1_markov_program.html#a8c83ca0dfa1ed20378497711bac1477b">lab::MarkovProgram</a></li>
+<li>replacement()&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#ab2e8ae07ea12f9862cdd484f5d76a2e2">lab::MarkovRule</a></li>
+<li>replacement_&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#a3103b988471f536562fc3390e7082dbd">lab::MarkovRule</a></li>
+<li>resize()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a52557001725d32efaa133cb39a0ea1ba">lab::Rectangle</a></li>
+<li>right()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#af4ac01ab7ff9ae2bcaee38bd4e4f3a1b">lab::Rectangle</a></li>
+<li>right_&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a25b081ee6abf5be70601fda9a23db056">lab::Rectangle</a></li>
+<li>rules_&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#ac6f02ac913de5c5ef39d1c7ee79fb0ff">lab::MarkovProgram</a></li>
+<li>run()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a438d31e9a2bcb49d575bd49d13b2b2e5">lab::MarkovMachine</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>setAlphabet()&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#a6a2c5abbca59aa31e230c28fa4194c15">lab::MarkovProgram</a></li>
+<li>setProgram()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#ad98138428baf2fe74e1e243ce18d520a">lab::MarkovMachine</a></li>
+<li>setSymbol()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a7dc3b636b6f8901cf2f6c2da8aba8b65">lab::MarkovMachine</a></li>
+<li>setTape()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#adc2c1228f113448b7804d87c8d8f43f1">lab::MarkovMachine</a></li>
+<li>size()&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#a4a50efb2bd3c78c4dc4ff18b59579788">lab::Alphabet</a>, <a class="el" href="classlab_1_1_markov_program.html#aa8d2e3e6eb35c254c71312f602728382">lab::MarkovProgram</a></li>
+<li>step()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#addd40b7b39826ab58f94515fbaddde24">lab::MarkovMachine</a></li>
+<li>steps_&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#ad723615901002de197f5696d35de4e4b">lab::MarkovMachine</a></li>
+<li>stepsDone()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a71bef82b2feb3feb5206ff8435807e3c">lab::MarkovMachine</a></li>
+<li>symbols_&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#af017588722080a4de2f5088874cf53ab">lab::Alphabet</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>tape()&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a13ffd7d01e278c781535cc640f34ac5e">lab::MarkovMachine</a></li>
+<li>tape_&#160;:&#160;<a class="el" href="classlab_1_1_markov_machine.html#a1e4f8411841f2455fd08c9cd3fb24e84">lab::MarkovMachine</a></li>
+<li>terminal_&#160;:&#160;<a class="el" href="classlab_1_1_markov_rule.html#ab247bb6446ce8c81c7c9614496d8a24e">lab::MarkovRule</a></li>
+<li>top()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a50b814fbb028d88d224c2fd52e37a464">lab::Rectangle</a></li>
+<li>top_&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#afe9751a56947958a09862b402638b659">lab::Rectangle</a></li>
+<li>topLeft()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#afcc336ef4be001227c79429d5ea774b2">lab::Rectangle</a></li>
+<li>topRight()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a58c232283520fd22574d7cd47e0627cb">lab::Rectangle</a></li>
+<li>toString()&#160;:&#160;<a class="el" href="classlab_1_1_alphabet.html#ac4547b4bbe1288d568625405f458257b">lab::Alphabet</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_v" name="index_v"></a>- v -</h3><ul>
+<li>validate()&#160;:&#160;<a class="el" href="classlab_1_1_markov_program.html#ac8594e6ffd88f60c2fd1bcaaebae7c5f">lab::MarkovProgram</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_w" name="index_w"></a>- w -</h3><ul>
+<li>width()&#160;:&#160;<a class="el" href="classlab_1_1_rectangle.html#a765d563aced329c3d61cd10292547aec">lab::Rectangle</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_x" name="index_x"></a>- x -</h3><ul>
+<li>x&#160;:&#160;<a class="el" href="structlab_1_1_point.html#ac87a4ea8935d022eaee00cca31b00558">lab::Point</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_y" name="index_y"></a>- y -</h3><ul>
+<li>y&#160;:&#160;<a class="el" href="structlab_1_1_point.html#a648c2664d700675e2badc3824d67aabf">lab::Point</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

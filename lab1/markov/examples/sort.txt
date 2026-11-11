@@ -1,0 +1,4 @@
+# Сортировка: все a перед b
+alphabet: ab
+tape: babab
+ba -> ab

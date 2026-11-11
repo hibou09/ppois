@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа 1: Прямоугольник и алгорифмы Маркова: Исходный файл rectangle/Rectangle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 1: Прямоугольник и алгорифмы Маркова
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_rectangle_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Rectangle.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_rectangle_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef LAB_RECTANGLE_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define LAB_RECTANGLE_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelab.html">lab</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structlab_1_1_point.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlab_1_1_point.html">Point</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structlab_1_1_point.html#ac87a4ea8935d022eaee00cca31b00558">   19</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structlab_1_1_point.html#ac87a4ea8935d022eaee00cca31b00558">x</a>; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structlab_1_1_point.html#a648c2664d700675e2badc3824d67aabf">   20</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structlab_1_1_point.html#a648c2664d700675e2badc3824d67aabf">y</a>; </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacelab.html#a22290e45066f60f06addb84827063a60">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structlab_1_1_point.html">Point</a>&amp; a, <span class="keyword">const</span> <a class="code hl_struct" href="structlab_1_1_point.html">Point</a>&amp; b);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacelab.html#ab2f77f2923d2508015758f61b3a34bad">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structlab_1_1_point.html">Point</a>&amp; a, <span class="keyword">const</span> <a class="code hl_struct" href="structlab_1_1_point.html">Point</a>&amp; b);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classlab_1_1_rectangle.html">   42</a></span><span class="keyword">class </span><a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>(<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classlab_1_1_rectangle.html#a81f9c375925fb85fd4fe0cf35d70fbc0">   58</a></span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a81f9c375925fb85fd4fe0cf35d70fbc0">Rectangle</a>(<span class="keyword">const</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classlab_1_1_rectangle.html#ace7e445f7c7e7d230994ede188eef880">   61</a></span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; <a class="code hl_function" href="classlab_1_1_rectangle.html#ace7e445f7c7e7d230994ede188eef880">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">static</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a> <a class="code hl_function" href="classlab_1_1_rectangle.html#a5cef45462f83e27e1e3355a9e3fc48ba">fromSize</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a765d563aced329c3d61cd10292547aec">width</a>, <span class="keywordtype">int</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a8b8e99bb09f5b96061911278c81c0085">height</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a7907cc574442e60a63f48ffef5fb8f27">left</a>() <span class="keyword">const</span>;       </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#af4ac01ab7ff9ae2bcaee38bd4e4f3a1b">right</a>() <span class="keyword">const</span>;      </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a7aac338bce1972fb19a8d3ef6b695537">bottom</a>() <span class="keyword">const</span>;     </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a50b814fbb028d88d224c2fd52e37a464">top</a>() <span class="keyword">const</span>;        </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_struct" href="structlab_1_1_point.html">Point</a> <a class="code hl_function" href="classlab_1_1_rectangle.html#af497e9e4cdcde3a324480182372f8a19">bottomLeft</a>() <span class="keyword">const</span>;  </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_struct" href="structlab_1_1_point.html">Point</a> <a class="code hl_function" href="classlab_1_1_rectangle.html#ade16768ec9b4ff6bc1457acb2287ff68">bottomRight</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_struct" href="structlab_1_1_point.html">Point</a> <a class="code hl_function" href="classlab_1_1_rectangle.html#afcc336ef4be001227c79429d5ea774b2">topLeft</a>() <span class="keyword">const</span>;     </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_struct" href="structlab_1_1_point.html">Point</a> <a class="code hl_function" href="classlab_1_1_rectangle.html#a58c232283520fd22574d7cd47e0627cb">topRight</a>() <span class="keyword">const</span>;    </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a765d563aced329c3d61cd10292547aec">width</a>() <span class="keyword">const</span>;         </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a8b8e99bb09f5b96061911278c81c0085">height</a>() <span class="keyword">const</span>;        </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#ad62fb01d36a307347096ea2fdafb4b52">area</a>() <span class="keyword">const</span>;    </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; <a class="code hl_function" href="classlab_1_1_rectangle.html#ace2396b6f2c8836e39d823ed1cf75ede">move</a>(<span class="keywordtype">int</span> dx, <span class="keywordtype">int</span> dy);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; <a class="code hl_function" href="classlab_1_1_rectangle.html#a884bc8781e02abe45551f0ac8909f95d">moveTo</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; <a class="code hl_function" href="classlab_1_1_rectangle.html#a52557001725d32efaa133cb39a0ea1ba">resize</a>(<span class="keywordtype">int</span> newWidth, <span class="keywordtype">int</span> newHeight);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; <a class="code hl_function" href="classlab_1_1_rectangle.html#a8d1ba7ed3a92ee447131cdda5dfcd070">operator++</a>();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a> <a class="code hl_function" href="classlab_1_1_rectangle.html#a8d1ba7ed3a92ee447131cdda5dfcd070">operator++</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; <a class="code hl_function" href="classlab_1_1_rectangle.html#abaee90603b497e9e45decdbe4fd62f37">operator--</a>();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a> <a class="code hl_function" href="classlab_1_1_rectangle.html#abaee90603b497e9e45decdbe4fd62f37">operator--</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; <a class="code hl_function" href="classlab_1_1_rectangle.html#ae30d28190994f819e522350888dc3568">operator+=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; other);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; <a class="code hl_function" href="classlab_1_1_rectangle.html#a9a2fec2adf20da76345bb55c5e577342">operator-=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; other);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a569c5b1d254c461ddf1648f38187b369">intersects</a>(<span class="keyword">const</span> <a class="code hl_function" href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">Rectangle</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classlab_1_1_rectangle.html#aa409d89ebed79b7d2e10ece3141344a9">  161</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classlab_1_1_rectangle.html#aa409d89ebed79b7d2e10ece3141344a9">left_</a>;   </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classlab_1_1_rectangle.html#ade663d823e24c5e8797881b599b99637">  162</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classlab_1_1_rectangle.html#ade663d823e24c5e8797881b599b99637">bottom_</a>; </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classlab_1_1_rectangle.html#a25b081ee6abf5be70601fda9a23db056">  163</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classlab_1_1_rectangle.html#a25b081ee6abf5be70601fda9a23db056">right_</a>;  </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classlab_1_1_rectangle.html#afe9751a56947958a09862b402638b659">  164</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classlab_1_1_rectangle.html#afe9751a56947958a09862b402638b659">top_</a>;    </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>};</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a> <a class="code hl_function" href="namespacelab.html#a9a4c9699c22a4d43d5e84d23ac5e9524">operator+</a>(<a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a> lhs, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a>&amp; rhs);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a> <a class="code hl_function" href="namespacelab.html#a15920d0863da513ac6d3056cab2a3ac4">operator-</a>(<a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a> lhs, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a>&amp; rhs);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacelab.html#a22290e45066f60f06addb84827063a60">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a>&amp; b);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacelab.html#ab2f77f2923d2508015758f61b3a34bad">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a>&amp; b);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>std::ostream&amp; <a class="code hl_function" href="namespacelab.html#ad36a123512992a0cd590029c5081cdde">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a>&amp; r);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>std::istream&amp; <a class="code hl_function" href="namespacelab.html#ad9063bfbd5418747b310d21969c9f3da">operator&gt;&gt;</a>(std::istream&amp; in, <a class="code hl_class" href="classlab_1_1_rectangle.html">Rectangle</a>&amp; r);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>} <span class="comment">// namespace lab</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#endif </span><span class="comment">// LAB_RECTANGLE_H</span></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html"><div class="ttname"><a href="classlab_1_1_rectangle.html">lab::Rectangle</a></div><div class="ttdoc">Прямоугольник, стороны которого параллельны осям координат.</div><div class="ttdef"><b>Определения</b> Rectangle.h:42</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a25b081ee6abf5be70601fda9a23db056"><div class="ttname"><a href="classlab_1_1_rectangle.html#a25b081ee6abf5be70601fda9a23db056">lab::Rectangle::right_</a></div><div class="ttdeci">int right_</div><div class="ttdoc">X правой стороны</div><div class="ttdef"><b>Определения</b> Rectangle.h:163</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a3369ac096c64f1416c744bb7ebd13f7e"><div class="ttname"><a href="classlab_1_1_rectangle.html#a3369ac096c64f1416c744bb7ebd13f7e">lab::Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle()</div><div class="ttdoc">Создаёт вырожденный прямоугольник (0,0)-(0,0).</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:17</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a50b814fbb028d88d224c2fd52e37a464"><div class="ttname"><a href="classlab_1_1_rectangle.html#a50b814fbb028d88d224c2fd52e37a464">lab::Rectangle::top</a></div><div class="ttdeci">int top() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:32</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a52557001725d32efaa133cb39a0ea1ba"><div class="ttname"><a href="classlab_1_1_rectangle.html#a52557001725d32efaa133cb39a0ea1ba">lab::Rectangle::resize</a></div><div class="ttdeci">Rectangle &amp; resize(int newWidth, int newHeight)</div><div class="ttdoc">Изменяет размер; левая нижняя вершина остаётся на месте.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:53</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a569c5b1d254c461ddf1648f38187b369"><div class="ttname"><a href="classlab_1_1_rectangle.html#a569c5b1d254c461ddf1648f38187b369">lab::Rectangle::intersects</a></div><div class="ttdeci">bool intersects(const Rectangle &amp;other) const</div><div class="ttdoc">Есть ли общая часть (включая касание границ).</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:95</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a58c232283520fd22574d7cd47e0627cb"><div class="ttname"><a href="classlab_1_1_rectangle.html#a58c232283520fd22574d7cd47e0627cb">lab::Rectangle::topRight</a></div><div class="ttdeci">Point topRight() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:36</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a5cef45462f83e27e1e3355a9e3fc48ba"><div class="ttname"><a href="classlab_1_1_rectangle.html#a5cef45462f83e27e1e3355a9e3fc48ba">lab::Rectangle::fromSize</a></div><div class="ttdeci">static Rectangle fromSize(int x, int y, int width, int height)</div><div class="ttdoc">Статический фабричный метод: прямоугольник по углу и размерам.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:23</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a765d563aced329c3d61cd10292547aec"><div class="ttname"><a href="classlab_1_1_rectangle.html#a765d563aced329c3d61cd10292547aec">lab::Rectangle::width</a></div><div class="ttdeci">int width() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:37</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a7907cc574442e60a63f48ffef5fb8f27"><div class="ttname"><a href="classlab_1_1_rectangle.html#a7907cc574442e60a63f48ffef5fb8f27">lab::Rectangle::left</a></div><div class="ttdeci">int left() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:29</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a7aac338bce1972fb19a8d3ef6b695537"><div class="ttname"><a href="classlab_1_1_rectangle.html#a7aac338bce1972fb19a8d3ef6b695537">lab::Rectangle::bottom</a></div><div class="ttdeci">int bottom() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:31</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a81f9c375925fb85fd4fe0cf35d70fbc0"><div class="ttname"><a href="classlab_1_1_rectangle.html#a81f9c375925fb85fd4fe0cf35d70fbc0">lab::Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle(const Rectangle &amp;other)=default</div><div class="ttdoc">Конструктор копирования.</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a884bc8781e02abe45551f0ac8909f95d"><div class="ttname"><a href="classlab_1_1_rectangle.html#a884bc8781e02abe45551f0ac8909f95d">lab::Rectangle::moveTo</a></div><div class="ttdeci">Rectangle &amp; moveTo(int x, int y)</div><div class="ttdoc">Перемещает левую нижнюю вершину в точку (x, y).</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:49</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a8b8e99bb09f5b96061911278c81c0085"><div class="ttname"><a href="classlab_1_1_rectangle.html#a8b8e99bb09f5b96061911278c81c0085">lab::Rectangle::height</a></div><div class="ttdeci">int height() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:38</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a8d1ba7ed3a92ee447131cdda5dfcd070"><div class="ttname"><a href="classlab_1_1_rectangle.html#a8d1ba7ed3a92ee447131cdda5dfcd070">lab::Rectangle::operator++</a></div><div class="ttdeci">Rectangle &amp; operator++()</div><div class="ttdoc">Префиксный инкремент: ширина и высота +1.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:61</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_a9a2fec2adf20da76345bb55c5e577342"><div class="ttname"><a href="classlab_1_1_rectangle.html#a9a2fec2adf20da76345bb55c5e577342">lab::Rectangle::operator-=</a></div><div class="ttdeci">Rectangle &amp; operator-=(const Rectangle &amp;other)</div><div class="ttdoc">Заменяет *this пересечением двух прямоугольников.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:100</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_aa409d89ebed79b7d2e10ece3141344a9"><div class="ttname"><a href="classlab_1_1_rectangle.html#aa409d89ebed79b7d2e10ece3141344a9">lab::Rectangle::left_</a></div><div class="ttdeci">int left_</div><div class="ttdoc">X левой стороны</div><div class="ttdef"><b>Определения</b> Rectangle.h:161</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_abaee90603b497e9e45decdbe4fd62f37"><div class="ttname"><a href="classlab_1_1_rectangle.html#abaee90603b497e9e45decdbe4fd62f37">lab::Rectangle::operator--</a></div><div class="ttdeci">Rectangle &amp; operator--()</div><div class="ttdoc">Префиксный декремент: ширина и высота -1.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:73</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_ace2396b6f2c8836e39d823ed1cf75ede"><div class="ttname"><a href="classlab_1_1_rectangle.html#ace2396b6f2c8836e39d823ed1cf75ede">lab::Rectangle::move</a></div><div class="ttdeci">Rectangle &amp; move(int dx, int dy)</div><div class="ttdoc">Перемещает прямоугольник на вектор (dx, dy).</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:43</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_ace7e445f7c7e7d230994ede188eef880"><div class="ttname"><a href="classlab_1_1_rectangle.html#ace7e445f7c7e7d230994ede188eef880">lab::Rectangle::operator=</a></div><div class="ttdeci">Rectangle &amp; operator=(const Rectangle &amp;other)=default</div><div class="ttdoc">Оператор присваивания.</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_ad62fb01d36a307347096ea2fdafb4b52"><div class="ttname"><a href="classlab_1_1_rectangle.html#ad62fb01d36a307347096ea2fdafb4b52">lab::Rectangle::area</a></div><div class="ttdeci">long long area() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:39</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_ade16768ec9b4ff6bc1457acb2287ff68"><div class="ttname"><a href="classlab_1_1_rectangle.html#ade16768ec9b4ff6bc1457acb2287ff68">lab::Rectangle::bottomRight</a></div><div class="ttdeci">Point bottomRight() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:34</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_ade663d823e24c5e8797881b599b99637"><div class="ttname"><a href="classlab_1_1_rectangle.html#ade663d823e24c5e8797881b599b99637">lab::Rectangle::bottom_</a></div><div class="ttdeci">int bottom_</div><div class="ttdoc">Y нижней стороны</div><div class="ttdef"><b>Определения</b> Rectangle.h:162</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_ae30d28190994f819e522350888dc3568"><div class="ttname"><a href="classlab_1_1_rectangle.html#ae30d28190994f819e522350888dc3568">lab::Rectangle::operator+=</a></div><div class="ttdeci">Rectangle &amp; operator+=(const Rectangle &amp;other)</div><div class="ttdoc">Заменяет *this наименьшим прямоугольником, содержащим оба.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:87</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_af497e9e4cdcde3a324480182372f8a19"><div class="ttname"><a href="classlab_1_1_rectangle.html#af497e9e4cdcde3a324480182372f8a19">lab::Rectangle::bottomLeft</a></div><div class="ttdeci">Point bottomLeft() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:33</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_af4ac01ab7ff9ae2bcaee38bd4e4f3a1b"><div class="ttname"><a href="classlab_1_1_rectangle.html#af4ac01ab7ff9ae2bcaee38bd4e4f3a1b">lab::Rectangle::right</a></div><div class="ttdeci">int right() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:30</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_afcc336ef4be001227c79429d5ea774b2"><div class="ttname"><a href="classlab_1_1_rectangle.html#afcc336ef4be001227c79429d5ea774b2">lab::Rectangle::topLeft</a></div><div class="ttdeci">Point topLeft() const</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:35</div></div>
+<div class="ttc" id="aclasslab_1_1_rectangle_html_afe9751a56947958a09862b402638b659"><div class="ttname"><a href="classlab_1_1_rectangle.html#afe9751a56947958a09862b402638b659">lab::Rectangle::top_</a></div><div class="ttdeci">int top_</div><div class="ttdoc">Y верхней стороны</div><div class="ttdef"><b>Определения</b> Rectangle.h:164</div></div>
+<div class="ttc" id="anamespacelab_html"><div class="ttname"><a href="namespacelab.html">lab</a></div><div class="ttdef"><b>Определения</b> Rectangle.cpp:12</div></div>
+<div class="ttc" id="anamespacelab_html_a15920d0863da513ac6d3056cab2a3ac4"><div class="ttname"><a href="namespacelab.html#a15920d0863da513ac6d3056cab2a3ac4">lab::operator-</a></div><div class="ttdeci">Rectangle operator-(Rectangle lhs, const Rectangle &amp;rhs)</div><div class="ttdoc">Пересечение двух прямоугольников.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:118</div></div>
+<div class="ttc" id="anamespacelab_html_a22290e45066f60f06addb84827063a60"><div class="ttname"><a href="namespacelab.html#a22290e45066f60f06addb84827063a60">lab::operator==</a></div><div class="ttdeci">bool operator==(const Point &amp;a, const Point &amp;b)</div><div class="ttdoc">Сравнение точек.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:14</div></div>
+<div class="ttc" id="anamespacelab_html_a9a4c9699c22a4d43d5e84d23ac5e9524"><div class="ttname"><a href="namespacelab.html#a9a4c9699c22a4d43d5e84d23ac5e9524">lab::operator+</a></div><div class="ttdeci">Rectangle operator+(Rectangle lhs, const Rectangle &amp;rhs)</div><div class="ttdoc">Наименьший прямоугольник, содержащий оба.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:113</div></div>
+<div class="ttc" id="anamespacelab_html_ab2f77f2923d2508015758f61b3a34bad"><div class="ttname"><a href="namespacelab.html#ab2f77f2923d2508015758f61b3a34bad">lab::operator!=</a></div><div class="ttdeci">bool operator!=(const Point &amp;a, const Point &amp;b)</div><div class="ttdoc">Точки не равны (см. operator==(const Point&amp;, const Point&amp;)).</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:15</div></div>
+<div class="ttc" id="anamespacelab_html_ad36a123512992a0cd590029c5081cdde"><div class="ttname"><a href="namespacelab.html#ad36a123512992a0cd590029c5081cdde">lab::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const Rectangle &amp;r)</div><div class="ttdoc">Вывод в поток в формате &quot;(l, b)-(r, t)&quot;.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:129</div></div>
+<div class="ttc" id="anamespacelab_html_ad9063bfbd5418747b310d21969c9f3da"><div class="ttname"><a href="namespacelab.html#ad9063bfbd5418747b310d21969c9f3da">lab::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;in, Rectangle &amp;r)</div><div class="ttdoc">Ввод из потока: четыре целых &quot;x1 y1 x2 y2&quot;.</div><div class="ttdef"><b>Определения</b> Rectangle.cpp:134</div></div>
+<div class="ttc" id="astructlab_1_1_point_html"><div class="ttname"><a href="structlab_1_1_point.html">lab::Point</a></div><div class="ttdoc">Точка плоскости с целочисленными координатами.</div><div class="ttdef"><b>Определения</b> Rectangle.h:18</div></div>
+<div class="ttc" id="astructlab_1_1_point_html_a648c2664d700675e2badc3824d67aabf"><div class="ttname"><a href="structlab_1_1_point.html#a648c2664d700675e2badc3824d67aabf">lab::Point::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">координата по оси Y</div><div class="ttdef"><b>Определения</b> Rectangle.h:20</div></div>
+<div class="ttc" id="astructlab_1_1_point_html_ac87a4ea8935d022eaee00cca31b00558"><div class="ttname"><a href="structlab_1_1_point.html#ac87a4ea8935d022eaee00cca31b00558">lab::Point::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">координата по оси X</div><div class="ttdef"><b>Определения</b> Rectangle.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_0943e568a6f75501343cd3dfd9fdd030.html">rectangle</a></li><li class="navelem"><a href="_rectangle_8h.html">Rectangle.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
