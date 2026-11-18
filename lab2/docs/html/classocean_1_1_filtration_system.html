@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::FiltrationSystem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_filtration_system.html','','classocean_1_1_filtration_system-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::FiltrationSystem</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Система фильтрации воды.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_water_8h_source.html">Water.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::FiltrationSystem:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_filtration_system__coll__graph.png" border="0" usemap="#aocean_1_1_filtration_system_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a2ad86867bf4f91dcd562410829df6a92" id="r_a2ad86867bf4f91dcd562410829df6a92"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2ad86867bf4f91dcd562410829df6a92">FiltrationSystem</a> (std::string model, double flowRateLph)</td></tr>
+<tr class="memdesc:a2ad86867bf4f91dcd562410829df6a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт систему фильтрации.  <br /></td></tr>
+<tr class="memitem:a61fbdf6c4e82736e0c94dea68db9075d" id="r_a61fbdf6c4e82736e0c94dea68db9075d"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a61fbdf6c4e82736e0c94dea68db9075d">model</a> () const</td></tr>
+<tr class="memdesc:a61fbdf6c4e82736e0c94dea68db9075d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название модели.  <br /></td></tr>
+<tr class="memitem:a248b237f26b965afaf26d656d99e108d" id="r_a248b237f26b965afaf26d656d99e108d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a248b237f26b965afaf26d656d99e108d">filterWear</a> () const</td></tr>
+<tr class="memdesc:a248b237f26b965afaf26d656d99e108d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Износ фильтра, % (0..100).  <br /></td></tr>
+<tr class="memitem:a79a2ee4f16e28e322cf5648727adff7e" id="r_a79a2ee4f16e28e322cf5648727adff7e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a79a2ee4f16e28e322cf5648727adff7e">isActive</a> () const</td></tr>
+<tr class="memdesc:a79a2ee4f16e28e322cf5648727adff7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включена ли система.  <br /></td></tr>
+<tr class="memitem:a19641a71cb31d74b4d83c0f576e2324b" id="r_a19641a71cb31d74b4d83c0f576e2324b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19641a71cb31d74b4d83c0f576e2324b">setActive</a> (bool active)</td></tr>
+<tr class="memdesc:a19641a71cb31d74b4d83c0f576e2324b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включает или выключает систему.  <br /></td></tr>
+<tr class="memitem:aaaebbe95afda7222615ea1b230919ded" id="r_aaaebbe95afda7222615ea1b230919ded"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaaebbe95afda7222615ea1b230919ded">runCycle</a> (<a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;water, double hours)</td></tr>
+<tr class="memdesc:aaaebbe95afda7222615ea1b230919ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает цикл фильтрации: снижает аммиак и увеличивает износ фильтра.  <br /></td></tr>
+<tr class="memitem:ac921fb908027877953ac6074b5ee49f4" id="r_ac921fb908027877953ac6074b5ee49f4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac921fb908027877953ac6074b5ee49f4">replaceFilter</a> ()</td></tr>
+<tr class="memdesc:ac921fb908027877953ac6074b5ee49f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменяет фильтр (износ становится 0).  <br /></td></tr>
+<tr class="memitem:aa6ab711eed330c7b6e150359bf020104" id="r_aa6ab711eed330c7b6e150359bf020104"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa6ab711eed330c7b6e150359bf020104">needsMaintenance</a> () const</td></tr>
+<tr class="memdesc:aa6ab711eed330c7b6e150359bf020104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, нужно ли обслуживание.  <br /></td></tr>
+<tr class="memitem:a3a1a13f25de7d94fa79dc96666bc70e5" id="r_a3a1a13f25de7d94fa79dc96666bc70e5"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a3a1a13f25de7d94fa79dc96666bc70e5">turnoverPerHour</a> (double volumeLiters) const</td></tr>
+<tr class="memdesc:a3a1a13f25de7d94fa79dc96666bc70e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сколько раз в час система прогоняет весь объём аквариума.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a4a2e4faa85fb194ed14f60415c2d365e" id="r_a4a2e4faa85fb194ed14f60415c2d365e"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a4a2e4faa85fb194ed14f60415c2d365e">model_</a></td></tr>
+<tr class="memdesc:a4a2e4faa85fb194ed14f60415c2d365e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название модели.  <br /></td></tr>
+<tr class="memitem:a0200334db01e22010e6a878bd5374c93" id="r_a0200334db01e22010e6a878bd5374c93"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a0200334db01e22010e6a878bd5374c93">flowRateLph_</a></td></tr>
+<tr class="memdesc:a0200334db01e22010e6a878bd5374c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Производительность, л/ч.  <br /></td></tr>
+<tr class="memitem:aac3c7ca046c585f29c1124a7d525d365" id="r_aac3c7ca046c585f29c1124a7d525d365"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aac3c7ca046c585f29c1124a7d525d365">filterWear_</a></td></tr>
+<tr class="memdesc:aac3c7ca046c585f29c1124a7d525d365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Износ фильтра, %.  <br /></td></tr>
+<tr class="memitem:aca27be7b2f04b248d2cdd4d2259aedc6" id="r_aca27be7b2f04b248d2cdd4d2259aedc6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aca27be7b2f04b248d2cdd4d2259aedc6">active_</a></td></tr>
+<tr class="memdesc:aca27be7b2f04b248d2cdd4d2259aedc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включена ли система.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Система фильтрации воды. </p>
+<p>Очищает воду от аммиака; фильтр изнашивается и требует замены. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00246">246</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a2ad86867bf4f91dcd562410829df6a92" name="a2ad86867bf4f91dcd562410829df6a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad86867bf4f91dcd562410829df6a92">&#9670;&#160;</a></span>FiltrationSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::FiltrationSystem::FiltrationSystem </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>flowRateLph</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт систему фильтрации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Название модели. </td></tr>
+    <tr><td class="paramname">flowRateLph</td><td>Производительность, л/ч. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если производительность не положительна. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00188">188</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a248b237f26b965afaf26d656d99e108d" name="a248b237f26b965afaf26d656d99e108d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248b237f26b965afaf26d656d99e108d">&#9670;&#160;</a></span>filterWear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FiltrationSystem::filterWear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Износ фильтра, % (0..100). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00259">259</a></p>
+
+</div>
+</div>
+<a id="a79a2ee4f16e28e322cf5648727adff7e" name="a79a2ee4f16e28e322cf5648727adff7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79a2ee4f16e28e322cf5648727adff7e">&#9670;&#160;</a></span>isActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::FiltrationSystem::isActive </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Включена ли система. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00261">261</a></p>
+
+</div>
+</div>
+<a id="a61fbdf6c4e82736e0c94dea68db9075d" name="a61fbdf6c4e82736e0c94dea68db9075d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61fbdf6c4e82736e0c94dea68db9075d">&#9670;&#160;</a></span>model()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::FiltrationSystem::model </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название модели. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00257">257</a></p>
+
+</div>
+</div>
+<a id="aa6ab711eed330c7b6e150359bf020104" name="aa6ab711eed330c7b6e150359bf020104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ab711eed330c7b6e150359bf020104">&#9670;&#160;</a></span>needsMaintenance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::FiltrationSystem::needsMaintenance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, нужно ли обслуживание. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если износ фильтра не меньше 80%. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00214">214</a></p>
+
+</div>
+</div>
+<a id="ac921fb908027877953ac6074b5ee49f4" name="ac921fb908027877953ac6074b5ee49f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac921fb908027877953ac6074b5ee49f4">&#9670;&#160;</a></span>replaceFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::FiltrationSystem::replaceFilter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Заменяет фильтр (износ становится 0). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00210">210</a></p>
+
+</div>
+</div>
+<a id="aaaebbe95afda7222615ea1b230919ded" name="aaaebbe95afda7222615ea1b230919ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaebbe95afda7222615ea1b230919ded">&#9670;&#160;</a></span>runCycle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::FiltrationSystem::runCycle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>water</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>hours</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запускает цикл фильтрации: снижает аммиак и увеличивает износ фильтра. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">water</td><td>Очищаемая вода. </td></tr>
+    <tr><td class="paramname">hours</td><td>Длительность цикла, ч. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если hours не положительно. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_equipment_failure_exception.html" title="Отказ оборудования (выключенный или забитый фильтр).">EquipmentFailureException</a></td><td>если система выключена или фильтр засорён (износ 100%). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00195">195</a></p>
+
+</div>
+</div>
+<a id="a19641a71cb31d74b4d83c0f576e2324b" name="a19641a71cb31d74b4d83c0f576e2324b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19641a71cb31d74b4d83c0f576e2324b">&#9670;&#160;</a></span>setActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::FiltrationSystem::setActive </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>active</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Включает или выключает систему. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00263">263</a></p>
+
+</div>
+</div>
+<a id="a3a1a13f25de7d94fa79dc96666bc70e5" name="a3a1a13f25de7d94fa79dc96666bc70e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1a13f25de7d94fa79dc96666bc70e5">&#9670;&#160;</a></span>turnoverPerHour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FiltrationSystem::turnoverPerHour </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>volumeLiters</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сколько раз в час система прогоняет весь объём аквариума. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volumeLiters</td><td>Объём аквариума, л. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Кратность оборота воды, 1/ч. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если объём не положителен. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00218">218</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="aca27be7b2f04b248d2cdd4d2259aedc6" name="aca27be7b2f04b248d2cdd4d2259aedc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca27be7b2f04b248d2cdd4d2259aedc6">&#9670;&#160;</a></span>active_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::FiltrationSystem::active_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Включена ли система. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00292">292</a></p>
+
+</div>
+</div>
+<a id="aac3c7ca046c585f29c1124a7d525d365" name="aac3c7ca046c585f29c1124a7d525d365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3c7ca046c585f29c1124a7d525d365">&#9670;&#160;</a></span>filterWear_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FiltrationSystem::filterWear_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Износ фильтра, %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00291">291</a></p>
+
+</div>
+</div>
+<a id="a0200334db01e22010e6a878bd5374c93" name="a0200334db01e22010e6a878bd5374c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0200334db01e22010e6a878bd5374c93">&#9670;&#160;</a></span>flowRateLph_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FiltrationSystem::flowRateLph_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Производительность, л/ч. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00290">290</a></p>
+
+</div>
+</div>
+<a id="a4a2e4faa85fb194ed14f60415c2d365e" name="a4a2e4faa85fb194ed14f60415c2d365e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2e4faa85fb194ed14f60415c2d365e">&#9670;&#160;</a></span>model_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::FiltrationSystem::model_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название модели. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00289">289</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_water_8h_source.html">Water.h</a></li>
+<li>src/<a class="el" href="_water_8cpp_source.html">Water.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_filtration_system.html">FiltrationSystem</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

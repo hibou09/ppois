@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::LightingSystem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_lighting_system.html','','classocean_1_1_lighting_system-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::LightingSystem</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Освещение аквариума (свет включается в 08:00).  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_water_8h_source.html">Water.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::LightingSystem:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_lighting_system__coll__graph.png" border="0" usemap="#aocean_1_1_lighting_system_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:abe6253c8cf496212df629490f82bdf6e" id="r_abe6253c8cf496212df629490f82bdf6e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#abe6253c8cf496212df629490f82bdf6e">LightingSystem</a> (double powerW, double dayLengthHours, double intensityLux)</td></tr>
+<tr class="memdesc:abe6253c8cf496212df629490f82bdf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт систему освещения.  <br /></td></tr>
+<tr class="memitem:a20d5f5c4ba3290d2a2aebfae03395637" id="r_a20d5f5c4ba3290d2a2aebfae03395637"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a20d5f5c4ba3290d2a2aebfae03395637">dayLength</a> () const</td></tr>
+<tr class="memdesc:a20d5f5c4ba3290d2a2aebfae03395637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина светового дня, ч.  <br /></td></tr>
+<tr class="memitem:a432db727ac5cdc42e9a7f071a507cfe6" id="r_a432db727ac5cdc42e9a7f071a507cfe6"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a432db727ac5cdc42e9a7f071a507cfe6">intensity</a> () const</td></tr>
+<tr class="memdesc:a432db727ac5cdc42e9a7f071a507cfe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интенсивность света, лк.  <br /></td></tr>
+<tr class="memitem:a957f3ca71aeb919c1cfe157782691895" id="r_a957f3ca71aeb919c1cfe157782691895"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a957f3ca71aeb919c1cfe157782691895">isActive</a> () const</td></tr>
+<tr class="memdesc:a957f3ca71aeb919c1cfe157782691895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включена ли система.  <br /></td></tr>
+<tr class="memitem:a24bfc67d1a862bdb9b26038fc67d3de4" id="r_a24bfc67d1a862bdb9b26038fc67d3de4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a24bfc67d1a862bdb9b26038fc67d3de4">setActive</a> (bool active)</td></tr>
+<tr class="memdesc:a24bfc67d1a862bdb9b26038fc67d3de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включает или выключает систему.  <br /></td></tr>
+<tr class="memitem:ab2a40cf1458ee3f62dd0cbe35fa394d7" id="r_ab2a40cf1458ee3f62dd0cbe35fa394d7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab2a40cf1458ee3f62dd0cbe35fa394d7">setDayLength</a> (double hours)</td></tr>
+<tr class="memdesc:ab2a40cf1458ee3f62dd0cbe35fa394d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задаёт длину светового дня.  <br /></td></tr>
+<tr class="memitem:a53b0f6dc2b2fc195193a5ee736bd9f60" id="r_a53b0f6dc2b2fc195193a5ee736bd9f60"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a53b0f6dc2b2fc195193a5ee736bd9f60">isLightOn</a> (int minuteOfDay) const</td></tr>
+<tr class="memdesc:a53b0f6dc2b2fc195193a5ee736bd9f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Горит ли свет в указанную минуту суток.  <br /></td></tr>
+<tr class="memitem:a2f348678fd510c49c570a733d7a54b7f" id="r_a2f348678fd510c49c570a733d7a54b7f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a2f348678fd510c49c570a733d7a54b7f">dailyEnergyKwh</a> () const</td></tr>
+<tr class="memdesc:a2f348678fd510c49c570a733d7a54b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Суточное потребление энергии.  <br /></td></tr>
+<tr class="memitem:a6de8135f8add506894fedc4a965a2ec0" id="r_a6de8135f8add506894fedc4a965a2ec0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6de8135f8add506894fedc4a965a2ec0">dim</a> (double percent)</td></tr>
+<tr class="memdesc:a6de8135f8add506894fedc4a965a2ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшает яркость света.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:aa665525da46a46b29eeb44aac9c4b793" id="r_aa665525da46a46b29eeb44aac9c4b793"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aa665525da46a46b29eeb44aac9c4b793">powerW_</a></td></tr>
+<tr class="memdesc:aa665525da46a46b29eeb44aac9c4b793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мощность, Вт.  <br /></td></tr>
+<tr class="memitem:ab744f3859e163dc5a56c32a7295edd35" id="r_ab744f3859e163dc5a56c32a7295edd35"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab744f3859e163dc5a56c32a7295edd35">dayLengthHours_</a></td></tr>
+<tr class="memdesc:ab744f3859e163dc5a56c32a7295edd35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина светового дня, ч.  <br /></td></tr>
+<tr class="memitem:aef3a6b05e4c61179a45031ef7dfe728c" id="r_aef3a6b05e4c61179a45031ef7dfe728c"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aef3a6b05e4c61179a45031ef7dfe728c">intensityLux_</a></td></tr>
+<tr class="memdesc:aef3a6b05e4c61179a45031ef7dfe728c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интенсивность света, лк.  <br /></td></tr>
+<tr class="memitem:ac4abc8ea905973c2c87f6168e626900a" id="r_ac4abc8ea905973c2c87f6168e626900a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac4abc8ea905973c2c87f6168e626900a">active_</a></td></tr>
+<tr class="memdesc:ac4abc8ea905973c2c87f6168e626900a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включена ли система.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Освещение аквариума (свет включается в 08:00). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00345">345</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="abe6253c8cf496212df629490f82bdf6e" name="abe6253c8cf496212df629490f82bdf6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6253c8cf496212df629490f82bdf6e">&#9670;&#160;</a></span>LightingSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::LightingSystem::LightingSystem </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>powerW</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dayLengthHours</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>intensityLux</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт систему освещения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">powerW</td><td>Мощность, Вт. </td></tr>
+    <tr><td class="paramname">dayLengthHours</td><td>Длина светового дня, ч (от 0 до 16). </td></tr>
+    <tr><td class="paramname">intensityLux</td><td>Интенсивность света, лк. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если мощность не положительна, интенсивность отрицательна или длина дня вне [0, 16]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00257">257</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a2f348678fd510c49c570a733d7a54b7f" name="a2f348678fd510c49c570a733d7a54b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f348678fd510c49c570a733d7a54b7f">&#9670;&#160;</a></span>dailyEnergyKwh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::LightingSystem::dailyEnergyKwh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Суточное потребление энергии. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Энергия, кВт·ч (0, если система выключена). </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00278">278</a></p>
+
+</div>
+</div>
+<a id="a20d5f5c4ba3290d2a2aebfae03395637" name="a20d5f5c4ba3290d2a2aebfae03395637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d5f5c4ba3290d2a2aebfae03395637">&#9670;&#160;</a></span>dayLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::LightingSystem::dayLength </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина светового дня, ч. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00358">358</a></p>
+
+</div>
+</div>
+<a id="a6de8135f8add506894fedc4a965a2ec0" name="a6de8135f8add506894fedc4a965a2ec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de8135f8add506894fedc4a965a2ec0">&#9670;&#160;</a></span>dim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::LightingSystem::dim </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>percent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уменьшает яркость света. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percent</td><td>На сколько процентов снизить интенсивность (0..100). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если percent вне диапазона [0, 100]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00282">282</a></p>
+
+</div>
+</div>
+<a id="a432db727ac5cdc42e9a7f071a507cfe6" name="a432db727ac5cdc42e9a7f071a507cfe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432db727ac5cdc42e9a7f071a507cfe6">&#9670;&#160;</a></span>intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::LightingSystem::intensity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Интенсивность света, лк. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00360">360</a></p>
+
+</div>
+</div>
+<a id="a957f3ca71aeb919c1cfe157782691895" name="a957f3ca71aeb919c1cfe157782691895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957f3ca71aeb919c1cfe157782691895">&#9670;&#160;</a></span>isActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::LightingSystem::isActive </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Включена ли система. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00362">362</a></p>
+
+</div>
+</div>
+<a id="a53b0f6dc2b2fc195193a5ee736bd9f60" name="a53b0f6dc2b2fc195193a5ee736bd9f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b0f6dc2b2fc195193a5ee736bd9f60">&#9670;&#160;</a></span>isLightOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::LightingSystem::isLightOn </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minuteOfDay</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Горит ли свет в указанную минуту суток. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minuteOfDay</td><td>Минута суток (0..1439). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если система включена и время в пределах светового дня (с 08:00). </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00272">272</a></p>
+
+</div>
+</div>
+<a id="a24bfc67d1a862bdb9b26038fc67d3de4" name="a24bfc67d1a862bdb9b26038fc67d3de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bfc67d1a862bdb9b26038fc67d3de4">&#9670;&#160;</a></span>setActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::LightingSystem::setActive </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>active</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Включает или выключает систему. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00364">364</a></p>
+
+</div>
+</div>
+<a id="ab2a40cf1458ee3f62dd0cbe35fa394d7" name="ab2a40cf1458ee3f62dd0cbe35fa394d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a40cf1458ee3f62dd0cbe35fa394d7">&#9670;&#160;</a></span>setDayLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::LightingSystem::setDayLength </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>hours</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Задаёт длину светового дня. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hours</td><td>Длина дня, ч. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если hours вне диапазона [0, 16]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00265">265</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="ac4abc8ea905973c2c87f6168e626900a" name="ac4abc8ea905973c2c87f6168e626900a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4abc8ea905973c2c87f6168e626900a">&#9670;&#160;</a></span>active_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::LightingSystem::active_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Включена ли система. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00394">394</a></p>
+
+</div>
+</div>
+<a id="ab744f3859e163dc5a56c32a7295edd35" name="ab744f3859e163dc5a56c32a7295edd35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab744f3859e163dc5a56c32a7295edd35">&#9670;&#160;</a></span>dayLengthHours_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::LightingSystem::dayLengthHours_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина светового дня, ч. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00392">392</a></p>
+
+</div>
+</div>
+<a id="aef3a6b05e4c61179a45031ef7dfe728c" name="aef3a6b05e4c61179a45031ef7dfe728c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef3a6b05e4c61179a45031ef7dfe728c">&#9670;&#160;</a></span>intensityLux_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::LightingSystem::intensityLux_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Интенсивность света, лк. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00393">393</a></p>
+
+</div>
+</div>
+<a id="aa665525da46a46b29eeb44aac9c4b793" name="aa665525da46a46b29eeb44aac9c4b793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa665525da46a46b29eeb44aac9c4b793">&#9670;&#160;</a></span>powerW_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::LightingSystem::powerW_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Мощность, Вт. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00391">391</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_water_8h_source.html">Water.h</a></li>
+<li>src/<a class="el" href="_water_8cpp_source.html">Water.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_lighting_system.html">LightingSystem</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Исходный файл include/Food.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_food_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Food.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_food_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_common_8h.html">Common.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceocean.html">ocean</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html">   17</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_food_item.html#a9fe7ef92fe35107d4bb268df7ae47b96">FoodItem</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="classocean_1_1_food_item.html#a9fe7ef92fe35107d4bb268df7ae47b96">FoodItem</a>(std::string <a class="code hl_function" href="classocean_1_1_food_item.html#a0108f51bdaef0e114b339ccc21c8b032">name</a>, <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_item.html#a18487a633f36b068127d2d0893c9b93c">caloriesPerKg</a>, <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_item.html#a78b6a79ae2de2a7aff7fcf1dbab6090d">stockKg</a>, <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_item.html#ab26b3a909ed9e30902b5fbd6d5eab062">pricePerKg</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>             <span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; <a class="code hl_function" href="classocean_1_1_food_item.html#a58f98b1bb30aed10f037c5003414d767">expiry</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a0108f51bdaef0e114b339ccc21c8b032">   32</a></span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classocean_1_1_food_item.html#a0108f51bdaef0e114b339ccc21c8b032">name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_food_item.html#a7d9e755d727e7a7c13d655994a8fb770">name_</a>; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a18487a633f36b068127d2d0893c9b93c">   34</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_item.html#a18487a633f36b068127d2d0893c9b93c">caloriesPerKg</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_food_item.html#a4843b8e1c1e2ff1c9e5114554b8b44a0">caloriesPerKg_</a>; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a78b6a79ae2de2a7aff7fcf1dbab6090d">   36</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_item.html#a78b6a79ae2de2a7aff7fcf1dbab6090d">stockKg</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_food_item.html#a28cd0509d00e9f100351d87c4df60bb3">stockKg_</a>; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#ab26b3a909ed9e30902b5fbd6d5eab062">   38</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_item.html#ab26b3a909ed9e30902b5fbd6d5eab062">pricePerKg</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_food_item.html#a5663095e9ca58986894b852751d9e2c0">pricePerKg_</a>; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a58f98b1bb30aed10f037c5003414d767">   40</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; <a class="code hl_function" href="classocean_1_1_food_item.html#a58f98b1bb30aed10f037c5003414d767">expiry</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_food_item.html#a14bde6ffb3bbcc6817ef1cbcc32e0cf4">expiry_</a>; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classocean_1_1_food_item.html#a17784ed08215106d2c34922bd4eaca38">consume</a>(<span class="keywordtype">double</span> kg, <span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_food_item.html#a717dab4c2c8aba43e6c24fb81b34e1c8">isExpired</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classocean_1_1_food_item.html#ac22608b20c671b8acabb6cbdedf1734b">daysUntilExpiry</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_item.html#a61cc35285ad86088694b696b05a82f21">cost</a>(<span class="keywordtype">double</span> kg) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classocean_1_1_food_item.html#a844ebdd197cba44270dfa3ffd00c38cf">addStock</a>(<span class="keywordtype">double</span> kg);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a7d9e755d727e7a7c13d655994a8fb770">   78</a></span>    std::string <a class="code hl_variable" href="classocean_1_1_food_item.html#a7d9e755d727e7a7c13d655994a8fb770">name_</a>;      </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a4843b8e1c1e2ff1c9e5114554b8b44a0">   79</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classocean_1_1_food_item.html#a4843b8e1c1e2ff1c9e5114554b8b44a0">caloriesPerKg_</a>;  </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a28cd0509d00e9f100351d87c4df60bb3">   80</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classocean_1_1_food_item.html#a28cd0509d00e9f100351d87c4df60bb3">stockKg_</a>;        </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a5663095e9ca58986894b852751d9e2c0">   81</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classocean_1_1_food_item.html#a5663095e9ca58986894b852751d9e2c0">pricePerKg_</a>;     </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classocean_1_1_food_item.html#a14bde6ffb3bbcc6817ef1cbcc32e0cf4">   82</a></span>    <a class="code hl_class" href="classocean_1_1_date.html">Date</a> <a class="code hl_variable" href="classocean_1_1_food_item.html#a14bde6ffb3bbcc6817ef1cbcc32e0cf4">expiry_</a>;           </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classocean_1_1_food_storage.html">   88</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_food_storage.html#ad2c5c83591ddaa4fc359048f8e1098bc">FoodStorage</a> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#ad2c5c83591ddaa4fc359048f8e1098bc">FoodStorage</a>(<span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#a995fcb94d6d8b0101df3210df269c5ac">capacityKg</a>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classocean_1_1_food_storage.html#a995fcb94d6d8b0101df3210df269c5ac">   98</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#a995fcb94d6d8b0101df3210df269c5ac">capacityKg</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_food_storage.html#a61d2d17ebff6fe50e39cb4da9fad72ff">capacityKg_</a>; }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classocean_1_1_food_storage.html#a16d42c93b788ac70c16bc2f778cbd4a6">  100</a></span>    <span class="keyword">const</span> std::vector&lt;FoodItem&gt;&amp; <a class="code hl_function" href="classocean_1_1_food_storage.html#a16d42c93b788ac70c16bc2f778cbd4a6">items</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_food_storage.html#a8f0e9e536759447e4f0866d41a4853f9">items_</a>; }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#a4408365d321dd3e6c1ef2c4073570a83">addItem</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_food_item.html">FoodItem</a>&amp; item);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#a9ae7e01b80b782568274279d91adeacf">contains</a>(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <a class="code hl_class" href="classocean_1_1_food_item.html">FoodItem</a>&amp; <a class="code hl_function" href="classocean_1_1_food_storage.html#a3b246f06b382c23b8fb3c10ecc936333">find</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#ae3f434df28d9ca524a3d36fdc12a5cc9">take</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">double</span> kg, <span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#a5650b683bfc85a75aee070f34c0a5cf0">removeExpired</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#ab7e116e1eeca24144da8a375a5ffc7fe">totalStockKg</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#a0bd08e3d51b5d4ff89604bfdcc1e646b">freeCapacityKg</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_food_storage.html#a8459833bbe0a8695794c2130e576be03">totalValue</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classocean_1_1_food_storage.html#a61d2d17ebff6fe50e39cb4da9fad72ff">  154</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classocean_1_1_food_storage.html#a61d2d17ebff6fe50e39cb4da9fad72ff">capacityKg_</a>;           </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classocean_1_1_food_storage.html#a8f0e9e536759447e4f0866d41a4853f9">  155</a></span>    std::vector&lt;FoodItem&gt; <a class="code hl_variable" href="classocean_1_1_food_storage.html#a8f0e9e536759447e4f0866d41a4853f9">items_</a>; </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>};</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}  <span class="comment">// namespace ocean</span></div>
+<div class="ttc" id="a_common_8h_html"><div class="ttname"><a href="_common_8h.html">Common.h</a></div><div class="ttdoc">Базовые value-классы: дата, временной интервал, расположение.</div></div>
+<div class="ttc" id="aclassocean_1_1_date_html"><div class="ttname"><a href="classocean_1_1_date.html">ocean::Date</a></div><div class="ttdoc">Календарная дата (григорианский календарь).</div><div class="ttdef"><b>Определения</b> <a href="_common_8h_source.html#l00015">Common.h:15</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html"><div class="ttname"><a href="classocean_1_1_food_item.html">ocean::FoodItem</a></div><div class="ttdoc">Партия корма определённого вида.</div><div class="ttdef"><b>Определения</b> <a href="#l00017">Food.h:17</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a0108f51bdaef0e114b339ccc21c8b032"><div class="ttname"><a href="classocean_1_1_food_item.html#a0108f51bdaef0e114b339ccc21c8b032">ocean::FoodItem::name</a></div><div class="ttdeci">const std::string &amp; name() const</div><div class="ttdoc">Название корма.</div><div class="ttdef"><b>Определения</b> <a href="#l00032">Food.h:32</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a14bde6ffb3bbcc6817ef1cbcc32e0cf4"><div class="ttname"><a href="classocean_1_1_food_item.html#a14bde6ffb3bbcc6817ef1cbcc32e0cf4">ocean::FoodItem::expiry_</a></div><div class="ttdeci">Date expiry_</div><div class="ttdoc">Дата окончания срока годности.</div><div class="ttdef"><b>Определения</b> <a href="#l00082">Food.h:82</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a17784ed08215106d2c34922bd4eaca38"><div class="ttname"><a href="classocean_1_1_food_item.html#a17784ed08215106d2c34922bd4eaca38">ocean::FoodItem::consume</a></div><div class="ttdeci">void consume(double kg, const Date &amp;today)</div><div class="ttdoc">Списывает корм; проверяет срок годности и остаток.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00024">Food.cpp:24</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a18487a633f36b068127d2d0893c9b93c"><div class="ttname"><a href="classocean_1_1_food_item.html#a18487a633f36b068127d2d0893c9b93c">ocean::FoodItem::caloriesPerKg</a></div><div class="ttdeci">double caloriesPerKg() const</div><div class="ttdoc">Калорийность, ккал на кг.</div><div class="ttdef"><b>Определения</b> <a href="#l00034">Food.h:34</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a28cd0509d00e9f100351d87c4df60bb3"><div class="ttname"><a href="classocean_1_1_food_item.html#a28cd0509d00e9f100351d87c4df60bb3">ocean::FoodItem::stockKg_</a></div><div class="ttdeci">double stockKg_</div><div class="ttdoc">Остаток, кг.</div><div class="ttdef"><b>Определения</b> <a href="#l00080">Food.h:80</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a4843b8e1c1e2ff1c9e5114554b8b44a0"><div class="ttname"><a href="classocean_1_1_food_item.html#a4843b8e1c1e2ff1c9e5114554b8b44a0">ocean::FoodItem::caloriesPerKg_</a></div><div class="ttdeci">double caloriesPerKg_</div><div class="ttdoc">Калорийность, ккал на кг.</div><div class="ttdef"><b>Определения</b> <a href="#l00079">Food.h:79</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a5663095e9ca58986894b852751d9e2c0"><div class="ttname"><a href="classocean_1_1_food_item.html#a5663095e9ca58986894b852751d9e2c0">ocean::FoodItem::pricePerKg_</a></div><div class="ttdeci">double pricePerKg_</div><div class="ttdoc">Цена за кг.</div><div class="ttdef"><b>Определения</b> <a href="#l00081">Food.h:81</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a58f98b1bb30aed10f037c5003414d767"><div class="ttname"><a href="classocean_1_1_food_item.html#a58f98b1bb30aed10f037c5003414d767">ocean::FoodItem::expiry</a></div><div class="ttdeci">const Date &amp; expiry() const</div><div class="ttdoc">Дата окончания срока годности.</div><div class="ttdef"><b>Определения</b> <a href="#l00040">Food.h:40</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a61cc35285ad86088694b696b05a82f21"><div class="ttname"><a href="classocean_1_1_food_item.html#a61cc35285ad86088694b696b05a82f21">ocean::FoodItem::cost</a></div><div class="ttdeci">double cost(double kg) const</div><div class="ttdoc">Стоимость заданного количества корма.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00046">Food.cpp:46</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a717dab4c2c8aba43e6c24fb81b34e1c8"><div class="ttname"><a href="classocean_1_1_food_item.html#a717dab4c2c8aba43e6c24fb81b34e1c8">ocean::FoodItem::isExpired</a></div><div class="ttdeci">bool isExpired(const Date &amp;today) const</div><div class="ttdoc">Проверяет, просрочена ли партия.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00038">Food.cpp:38</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a78b6a79ae2de2a7aff7fcf1dbab6090d"><div class="ttname"><a href="classocean_1_1_food_item.html#a78b6a79ae2de2a7aff7fcf1dbab6090d">ocean::FoodItem::stockKg</a></div><div class="ttdeci">double stockKg() const</div><div class="ttdoc">Остаток на складе, кг.</div><div class="ttdef"><b>Определения</b> <a href="#l00036">Food.h:36</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a7d9e755d727e7a7c13d655994a8fb770"><div class="ttname"><a href="classocean_1_1_food_item.html#a7d9e755d727e7a7c13d655994a8fb770">ocean::FoodItem::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdoc">Название корма.</div><div class="ttdef"><b>Определения</b> <a href="#l00078">Food.h:78</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a844ebdd197cba44270dfa3ffd00c38cf"><div class="ttname"><a href="classocean_1_1_food_item.html#a844ebdd197cba44270dfa3ffd00c38cf">ocean::FoodItem::addStock</a></div><div class="ttdeci">void addStock(double kg)</div><div class="ttdoc">Увеличивает остаток.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00053">Food.cpp:53</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a9fe7ef92fe35107d4bb268df7ae47b96"><div class="ttname"><a href="classocean_1_1_food_item.html#a9fe7ef92fe35107d4bb268df7ae47b96">ocean::FoodItem::FoodItem</a></div><div class="ttdeci">FoodItem(std::string name, double caloriesPerKg, double stockKg, double pricePerKg, const Date &amp;expiry)</div><div class="ttdoc">Создаёт партию корма.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00012">Food.cpp:12</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_ab26b3a909ed9e30902b5fbd6d5eab062"><div class="ttname"><a href="classocean_1_1_food_item.html#ab26b3a909ed9e30902b5fbd6d5eab062">ocean::FoodItem::pricePerKg</a></div><div class="ttdeci">double pricePerKg() const</div><div class="ttdoc">Цена за килограмм.</div><div class="ttdef"><b>Определения</b> <a href="#l00038">Food.h:38</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_ac22608b20c671b8acabb6cbdedf1734b"><div class="ttname"><a href="classocean_1_1_food_item.html#ac22608b20c671b8acabb6cbdedf1734b">ocean::FoodItem::daysUntilExpiry</a></div><div class="ttdeci">int daysUntilExpiry(const Date &amp;today) const</div><div class="ttdoc">Сколько дней осталось до конца срока годности.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00042">Food.cpp:42</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a0bd08e3d51b5d4ff89604bfdcc1e646b"><div class="ttname"><a href="classocean_1_1_food_storage.html#a0bd08e3d51b5d4ff89604bfdcc1e646b">ocean::FoodStorage::freeCapacityKg</a></div><div class="ttdeci">double freeCapacityKg() const</div><div class="ttdoc">Свободная вместимость склада.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00118">Food.cpp:118</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a16d42c93b788ac70c16bc2f778cbd4a6"><div class="ttname"><a href="classocean_1_1_food_storage.html#a16d42c93b788ac70c16bc2f778cbd4a6">ocean::FoodStorage::items</a></div><div class="ttdeci">const std::vector&lt; FoodItem &gt; &amp; items() const</div><div class="ttdoc">Все партии на складе.</div><div class="ttdef"><b>Определения</b> <a href="#l00100">Food.h:100</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a3b246f06b382c23b8fb3c10ecc936333"><div class="ttname"><a href="classocean_1_1_food_storage.html#a3b246f06b382c23b8fb3c10ecc936333">ocean::FoodStorage::find</a></div><div class="ttdeci">FoodItem &amp; find(const std::string &amp;name)</div><div class="ttdoc">Находит партию по названию.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00089">Food.cpp:89</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a4408365d321dd3e6c1ef2c4073570a83"><div class="ttname"><a href="classocean_1_1_food_storage.html#a4408365d321dd3e6c1ef2c4073570a83">ocean::FoodStorage::addItem</a></div><div class="ttdeci">void addItem(const FoodItem &amp;item)</div><div class="ttdoc">Добавляет партию; одноимённые партии объединяются.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00068">Food.cpp:68</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a5650b683bfc85a75aee070f34c0a5cf0"><div class="ttname"><a href="classocean_1_1_food_storage.html#a5650b683bfc85a75aee070f34c0a5cf0">ocean::FoodStorage::removeExpired</a></div><div class="ttdeci">int removeExpired(const Date &amp;today)</div><div class="ttdoc">Удаляет просроченные партии.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00102">Food.cpp:102</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a61d2d17ebff6fe50e39cb4da9fad72ff"><div class="ttname"><a href="classocean_1_1_food_storage.html#a61d2d17ebff6fe50e39cb4da9fad72ff">ocean::FoodStorage::capacityKg_</a></div><div class="ttdeci">double capacityKg_</div><div class="ttdoc">Вместимость, кг.</div><div class="ttdef"><b>Определения</b> <a href="#l00154">Food.h:154</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a8459833bbe0a8695794c2130e576be03"><div class="ttname"><a href="classocean_1_1_food_storage.html#a8459833bbe0a8695794c2130e576be03">ocean::FoodStorage::totalValue</a></div><div class="ttdeci">double totalValue() const</div><div class="ttdoc">Суммарная стоимость запасов.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00122">Food.cpp:122</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a8f0e9e536759447e4f0866d41a4853f9"><div class="ttname"><a href="classocean_1_1_food_storage.html#a8f0e9e536759447e4f0866d41a4853f9">ocean::FoodStorage::items_</a></div><div class="ttdeci">std::vector&lt; FoodItem &gt; items_</div><div class="ttdoc">Партии на складе.</div><div class="ttdef"><b>Определения</b> <a href="#l00155">Food.h:155</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a995fcb94d6d8b0101df3210df269c5ac"><div class="ttname"><a href="classocean_1_1_food_storage.html#a995fcb94d6d8b0101df3210df269c5ac">ocean::FoodStorage::capacityKg</a></div><div class="ttdeci">double capacityKg() const</div><div class="ttdoc">Вместимость склада, кг.</div><div class="ttdef"><b>Определения</b> <a href="#l00098">Food.h:98</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a9ae7e01b80b782568274279d91adeacf"><div class="ttname"><a href="classocean_1_1_food_storage.html#a9ae7e01b80b782568274279d91adeacf">ocean::FoodStorage::contains</a></div><div class="ttdeci">bool contains(const std::string &amp;name) const</div><div class="ttdoc">Проверяет наличие корма с данным названием.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00084">Food.cpp:84</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_ab7e116e1eeca24144da8a375a5ffc7fe"><div class="ttname"><a href="classocean_1_1_food_storage.html#ab7e116e1eeca24144da8a375a5ffc7fe">ocean::FoodStorage::totalStockKg</a></div><div class="ttdeci">double totalStockKg() const</div><div class="ttdoc">Суммарный остаток всех партий.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00110">Food.cpp:110</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_ad2c5c83591ddaa4fc359048f8e1098bc"><div class="ttname"><a href="classocean_1_1_food_storage.html#ad2c5c83591ddaa4fc359048f8e1098bc">ocean::FoodStorage::FoodStorage</a></div><div class="ttdeci">FoodStorage(double capacityKg)</div><div class="ttdoc">Создаёт склад.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00062">Food.cpp:62</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_ae3f434df28d9ca524a3d36fdc12a5cc9"><div class="ttname"><a href="classocean_1_1_food_storage.html#ae3f434df28d9ca524a3d36fdc12a5cc9">ocean::FoodStorage::take</a></div><div class="ttdeci">void take(const std::string &amp;name, double kg, const Date &amp;today)</div><div class="ttdoc">Забирает корм со склада.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00098">Food.cpp:98</a></div></div>
+<div class="ttc" id="anamespaceocean_html"><div class="ttname"><a href="namespaceocean.html">ocean</a></div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00015">Animals.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="_food_8h.html">Food.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

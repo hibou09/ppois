@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::Payroll</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_payroll.html','','classocean_1_1_payroll-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::Payroll</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Расчёт и выплата зарплаты.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_management_8h_source.html">Management.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::Payroll:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_payroll__coll__graph.png" border="0" usemap="#aocean_1_1_payroll_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a07bd4e932c3092ac7390ff3098ef4b9d" id="r_a07bd4e932c3092ac7390ff3098ef4b9d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a07bd4e932c3092ac7390ff3098ef4b9d">Payroll</a> (double bonusPercent=0.0)</td></tr>
+<tr class="memdesc:a07bd4e932c3092ac7390ff3098ef4b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт расчёт зарплаты.  <br /></td></tr>
+<tr class="memitem:a952a76f7d941374e960a592861749d33" id="r_a952a76f7d941374e960a592861749d33"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a952a76f7d941374e960a592861749d33">totalPaid</a> () const</td></tr>
+<tr class="memdesc:a952a76f7d941374e960a592861749d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Всего выплачено.  <br /></td></tr>
+<tr class="memitem:ad923c0b8346558ff4b84efabf6229b4b" id="r_ad923c0b8346558ff4b84efabf6229b4b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad923c0b8346558ff4b84efabf6229b4b">paymentsCount</a> () const</td></tr>
+<tr class="memdesc:ad923c0b8346558ff4b84efabf6229b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число выплат сотрудникам.  <br /></td></tr>
+<tr class="memitem:ae350472bcadbed094f32a2084131e177" id="r_ae350472bcadbed094f32a2084131e177"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ae350472bcadbed094f32a2084131e177">bonusPercent</a> () const</td></tr>
+<tr class="memdesc:ae350472bcadbed094f32a2084131e177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая премия, %.  <br /></td></tr>
+<tr class="memitem:a12788bd5baa8422ec9d28e05fb9a99db" id="r_a12788bd5baa8422ec9d28e05fb9a99db"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a12788bd5baa8422ec9d28e05fb9a99db">setBonus</a> (double percent)</td></tr>
+<tr class="memdesc:a12788bd5baa8422ec9d28e05fb9a99db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает премию.  <br /></td></tr>
+<tr class="memitem:ac6766f0cde8a85b18e0dddc6e3c051e0" id="r_ac6766f0cde8a85b18e0dddc6e3c051e0"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ac6766f0cde8a85b18e0dddc6e3c051e0">calculate</a> (const <a class="el" href="classocean_1_1_employee.html">Employee</a> &amp;employee) const</td></tr>
+<tr class="memdesc:ac6766f0cde8a85b18e0dddc6e3c051e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитывает выплату сотруднику с учётом премии.  <br /></td></tr>
+<tr class="memitem:a3ea347a847866666388d84e0a2479873" id="r_a3ea347a847866666388d84e0a2479873"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a3ea347a847866666388d84e0a2479873">payAll</a> (const std::vector&lt; <a class="el" href="classocean_1_1_employee.html">Employee</a> * &gt; &amp;employees, <a class="el" href="classocean_1_1_budget.html">Budget</a> &amp;budget)</td></tr>
+<tr class="memdesc:a3ea347a847866666388d84e0a2479873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выплачивает зарплату всем активным сотрудникам из бюджета (всё или ничего).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ab3dfd2084d7e4e15d8ed4c35a5dea998" id="r_ab3dfd2084d7e4e15d8ed4c35a5dea998"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab3dfd2084d7e4e15d8ed4c35a5dea998">totalPaid_</a></td></tr>
+<tr class="memdesc:ab3dfd2084d7e4e15d8ed4c35a5dea998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Всего выплачено.  <br /></td></tr>
+<tr class="memitem:a80b63966808c77e1d40ec030cea5153b" id="r_a80b63966808c77e1d40ec030cea5153b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a80b63966808c77e1d40ec030cea5153b">paymentsCount_</a></td></tr>
+<tr class="memdesc:a80b63966808c77e1d40ec030cea5153b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число выплат.  <br /></td></tr>
+<tr class="memitem:aadacb756bc0de20c00c121635e2a0e0f" id="r_aadacb756bc0de20c00c121635e2a0e0f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aadacb756bc0de20c00c121635e2a0e0f">bonusPercent_</a></td></tr>
+<tr class="memdesc:aadacb756bc0de20c00c121635e2a0e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Премия, %.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Расчёт и выплата зарплаты. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00196">196</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a07bd4e932c3092ac7390ff3098ef4b9d" name="a07bd4e932c3092ac7390ff3098ef4b9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07bd4e932c3092ac7390ff3098ef4b9d">&#9670;&#160;</a></span>Payroll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::Payroll::Payroll </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>bonusPercent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаёт расчёт зарплаты. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bonusPercent</td><td>Общая премия в процентах, 0..100. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если премия вне [0, 100]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00138">138</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ae350472bcadbed094f32a2084131e177" name="ae350472bcadbed094f32a2084131e177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae350472bcadbed094f32a2084131e177">&#9670;&#160;</a></span>bonusPercent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Payroll::bonusPercent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текущая премия, %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00210">210</a></p>
+
+</div>
+</div>
+<a id="ac6766f0cde8a85b18e0dddc6e3c051e0" name="ac6766f0cde8a85b18e0dddc6e3c051e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6766f0cde8a85b18e0dddc6e3c051e0">&#9670;&#160;</a></span>calculate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Payroll::calculate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_employee.html">Employee</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>employee</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитывает выплату сотруднику с учётом премии. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">employee</td><td>Сотрудник. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Месячная зарплата сотрудника, увеличенная на премию. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00149">149</a></p>
+
+</div>
+</div>
+<a id="a3ea347a847866666388d84e0a2479873" name="a3ea347a847866666388d84e0a2479873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea347a847866666388d84e0a2479873">&#9670;&#160;</a></span>payAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Payroll::payAll </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classocean_1_1_employee.html">Employee</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>employees</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_budget.html">Budget</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>budget</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выплачивает зарплату всем активным сотрудникам из бюджета (всё или ничего). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">employees</td><td>Список сотрудников (нулевые указатели и уволенные пропускаются). </td></tr>
+    <tr><td class="paramname">budget</td><td>Бюджет, из которого списывается сумма в категории "salary". </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Выплаченная сумма; 0, если платить некому. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_budget_exceeded_exception.html" title="Превышен лимит расходов бюджета.">BudgetExceededException</a></td><td>если превышен лимит расходов. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_insufficient_funds_exception.html" title="Недостаточно средств у посетителя или на счёте океанариума.">InsufficientFundsException</a></td><td>если денег в бюджете не хватает. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00153">153</a></p>
+
+</div>
+</div>
+<a id="ad923c0b8346558ff4b84efabf6229b4b" name="ad923c0b8346558ff4b84efabf6229b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad923c0b8346558ff4b84efabf6229b4b">&#9670;&#160;</a></span>paymentsCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Payroll::paymentsCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Число выплат сотрудникам. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00208">208</a></p>
+
+</div>
+</div>
+<a id="a12788bd5baa8422ec9d28e05fb9a99db" name="a12788bd5baa8422ec9d28e05fb9a99db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12788bd5baa8422ec9d28e05fb9a99db">&#9670;&#160;</a></span>setBonus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Payroll::setBonus </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>percent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает премию. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percent</td><td>Премия в процентах, 0..100. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если значение вне [0, 100]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00142">142</a></p>
+
+</div>
+</div>
+<a id="a952a76f7d941374e960a592861749d33" name="a952a76f7d941374e960a592861749d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952a76f7d941374e960a592861749d33">&#9670;&#160;</a></span>totalPaid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Payroll::totalPaid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Всего выплачено. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00206">206</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="aadacb756bc0de20c00c121635e2a0e0f" name="aadacb756bc0de20c00c121635e2a0e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadacb756bc0de20c00c121635e2a0e0f">&#9670;&#160;</a></span>bonusPercent_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Payroll::bonusPercent_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Премия, %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00237">237</a></p>
+
+</div>
+</div>
+<a id="a80b63966808c77e1d40ec030cea5153b" name="a80b63966808c77e1d40ec030cea5153b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b63966808c77e1d40ec030cea5153b">&#9670;&#160;</a></span>paymentsCount_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Payroll::paymentsCount_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Число выплат. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00236">236</a></p>
+
+</div>
+</div>
+<a id="ab3dfd2084d7e4e15d8ed4c35a5dea998" name="ab3dfd2084d7e4e15d8ed4c35a5dea998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3dfd2084d7e4e15d8ed4c35a5dea998">&#9670;&#160;</a></span>totalPaid_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Payroll::totalPaid_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Всего выплачено. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00235">235</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_management_8h_source.html">Management.h</a></li>
+<li>src/<a class="el" href="_management_8cpp_source.html">Management.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_payroll.html">Payroll</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

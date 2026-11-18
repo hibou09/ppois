@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::EnvironmentMonitor</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_environment_monitor.html','','classocean_1_1_environment_monitor-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::EnvironmentMonitor</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Мониторинг среды: набор датчиков и журнал тревог.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_tanks_8h_source.html">Tanks.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::EnvironmentMonitor:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_environment_monitor__coll__graph.png" border="0" usemap="#aocean_1_1_environment_monitor_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a1b0aadcfc0464967a6aa1107f9fc895d" id="r_a1b0aadcfc0464967a6aa1107f9fc895d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1b0aadcfc0464967a6aa1107f9fc895d">EnvironmentMonitor</a> ()</td></tr>
+<tr class="memdesc:a1b0aadcfc0464967a6aa1107f9fc895d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт монитор без датчиков и тревог.  <br /></td></tr>
+<tr class="memitem:aec4164879e6769ca2da08150eab90650" id="r_aec4164879e6769ca2da08150eab90650"><td class="memItemLeft">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aec4164879e6769ca2da08150eab90650">alerts</a> () const</td></tr>
+<tr class="memdesc:aec4164879e6769ca2da08150eab90650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Журнал тревог.  <br /></td></tr>
+<tr class="memitem:ab9d6ba1b419174846888f8d03dcfc495" id="r_ab9d6ba1b419174846888f8d03dcfc495"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab9d6ba1b419174846888f8d03dcfc495">checksPerformed</a> () const</td></tr>
+<tr class="memdesc:ab9d6ba1b419174846888f8d03dcfc495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сколько проверок выполнено.  <br /></td></tr>
+<tr class="memitem:ac820a000d8a78b54f3c821649631dbad" id="r_ac820a000d8a78b54f3c821649631dbad"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_sensor.html">Sensor</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac820a000d8a78b54f3c821649631dbad">sensors</a> ()</td></tr>
+<tr class="memdesc:ac820a000d8a78b54f3c821649631dbad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Датчики монитора (изменяемая ссылка).  <br /></td></tr>
+<tr class="memitem:ad0904fc38a9ddd42fd1f04f472c0966f" id="r_ad0904fc38a9ddd42fd1f04f472c0966f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad0904fc38a9ddd42fd1f04f472c0966f">addSensor</a> (const <a class="el" href="classocean_1_1_sensor.html">Sensor</a> &amp;sensor)</td></tr>
+<tr class="memdesc:ad0904fc38a9ddd42fd1f04f472c0966f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет датчик.  <br /></td></tr>
+<tr class="memitem:a7de425de76c4d3787959e06078b033eb" id="r_a7de425de76c4d3787959e06078b033eb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7de425de76c4d3787959e06078b033eb">check</a> (const <a class="el" href="classocean_1_1_tank.html">Tank</a> &amp;tank)</td></tr>
+<tr class="memdesc:a7de425de76c4d3787959e06078b033eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Опросить датчики по воде аквариума; вернуть число новых тревог.  <br /></td></tr>
+<tr class="memitem:a7a981c1ffd6c9da8530aefeb5f133c26" id="r_a7a981c1ffd6c9da8530aefeb5f133c26"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7a981c1ffd6c9da8530aefeb5f133c26">calibrateAll</a> ()</td></tr>
+<tr class="memdesc:a7a981c1ffd6c9da8530aefeb5f133c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Калибрует все датчики.  <br /></td></tr>
+<tr class="memitem:af0d3bc76e33e4e94ae1ab963551f16a7" id="r_af0d3bc76e33e4e94ae1ab963551f16a7"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af0d3bc76e33e4e94ae1ab963551f16a7">alertCount</a> () const</td></tr>
+<tr class="memdesc:af0d3bc76e33e4e94ae1ab963551f16a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число записей в журнале тревог.  <br /></td></tr>
+<tr class="memitem:a48ff8b2f039083a3b390a35f9785a058" id="r_a48ff8b2f039083a3b390a35f9785a058"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a48ff8b2f039083a3b390a35f9785a058">clearAlerts</a> ()</td></tr>
+<tr class="memdesc:a48ff8b2f039083a3b390a35f9785a058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищает журнал тревог.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ae09ac6b9f3250e93c22e4027dd04ce25" id="r_ae09ac6b9f3250e93c22e4027dd04ce25"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_sensor.html">Sensor</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae09ac6b9f3250e93c22e4027dd04ce25">sensors_</a></td></tr>
+<tr class="memdesc:ae09ac6b9f3250e93c22e4027dd04ce25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Датчики.  <br /></td></tr>
+<tr class="memitem:ae737ada3769aa32f594bc316fbc824f4" id="r_ae737ada3769aa32f594bc316fbc824f4"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae737ada3769aa32f594bc316fbc824f4">alerts_</a></td></tr>
+<tr class="memdesc:ae737ada3769aa32f594bc316fbc824f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Журнал тревог.  <br /></td></tr>
+<tr class="memitem:ad6d213dc73280011db40a59808e00548" id="r_ad6d213dc73280011db40a59808e00548"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad6d213dc73280011db40a59808e00548">checksPerformed_</a></td></tr>
+<tr class="memdesc:ad6d213dc73280011db40a59808e00548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число выполненных проверок.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Мониторинг среды: набор датчиков и журнал тревог. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00387">387</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a1b0aadcfc0464967a6aa1107f9fc895d" name="a1b0aadcfc0464967a6aa1107f9fc895d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b0aadcfc0464967a6aa1107f9fc895d">&#9670;&#160;</a></span>EnvironmentMonitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::EnvironmentMonitor::EnvironmentMonitor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт монитор без датчиков и тревог. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00375">375</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ad0904fc38a9ddd42fd1f04f472c0966f" name="ad0904fc38a9ddd42fd1f04f472c0966f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0904fc38a9ddd42fd1f04f472c0966f">&#9670;&#160;</a></span>addSensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::EnvironmentMonitor::addSensor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_sensor.html">Sensor</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sensor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет датчик. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Добавляемый датчик. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00377">377</a></p>
+
+</div>
+</div>
+<a id="af0d3bc76e33e4e94ae1ab963551f16a7" name="af0d3bc76e33e4e94ae1ab963551f16a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d3bc76e33e4e94ae1ab963551f16a7">&#9670;&#160;</a></span>alertCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::EnvironmentMonitor::alertCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Число записей в журнале тревог. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00405">405</a></p>
+
+</div>
+</div>
+<a id="aec4164879e6769ca2da08150eab90650" name="aec4164879e6769ca2da08150eab90650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec4164879e6769ca2da08150eab90650">&#9670;&#160;</a></span>alerts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::string &gt; &amp; ocean::EnvironmentMonitor::alerts </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Журнал тревог. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00393">393</a></p>
+
+</div>
+</div>
+<a id="a7a981c1ffd6c9da8530aefeb5f133c26" name="a7a981c1ffd6c9da8530aefeb5f133c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a981c1ffd6c9da8530aefeb5f133c26">&#9670;&#160;</a></span>calibrateAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::EnvironmentMonitor::calibrateAll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Калибрует все датчики. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00399">399</a></p>
+
+</div>
+</div>
+<a id="a7de425de76c4d3787959e06078b033eb" name="a7de425de76c4d3787959e06078b033eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de425de76c4d3787959e06078b033eb">&#9670;&#160;</a></span>check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::EnvironmentMonitor::check </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_tank.html">Tank</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>tank</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Опросить датчики по воде аквариума; вернуть число новых тревог. </p>
+<p>Дополнительно фиксирует тревогу, если аквариуму нужна чистка. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tank</td><td>Проверяемый аквариум. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число добавленных в журнал тревог. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00381">381</a></p>
+
+</div>
+</div>
+<a id="ab9d6ba1b419174846888f8d03dcfc495" name="ab9d6ba1b419174846888f8d03dcfc495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d6ba1b419174846888f8d03dcfc495">&#9670;&#160;</a></span>checksPerformed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::EnvironmentMonitor::checksPerformed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сколько проверок выполнено. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00395">395</a></p>
+
+</div>
+</div>
+<a id="a48ff8b2f039083a3b390a35f9785a058" name="a48ff8b2f039083a3b390a35f9785a058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ff8b2f039083a3b390a35f9785a058">&#9670;&#160;</a></span>clearAlerts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::EnvironmentMonitor::clearAlerts </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очищает журнал тревог. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00409">409</a></p>
+
+</div>
+</div>
+<a id="ac820a000d8a78b54f3c821649631dbad" name="ac820a000d8a78b54f3c821649631dbad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac820a000d8a78b54f3c821649631dbad">&#9670;&#160;</a></span>sensors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classocean_1_1_sensor.html">Sensor</a> &gt; &amp; ocean::EnvironmentMonitor::sensors </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Датчики монитора (изменяемая ссылка). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00397">397</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="ae737ada3769aa32f594bc316fbc824f4" name="ae737ada3769aa32f594bc316fbc824f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae737ada3769aa32f594bc316fbc824f4">&#9670;&#160;</a></span>alerts_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; ocean::EnvironmentMonitor::alerts_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Журнал тревог. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00418">418</a></p>
+
+</div>
+</div>
+<a id="ad6d213dc73280011db40a59808e00548" name="ad6d213dc73280011db40a59808e00548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d213dc73280011db40a59808e00548">&#9670;&#160;</a></span>checksPerformed_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::EnvironmentMonitor::checksPerformed_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Число выполненных проверок. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00419">419</a></p>
+
+</div>
+</div>
+<a id="ae09ac6b9f3250e93c22e4027dd04ce25" name="ae09ac6b9f3250e93c22e4027dd04ce25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09ac6b9f3250e93c22e4027dd04ce25">&#9670;&#160;</a></span>sensors_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classocean_1_1_sensor.html">Sensor</a>&gt; ocean::EnvironmentMonitor::sensors_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Датчики. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00417">417</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_tanks_8h_source.html">Tanks.h</a></li>
+<li>src/<a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_environment_monitor.html">EnvironmentMonitor</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

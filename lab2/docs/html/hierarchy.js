@@ -1,0 +1,96 @@
+var hierarchy =
+[
+    [ "ocean::Animal", "classocean_1_1_animal.html", [
+      [ "ocean::Fish", "classocean_1_1_fish.html", [
+        [ "ocean::Ray", "classocean_1_1_ray.html", null ],
+        [ "ocean::Shark", "classocean_1_1_shark.html", null ]
+      ] ],
+      [ "ocean::Jellyfish", "classocean_1_1_jellyfish.html", null ],
+      [ "ocean::Octopus", "classocean_1_1_octopus.html", null ],
+      [ "ocean::Penguin", "classocean_1_1_penguin.html", null ],
+      [ "ocean::Seal", "classocean_1_1_seal.html", null ],
+      [ "ocean::Turtle", "classocean_1_1_turtle.html", null ]
+    ] ],
+    [ "ocean::Budget", "classocean_1_1_budget.html", null ],
+    [ "ocean::Coral", "classocean_1_1_coral.html", null ],
+    [ "ocean::Date", "classocean_1_1_date.html", null ],
+    [ "ocean::Employee", "classocean_1_1_employee.html", [
+      [ "ocean::Aquarist", "classocean_1_1_aquarist.html", null ],
+      [ "ocean::Cashier", "classocean_1_1_cashier.html", null ],
+      [ "ocean::Diver", "classocean_1_1_diver.html", null ],
+      [ "ocean::Guide", "classocean_1_1_guide.html", null ],
+      [ "ocean::Trainer", "classocean_1_1_trainer.html", null ],
+      [ "ocean::Veterinarian", "classocean_1_1_veterinarian.html", null ]
+    ] ],
+    [ "ocean::EnvironmentMonitor", "classocean_1_1_environment_monitor.html", null ],
+    [ "std::exception", null, [
+      [ "std::runtime_error", null, [
+        [ "ocean::OceanariumException", "classocean_1_1_oceanarium_exception.html", [
+          [ "ocean::AnimalNotFoundException", "classocean_1_1_animal_not_found_exception.html", null ],
+          [ "ocean::BudgetExceededException", "classocean_1_1_budget_exceeded_exception.html", null ],
+          [ "ocean::EmployeeNotFoundException", "classocean_1_1_employee_not_found_exception.html", null ],
+          [ "ocean::EmployeeNotQualifiedException", "classocean_1_1_employee_not_qualified_exception.html", null ],
+          [ "ocean::EquipmentFailureException", "classocean_1_1_equipment_failure_exception.html", null ],
+          [ "ocean::EventFullException", "classocean_1_1_event_full_exception.html", null ],
+          [ "ocean::ExpiredProductException", "classocean_1_1_expired_product_exception.html", null ],
+          [ "ocean::IncompatibleSpeciesException", "classocean_1_1_incompatible_species_exception.html", null ],
+          [ "ocean::InsufficientFoodException", "classocean_1_1_insufficient_food_exception.html", null ],
+          [ "ocean::InsufficientFundsException", "classocean_1_1_insufficient_funds_exception.html", null ],
+          [ "ocean::InvalidDateException", "classocean_1_1_invalid_date_exception.html", null ],
+          [ "ocean::InvalidParameterException", "classocean_1_1_invalid_parameter_exception.html", null ],
+          [ "ocean::InvalidPromoCodeException", "classocean_1_1_invalid_promo_code_exception.html", null ],
+          [ "ocean::InvalidTicketException", "classocean_1_1_invalid_ticket_exception.html", null ],
+          [ "ocean::InvalidWaterParametersException", "classocean_1_1_invalid_water_parameters_exception.html", null ],
+          [ "ocean::LicenseExpiredException", "classocean_1_1_license_expired_exception.html", null ],
+          [ "ocean::OutOfStockException", "classocean_1_1_out_of_stock_exception.html", null ],
+          [ "ocean::QuarantineViolationException", "classocean_1_1_quarantine_violation_exception.html", null ],
+          [ "ocean::ScheduleConflictException", "classocean_1_1_schedule_conflict_exception.html", null ],
+          [ "ocean::SensorNotCalibratedException", "classocean_1_1_sensor_not_calibrated_exception.html", null ],
+          [ "ocean::StorageFullException", "classocean_1_1_storage_full_exception.html", null ],
+          [ "ocean::TankCapacityExceededException", "classocean_1_1_tank_capacity_exceeded_exception.html", null ],
+          [ "ocean::TankNotFoundException", "classocean_1_1_tank_not_found_exception.html", null ],
+          [ "ocean::TaskNotFoundException", "classocean_1_1_task_not_found_exception.html", null ],
+          [ "ocean::TicketSoldOutException", "classocean_1_1_ticket_sold_out_exception.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "ocean::Exhibit", "classocean_1_1_exhibit.html", null ],
+    [ "ocean::FeedingEntry", "classocean_1_1_feeding_entry.html", null ],
+    [ "ocean::FeedingSchedule", "classocean_1_1_feeding_schedule.html", null ],
+    [ "ocean::FiltrationSystem", "classocean_1_1_filtration_system.html", null ],
+    [ "ocean::FoodItem", "classocean_1_1_food_item.html", null ],
+    [ "ocean::FoodStorage", "classocean_1_1_food_storage.html", null ],
+    [ "ocean::GiftShop", "classocean_1_1_gift_shop.html", null ],
+    [ "ocean::HealthRecord", "classocean_1_1_health_record.html", null ],
+    [ "ocean::HeatingSystem", "classocean_1_1_heating_system.html", null ],
+    [ "ocean::LightingSystem", "classocean_1_1_lighting_system.html", null ],
+    [ "ocean::Location", "classocean_1_1_location.html", null ],
+    [ "ocean::MaintenanceLog", "classocean_1_1_maintenance_log.html", null ],
+    [ "ocean::MaintenanceTask", "classocean_1_1_maintenance_task.html", null ],
+    [ "ocean::MedicalEntry", "classocean_1_1_medical_entry.html", null ],
+    [ "ocean::Medication", "classocean_1_1_medication.html", null ],
+    [ "ocean::Membership", "classocean_1_1_membership.html", null ],
+    [ "ocean::Oceanarium", "classocean_1_1_oceanarium.html", null ],
+    [ "ocean::Payroll", "classocean_1_1_payroll.html", null ],
+    [ "ocean::Product", "classocean_1_1_product.html", null ],
+    [ "ocean::PromoCode", "classocean_1_1_promo_code.html", null ],
+    [ "ocean::Sensor", "classocean_1_1_sensor.html", null ],
+    [ "ocean::Shift", "classocean_1_1_shift.html", null ],
+    [ "ocean::Show", "classocean_1_1_show.html", null ],
+    [ "ocean::Species", "classocean_1_1_species.html", null ],
+    [ "ocean::StaffSchedule", "classocean_1_1_staff_schedule.html", null ],
+    [ "ocean::Supplier", "classocean_1_1_supplier.html", null ],
+    [ "ocean::Tank", "classocean_1_1_tank.html", [
+      [ "ocean::CoralReefTank", "classocean_1_1_coral_reef_tank.html", null ],
+      [ "ocean::OpenOceanTank", "classocean_1_1_open_ocean_tank.html", null ],
+      [ "ocean::QuarantineTank", "classocean_1_1_quarantine_tank.html", null ],
+      [ "ocean::TouchPool", "classocean_1_1_touch_pool.html", null ]
+    ] ],
+    [ "ocean::Ticket", "classocean_1_1_ticket.html", null ],
+    [ "ocean::TicketOffice", "classocean_1_1_ticket_office.html", null ],
+    [ "ocean::TimeSlot", "classocean_1_1_time_slot.html", null ],
+    [ "ocean::Tour", "classocean_1_1_tour.html", null ],
+    [ "ocean::Visitor", "classocean_1_1_visitor.html", null ],
+    [ "ocean::WaterParameters", "classocean_1_1_water_parameters.html", null ],
+    [ "ocean::WaterRequirements", "classocean_1_1_water_requirements.html", null ]
+];

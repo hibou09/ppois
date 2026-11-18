@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::Coral</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_coral.html','','classocean_1_1_coral-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::Coral</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Колония кораллов.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_animals_8h_source.html">Animals.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::Coral:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_coral__coll__graph.png" border="0" usemap="#aocean_1_1_coral_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a83c77d1202b18dc96519617235621f1e" id="r_a83c77d1202b18dc96519617235621f1e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a83c77d1202b18dc96519617235621f1e">Coral</a> (std::string speciesName, double sizeCm2, double healthPercent=100.0)</td></tr>
+<tr class="memdesc:a83c77d1202b18dc96519617235621f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт колонию кораллов.  <br /></td></tr>
+<tr class="memitem:a205b13eb1bd681699b4d9d885c1a9bd7" id="r_a205b13eb1bd681699b4d9d885c1a9bd7"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a205b13eb1bd681699b4d9d885c1a9bd7">speciesName</a> () const</td></tr>
+<tr class="memdesc:a205b13eb1bd681699b4d9d885c1a9bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название вида кораллов.  <br /></td></tr>
+<tr class="memitem:abd49604acfeb2ce8dbe173d4dfb8c06f" id="r_abd49604acfeb2ce8dbe173d4dfb8c06f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#abd49604acfeb2ce8dbe173d4dfb8c06f">size</a> () const</td></tr>
+<tr class="memdesc:abd49604acfeb2ce8dbe173d4dfb8c06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Площадь колонии, см².  <br /></td></tr>
+<tr class="memitem:ab499d371541adcdaafa5b43851708040" id="r_ab499d371541adcdaafa5b43851708040"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab499d371541adcdaafa5b43851708040">healthPercent</a> () const</td></tr>
+<tr class="memdesc:ab499d371541adcdaafa5b43851708040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Здоровье колонии, %.  <br /></td></tr>
+<tr class="memitem:a8766da80cbb853f8276510432a01ed1d" id="r_a8766da80cbb853f8276510432a01ed1d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8766da80cbb853f8276510432a01ed1d">isBleached</a> () const</td></tr>
+<tr class="memdesc:a8766da80cbb853f8276510432a01ed1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обесцвечена ли колония.  <br /></td></tr>
+<tr class="memitem:a2525c12084cec8f744cd31cb9b1630be" id="r_a2525c12084cec8f744cd31cb9b1630be"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a2525c12084cec8f744cd31cb9b1630be">grow</a> (const <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;water)</td></tr>
+<tr class="memdesc:a2525c12084cec8f744cd31cb9b1630be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рост за сутки при данных параметрах воды.  <br /></td></tr>
+<tr class="memitem:a2ab98abf14fd25e8a203c971ca6c92fc" id="r_a2ab98abf14fd25e8a203c971ca6c92fc"><td class="memItemLeft"><a class="el" href="#a83c77d1202b18dc96519617235621f1e">Coral</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2ab98abf14fd25e8a203c971ca6c92fc">fragment</a> (double cm2)</td></tr>
+<tr class="memdesc:a2ab98abf14fd25e8a203c971ca6c92fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отделяет фрагмент для размножения.  <br /></td></tr>
+<tr class="memitem:a11a581b9b66b8ba8028627849c659d3f" id="r_a11a581b9b66b8ba8028627849c659d3f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a11a581b9b66b8ba8028627849c659d3f">recover</a> ()</td></tr>
+<tr class="memdesc:a11a581b9b66b8ba8028627849c659d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Восстанавливает здоровье на 20%; при достижении 50% обесцвечивание снимается.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a11911d3e4b0ed5bed6f11cd3a87ddf74" id="r_a11911d3e4b0ed5bed6f11cd3a87ddf74"><td class="memItemLeft">static constexpr double&#160;</td><td class="memItemRight"><a class="el" href="#a11911d3e4b0ed5bed6f11cd3a87ddf74">kBleachingTemperature</a> = 29.0</td></tr>
+<tr class="memdesc:a11911d3e4b0ed5bed6f11cd3a87ddf74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Температура воды, выше которой кораллы обесцвечиваются, °C.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a81945c945a1b78220c8df32e558e561a" id="r_a81945c945a1b78220c8df32e558e561a"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a81945c945a1b78220c8df32e558e561a">speciesName_</a></td></tr>
+<tr class="memdesc:a81945c945a1b78220c8df32e558e561a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название вида.  <br /></td></tr>
+<tr class="memitem:aa04a62d02e066e9f9f1f3757bca5a425" id="r_aa04a62d02e066e9f9f1f3757bca5a425"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aa04a62d02e066e9f9f1f3757bca5a425">sizeCm2_</a></td></tr>
+<tr class="memdesc:aa04a62d02e066e9f9f1f3757bca5a425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Площадь колонии, см².  <br /></td></tr>
+<tr class="memitem:a6b6c721642ac4799a6d2b26cd6b9452e" id="r_a6b6c721642ac4799a6d2b26cd6b9452e"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a6b6c721642ac4799a6d2b26cd6b9452e">healthPercent_</a></td></tr>
+<tr class="memdesc:a6b6c721642ac4799a6d2b26cd6b9452e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Здоровье, %.  <br /></td></tr>
+<tr class="memitem:a3e4c721cdd3ceaf59ef23da070929251" id="r_a3e4c721cdd3ceaf59ef23da070929251"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3e4c721cdd3ceaf59ef23da070929251">bleached_</a></td></tr>
+<tr class="memdesc:a3e4c721cdd3ceaf59ef23da070929251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак обесцвечивания.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Колония кораллов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00624">624</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a83c77d1202b18dc96519617235621f1e" name="a83c77d1202b18dc96519617235621f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c77d1202b18dc96519617235621f1e">&#9670;&#160;</a></span>Coral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::Coral::Coral </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>speciesName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>sizeCm2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>healthPercent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">100.0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт колонию кораллов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speciesName</td><td>Название вида. </td></tr>
+    <tr><td class="paramname">sizeCm2</td><td>Площадь, см² (&gt; 0). </td></tr>
+    <tr><td class="paramname">healthPercent</td><td>Здоровье в процентах (0..100); ниже 50 колония считается обесцвеченной. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если название пусто, площадь не положительна или здоровье вне диапазона 0..100. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8cpp_source.html">Animals.cpp</a> строка <a class="el" href="_animals_8cpp_source.html#l00341">341</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a2ab98abf14fd25e8a203c971ca6c92fc" name="a2ab98abf14fd25e8a203c971ca6c92fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab98abf14fd25e8a203c971ca6c92fc">&#9670;&#160;</a></span>fragment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a83c77d1202b18dc96519617235621f1e">Coral</a> ocean::Coral::fragment </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>cm2</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отделяет фрагмент для размножения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cm2</td><td>Площадь фрагмента, см² (&gt; 0 и меньше площади колонии). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новая колония-фрагмент с тем же здоровьем. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если площадь фрагмента некорректна. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8cpp_source.html">Animals.cpp</a> строка <a class="el" href="_animals_8cpp_source.html#l00361">361</a></p>
+
+</div>
+</div>
+<a id="a2525c12084cec8f744cd31cb9b1630be" name="a2525c12084cec8f744cd31cb9b1630be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2525c12084cec8f744cd31cb9b1630be">&#9670;&#160;</a></span>grow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Coral::grow </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>water</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рост за сутки при данных параметрах воды. </p>
+<p>Выше kBleachingTemperature здоровье падает на 10%, при падении ниже 50% колония обесцвечивается; иначе необесцвеченная колония растёт на 2%. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">water</td><td>Параметры воды. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новая площадь, см². </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8cpp_source.html">Animals.cpp</a> строка <a class="el" href="_animals_8cpp_source.html#l00349">349</a></p>
+
+</div>
+</div>
+<a id="ab499d371541adcdaafa5b43851708040" name="ab499d371541adcdaafa5b43851708040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab499d371541adcdaafa5b43851708040">&#9670;&#160;</a></span>healthPercent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Coral::healthPercent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Здоровье колонии, %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00641">641</a></p>
+
+</div>
+</div>
+<a id="a8766da80cbb853f8276510432a01ed1d" name="a8766da80cbb853f8276510432a01ed1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8766da80cbb853f8276510432a01ed1d">&#9670;&#160;</a></span>isBleached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Coral::isBleached </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обесцвечена ли колония. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00643">643</a></p>
+
+</div>
+</div>
+<a id="a11a581b9b66b8ba8028627849c659d3f" name="a11a581b9b66b8ba8028627849c659d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a581b9b66b8ba8028627849c659d3f">&#9670;&#160;</a></span>recover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Coral::recover </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Восстанавливает здоровье на 20%; при достижении 50% обесцвечивание снимается. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8cpp_source.html">Animals.cpp</a> строка <a class="el" href="_animals_8cpp_source.html#l00369">369</a></p>
+
+</div>
+</div>
+<a id="abd49604acfeb2ce8dbe173d4dfb8c06f" name="abd49604acfeb2ce8dbe173d4dfb8c06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd49604acfeb2ce8dbe173d4dfb8c06f">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Coral::size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Площадь колонии, см². </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00639">639</a></p>
+
+</div>
+</div>
+<a id="a205b13eb1bd681699b4d9d885c1a9bd7" name="a205b13eb1bd681699b4d9d885c1a9bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205b13eb1bd681699b4d9d885c1a9bd7">&#9670;&#160;</a></span>speciesName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::Coral::speciesName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название вида кораллов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00637">637</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a3e4c721cdd3ceaf59ef23da070929251" name="a3e4c721cdd3ceaf59ef23da070929251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4c721cdd3ceaf59ef23da070929251">&#9670;&#160;</a></span>bleached_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Coral::bleached_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак обесцвечивания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00672">672</a></p>
+
+</div>
+</div>
+<a id="a6b6c721642ac4799a6d2b26cd6b9452e" name="a6b6c721642ac4799a6d2b26cd6b9452e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6c721642ac4799a6d2b26cd6b9452e">&#9670;&#160;</a></span>healthPercent_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Coral::healthPercent_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Здоровье, %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00671">671</a></p>
+
+</div>
+</div>
+<a id="a11911d3e4b0ed5bed6f11cd3a87ddf74" name="a11911d3e4b0ed5bed6f11cd3a87ddf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11911d3e4b0ed5bed6f11cd3a87ddf74">&#9670;&#160;</a></span>kBleachingTemperature</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Coral::kBleachingTemperature = 29.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Температура воды, выше которой кораллы обесцвечиваются, °C. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00666">666</a></p>
+
+</div>
+</div>
+<a id="aa04a62d02e066e9f9f1f3757bca5a425" name="aa04a62d02e066e9f9f1f3757bca5a425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04a62d02e066e9f9f1f3757bca5a425">&#9670;&#160;</a></span>sizeCm2_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Coral::sizeCm2_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Площадь колонии, см². </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00670">670</a></p>
+
+</div>
+</div>
+<a id="a81945c945a1b78220c8df32e558e561a" name="a81945c945a1b78220c8df32e558e561a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81945c945a1b78220c8df32e558e561a">&#9670;&#160;</a></span>speciesName_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Coral::speciesName_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название вида. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00669">669</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_animals_8h_source.html">Animals.h</a></li>
+<li>src/<a class="el" href="_animals_8cpp_source.html">Animals.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_coral.html">Coral</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

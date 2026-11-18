@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::Jellyfish</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_jellyfish.html','','classocean_1_1_jellyfish-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::Jellyfish</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Медуза.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_animals_8h_source.html">Animals.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ocean::Jellyfish:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_jellyfish__inherit__graph.png" border="0" usemap="#aocean_1_1_jellyfish_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<!-- MAP 0 -->
+</div>
+<div class="dynheader">
+Граф связей класса ocean::Jellyfish:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_jellyfish__coll__graph.png" border="0" usemap="#aocean_1_1_jellyfish_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 1 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a9e67bf6c9d53e57a48356cd54184a36a" id="r_a9e67bf6c9d53e57a48356cd54184a36a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9e67bf6c9d53e57a48356cd54184a36a">Jellyfish</a> (int id, std::string name, <a class="el" href="classocean_1_1_species.html">Species</a> species, int ageYears, double weightKg, double bellDiameterCm, bool stinging)</td></tr>
+<tr class="memdesc:a9e67bf6c9d53e57a48356cd54184a36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт медузу.  <br /></td></tr>
+<tr class="memitem:a0a04c452556cf8c16f140c0c7ef0b9bb" id="r_a0a04c452556cf8c16f140c0c7ef0b9bb"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a0a04c452556cf8c16f140c0c7ef0b9bb">bellDiameter</a> () const</td></tr>
+<tr class="memdesc:a0a04c452556cf8c16f140c0c7ef0b9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диаметр купола, см.  <br /></td></tr>
+<tr class="memitem:a090b8990702749dcb66ffdac5144e0bb" id="r_a090b8990702749dcb66ffdac5144e0bb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a090b8990702749dcb66ffdac5144e0bb">isStinging</a> () const</td></tr>
+<tr class="memdesc:a090b8990702749dcb66ffdac5144e0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Жалит ли медуза.  <br /></td></tr>
+<tr class="memitem:adc893776f8297353030146f40a7b02f6" id="r_adc893776f8297353030146f40a7b02f6"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#adc893776f8297353030146f40a7b02f6">dailyFoodKg</a> () const override</td></tr>
+<tr class="memdesc:adc893776f8297353030146f40a7b02f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Суточная норма корма (зависит от диаметра купола, не меньше 1 г).  <br /></td></tr>
+<tr class="memitem:ada005d9b3d4b799caa7c080ba5339e74" id="r_ada005d9b3d4b799caa7c080ba5339e74"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ada005d9b3d4b799caa7c080ba5339e74">kind</a> () const override</td></tr>
+<tr class="memdesc:ada005d9b3d4b799caa7c080ba5339e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Категория животного: «Jellyfish».  <br /></td></tr>
+<tr class="memitem:add3940ccdc1f2b7edfaf36a56a3e3d09" id="r_add3940ccdc1f2b7edfaf36a56a3e3d09"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#add3940ccdc1f2b7edfaf36a56a3e3d09">pulseRate</a> (double waterTemperature) const</td></tr>
+<tr class="memdesc:add3940ccdc1f2b7edfaf36a56a3e3d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Частота пульсаций купола при заданной температуре.  <br /></td></tr>
+<tr class="memitem:a57c24bbc01367cf38b83c33138d9d592" id="r_a57c24bbc01367cf38b83c33138d9d592"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a57c24bbc01367cf38b83c33138d9d592">isSafeForTouch</a> () const</td></tr>
+<tr class="memdesc:a57c24bbc01367cf38b83c33138d9d592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Безопасна ли медуза для контакта.  <br /></td></tr>
+<tr class="inherit_header pub_methods_classocean_1_1_animal"><td colspan="2">Открытые члены унаследованные от <a class="el" href="classocean_1_1_animal.html">ocean::Animal</a></td></tr>
+<tr class="memitem:a1e4840084567f6a642a3518bc34ae278 pub_methods_classocean_1_1_animal" id="r_a1e4840084567f6a642a3518bc34ae278"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a1e4840084567f6a642a3518bc34ae278">Animal</a> (int id, std::string name, <a class="el" href="classocean_1_1_species.html">Species</a> species, int ageYears, double weightKg)</td></tr>
+<tr class="memdesc:a1e4840084567f6a642a3518bc34ae278 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт животное.  <br /></td></tr>
+<tr class="memitem:aa978eb8c780ba13b3558d60634e07efd pub_methods_classocean_1_1_animal" id="r_aa978eb8c780ba13b3558d60634e07efd"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#aa978eb8c780ba13b3558d60634e07efd">~Animal</a> ()=default</td></tr>
+<tr class="memdesc:aa978eb8c780ba13b3558d60634e07efd pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виртуальный деструктор для корректного удаления через базовый указатель.  <br /></td></tr>
+<tr class="memitem:a9ee6a1f8f1faf7702ff2d024ae8d7eff pub_methods_classocean_1_1_animal" id="r_a9ee6a1f8f1faf7702ff2d024ae8d7eff"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a9ee6a1f8f1faf7702ff2d024ae8d7eff">id</a> () const</td></tr>
+<tr class="memdesc:a9ee6a1f8f1faf7702ff2d024ae8d7eff pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уникальный номер животного.  <br /></td></tr>
+<tr class="memitem:aab9c5815d2b81390c7f4aec2c2fa56ee pub_methods_classocean_1_1_animal" id="r_aab9c5815d2b81390c7f4aec2c2fa56ee"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#aab9c5815d2b81390c7f4aec2c2fa56ee">name</a> () const</td></tr>
+<tr class="memdesc:aab9c5815d2b81390c7f4aec2c2fa56ee pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кличка.  <br /></td></tr>
+<tr class="memitem:ab488155788b701a66318401f22b09523 pub_methods_classocean_1_1_animal" id="r_ab488155788b701a66318401f22b09523"><td class="memItemLeft">const <a class="el" href="classocean_1_1_species.html">Species</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#ab488155788b701a66318401f22b09523">species</a> () const</td></tr>
+<tr class="memdesc:ab488155788b701a66318401f22b09523 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вид животного.  <br /></td></tr>
+<tr class="memitem:a9a481f89f3c03295b433b1b163f8d0f5 pub_methods_classocean_1_1_animal" id="r_a9a481f89f3c03295b433b1b163f8d0f5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a9a481f89f3c03295b433b1b163f8d0f5">ageYears</a> () const</td></tr>
+<tr class="memdesc:a9a481f89f3c03295b433b1b163f8d0f5 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возраст в годах.  <br /></td></tr>
+<tr class="memitem:a2a0362a0bab6417fab5b4ef15076f095 pub_methods_classocean_1_1_animal" id="r_a2a0362a0bab6417fab5b4ef15076f095"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a2a0362a0bab6417fab5b4ef15076f095">weightKg</a> () const</td></tr>
+<tr class="memdesc:a2a0362a0bab6417fab5b4ef15076f095 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масса, кг.  <br /></td></tr>
+<tr class="memitem:ab0b4554c27c9ffe0f578e9dc92b02362 pub_methods_classocean_1_1_animal" id="r_ab0b4554c27c9ffe0f578e9dc92b02362"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#ab0b4554c27c9ffe0f578e9dc92b02362">hunger</a> () const</td></tr>
+<tr class="memdesc:ab0b4554c27c9ffe0f578e9dc92b02362 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уровень голода (0..100).  <br /></td></tr>
+<tr class="memitem:a1980c2935b86392a687f9816b5a6f27a pub_methods_classocean_1_1_animal" id="r_a1980c2935b86392a687f9816b5a6f27a"><td class="memItemLeft"><a class="el" href="classocean_1_1_health_record.html">HealthRecord</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a1980c2935b86392a687f9816b5a6f27a">health</a> ()</td></tr>
+<tr class="memdesc:a1980c2935b86392a687f9816b5a6f27a pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Медицинская карта (для изменения).  <br /></td></tr>
+<tr class="memitem:ad2ed290701fc2c3846ea56f24f198a57 pub_methods_classocean_1_1_animal" id="r_ad2ed290701fc2c3846ea56f24f198a57"><td class="memItemLeft">const <a class="el" href="classocean_1_1_health_record.html">HealthRecord</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#ad2ed290701fc2c3846ea56f24f198a57">health</a> () const</td></tr>
+<tr class="memdesc:ad2ed290701fc2c3846ea56f24f198a57 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Медицинская карта (только чтение).  <br /></td></tr>
+<tr class="memitem:ac0fa7b3927e41351bf19d9b7e93ebb96 pub_methods_classocean_1_1_animal" id="r_ac0fa7b3927e41351bf19d9b7e93ebb96"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#ac0fa7b3927e41351bf19d9b7e93ebb96">describe</a> () const</td></tr>
+<tr class="memdesc:ac0fa7b3927e41351bf19d9b7e93ebb96 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Краткое описание животного.  <br /></td></tr>
+<tr class="memitem:a8fa054f2a8b6c8c37b9e8dec350fb758 pub_methods_classocean_1_1_animal" id="r_a8fa054f2a8b6c8c37b9e8dec350fb758"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a8fa054f2a8b6c8c37b9e8dec350fb758">passDay</a> ()</td></tr>
+<tr class="memdesc:a8fa054f2a8b6c8c37b9e8dec350fb758 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прошли сутки: растёт голод.  <br /></td></tr>
+<tr class="memitem:aaf790695a60de4dcc1a60bf556491ebc pub_methods_classocean_1_1_animal" id="r_aaf790695a60de4dcc1a60bf556491ebc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#aaf790695a60de4dcc1a60bf556491ebc">feed</a> (<a class="el" href="classocean_1_1_food_item.html">FoodItem</a> &amp;food, double kg, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today)</td></tr>
+<tr class="memdesc:aaf790695a60de4dcc1a60bf556491ebc pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кормит животное.  <br /></td></tr>
+<tr class="memitem:ae29bd4002b17b7f492589757bafe1de1 pub_methods_classocean_1_1_animal" id="r_ae29bd4002b17b7f492589757bafe1de1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#ae29bd4002b17b7f492589757bafe1de1">isHungry</a> () const</td></tr>
+<tr class="memdesc:ae29bd4002b17b7f492589757bafe1de1 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проголодалось ли животное.  <br /></td></tr>
+<tr class="memitem:a74f4aa7e6ad1d62c2e1d08e92f29d8ef pub_methods_classocean_1_1_animal" id="r_a74f4aa7e6ad1d62c2e1d08e92f29d8ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a74f4aa7e6ad1d62c2e1d08e92f29d8ef">celebrateBirthday</a> ()</td></tr>
+<tr class="memdesc:a74f4aa7e6ad1d62c2e1d08e92f29d8ef pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличивает возраст на один год.  <br /></td></tr>
+<tr class="memitem:aa3c69c16af8134c7678a508357e1e520 pub_methods_classocean_1_1_animal" id="r_aa3c69c16af8134c7678a508357e1e520"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#aa3c69c16af8134c7678a508357e1e520">canLiveIn</a> (const <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;water) const</td></tr>
+<tr class="memdesc:aa3c69c16af8134c7678a508357e1e520 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подходит ли вода для вида.  <br /></td></tr>
+<tr class="memitem:a8d55193d19a872221f3128e4cf280cf0 pub_methods_classocean_1_1_animal" id="r_a8d55193d19a872221f3128e4cf280cf0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a8d55193d19a872221f3128e4cf280cf0">canShareTankWith</a> (const <a class="el" href="classocean_1_1_animal.html#a1e4840084567f6a642a3518bc34ae278">Animal</a> &amp;other) const</td></tr>
+<tr class="memdesc:a8d55193d19a872221f3128e4cf280cf0 pub_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Можно ли держать с другим животным в одном аквариуме.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:aeaa2b21ab4f15e94d8ccec8dc7f500e0" id="r_aeaa2b21ab4f15e94d8ccec8dc7f500e0"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aeaa2b21ab4f15e94d8ccec8dc7f500e0">bellDiameterCm_</a></td></tr>
+<tr class="memdesc:aeaa2b21ab4f15e94d8ccec8dc7f500e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диаметр купола, см.  <br /></td></tr>
+<tr class="memitem:a6f0c773e83fcd899ee56ed5a8f0ae0bc" id="r_a6f0c773e83fcd899ee56ed5a8f0ae0bc"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6f0c773e83fcd899ee56ed5a8f0ae0bc">stinging_</a></td></tr>
+<tr class="memdesc:a6f0c773e83fcd899ee56ed5a8f0ae0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак жалящей медузы.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_classocean_1_1_animal"><td colspan="2">Защищенные члены унаследованные от <a class="el" href="classocean_1_1_animal.html">ocean::Animal</a></td></tr>
+<tr class="memitem:ad4827e5a5f57a36dbaa03aa9c6a7ec33 pro_methods_classocean_1_1_animal" id="r_ad4827e5a5f57a36dbaa03aa9c6a7ec33"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#ad4827e5a5f57a36dbaa03aa9c6a7ec33">increaseHunger</a> (double amount)</td></tr>
+<tr class="memdesc:ad4827e5a5f57a36dbaa03aa9c6a7ec33 pro_methods_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличивает голод с ограничением диапазоном 0..100.  <br /></td></tr>
+<tr class="inherit_header pro_attribs_classocean_1_1_animal"><td colspan="2">Защищенные данные унаследованные от <a class="el" href="classocean_1_1_animal.html">ocean::Animal</a></td></tr>
+<tr class="memitem:a473b8860fb6ff586483d1fe699ea0f0a pro_attribs_classocean_1_1_animal" id="r_a473b8860fb6ff586483d1fe699ea0f0a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a473b8860fb6ff586483d1fe699ea0f0a">id_</a></td></tr>
+<tr class="memdesc:a473b8860fb6ff586483d1fe699ea0f0a pro_attribs_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уникальный номер.  <br /></td></tr>
+<tr class="memitem:aa24fb4fdeddbec6c8c094d09e65fb88b pro_attribs_classocean_1_1_animal" id="r_aa24fb4fdeddbec6c8c094d09e65fb88b"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#aa24fb4fdeddbec6c8c094d09e65fb88b">name_</a></td></tr>
+<tr class="memdesc:aa24fb4fdeddbec6c8c094d09e65fb88b pro_attribs_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кличка.  <br /></td></tr>
+<tr class="memitem:a6a72aa52f9c44c37eb8aeb8ee82d1c9c pro_attribs_classocean_1_1_animal" id="r_a6a72aa52f9c44c37eb8aeb8ee82d1c9c"><td class="memItemLeft"><a class="el" href="classocean_1_1_species.html">Species</a>&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a6a72aa52f9c44c37eb8aeb8ee82d1c9c">species_</a></td></tr>
+<tr class="memdesc:a6a72aa52f9c44c37eb8aeb8ee82d1c9c pro_attribs_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вид.  <br /></td></tr>
+<tr class="memitem:a3f569dcde4be70a587d782db0bd462ad pro_attribs_classocean_1_1_animal" id="r_a3f569dcde4be70a587d782db0bd462ad"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a3f569dcde4be70a587d782db0bd462ad">ageYears_</a></td></tr>
+<tr class="memdesc:a3f569dcde4be70a587d782db0bd462ad pro_attribs_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возраст в годах.  <br /></td></tr>
+<tr class="memitem:ada477068a49e988bdeda4270e829c38f pro_attribs_classocean_1_1_animal" id="r_ada477068a49e988bdeda4270e829c38f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#ada477068a49e988bdeda4270e829c38f">weightKg_</a></td></tr>
+<tr class="memdesc:ada477068a49e988bdeda4270e829c38f pro_attribs_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масса, кг.  <br /></td></tr>
+<tr class="memitem:aeba77920b23f1aba57e0545c97d83a0b pro_attribs_classocean_1_1_animal" id="r_aeba77920b23f1aba57e0545c97d83a0b"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#aeba77920b23f1aba57e0545c97d83a0b">hunger_</a></td></tr>
+<tr class="memdesc:aeba77920b23f1aba57e0545c97d83a0b pro_attribs_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уровень голода (0..100).  <br /></td></tr>
+<tr class="memitem:a342588d22b697cda928ace547a0d6ab0 pro_attribs_classocean_1_1_animal" id="r_a342588d22b697cda928ace547a0d6ab0"><td class="memItemLeft"><a class="el" href="classocean_1_1_health_record.html">HealthRecord</a>&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_animal.html#a342588d22b697cda928ace547a0d6ab0">health_</a></td></tr>
+<tr class="memdesc:a342588d22b697cda928ace547a0d6ab0 pro_attribs_classocean_1_1_animal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Медицинская карта.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Медуза. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00462">462</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a9e67bf6c9d53e57a48356cd54184a36a" name="a9e67bf6c9d53e57a48356cd54184a36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e67bf6c9d53e57a48356cd54184a36a">&#9670;&#160;</a></span>Jellyfish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::Jellyfish::Jellyfish </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_species.html">Species</a></td>          <td class="paramname"><span class="paramname"><em>species</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ageYears</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>weightKg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>bellDiameterCm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>stinging</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт медузу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Уникальный номер. </td></tr>
+    <tr><td class="paramname">name</td><td>Кличка. </td></tr>
+    <tr><td class="paramname">species</td><td>Вид. </td></tr>
+    <tr><td class="paramname">ageYears</td><td>Возраст в годах. </td></tr>
+    <tr><td class="paramname">weightKg</td><td>Масса, кг. </td></tr>
+    <tr><td class="paramname">bellDiameterCm</td><td>Диаметр купола, см (&gt; 0). </td></tr>
+    <tr><td class="paramname">stinging</td><td>Жалит ли медуза. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если диаметр не положителен или не прошла проверка <a class="el" href="classocean_1_1_animal.html" title="Абстрактный обитатель океанариума.">Animal</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8cpp_source.html">Animals.cpp</a> строка <a class="el" href="_animals_8cpp_source.html#l00244">244</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a0a04c452556cf8c16f140c0c7ef0b9bb" name="a0a04c452556cf8c16f140c0c7ef0b9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a04c452556cf8c16f140c0c7ef0b9bb">&#9670;&#160;</a></span>bellDiameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Jellyfish::bellDiameter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Диаметр купола, см. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00479">479</a></p>
+
+</div>
+</div>
+<a id="adc893776f8297353030146f40a7b02f6" name="adc893776f8297353030146f40a7b02f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc893776f8297353030146f40a7b02f6">&#9670;&#160;</a></span>dailyFoodKg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Jellyfish::dailyFoodKg </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Суточная норма корма (зависит от диаметра купола, не меньше 1 г). </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Масса корма, кг. </dd></dl>
+
+<p>Замещает <a class="el" href="classocean_1_1_animal.html#a15adc0f028662f21b387a1ae45e21f73">ocean::Animal</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8cpp_source.html">Animals.cpp</a> строка <a class="el" href="_animals_8cpp_source.html#l00253">253</a></p>
+
+</div>
+</div>
+<a id="a57c24bbc01367cf38b83c33138d9d592" name="a57c24bbc01367cf38b83c33138d9d592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c24bbc01367cf38b83c33138d9d592">&#9670;&#160;</a></span>isSafeForTouch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Jellyfish::isSafeForTouch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Безопасна ли медуза для контакта. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если медуза не жалит. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8cpp_source.html">Animals.cpp</a> строка <a class="el" href="_animals_8cpp_source.html#l00261">261</a></p>
+
+</div>
+</div>
+<a id="a090b8990702749dcb66ffdac5144e0bb" name="a090b8990702749dcb66ffdac5144e0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090b8990702749dcb66ffdac5144e0bb">&#9670;&#160;</a></span>isStinging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Jellyfish::isStinging </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Жалит ли медуза. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00481">481</a></p>
+
+</div>
+</div>
+<a id="ada005d9b3d4b799caa7c080ba5339e74" name="ada005d9b3d4b799caa7c080ba5339e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada005d9b3d4b799caa7c080ba5339e74">&#9670;&#160;</a></span>kind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Jellyfish::kind </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Категория животного: «Jellyfish». </p>
+
+<p>Замещает <a class="el" href="classocean_1_1_animal.html#a6ff58d1de055bcc5b65ac6514bde88fa">ocean::Animal</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00489">489</a></p>
+
+</div>
+</div>
+<a id="add3940ccdc1f2b7edfaf36a56a3e3d09" name="add3940ccdc1f2b7edfaf36a56a3e3d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3940ccdc1f2b7edfaf36a56a3e3d09">&#9670;&#160;</a></span>pulseRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Jellyfish::pulseRate </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>waterTemperature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Частота пульсаций купола при заданной температуре. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">waterTemperature</td><td>Температура воды, °C. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Пульсаций в минуту (не меньше 10). </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8cpp_source.html">Animals.cpp</a> строка <a class="el" href="_animals_8cpp_source.html#l00257">257</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="aeaa2b21ab4f15e94d8ccec8dc7f500e0" name="aeaa2b21ab4f15e94d8ccec8dc7f500e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa2b21ab4f15e94d8ccec8dc7f500e0">&#9670;&#160;</a></span>bellDiameterCm_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Jellyfish::bellDiameterCm_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Диаметр купола, см. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00503">503</a></p>
+
+</div>
+</div>
+<a id="a6f0c773e83fcd899ee56ed5a8f0ae0bc" name="a6f0c773e83fcd899ee56ed5a8f0ae0bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0c773e83fcd899ee56ed5a8f0ae0bc">&#9670;&#160;</a></span>stinging_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Jellyfish::stinging_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак жалящей медузы. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_animals_8h_source.html">Animals.h</a> строка <a class="el" href="_animals_8h_source.html#l00504">504</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_animals_8h_source.html">Animals.h</a></li>
+<li>src/<a class="el" href="_animals_8cpp_source.html">Animals.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_jellyfish.html">Jellyfish</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

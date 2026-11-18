@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::MedicalEntry</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_medical_entry.html','','classocean_1_1_medical_entry-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::MedicalEntry</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Одна запись в медицинской карте.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_health_8h_source.html">Health.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::MedicalEntry:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_medical_entry__coll__graph.png" border="0" usemap="#aocean_1_1_medical_entry_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a7d6f090421283401744a39da41b6dc79" id="r_a7d6f090421283401744a39da41b6dc79"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7d6f090421283401744a39da41b6dc79">MedicalEntry</a> (const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;date, std::string diagnosis, std::string treatment, std::string vetName, int severity)</td></tr>
+<tr class="memdesc:a7d6f090421283401744a39da41b6dc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт запись о диагнозе и лечении.  <br /></td></tr>
+<tr class="memitem:ad81bc3db6f68f83a08a997653413b8d6" id="r_ad81bc3db6f68f83a08a997653413b8d6"><td class="memItemLeft">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad81bc3db6f68f83a08a997653413b8d6">date</a> () const</td></tr>
+<tr class="memdesc:ad81bc3db6f68f83a08a997653413b8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дата записи.  <br /></td></tr>
+<tr class="memitem:a79e9a04ad4376674f7ae6abfeda7f974" id="r_a79e9a04ad4376674f7ae6abfeda7f974"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a79e9a04ad4376674f7ae6abfeda7f974">diagnosis</a> () const</td></tr>
+<tr class="memdesc:a79e9a04ad4376674f7ae6abfeda7f974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диагноз.  <br /></td></tr>
+<tr class="memitem:ad3478f2173037f023e5d761395dd6be7" id="r_ad3478f2173037f023e5d761395dd6be7"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad3478f2173037f023e5d761395dd6be7">treatment</a> () const</td></tr>
+<tr class="memdesc:ad3478f2173037f023e5d761395dd6be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Назначенное лечение.  <br /></td></tr>
+<tr class="memitem:ab77fa6864a06aec41e3d074abde08b60" id="r_ab77fa6864a06aec41e3d074abde08b60"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ab77fa6864a06aec41e3d074abde08b60">vetName</a> () const</td></tr>
+<tr class="memdesc:ab77fa6864a06aec41e3d074abde08b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя ветеринара.  <br /></td></tr>
+<tr class="memitem:ae0b56697dfc220052c0e867ee2e0d029" id="r_ae0b56697dfc220052c0e867ee2e0d029"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae0b56697dfc220052c0e867ee2e0d029">severity</a> () const</td></tr>
+<tr class="memdesc:ae0b56697dfc220052c0e867ee2e0d029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тяжесть состояния (1..5).  <br /></td></tr>
+<tr class="memitem:a7739ffb9cd397484f7d67b8fa1c55301" id="r_a7739ffb9cd397484f7d67b8fa1c55301"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7739ffb9cd397484f7d67b8fa1c55301">isSerious</a> () const</td></tr>
+<tr class="memdesc:a7739ffb9cd397484f7d67b8fa1c55301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Серьёзное ли состояние.  <br /></td></tr>
+<tr class="memitem:af5289233df8cf49b620740c2e3623bf4" id="r_af5289233df8cf49b620740c2e3623bf4"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#af5289233df8cf49b620740c2e3623bf4">summary</a> () const</td></tr>
+<tr class="memdesc:af5289233df8cf49b620740c2e3623bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Краткое текстовое описание записи.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a5f619ad325396ec0a23e5c331224f1b8" id="r_a5f619ad325396ec0a23e5c331224f1b8"><td class="memItemLeft"><a class="el" href="classocean_1_1_date.html">Date</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5f619ad325396ec0a23e5c331224f1b8">date_</a></td></tr>
+<tr class="memdesc:a5f619ad325396ec0a23e5c331224f1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дата записи.  <br /></td></tr>
+<tr class="memitem:afdb4c3d101c9773832abe86652b3b7ef" id="r_afdb4c3d101c9773832abe86652b3b7ef"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#afdb4c3d101c9773832abe86652b3b7ef">diagnosis_</a></td></tr>
+<tr class="memdesc:afdb4c3d101c9773832abe86652b3b7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диагноз.  <br /></td></tr>
+<tr class="memitem:a3e2fd0199ca5b1cae1227064e669863f" id="r_a3e2fd0199ca5b1cae1227064e669863f"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a3e2fd0199ca5b1cae1227064e669863f">treatment_</a></td></tr>
+<tr class="memdesc:a3e2fd0199ca5b1cae1227064e669863f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лечение.  <br /></td></tr>
+<tr class="memitem:ab506b5dd58a5502fea2099bac26d7197" id="r_ab506b5dd58a5502fea2099bac26d7197"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab506b5dd58a5502fea2099bac26d7197">vetName_</a></td></tr>
+<tr class="memdesc:ab506b5dd58a5502fea2099bac26d7197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя ветеринара.  <br /></td></tr>
+<tr class="memitem:aa6fd90b7fedbd36c645100a70cbadf33" id="r_aa6fd90b7fedbd36c645100a70cbadf33"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa6fd90b7fedbd36c645100a70cbadf33">severity_</a></td></tr>
+<tr class="memdesc:aa6fd90b7fedbd36c645100a70cbadf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тяжесть состояния (1..5).  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Одна запись в медицинской карте. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00020">20</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a7d6f090421283401744a39da41b6dc79" name="a7d6f090421283401744a39da41b6dc79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6f090421283401744a39da41b6dc79">&#9670;&#160;</a></span>MedicalEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::MedicalEntry::MedicalEntry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>date</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>diagnosis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>treatment</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>vetName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>severity</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт запись о диагнозе и лечении. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">date</td><td>Дата осмотра. </td></tr>
+    <tr><td class="paramname">diagnosis</td><td>Диагноз (непустой). </td></tr>
+    <tr><td class="paramname">treatment</td><td>Назначенное лечение. </td></tr>
+    <tr><td class="paramname">vetName</td><td>Имя ветеринара. </td></tr>
+    <tr><td class="paramname">severity</td><td>Тяжесть от 1 до 5. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если диагноз пуст или тяжесть вне [1, 5]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8cpp_source.html">Health.cpp</a> строка <a class="el" href="_health_8cpp_source.html#l00012">12</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ad81bc3db6f68f83a08a997653413b8d6" name="ad81bc3db6f68f83a08a997653413b8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81bc3db6f68f83a08a997653413b8d6">&#9670;&#160;</a></span>date()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp; ocean::MedicalEntry::date </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дата записи. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00035">35</a></p>
+
+</div>
+</div>
+<a id="a79e9a04ad4376674f7ae6abfeda7f974" name="a79e9a04ad4376674f7ae6abfeda7f974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e9a04ad4376674f7ae6abfeda7f974">&#9670;&#160;</a></span>diagnosis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::MedicalEntry::diagnosis </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Диагноз. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00037">37</a></p>
+
+</div>
+</div>
+<a id="a7739ffb9cd397484f7d67b8fa1c55301" name="a7739ffb9cd397484f7d67b8fa1c55301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7739ffb9cd397484f7d67b8fa1c55301">&#9670;&#160;</a></span>isSerious()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::MedicalEntry::isSerious </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Серьёзное ли состояние. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если тяжесть не меньше 4. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8cpp_source.html">Health.cpp</a> строка <a class="el" href="_health_8cpp_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="ae0b56697dfc220052c0e867ee2e0d029" name="ae0b56697dfc220052c0e867ee2e0d029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b56697dfc220052c0e867ee2e0d029">&#9670;&#160;</a></span>severity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::MedicalEntry::severity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тяжесть состояния (1..5). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00043">43</a></p>
+
+</div>
+</div>
+<a id="af5289233df8cf49b620740c2e3623bf4" name="af5289233df8cf49b620740c2e3623bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5289233df8cf49b620740c2e3623bf4">&#9670;&#160;</a></span>summary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::MedicalEntry::summary </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Краткое текстовое описание записи. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка с датой, диагнозом, тяжестью, лечением и ветеринаром. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8cpp_source.html">Health.cpp</a> строка <a class="el" href="_health_8cpp_source.html#l00028">28</a></p>
+
+</div>
+</div>
+<a id="ad3478f2173037f023e5d761395dd6be7" name="ad3478f2173037f023e5d761395dd6be7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3478f2173037f023e5d761395dd6be7">&#9670;&#160;</a></span>treatment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::MedicalEntry::treatment </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Назначенное лечение. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<a id="ab77fa6864a06aec41e3d074abde08b60" name="ab77fa6864a06aec41e3d074abde08b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab77fa6864a06aec41e3d074abde08b60">&#9670;&#160;</a></span>vetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::MedicalEntry::vetName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя ветеринара. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a5f619ad325396ec0a23e5c331224f1b8" name="a5f619ad325396ec0a23e5c331224f1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f619ad325396ec0a23e5c331224f1b8">&#9670;&#160;</a></span>date_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_date.html">Date</a> ocean::MedicalEntry::date_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дата записи. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00057">57</a></p>
+
+</div>
+</div>
+<a id="afdb4c3d101c9773832abe86652b3b7ef" name="afdb4c3d101c9773832abe86652b3b7ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb4c3d101c9773832abe86652b3b7ef">&#9670;&#160;</a></span>diagnosis_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::MedicalEntry::diagnosis_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Диагноз. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00058">58</a></p>
+
+</div>
+</div>
+<a id="aa6fd90b7fedbd36c645100a70cbadf33" name="aa6fd90b7fedbd36c645100a70cbadf33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6fd90b7fedbd36c645100a70cbadf33">&#9670;&#160;</a></span>severity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::MedicalEntry::severity_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тяжесть состояния (1..5). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00061">61</a></p>
+
+</div>
+</div>
+<a id="a3e2fd0199ca5b1cae1227064e669863f" name="a3e2fd0199ca5b1cae1227064e669863f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2fd0199ca5b1cae1227064e669863f">&#9670;&#160;</a></span>treatment_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::MedicalEntry::treatment_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Лечение. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00059">59</a></p>
+
+</div>
+</div>
+<a id="ab506b5dd58a5502fea2099bac26d7197" name="ab506b5dd58a5502fea2099bac26d7197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab506b5dd58a5502fea2099bac26d7197">&#9670;&#160;</a></span>vetName_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::MedicalEntry::vetName_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя ветеринара. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_health_8h_source.html">Health.h</a> строка <a class="el" href="_health_8h_source.html#l00060">60</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_health_8h_source.html">Health.h</a></li>
+<li>src/<a class="el" href="_health_8cpp_source.html">Health.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_medical_entry.html">MedicalEntry</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

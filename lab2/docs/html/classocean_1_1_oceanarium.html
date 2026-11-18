@@ -1,0 +1,1367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::Oceanarium</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_oceanarium.html','','classocean_1_1_oceanarium-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::Oceanarium</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Океанариум — корневой объект модели.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_management_8h_source.html">Management.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::Oceanarium:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_oceanarium__coll__graph.png" border="0" usemap="#aocean_1_1_oceanarium_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab54c76bf2ef89db4d2aa763afdc1c2d0" id="r_ab54c76bf2ef89db4d2aa763afdc1c2d0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab54c76bf2ef89db4d2aa763afdc1c2d0">Oceanarium</a> (std::string name, std::string city, double initialBalance, double ticketPrice)</td></tr>
+<tr class="memdesc:ab54c76bf2ef89db4d2aa763afdc1c2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт океанариум.  <br /></td></tr>
+<tr class="memitem:aff94f6ec48118914953595743243e813" id="r_aff94f6ec48118914953595743243e813"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aff94f6ec48118914953595743243e813">name</a> () const</td></tr>
+<tr class="memdesc:aff94f6ec48118914953595743243e813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название.  <br /></td></tr>
+<tr class="memitem:af21e839f47f27a4710e8f1d64ac95581" id="r_af21e839f47f27a4710e8f1d64ac95581"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af21e839f47f27a4710e8f1d64ac95581">city</a> () const</td></tr>
+<tr class="memdesc:af21e839f47f27a4710e8f1d64ac95581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Город.  <br /></td></tr>
+<tr class="memitem:aff93a2aa64c11ae263bd548450c69b99" id="r_aff93a2aa64c11ae263bd548450c69b99"><td class="memItemLeft"><a class="el" href="classocean_1_1_ticket_office.html">TicketOffice</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aff93a2aa64c11ae263bd548450c69b99">ticketOffice</a> ()</td></tr>
+<tr class="memdesc:aff93a2aa64c11ae263bd548450c69b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Билетная касса.  <br /></td></tr>
+<tr class="memitem:a43b64df6a4886a4f4ae922f8ef23fffd" id="r_a43b64df6a4886a4f4ae922f8ef23fffd"><td class="memItemLeft"><a class="el" href="classocean_1_1_food_storage.html">FoodStorage</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a43b64df6a4886a4f4ae922f8ef23fffd">foodStorage</a> ()</td></tr>
+<tr class="memdesc:a43b64df6a4886a4f4ae922f8ef23fffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Склад корма.  <br /></td></tr>
+<tr class="memitem:ab6638daab10c0900a30b91eecf89b149" id="r_ab6638daab10c0900a30b91eecf89b149"><td class="memItemLeft"><a class="el" href="classocean_1_1_maintenance_log.html">MaintenanceLog</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ab6638daab10c0900a30b91eecf89b149">maintenance</a> ()</td></tr>
+<tr class="memdesc:ab6638daab10c0900a30b91eecf89b149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Журнал обслуживания.  <br /></td></tr>
+<tr class="memitem:a4ce4b486e19674100997e82f4885245a" id="r_a4ce4b486e19674100997e82f4885245a"><td class="memItemLeft"><a class="el" href="classocean_1_1_staff_schedule.html">StaffSchedule</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a4ce4b486e19674100997e82f4885245a">schedule</a> ()</td></tr>
+<tr class="memdesc:a4ce4b486e19674100997e82f4885245a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расписание смен персонала.  <br /></td></tr>
+<tr class="memitem:a5dbae72ecc2897b4ee137a3323b338ee" id="r_a5dbae72ecc2897b4ee137a3323b338ee"><td class="memItemLeft"><a class="el" href="classocean_1_1_feeding_schedule.html">FeedingSchedule</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a5dbae72ecc2897b4ee137a3323b338ee">feeding</a> ()</td></tr>
+<tr class="memdesc:a5dbae72ecc2897b4ee137a3323b338ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расписание кормлений.  <br /></td></tr>
+<tr class="memitem:a8671fbf3c5bed6558c1b0f86d0188a91" id="r_a8671fbf3c5bed6558c1b0f86d0188a91"><td class="memItemLeft"><a class="el" href="classocean_1_1_budget.html">Budget</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8671fbf3c5bed6558c1b0f86d0188a91">budget</a> ()</td></tr>
+<tr class="memdesc:a8671fbf3c5bed6558c1b0f86d0188a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Бюджет.  <br /></td></tr>
+<tr class="memitem:a8c40da1161f6de607a02305c74041231" id="r_a8c40da1161f6de607a02305c74041231"><td class="memItemLeft"><a class="el" href="classocean_1_1_payroll.html">Payroll</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8c40da1161f6de607a02305c74041231">payroll</a> ()</td></tr>
+<tr class="memdesc:a8c40da1161f6de607a02305c74041231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расчёт зарплаты.  <br /></td></tr>
+<tr class="memitem:a4f665e709e12b6db62b6521280f39ad4" id="r_a4f665e709e12b6db62b6521280f39ad4"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_exhibit.html">Exhibit</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a4f665e709e12b6db62b6521280f39ad4">exhibits</a> ()</td></tr>
+<tr class="memdesc:a4f665e709e12b6db62b6521280f39ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Экспозиции.  <br /></td></tr>
+<tr class="memitem:a06345e5fb72760f8f67313326a394837" id="r_a06345e5fb72760f8f67313326a394837"><td class="memItemLeft"><a class="el" href="classocean_1_1_tank.html">Tank</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a06345e5fb72760f8f67313326a394837">addTank</a> (std::unique_ptr&lt; <a class="el" href="classocean_1_1_tank.html">Tank</a> &gt; tank)</td></tr>
+<tr class="memdesc:a06345e5fb72760f8f67313326a394837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет аквариум (океанариум становится его владельцем).  <br /></td></tr>
+<tr class="memitem:ae47814754b206e8783b8693ca5a8adbd" id="r_ae47814754b206e8783b8693ca5a8adbd"><td class="memItemLeft"><a class="el" href="classocean_1_1_tank.html">Tank</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ae47814754b206e8783b8693ca5a8adbd">findTank</a> (int tankId)</td></tr>
+<tr class="memdesc:ae47814754b206e8783b8693ca5a8adbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит аквариум по идентификатору.  <br /></td></tr>
+<tr class="memitem:aedb93ee6fbd8bed1f50c111c619ba5ee" id="r_aedb93ee6fbd8bed1f50c111c619ba5ee"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aedb93ee6fbd8bed1f50c111c619ba5ee">tankCount</a> () const</td></tr>
+<tr class="memdesc:aedb93ee6fbd8bed1f50c111c619ba5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число аквариумов.  <br /></td></tr>
+<tr class="memitem:afd6fdab7a41f83ca2115b12bce8ac2ec" id="r_afd6fdab7a41f83ca2115b12bce8ac2ec"><td class="memItemLeft"><a class="el" href="classocean_1_1_employee.html">Employee</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#afd6fdab7a41f83ca2115b12bce8ac2ec">hire</a> (std::unique_ptr&lt; <a class="el" href="classocean_1_1_employee.html">Employee</a> &gt; employee)</td></tr>
+<tr class="memdesc:afd6fdab7a41f83ca2115b12bce8ac2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нанимает сотрудника (океанариум становится его владельцем).  <br /></td></tr>
+<tr class="memitem:aff489c743cd8eb17ad7c0476013bedf3" id="r_aff489c743cd8eb17ad7c0476013bedf3"><td class="memItemLeft"><a class="el" href="classocean_1_1_employee.html">Employee</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aff489c743cd8eb17ad7c0476013bedf3">findEmployee</a> (int employeeId)</td></tr>
+<tr class="memdesc:aff489c743cd8eb17ad7c0476013bedf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит сотрудника по идентификатору.  <br /></td></tr>
+<tr class="memitem:afb9d95646d34a27c968d57be39a62a1f" id="r_afb9d95646d34a27c968d57be39a62a1f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb9d95646d34a27c968d57be39a62a1f">fire</a> (int employeeId)</td></tr>
+<tr class="memdesc:afb9d95646d34a27c968d57be39a62a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увольняет сотрудника и удаляет его смены из расписания.  <br /></td></tr>
+<tr class="memitem:aa228e56a1ee8d693ea15b25d243a19c3" id="r_aa228e56a1ee8d693ea15b25d243a19c3"><td class="memItemLeft"><a class="el" href="classocean_1_1_exhibit.html">Exhibit</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa228e56a1ee8d693ea15b25d243a19c3">addExhibit</a> (const <a class="el" href="classocean_1_1_exhibit.html">Exhibit</a> &amp;exhibit)</td></tr>
+<tr class="memdesc:aa228e56a1ee8d693ea15b25d243a19c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет экспозицию.  <br /></td></tr>
+<tr class="memitem:a2f899490429a597be11b0109256d4e30" id="r_a2f899490429a597be11b0109256d4e30"><td class="memItemLeft"><a class="el" href="classocean_1_1_tank.html">Tank</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2f899490429a597be11b0109256d4e30">locateAnimal</a> (int animalId)</td></tr>
+<tr class="memdesc:a2f899490429a597be11b0109256d4e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит аквариум, в котором живёт животное.  <br /></td></tr>
+<tr class="memitem:a21984f0b7d14bd0baaacffd677dff794" id="r_a21984f0b7d14bd0baaacffd677dff794"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a21984f0b7d14bd0baaacffd677dff794">transferAnimal</a> (int animalId, int fromTankId, int toTankId)</td></tr>
+<tr class="memdesc:a21984f0b7d14bd0baaacffd677dff794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переводит животное между аквариумами (с откатом при ошибке).  <br /></td></tr>
+<tr class="memitem:aa4b2031da5a790e1a524782f35a2e55d" id="r_aa4b2031da5a790e1a524782f35a2e55d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa4b2031da5a790e1a524782f35a2e55d">totalAnimals</a> () const</td></tr>
+<tr class="memdesc:aa4b2031da5a790e1a524782f35a2e55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общее число животных во всех аквариумах.  <br /></td></tr>
+<tr class="memitem:aade72d1b7926ccd828d5d1a06d60f8e9" id="r_aade72d1b7926ccd828d5d1a06d60f8e9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aade72d1b7926ccd828d5d1a06d60f8e9">endangeredAnimals</a> () const</td></tr>
+<tr class="memdesc:aade72d1b7926ccd828d5d1a06d60f8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число животных исчезающих видов.  <br /></td></tr>
+<tr class="memitem:a1077ea470c04fbaec2430b1e6c9a9573" id="r_a1077ea470c04fbaec2430b1e6c9a9573"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a1077ea470c04fbaec2430b1e6c9a9573">dailyFoodRequirement</a> () const</td></tr>
+<tr class="memdesc:a1077ea470c04fbaec2430b1e6c9a9573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Суточная потребность в корме всех животных, кг.  <br /></td></tr>
+<tr class="memitem:ac3639384e7e960d93e2a19732bd4b939" id="r_ac3639384e7e960d93e2a19732bd4b939"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac3639384e7e960d93e2a19732bd4b939">feedAnimals</a> (int minute, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today)</td></tr>
+<tr class="memdesc:ac3639384e7e960d93e2a19732bd4b939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проводит кормления, назначенные на указанную минуту.  <br /></td></tr>
+<tr class="memitem:ae5b7ea88f68ac0cf95dda104ead0bc47" id="r_ae5b7ea88f68ac0cf95dda104ead0bc47"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae5b7ea88f68ac0cf95dda104ead0bc47">runDailyOperations</a> (const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today)</td></tr>
+<tr class="memdesc:ae5b7ea88f68ac0cf95dda104ead0bc47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Суточный цикл: жизнеобеспечение, голод, задачи на уборку.  <br /></td></tr>
+<tr class="memitem:a1de4381c66f3436ed2a971d04b8ed5ef" id="r_a1de4381c66f3436ed2a971d04b8ed5ef"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a1de4381c66f3436ed2a971d04b8ed5ef">paySalaries</a> ()</td></tr>
+<tr class="memdesc:a1de4381c66f3436ed2a971d04b8ed5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выплачивает зарплату всем сотрудникам из бюджета.  <br /></td></tr>
+<tr class="memitem:a869b573357713d12c686156131fc8188" id="r_a869b573357713d12c686156131fc8188"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a869b573357713d12c686156131fc8188">summary</a> () const</td></tr>
+<tr class="memdesc:a869b573357713d12c686156131fc8188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Краткая сводка: название, город, число аквариумов, животных и сотрудников.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ad6fb9762d242e3dfe344e30833657b0c" id="r_ad6fb9762d242e3dfe344e30833657b0c"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ad6fb9762d242e3dfe344e30833657b0c">name_</a></td></tr>
+<tr class="memdesc:ad6fb9762d242e3dfe344e30833657b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название.  <br /></td></tr>
+<tr class="memitem:a7667d2042463570aea11cd8372806e97" id="r_a7667d2042463570aea11cd8372806e97"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a7667d2042463570aea11cd8372806e97">city_</a></td></tr>
+<tr class="memdesc:a7667d2042463570aea11cd8372806e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Город.  <br /></td></tr>
+<tr class="memitem:adf0713db5a4bcfca9876ff0f1822f493" id="r_adf0713db5a4bcfca9876ff0f1822f493"><td class="memItemLeft">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classocean_1_1_tank.html">Tank</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adf0713db5a4bcfca9876ff0f1822f493">tanks_</a></td></tr>
+<tr class="memdesc:adf0713db5a4bcfca9876ff0f1822f493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аквариумы (во владении).  <br /></td></tr>
+<tr class="memitem:a35f0459eabeaf7ba93695b55a8c84f48" id="r_a35f0459eabeaf7ba93695b55a8c84f48"><td class="memItemLeft">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classocean_1_1_employee.html">Employee</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a35f0459eabeaf7ba93695b55a8c84f48">employees_</a></td></tr>
+<tr class="memdesc:a35f0459eabeaf7ba93695b55a8c84f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сотрудники (во владении).  <br /></td></tr>
+<tr class="memitem:a918b27d63f80b0891643fdbba5d16e25" id="r_a918b27d63f80b0891643fdbba5d16e25"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_exhibit.html">Exhibit</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a918b27d63f80b0891643fdbba5d16e25">exhibits_</a></td></tr>
+<tr class="memdesc:a918b27d63f80b0891643fdbba5d16e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Экспозиции.  <br /></td></tr>
+<tr class="memitem:a93f9a36243b358fe080994dd1d0fe8f8" id="r_a93f9a36243b358fe080994dd1d0fe8f8"><td class="memItemLeft"><a class="el" href="classocean_1_1_ticket_office.html">TicketOffice</a>&#160;</td><td class="memItemRight"><a class="el" href="#a93f9a36243b358fe080994dd1d0fe8f8">ticketOffice_</a></td></tr>
+<tr class="memdesc:a93f9a36243b358fe080994dd1d0fe8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Билетная касса.  <br /></td></tr>
+<tr class="memitem:abe8b6f5170e9f373297fa8a6fb583e86" id="r_abe8b6f5170e9f373297fa8a6fb583e86"><td class="memItemLeft"><a class="el" href="classocean_1_1_food_storage.html">FoodStorage</a>&#160;</td><td class="memItemRight"><a class="el" href="#abe8b6f5170e9f373297fa8a6fb583e86">foodStorage_</a></td></tr>
+<tr class="memdesc:abe8b6f5170e9f373297fa8a6fb583e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Склад корма.  <br /></td></tr>
+<tr class="memitem:a6d01f71b20d72df1861f091aafd3dabf" id="r_a6d01f71b20d72df1861f091aafd3dabf"><td class="memItemLeft"><a class="el" href="classocean_1_1_maintenance_log.html">MaintenanceLog</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d01f71b20d72df1861f091aafd3dabf">maintenance_</a></td></tr>
+<tr class="memdesc:a6d01f71b20d72df1861f091aafd3dabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Журнал обслуживания.  <br /></td></tr>
+<tr class="memitem:a7410d447eedb3b318d7aafd14b03f74f" id="r_a7410d447eedb3b318d7aafd14b03f74f"><td class="memItemLeft"><a class="el" href="classocean_1_1_staff_schedule.html">StaffSchedule</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7410d447eedb3b318d7aafd14b03f74f">schedule_</a></td></tr>
+<tr class="memdesc:a7410d447eedb3b318d7aafd14b03f74f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расписание смен.  <br /></td></tr>
+<tr class="memitem:a5b9bc1d27cc56ab51ea2385e20e1bce1" id="r_a5b9bc1d27cc56ab51ea2385e20e1bce1"><td class="memItemLeft"><a class="el" href="classocean_1_1_feeding_schedule.html">FeedingSchedule</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5b9bc1d27cc56ab51ea2385e20e1bce1">feeding_</a></td></tr>
+<tr class="memdesc:a5b9bc1d27cc56ab51ea2385e20e1bce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расписание кормлений.  <br /></td></tr>
+<tr class="memitem:ad4678dc6724b6af1054146ef87480c8e" id="r_ad4678dc6724b6af1054146ef87480c8e"><td class="memItemLeft"><a class="el" href="classocean_1_1_budget.html">Budget</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad4678dc6724b6af1054146ef87480c8e">budget_</a></td></tr>
+<tr class="memdesc:ad4678dc6724b6af1054146ef87480c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Бюджет.  <br /></td></tr>
+<tr class="memitem:a1f1b6c8b12d7cca192b2f0f769aba66a" id="r_a1f1b6c8b12d7cca192b2f0f769aba66a"><td class="memItemLeft"><a class="el" href="classocean_1_1_payroll.html">Payroll</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1f1b6c8b12d7cca192b2f0f769aba66a">payroll_</a></td></tr>
+<tr class="memdesc:a1f1b6c8b12d7cca192b2f0f769aba66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расчёт зарплаты.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Океанариум — корневой объект модели. </p>
+<p>Владеет аквариумами и сотрудниками и объединяет кассу, склад корма, журнал обслуживания, расписания, бюджет и расчёт зарплаты. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00245">245</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ab54c76bf2ef89db4d2aa763afdc1c2d0" name="ab54c76bf2ef89db4d2aa763afdc1c2d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54c76bf2ef89db4d2aa763afdc1c2d0">&#9670;&#160;</a></span>Oceanarium()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::Oceanarium::Oceanarium </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>city</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>initialBalance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>ticketPrice</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт океанариум. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Непустое название. </td></tr>
+    <tr><td class="paramname">city</td><td>Город. </td></tr>
+    <tr><td class="paramname">initialBalance</td><td>Начальный баланс бюджета (лимит расходов — 10 балансов). </td></tr>
+    <tr><td class="paramname">ticketPrice</td><td>Базовая цена билета. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если название пустое или параметры кассы/бюджета некорректны. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00175">175</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="aa228e56a1ee8d693ea15b25d243a19c3" name="aa228e56a1ee8d693ea15b25d243a19c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa228e56a1ee8d693ea15b25d243a19c3">&#9670;&#160;</a></span>addExhibit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_exhibit.html">Exhibit</a> &amp; ocean::Oceanarium::addExhibit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_exhibit.html">Exhibit</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>exhibit</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет экспозицию. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exhibit</td><td>Экспозиция (копируется). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на добавленную экспозицию. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00238">238</a></p>
+
+</div>
+</div>
+<a id="a06345e5fb72760f8f67313326a394837" name="a06345e5fb72760f8f67313326a394837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06345e5fb72760f8f67313326a394837">&#9670;&#160;</a></span>addTank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_tank.html">Tank</a> &amp; ocean::Oceanarium::addTank </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classocean_1_1_tank.html">Tank</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>tank</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет аквариум (океанариум становится его владельцем). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tank</td><td>Аквариум. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на добавленный аквариум. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если указатель нулевой или аквариум с таким id уже есть. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00184">184</a></p>
+
+</div>
+</div>
+<a id="a8671fbf3c5bed6558c1b0f86d0188a91" name="a8671fbf3c5bed6558c1b0f86d0188a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8671fbf3c5bed6558c1b0f86d0188a91">&#9670;&#160;</a></span>budget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_budget.html">Budget</a> &amp; ocean::Oceanarium::budget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Бюджет. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00272">272</a></p>
+
+</div>
+</div>
+<a id="af21e839f47f27a4710e8f1d64ac95581" name="af21e839f47f27a4710e8f1d64ac95581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21e839f47f27a4710e8f1d64ac95581">&#9670;&#160;</a></span>city()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::Oceanarium::city </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Город. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00260">260</a></p>
+
+</div>
+</div>
+<a id="a1077ea470c04fbaec2430b1e6c9a9573" name="a1077ea470c04fbaec2430b1e6c9a9573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1077ea470c04fbaec2430b1e6c9a9573">&#9670;&#160;</a></span>dailyFoodRequirement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Oceanarium::dailyFoodRequirement </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Суточная потребность в корме всех животных, кг. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00287">287</a></p>
+
+</div>
+</div>
+<a id="aade72d1b7926ccd828d5d1a06d60f8e9" name="aade72d1b7926ccd828d5d1a06d60f8e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade72d1b7926ccd828d5d1a06d60f8e9">&#9670;&#160;</a></span>endangeredAnimals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Oceanarium::endangeredAnimals </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Число животных исчезающих видов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00275">275</a></p>
+
+</div>
+</div>
+<a id="a4f665e709e12b6db62b6521280f39ad4" name="a4f665e709e12b6db62b6521280f39ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f665e709e12b6db62b6521280f39ad4">&#9670;&#160;</a></span>exhibits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classocean_1_1_exhibit.html">Exhibit</a> &gt; &amp; ocean::Oceanarium::exhibits </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Экспозиции. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00276">276</a></p>
+
+</div>
+</div>
+<a id="ac3639384e7e960d93e2a19732bd4b939" name="ac3639384e7e960d93e2a19732bd4b939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3639384e7e960d93e2a19732bd4b939">&#9670;&#160;</a></span>feedAnimals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Oceanarium::feedAnimals </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minute</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>today</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проводит кормления, назначенные на указанную минуту. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minute</td><td>Минута от начала суток. </td></tr>
+    <tr><td class="paramname">today</td><td>Текущая дата. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число накормленных животных (результат <a class="el" href="classocean_1_1_feeding_schedule.html#ac50f7e2526ea6386d8ec706db04b2ca1" title="Проводит кормления, назначенные на minute.">FeedingSchedule::execute</a>). </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00295">295</a></p>
+
+</div>
+</div>
+<a id="a5dbae72ecc2897b4ee137a3323b338ee" name="a5dbae72ecc2897b4ee137a3323b338ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dbae72ecc2897b4ee137a3323b338ee">&#9670;&#160;</a></span>feeding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_feeding_schedule.html">FeedingSchedule</a> &amp; ocean::Oceanarium::feeding </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расписание кормлений. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00270">270</a></p>
+
+</div>
+</div>
+<a id="aff489c743cd8eb17ad7c0476013bedf3" name="aff489c743cd8eb17ad7c0476013bedf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff489c743cd8eb17ad7c0476013bedf3">&#9670;&#160;</a></span>findEmployee()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_employee.html">Employee</a> &amp; ocean::Oceanarium::findEmployee </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>employeeId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Находит сотрудника по идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">employeeId</td><td>Идентификатор. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на сотрудника. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_employee_not_found_exception.html" title="Сотрудник с указанным идентификатором не найден.">EmployeeNotFoundException</a></td><td>если сотрудника нет. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00224">224</a></p>
+
+</div>
+</div>
+<a id="ae47814754b206e8783b8693ca5a8adbd" name="ae47814754b206e8783b8693ca5a8adbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47814754b206e8783b8693ca5a8adbd">&#9670;&#160;</a></span>findTank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_tank.html">Tank</a> &amp; ocean::Oceanarium::findTank </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tankId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Находит аквариум по идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tankId</td><td>Идентификатор. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на аквариум. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_tank_not_found_exception.html" title="Аквариум с указанным идентификатором не найден.">TankNotFoundException</a></td><td>если аквариума нет. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00197">197</a></p>
+
+</div>
+</div>
+<a id="afb9d95646d34a27c968d57be39a62a1f" name="afb9d95646d34a27c968d57be39a62a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9d95646d34a27c968d57be39a62a1f">&#9670;&#160;</a></span>fire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Oceanarium::fire </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>employeeId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Увольняет сотрудника и удаляет его смены из расписания. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">employeeId</td><td>Идентификатор. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_employee_not_found_exception.html" title="Сотрудник с указанным идентификатором не найден.">EmployeeNotFoundException</a></td><td>если сотрудника нет. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00233">233</a></p>
+
+</div>
+</div>
+<a id="a43b64df6a4886a4f4ae922f8ef23fffd" name="a43b64df6a4886a4f4ae922f8ef23fffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b64df6a4886a4f4ae922f8ef23fffd">&#9670;&#160;</a></span>foodStorage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_food_storage.html">FoodStorage</a> &amp; ocean::Oceanarium::foodStorage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Склад корма. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00264">264</a></p>
+
+</div>
+</div>
+<a id="afd6fdab7a41f83ca2115b12bce8ac2ec" name="afd6fdab7a41f83ca2115b12bce8ac2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6fdab7a41f83ca2115b12bce8ac2ec">&#9670;&#160;</a></span>hire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_employee.html">Employee</a> &amp; ocean::Oceanarium::hire </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classocean_1_1_employee.html">Employee</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>employee</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Нанимает сотрудника (океанариум становится его владельцем). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">employee</td><td>Сотрудник. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на добавленного сотрудника. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если указатель нулевой или сотрудник с таким id уже есть. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00210">210</a></p>
+
+</div>
+</div>
+<a id="a2f899490429a597be11b0109256d4e30" name="a2f899490429a597be11b0109256d4e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f899490429a597be11b0109256d4e30">&#9670;&#160;</a></span>locateAnimal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_tank.html">Tank</a> &amp; ocean::Oceanarium::locateAnimal </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>animalId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Находит аквариум, в котором живёт животное. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animalId</td><td>Идентификатор животного. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на аквариум. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_animal_not_found_exception.html" title="Животное с указанным идентификатором не найдено.">AnimalNotFoundException</a></td><td>если животное не найдено ни в одном аквариуме. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00243">243</a></p>
+
+</div>
+</div>
+<a id="ab6638daab10c0900a30b91eecf89b149" name="ab6638daab10c0900a30b91eecf89b149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6638daab10c0900a30b91eecf89b149">&#9670;&#160;</a></span>maintenance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_maintenance_log.html">MaintenanceLog</a> &amp; ocean::Oceanarium::maintenance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Журнал обслуживания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00266">266</a></p>
+
+</div>
+</div>
+<a id="aff94f6ec48118914953595743243e813" name="aff94f6ec48118914953595743243e813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff94f6ec48118914953595743243e813">&#9670;&#160;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::Oceanarium::name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00258">258</a></p>
+
+</div>
+</div>
+<a id="a8c40da1161f6de607a02305c74041231" name="a8c40da1161f6de607a02305c74041231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c40da1161f6de607a02305c74041231">&#9670;&#160;</a></span>payroll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_payroll.html">Payroll</a> &amp; ocean::Oceanarium::payroll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расчёт зарплаты. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00274">274</a></p>
+
+</div>
+</div>
+<a id="a1de4381c66f3436ed2a971d04b8ed5ef" name="a1de4381c66f3436ed2a971d04b8ed5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de4381c66f3436ed2a971d04b8ed5ef">&#9670;&#160;</a></span>paySalaries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Oceanarium::paySalaries </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выплачивает зарплату всем сотрудникам из бюджета. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Выплаченная сумма. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_budget_exceeded_exception.html" title="Превышен лимит расходов бюджета.">BudgetExceededException</a></td><td>если превышен лимит расходов. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_insufficient_funds_exception.html" title="Недостаточно средств у посетителя или на счёте океанариума.">InsufficientFundsException</a></td><td>если средств не хватает. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00328">328</a></p>
+
+</div>
+</div>
+<a id="ae5b7ea88f68ac0cf95dda104ead0bc47" name="ae5b7ea88f68ac0cf95dda104ead0bc47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b7ea88f68ac0cf95dda104ead0bc47">&#9670;&#160;</a></span>runDailyOperations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Oceanarium::runDailyOperations </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>today</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Суточный цикл: жизнеобеспечение, голод, задачи на уборку. </p>
+<p>При отказе оборудования создаётся задача ремонта (приоритет 5), для грязного аквариума — задача уборки, для изношенного фильтра — задача замены; затем со склада удаляется просроченный корм. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">today</td><td>Текущая дата. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число созданных задач обслуживания. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00303">303</a></p>
+
+</div>
+</div>
+<a id="a4ce4b486e19674100997e82f4885245a" name="a4ce4b486e19674100997e82f4885245a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce4b486e19674100997e82f4885245a">&#9670;&#160;</a></span>schedule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_staff_schedule.html">StaffSchedule</a> &amp; ocean::Oceanarium::schedule </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расписание смен персонала. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00268">268</a></p>
+
+</div>
+</div>
+<a id="a869b573357713d12c686156131fc8188" name="a869b573357713d12c686156131fc8188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869b573357713d12c686156131fc8188">&#9670;&#160;</a></span>summary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Oceanarium::summary </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Краткая сводка: название, город, число аквариумов, животных и сотрудников. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00336">336</a></p>
+
+</div>
+</div>
+<a id="aedb93ee6fbd8bed1f50c111c619ba5ee" name="aedb93ee6fbd8bed1f50c111c619ba5ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb93ee6fbd8bed1f50c111c619ba5ee">&#9670;&#160;</a></span>tankCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Oceanarium::tankCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Число аквариумов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00206">206</a></p>
+
+</div>
+</div>
+<a id="aff93a2aa64c11ae263bd548450c69b99" name="aff93a2aa64c11ae263bd548450c69b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff93a2aa64c11ae263bd548450c69b99">&#9670;&#160;</a></span>ticketOffice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_ticket_office.html">TicketOffice</a> &amp; ocean::Oceanarium::ticketOffice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Билетная касса. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00262">262</a></p>
+
+</div>
+</div>
+<a id="aa4b2031da5a790e1a524782f35a2e55d" name="aa4b2031da5a790e1a524782f35a2e55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b2031da5a790e1a524782f35a2e55d">&#9670;&#160;</a></span>totalAnimals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Oceanarium::totalAnimals </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Общее число животных во всех аквариумах. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00267">267</a></p>
+
+</div>
+</div>
+<a id="a21984f0b7d14bd0baaacffd677dff794" name="a21984f0b7d14bd0baaacffd677dff794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21984f0b7d14bd0baaacffd677dff794">&#9670;&#160;</a></span>transferAnimal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Oceanarium::transferAnimal </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>animalId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>fromTankId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>toTankId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переводит животное между аквариумами (с откатом при ошибке). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animalId</td><td>Идентификатор животного. </td></tr>
+    <tr><td class="paramname">fromTankId</td><td>Аквариум-источник. </td></tr>
+    <tr><td class="paramname">toTankId</td><td>Аквариум-приёмник. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если аквариумы совпадают. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_tank_not_found_exception.html" title="Аквариум с указанным идентификатором не найден.">TankNotFoundException</a></td><td>если один из аквариумов не найден. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_animal_not_found_exception.html" title="Животное с указанным идентификатором не найдено.">AnimalNotFoundException</a></td><td>если животного нет в источнике. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Если приёмник не принял животное (например, <a class="el" href="classocean_1_1_incompatible_species_exception.html" title="Виды не могут жить вместе (хищник/жертва, разные требования к воде).">IncompatibleSpeciesException</a> или <a class="el" href="classocean_1_1_tank_capacity_exceeded_exception.html" title="В аквариуме нет места для нового животного.">TankCapacityExceededException</a>), оно возвращается в источник, а исключение пробрасывается. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8cpp_source.html">Management.cpp</a> строка <a class="el" href="_management_8cpp_source.html#l00252">252</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="ad4678dc6724b6af1054146ef87480c8e" name="ad4678dc6724b6af1054146ef87480c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4678dc6724b6af1054146ef87480c8e">&#9670;&#160;</a></span>budget_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_budget.html">Budget</a> ocean::Oceanarium::budget_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Бюджет. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00383">383</a></p>
+
+</div>
+</div>
+<a id="a7667d2042463570aea11cd8372806e97" name="a7667d2042463570aea11cd8372806e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7667d2042463570aea11cd8372806e97">&#9670;&#160;</a></span>city_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Oceanarium::city_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Город. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00374">374</a></p>
+
+</div>
+</div>
+<a id="a35f0459eabeaf7ba93695b55a8c84f48" name="a35f0459eabeaf7ba93695b55a8c84f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f0459eabeaf7ba93695b55a8c84f48">&#9670;&#160;</a></span>employees_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classocean_1_1_employee.html">Employee</a>&gt; &gt; ocean::Oceanarium::employees_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сотрудники (во владении). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00376">376</a></p>
+
+</div>
+</div>
+<a id="a918b27d63f80b0891643fdbba5d16e25" name="a918b27d63f80b0891643fdbba5d16e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918b27d63f80b0891643fdbba5d16e25">&#9670;&#160;</a></span>exhibits_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classocean_1_1_exhibit.html">Exhibit</a>&gt; ocean::Oceanarium::exhibits_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Экспозиции. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00377">377</a></p>
+
+</div>
+</div>
+<a id="a5b9bc1d27cc56ab51ea2385e20e1bce1" name="a5b9bc1d27cc56ab51ea2385e20e1bce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b9bc1d27cc56ab51ea2385e20e1bce1">&#9670;&#160;</a></span>feeding_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_feeding_schedule.html">FeedingSchedule</a> ocean::Oceanarium::feeding_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расписание кормлений. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00382">382</a></p>
+
+</div>
+</div>
+<a id="abe8b6f5170e9f373297fa8a6fb583e86" name="abe8b6f5170e9f373297fa8a6fb583e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8b6f5170e9f373297fa8a6fb583e86">&#9670;&#160;</a></span>foodStorage_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_food_storage.html">FoodStorage</a> ocean::Oceanarium::foodStorage_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Склад корма. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00379">379</a></p>
+
+</div>
+</div>
+<a id="a6d01f71b20d72df1861f091aafd3dabf" name="a6d01f71b20d72df1861f091aafd3dabf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d01f71b20d72df1861f091aafd3dabf">&#9670;&#160;</a></span>maintenance_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_maintenance_log.html">MaintenanceLog</a> ocean::Oceanarium::maintenance_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Журнал обслуживания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00380">380</a></p>
+
+</div>
+</div>
+<a id="ad6fb9762d242e3dfe344e30833657b0c" name="ad6fb9762d242e3dfe344e30833657b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fb9762d242e3dfe344e30833657b0c">&#9670;&#160;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Oceanarium::name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00373">373</a></p>
+
+</div>
+</div>
+<a id="a1f1b6c8b12d7cca192b2f0f769aba66a" name="a1f1b6c8b12d7cca192b2f0f769aba66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1b6c8b12d7cca192b2f0f769aba66a">&#9670;&#160;</a></span>payroll_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_payroll.html">Payroll</a> ocean::Oceanarium::payroll_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расчёт зарплаты. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00384">384</a></p>
+
+</div>
+</div>
+<a id="a7410d447eedb3b318d7aafd14b03f74f" name="a7410d447eedb3b318d7aafd14b03f74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7410d447eedb3b318d7aafd14b03f74f">&#9670;&#160;</a></span>schedule_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_staff_schedule.html">StaffSchedule</a> ocean::Oceanarium::schedule_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расписание смен. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00381">381</a></p>
+
+</div>
+</div>
+<a id="adf0713db5a4bcfca9876ff0f1822f493" name="adf0713db5a4bcfca9876ff0f1822f493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf0713db5a4bcfca9876ff0f1822f493">&#9670;&#160;</a></span>tanks_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classocean_1_1_tank.html">Tank</a>&gt; &gt; ocean::Oceanarium::tanks_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Аквариумы (во владении). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00375">375</a></p>
+
+</div>
+</div>
+<a id="a93f9a36243b358fe080994dd1d0fe8f8" name="a93f9a36243b358fe080994dd1d0fe8f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f9a36243b358fe080994dd1d0fe8f8">&#9670;&#160;</a></span>ticketOffice_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_ticket_office.html">TicketOffice</a> ocean::Oceanarium::ticketOffice_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Билетная касса. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_management_8h_source.html">Management.h</a> строка <a class="el" href="_management_8h_source.html#l00378">378</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_management_8h_source.html">Management.h</a></li>
+<li>src/<a class="el" href="_management_8cpp_source.html">Management.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_oceanarium.html">Oceanarium</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

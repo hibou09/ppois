@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Исходный файл include/Health.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_health_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Health.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_health_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_common_8h.html">Common.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceocean.html">ocean</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="classocean_1_1_animal.html">Animal</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html">   20</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_medical_entry.html#a7d6f090421283401744a39da41b6dc79">MedicalEntry</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="classocean_1_1_medical_entry.html#a7d6f090421283401744a39da41b6dc79">MedicalEntry</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; <a class="code hl_function" href="classocean_1_1_medical_entry.html#ad81bc3db6f68f83a08a997653413b8d6">date</a>, std::string <a class="code hl_function" href="classocean_1_1_medical_entry.html#a79e9a04ad4376674f7ae6abfeda7f974">diagnosis</a>, std::string <a class="code hl_function" href="classocean_1_1_medical_entry.html#ad3478f2173037f023e5d761395dd6be7">treatment</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                 std::string <a class="code hl_function" href="classocean_1_1_medical_entry.html#ab77fa6864a06aec41e3d074abde08b60">vetName</a>, <span class="keywordtype">int</span> <a class="code hl_function" href="classocean_1_1_medical_entry.html#ae0b56697dfc220052c0e867ee2e0d029">severity</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#ad81bc3db6f68f83a08a997653413b8d6">   35</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; <a class="code hl_function" href="classocean_1_1_medical_entry.html#ad81bc3db6f68f83a08a997653413b8d6">date</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_medical_entry.html#a5f619ad325396ec0a23e5c331224f1b8">date_</a>; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#a79e9a04ad4376674f7ae6abfeda7f974">   37</a></span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classocean_1_1_medical_entry.html#a79e9a04ad4376674f7ae6abfeda7f974">diagnosis</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_medical_entry.html#afdb4c3d101c9773832abe86652b3b7ef">diagnosis_</a>; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#ad3478f2173037f023e5d761395dd6be7">   39</a></span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classocean_1_1_medical_entry.html#ad3478f2173037f023e5d761395dd6be7">treatment</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_medical_entry.html#a3e2fd0199ca5b1cae1227064e669863f">treatment_</a>; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#ab77fa6864a06aec41e3d074abde08b60">   41</a></span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classocean_1_1_medical_entry.html#ab77fa6864a06aec41e3d074abde08b60">vetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_medical_entry.html#ab506b5dd58a5502fea2099bac26d7197">vetName_</a>; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#ae0b56697dfc220052c0e867ee2e0d029">   43</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classocean_1_1_medical_entry.html#ae0b56697dfc220052c0e867ee2e0d029">severity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_medical_entry.html#aa6fd90b7fedbd36c645100a70cbadf33">severity_</a>; }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_medical_entry.html#a7739ffb9cd397484f7d67b8fa1c55301">isSerious</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    std::string <a class="code hl_function" href="classocean_1_1_medical_entry.html#af5289233df8cf49b620740c2e3623bf4">summary</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#a5f619ad325396ec0a23e5c331224f1b8">   57</a></span>    <a class="code hl_class" href="classocean_1_1_date.html">Date</a> <a class="code hl_variable" href="classocean_1_1_medical_entry.html#a5f619ad325396ec0a23e5c331224f1b8">date_</a>;             </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#afdb4c3d101c9773832abe86652b3b7ef">   58</a></span>    std::string <a class="code hl_variable" href="classocean_1_1_medical_entry.html#afdb4c3d101c9773832abe86652b3b7ef">diagnosis_</a>; </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#a3e2fd0199ca5b1cae1227064e669863f">   59</a></span>    std::string <a class="code hl_variable" href="classocean_1_1_medical_entry.html#a3e2fd0199ca5b1cae1227064e669863f">treatment_</a>; </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#ab506b5dd58a5502fea2099bac26d7197">   60</a></span>    std::string <a class="code hl_variable" href="classocean_1_1_medical_entry.html#ab506b5dd58a5502fea2099bac26d7197">vetName_</a>;   </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classocean_1_1_medical_entry.html#aa6fd90b7fedbd36c645100a70cbadf33">   61</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classocean_1_1_medical_entry.html#aa6fd90b7fedbd36c645100a70cbadf33">severity_</a>;          </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="};">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html">   68</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_health_record.html#aa074f6d784c23ccc8bba90988250d23f">HealthRecord</a> {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_function" href="classocean_1_1_health_record.html#aa074f6d784c23ccc8bba90988250d23f">HealthRecord</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html#a06df01adab532a465ed2898da876a2b8">   74</a></span>    <span class="keyword">const</span> std::vector&lt;MedicalEntry&gt;&amp; <a class="code hl_function" href="classocean_1_1_health_record.html#a06df01adab532a465ed2898da876a2b8">entries</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_health_record.html#aebf2d9a644900f3f03ccab646c8bb832">entries_</a>; }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html#acc8afd360b612792837f8b1972f9e991">   76</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_health_record.html#acc8afd360b612792837f8b1972f9e991">isVaccinated</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_health_record.html#a2cc48ec1f48dbf18ac0794d26eb743ec">vaccinated_</a>; }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html#af7fe29bbc8e363eb03010312347aa46d">   78</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_health_record.html#af7fe29bbc8e363eb03010312347aa46d">isQuarantined</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_health_record.html#a57145ebc2b8ef84d59095343590e5bd2">quarantined_</a>; }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html#afd890e2b85f6e23555423e0d08e0119e">   80</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classocean_1_1_health_record.html#afd890e2b85f6e23555423e0d08e0119e">setQuarantined</a>(<span class="keywordtype">bool</span> value) { <a class="code hl_variable" href="classocean_1_1_health_record.html#a57145ebc2b8ef84d59095343590e5bd2">quarantined_</a> = value; }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classocean_1_1_health_record.html#a96701de17d8030a659da3cd897ea586c">addEntry</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_medical_entry.html">MedicalEntry</a>&amp; entry);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_health_record.html#ab5417f997456d937bdb16ab639a73d41">needsCheckup</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    std::string <a class="code hl_function" href="classocean_1_1_health_record.html#a8f992e74c187747061e8bff8f9cc9db2">lastDiagnosis</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_health_record.html#adc5b570362d7d834280462334e83e509">hasSeriousCondition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classocean_1_1_health_record.html#abea86791cfdc81bfbd429625b58cd68d">vaccinate</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; date);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_health_record.html#a903b8cd361664358bac26856144a6691">vaccinationExpired</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html#aebf2d9a644900f3f03ccab646c8bb832">  117</a></span>    std::vector&lt;MedicalEntry&gt; <a class="code hl_variable" href="classocean_1_1_health_record.html#aebf2d9a644900f3f03ccab646c8bb832">entries_</a>;      </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html#a2cc48ec1f48dbf18ac0794d26eb743ec">  118</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classocean_1_1_health_record.html#a2cc48ec1f48dbf18ac0794d26eb743ec">vaccinated_</a>;                        </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html#a57145ebc2b8ef84d59095343590e5bd2">  119</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classocean_1_1_health_record.html#a57145ebc2b8ef84d59095343590e5bd2">quarantined_</a>;                       </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classocean_1_1_health_record.html#a8bfbfa4ed5078389c07ee82c0a400b8f">  120</a></span>    std::optional&lt;Date&gt; <a class="code hl_variable" href="classocean_1_1_health_record.html#a8bfbfa4ed5078389c07ee82c0a400b8f">vaccinationDate_</a>;    </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span></div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="};">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classocean_1_1_medication.html">  126</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_medication.html#a0a48b03584b64429ddd8f42290088e38">Medication</a> {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_function" href="classocean_1_1_medication.html#a0a48b03584b64429ddd8f42290088e38">Medication</a>(std::string <a class="code hl_function" href="classocean_1_1_medication.html#a3588d2c2ed93e1fd725980a421f96711">name</a>, <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_medication.html#a7c4911835a83ce336ab8e776abdd0633">dosageMgPerKg</a>, <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_medication.html#af6ed75deea98125a503047b3e2b3a8d1">stockMg</a>, <span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; expiry);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="classocean_1_1_medication.html#a3588d2c2ed93e1fd725980a421f96711">  140</a></span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classocean_1_1_medication.html#a3588d2c2ed93e1fd725980a421f96711">name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_medication.html#ace63463ed994f5f9d6eb5e3381302f66">name_</a>; }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classocean_1_1_medication.html#af6ed75deea98125a503047b3e2b3a8d1">  142</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_medication.html#af6ed75deea98125a503047b3e2b3a8d1">stockMg</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_medication.html#abc60dd628a926e1f4b37886b72229f56">stockMg_</a>; }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classocean_1_1_medication.html#a7c4911835a83ce336ab8e776abdd0633">  144</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_medication.html#a7c4911835a83ce336ab8e776abdd0633">dosageMgPerKg</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classocean_1_1_medication.html#ace5ae8cfe11b7b75c6ea42cfe506eaad">dosageMgPerKg_</a>; }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_medication.html#a39a7a254f6c676c99842fafcdab77edf">doseFor</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_animal.html">Animal</a>&amp; animal) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classocean_1_1_medication.html#a6c9c4d9690529efeaf0eadb5722c636c">dispense</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_animal.html">Animal</a>&amp; animal, <span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classocean_1_1_medication.html#aba5141f930d7e894267803896c490f38">restock</a>(<span class="keywordtype">double</span> mg);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classocean_1_1_medication.html#a835dd6643601d9e81fc10f3027e7bd0e">isExpired</a>(<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a>&amp; today) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="classocean_1_1_medication.html#ace63463ed994f5f9d6eb5e3381302f66">  175</a></span>    std::string <a class="code hl_variable" href="classocean_1_1_medication.html#ace63463ed994f5f9d6eb5e3381302f66">name_</a>;       </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classocean_1_1_medication.html#ace5ae8cfe11b7b75c6ea42cfe506eaad">  176</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classocean_1_1_medication.html#ace5ae8cfe11b7b75c6ea42cfe506eaad">dosageMgPerKg_</a>;   </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classocean_1_1_medication.html#abc60dd628a926e1f4b37886b72229f56">  177</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classocean_1_1_medication.html#abc60dd628a926e1f4b37886b72229f56">stockMg_</a>;         </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classocean_1_1_medication.html#a5e5cfcc6d1fd2b34dd0c79cf7ecb5b9c">  178</a></span>    <a class="code hl_class" href="classocean_1_1_date.html">Date</a> <a class="code hl_variable" href="classocean_1_1_medication.html#a5e5cfcc6d1fd2b34dd0c79cf7ecb5b9c">expiry_</a>;            </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>};</div>
+</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}  <span class="comment">// namespace ocean</span></div>
+<div class="ttc" id="a_common_8h_html"><div class="ttname"><a href="_common_8h.html">Common.h</a></div><div class="ttdoc">Базовые value-классы: дата, временной интервал, расположение.</div></div>
+<div class="ttc" id="aclassocean_1_1_animal_html"><div class="ttname"><a href="classocean_1_1_animal.html">ocean::Animal</a></div><div class="ttdoc">Абстрактный обитатель океанариума.</div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00095">Animals.h:95</a></div></div>
+<div class="ttc" id="aclassocean_1_1_date_html"><div class="ttname"><a href="classocean_1_1_date.html">ocean::Date</a></div><div class="ttdoc">Календарная дата (григорианский календарь).</div><div class="ttdef"><b>Определения</b> <a href="_common_8h_source.html#l00015">Common.h:15</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_a06df01adab532a465ed2898da876a2b8"><div class="ttname"><a href="classocean_1_1_health_record.html#a06df01adab532a465ed2898da876a2b8">ocean::HealthRecord::entries</a></div><div class="ttdeci">const std::vector&lt; MedicalEntry &gt; &amp; entries() const</div><div class="ttdoc">Все записи карты в хронологическом порядке.</div><div class="ttdef"><b>Определения</b> <a href="#l00074">Health.h:74</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_a2cc48ec1f48dbf18ac0794d26eb743ec"><div class="ttname"><a href="classocean_1_1_health_record.html#a2cc48ec1f48dbf18ac0794d26eb743ec">ocean::HealthRecord::vaccinated_</a></div><div class="ttdeci">bool vaccinated_</div><div class="ttdoc">Признак вакцинации.</div><div class="ttdef"><b>Определения</b> <a href="#l00118">Health.h:118</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_a57145ebc2b8ef84d59095343590e5bd2"><div class="ttname"><a href="classocean_1_1_health_record.html#a57145ebc2b8ef84d59095343590e5bd2">ocean::HealthRecord::quarantined_</a></div><div class="ttdeci">bool quarantined_</div><div class="ttdoc">Признак карантина.</div><div class="ttdef"><b>Определения</b> <a href="#l00119">Health.h:119</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_a8bfbfa4ed5078389c07ee82c0a400b8f"><div class="ttname"><a href="classocean_1_1_health_record.html#a8bfbfa4ed5078389c07ee82c0a400b8f">ocean::HealthRecord::vaccinationDate_</a></div><div class="ttdeci">std::optional&lt; Date &gt; vaccinationDate_</div><div class="ttdoc">Дата последней вакцинации.</div><div class="ttdef"><b>Определения</b> <a href="#l00120">Health.h:120</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_a8f992e74c187747061e8bff8f9cc9db2"><div class="ttname"><a href="classocean_1_1_health_record.html#a8f992e74c187747061e8bff8f9cc9db2">ocean::HealthRecord::lastDiagnosis</a></div><div class="ttdeci">std::string lastDiagnosis() const</div><div class="ttdoc">Последний диагноз.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00051">Health.cpp:51</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_a903b8cd361664358bac26856144a6691"><div class="ttname"><a href="classocean_1_1_health_record.html#a903b8cd361664358bac26856144a6691">ocean::HealthRecord::vaccinationExpired</a></div><div class="ttdeci">bool vaccinationExpired(const Date &amp;today) const</div><div class="ttdoc">Истёк ли срок действия вакцинации.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00064">Health.cpp:64</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_a96701de17d8030a659da3cd897ea586c"><div class="ttname"><a href="classocean_1_1_health_record.html#a96701de17d8030a659da3cd897ea586c">ocean::HealthRecord::addEntry</a></div><div class="ttdeci">void addEntry(const MedicalEntry &amp;entry)</div><div class="ttdoc">Добавляет запись в карту.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00037">Health.cpp:37</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_aa074f6d784c23ccc8bba90988250d23f"><div class="ttname"><a href="classocean_1_1_health_record.html#aa074f6d784c23ccc8bba90988250d23f">ocean::HealthRecord::HealthRecord</a></div><div class="ttdeci">HealthRecord()</div><div class="ttdoc">Создаёт пустую карту: без записей, не вакцинирована, не на карантине.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00035">Health.cpp:35</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_ab5417f997456d937bdb16ab639a73d41"><div class="ttname"><a href="classocean_1_1_health_record.html#ab5417f997456d937bdb16ab639a73d41">ocean::HealthRecord::needsCheckup</a></div><div class="ttdeci">bool needsCheckup(const Date &amp;today) const</div><div class="ttdoc">Осмотр нужен, если его не было или прошло более 180 дней.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00044">Health.cpp:44</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_abea86791cfdc81bfbd429625b58cd68d"><div class="ttname"><a href="classocean_1_1_health_record.html#abea86791cfdc81bfbd429625b58cd68d">ocean::HealthRecord::vaccinate</a></div><div class="ttdeci">void vaccinate(const Date &amp;date)</div><div class="ttdoc">Фиксирует вакцинацию.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00059">Health.cpp:59</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_acc8afd360b612792837f8b1972f9e991"><div class="ttname"><a href="classocean_1_1_health_record.html#acc8afd360b612792837f8b1972f9e991">ocean::HealthRecord::isVaccinated</a></div><div class="ttdeci">bool isVaccinated() const</div><div class="ttdoc">Вакцинировано ли животное.</div><div class="ttdef"><b>Определения</b> <a href="#l00076">Health.h:76</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_adc5b570362d7d834280462334e83e509"><div class="ttname"><a href="classocean_1_1_health_record.html#adc5b570362d7d834280462334e83e509">ocean::HealthRecord::hasSeriousCondition</a></div><div class="ttdeci">bool hasSeriousCondition() const</div><div class="ttdoc">Есть ли серьёзное состояние.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00055">Health.cpp:55</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_aebf2d9a644900f3f03ccab646c8bb832"><div class="ttname"><a href="classocean_1_1_health_record.html#aebf2d9a644900f3f03ccab646c8bb832">ocean::HealthRecord::entries_</a></div><div class="ttdeci">std::vector&lt; MedicalEntry &gt; entries_</div><div class="ttdoc">Записи карты.</div><div class="ttdef"><b>Определения</b> <a href="#l00117">Health.h:117</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_af7fe29bbc8e363eb03010312347aa46d"><div class="ttname"><a href="classocean_1_1_health_record.html#af7fe29bbc8e363eb03010312347aa46d">ocean::HealthRecord::isQuarantined</a></div><div class="ttdeci">bool isQuarantined() const</div><div class="ttdoc">Находится ли животное на карантине.</div><div class="ttdef"><b>Определения</b> <a href="#l00078">Health.h:78</a></div></div>
+<div class="ttc" id="aclassocean_1_1_health_record_html_afd890e2b85f6e23555423e0d08e0119e"><div class="ttname"><a href="classocean_1_1_health_record.html#afd890e2b85f6e23555423e0d08e0119e">ocean::HealthRecord::setQuarantined</a></div><div class="ttdeci">void setQuarantined(bool value)</div><div class="ttdoc">Устанавливает или снимает признак карантина.</div><div class="ttdef"><b>Определения</b> <a href="#l00080">Health.h:80</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html"><div class="ttname"><a href="classocean_1_1_medical_entry.html">ocean::MedicalEntry</a></div><div class="ttdoc">Одна запись в медицинской карте.</div><div class="ttdef"><b>Определения</b> <a href="#l00020">Health.h:20</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_a3e2fd0199ca5b1cae1227064e669863f"><div class="ttname"><a href="classocean_1_1_medical_entry.html#a3e2fd0199ca5b1cae1227064e669863f">ocean::MedicalEntry::treatment_</a></div><div class="ttdeci">std::string treatment_</div><div class="ttdoc">Лечение.</div><div class="ttdef"><b>Определения</b> <a href="#l00059">Health.h:59</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_a5f619ad325396ec0a23e5c331224f1b8"><div class="ttname"><a href="classocean_1_1_medical_entry.html#a5f619ad325396ec0a23e5c331224f1b8">ocean::MedicalEntry::date_</a></div><div class="ttdeci">Date date_</div><div class="ttdoc">Дата записи.</div><div class="ttdef"><b>Определения</b> <a href="#l00057">Health.h:57</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_a7739ffb9cd397484f7d67b8fa1c55301"><div class="ttname"><a href="classocean_1_1_medical_entry.html#a7739ffb9cd397484f7d67b8fa1c55301">ocean::MedicalEntry::isSerious</a></div><div class="ttdeci">bool isSerious() const</div><div class="ttdoc">Серьёзное ли состояние.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00024">Health.cpp:24</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_a79e9a04ad4376674f7ae6abfeda7f974"><div class="ttname"><a href="classocean_1_1_medical_entry.html#a79e9a04ad4376674f7ae6abfeda7f974">ocean::MedicalEntry::diagnosis</a></div><div class="ttdeci">const std::string &amp; diagnosis() const</div><div class="ttdoc">Диагноз.</div><div class="ttdef"><b>Определения</b> <a href="#l00037">Health.h:37</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_a7d6f090421283401744a39da41b6dc79"><div class="ttname"><a href="classocean_1_1_medical_entry.html#a7d6f090421283401744a39da41b6dc79">ocean::MedicalEntry::MedicalEntry</a></div><div class="ttdeci">MedicalEntry(const Date &amp;date, std::string diagnosis, std::string treatment, std::string vetName, int severity)</div><div class="ttdoc">Создаёт запись о диагнозе и лечении.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00012">Health.cpp:12</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_aa6fd90b7fedbd36c645100a70cbadf33"><div class="ttname"><a href="classocean_1_1_medical_entry.html#aa6fd90b7fedbd36c645100a70cbadf33">ocean::MedicalEntry::severity_</a></div><div class="ttdeci">int severity_</div><div class="ttdoc">Тяжесть состояния (1..5).</div><div class="ttdef"><b>Определения</b> <a href="#l00061">Health.h:61</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_ab506b5dd58a5502fea2099bac26d7197"><div class="ttname"><a href="classocean_1_1_medical_entry.html#ab506b5dd58a5502fea2099bac26d7197">ocean::MedicalEntry::vetName_</a></div><div class="ttdeci">std::string vetName_</div><div class="ttdoc">Имя ветеринара.</div><div class="ttdef"><b>Определения</b> <a href="#l00060">Health.h:60</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_ab77fa6864a06aec41e3d074abde08b60"><div class="ttname"><a href="classocean_1_1_medical_entry.html#ab77fa6864a06aec41e3d074abde08b60">ocean::MedicalEntry::vetName</a></div><div class="ttdeci">const std::string &amp; vetName() const</div><div class="ttdoc">Имя ветеринара.</div><div class="ttdef"><b>Определения</b> <a href="#l00041">Health.h:41</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_ad3478f2173037f023e5d761395dd6be7"><div class="ttname"><a href="classocean_1_1_medical_entry.html#ad3478f2173037f023e5d761395dd6be7">ocean::MedicalEntry::treatment</a></div><div class="ttdeci">const std::string &amp; treatment() const</div><div class="ttdoc">Назначенное лечение.</div><div class="ttdef"><b>Определения</b> <a href="#l00039">Health.h:39</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_ad81bc3db6f68f83a08a997653413b8d6"><div class="ttname"><a href="classocean_1_1_medical_entry.html#ad81bc3db6f68f83a08a997653413b8d6">ocean::MedicalEntry::date</a></div><div class="ttdeci">const Date &amp; date() const</div><div class="ttdoc">Дата записи.</div><div class="ttdef"><b>Определения</b> <a href="#l00035">Health.h:35</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_ae0b56697dfc220052c0e867ee2e0d029"><div class="ttname"><a href="classocean_1_1_medical_entry.html#ae0b56697dfc220052c0e867ee2e0d029">ocean::MedicalEntry::severity</a></div><div class="ttdeci">int severity() const</div><div class="ttdoc">Тяжесть состояния (1..5).</div><div class="ttdef"><b>Определения</b> <a href="#l00043">Health.h:43</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_af5289233df8cf49b620740c2e3623bf4"><div class="ttname"><a href="classocean_1_1_medical_entry.html#af5289233df8cf49b620740c2e3623bf4">ocean::MedicalEntry::summary</a></div><div class="ttdeci">std::string summary() const</div><div class="ttdoc">Краткое текстовое описание записи.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00028">Health.cpp:28</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medical_entry_html_afdb4c3d101c9773832abe86652b3b7ef"><div class="ttname"><a href="classocean_1_1_medical_entry.html#afdb4c3d101c9773832abe86652b3b7ef">ocean::MedicalEntry::diagnosis_</a></div><div class="ttdeci">std::string diagnosis_</div><div class="ttdoc">Диагноз.</div><div class="ttdef"><b>Определения</b> <a href="#l00058">Health.h:58</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_a0a48b03584b64429ddd8f42290088e38"><div class="ttname"><a href="classocean_1_1_medication.html#a0a48b03584b64429ddd8f42290088e38">ocean::Medication::Medication</a></div><div class="ttdeci">Medication(std::string name, double dosageMgPerKg, double stockMg, const Date &amp;expiry)</div><div class="ttdoc">Создаёт лекарство.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00070">Health.cpp:70</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_a3588d2c2ed93e1fd725980a421f96711"><div class="ttname"><a href="classocean_1_1_medication.html#a3588d2c2ed93e1fd725980a421f96711">ocean::Medication::name</a></div><div class="ttdeci">const std::string &amp; name() const</div><div class="ttdoc">Название лекарства.</div><div class="ttdef"><b>Определения</b> <a href="#l00140">Health.h:140</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_a39a7a254f6c676c99842fafcdab77edf"><div class="ttname"><a href="classocean_1_1_medication.html#a39a7a254f6c676c99842fafcdab77edf">ocean::Medication::doseFor</a></div><div class="ttdeci">double doseFor(const Animal &amp;animal) const</div><div class="ttdoc">Рассчитывает дозу для животного.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00077">Health.cpp:77</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_a5e5cfcc6d1fd2b34dd0c79cf7ecb5b9c"><div class="ttname"><a href="classocean_1_1_medication.html#a5e5cfcc6d1fd2b34dd0c79cf7ecb5b9c">ocean::Medication::expiry_</a></div><div class="ttdeci">Date expiry_</div><div class="ttdoc">Срок годности.</div><div class="ttdef"><b>Определения</b> <a href="#l00178">Health.h:178</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_a6c9c4d9690529efeaf0eadb5722c636c"><div class="ttname"><a href="classocean_1_1_medication.html#a6c9c4d9690529efeaf0eadb5722c636c">ocean::Medication::dispense</a></div><div class="ttdeci">double dispense(const Animal &amp;animal, const Date &amp;today)</div><div class="ttdoc">Выдаёт дозу для животного.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00081">Health.cpp:81</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_a7c4911835a83ce336ab8e776abdd0633"><div class="ttname"><a href="classocean_1_1_medication.html#a7c4911835a83ce336ab8e776abdd0633">ocean::Medication::dosageMgPerKg</a></div><div class="ttdeci">double dosageMgPerKg() const</div><div class="ttdoc">Дозировка, мг на кг массы.</div><div class="ttdef"><b>Определения</b> <a href="#l00144">Health.h:144</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_a835dd6643601d9e81fc10f3027e7bd0e"><div class="ttname"><a href="classocean_1_1_medication.html#a835dd6643601d9e81fc10f3027e7bd0e">ocean::Medication::isExpired</a></div><div class="ttdeci">bool isExpired(const Date &amp;today) const</div><div class="ttdoc">Просрочено ли лекарство.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00100">Health.cpp:100</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_aba5141f930d7e894267803896c490f38"><div class="ttname"><a href="classocean_1_1_medication.html#aba5141f930d7e894267803896c490f38">ocean::Medication::restock</a></div><div class="ttdeci">void restock(double mg)</div><div class="ttdoc">Пополняет запас.</div><div class="ttdef"><b>Определения</b> <a href="_health_8cpp_source.html#l00093">Health.cpp:93</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_abc60dd628a926e1f4b37886b72229f56"><div class="ttname"><a href="classocean_1_1_medication.html#abc60dd628a926e1f4b37886b72229f56">ocean::Medication::stockMg_</a></div><div class="ttdeci">double stockMg_</div><div class="ttdoc">Остаток на складе, мг.</div><div class="ttdef"><b>Определения</b> <a href="#l00177">Health.h:177</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_ace5ae8cfe11b7b75c6ea42cfe506eaad"><div class="ttname"><a href="classocean_1_1_medication.html#ace5ae8cfe11b7b75c6ea42cfe506eaad">ocean::Medication::dosageMgPerKg_</a></div><div class="ttdeci">double dosageMgPerKg_</div><div class="ttdoc">Дозировка, мг/кг.</div><div class="ttdef"><b>Определения</b> <a href="#l00176">Health.h:176</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_ace63463ed994f5f9d6eb5e3381302f66"><div class="ttname"><a href="classocean_1_1_medication.html#ace63463ed994f5f9d6eb5e3381302f66">ocean::Medication::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdoc">Название.</div><div class="ttdef"><b>Определения</b> <a href="#l00175">Health.h:175</a></div></div>
+<div class="ttc" id="aclassocean_1_1_medication_html_af6ed75deea98125a503047b3e2b3a8d1"><div class="ttname"><a href="classocean_1_1_medication.html#af6ed75deea98125a503047b3e2b3a8d1">ocean::Medication::stockMg</a></div><div class="ttdeci">double stockMg() const</div><div class="ttdoc">Остаток на складе, мг.</div><div class="ttdef"><b>Определения</b> <a href="#l00142">Health.h:142</a></div></div>
+<div class="ttc" id="anamespaceocean_html"><div class="ttname"><a href="namespaceocean.html">ocean</a></div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00015">Animals.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="_health_8h.html">Health.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::OpenOceanTank</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_open_ocean_tank.html','','classocean_1_1_open_ocean_tank-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::OpenOceanTank</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Большой аквариум «Открытый океан» с подводным тоннелем.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_tanks_8h_source.html">Tanks.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ocean::OpenOceanTank:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_open_ocean_tank__inherit__graph.png" border="0" usemap="#aocean_1_1_open_ocean_tank_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<!-- MAP 0 -->
+</div>
+<div class="dynheader">
+Граф связей класса ocean::OpenOceanTank:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_open_ocean_tank__coll__graph.png" border="0" usemap="#aocean_1_1_open_ocean_tank_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 1 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4c32bca7b9bfaa0db525bcdde3da3312" id="r_a4c32bca7b9bfaa0db525bcdde3da3312"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4c32bca7b9bfaa0db525bcdde3da3312">OpenOceanTank</a> (int id, std::string name, double volumeLiters, <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> water, <a class="el" href="classocean_1_1_location.html">Location</a> location, int maxAnimals, double depthM, double tunnelLengthM)</td></tr>
+<tr class="memdesc:a4c32bca7b9bfaa0db525bcdde3da3312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт аквариум «Открытый океан».  <br /></td></tr>
+<tr class="memitem:aa1fb1c7a38c459f8158b70107fc0420f" id="r_aa1fb1c7a38c459f8158b70107fc0420f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aa1fb1c7a38c459f8158b70107fc0420f">depth</a> () const</td></tr>
+<tr class="memdesc:aa1fb1c7a38c459f8158b70107fc0420f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глубина, м.  <br /></td></tr>
+<tr class="memitem:a6c67a0e63ce6f16a5af1b19058f12970" id="r_a6c67a0e63ce6f16a5af1b19058f12970"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a6c67a0e63ce6f16a5af1b19058f12970">tunnelLength</a> () const</td></tr>
+<tr class="memdesc:a6c67a0e63ce6f16a5af1b19058f12970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина тоннеля, м.  <br /></td></tr>
+<tr class="memitem:a13ceded702573bfef60144de1a7a2f3e" id="r_a13ceded702573bfef60144de1a7a2f3e"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a13ceded702573bfef60144de1a7a2f3e">type</a> () const override</td></tr>
+<tr class="memdesc:a13ceded702573bfef60144de1a7a2f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название типа аквариума.  <br /></td></tr>
+<tr class="memitem:a8630cb07fdad6dbc6a5f03ccbe6cb6dd" id="r_a8630cb07fdad6dbc6a5f03ccbe6cb6dd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8630cb07fdad6dbc6a5f03ccbe6cb6dd">hasTunnel</a> () const</td></tr>
+<tr class="memdesc:a8630cb07fdad6dbc6a5f03ccbe6cb6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли подводный тоннель.  <br /></td></tr>
+<tr class="memitem:ac3eec84b8f826b44c06f82484e67712b" id="r_ac3eec84b8f826b44c06f82484e67712b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac3eec84b8f826b44c06f82484e67712b">tunnelVisitorCapacity</a> () const</td></tr>
+<tr class="memdesc:ac3eec84b8f826b44c06f82484e67712b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вместимость тоннеля по числу посетителей (3 человека на метр).  <br /></td></tr>
+<tr class="memitem:a66ce44e85cee6e5a072e70d1532c1171" id="r_a66ce44e85cee6e5a072e70d1532c1171"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a66ce44e85cee6e5a072e70d1532c1171">requiresDiverCertification</a> () const</td></tr>
+<tr class="memdesc:a66ce44e85cee6e5a072e70d1532c1171"><td class="mdescLeft">&#160;</td><td class="mdescRight">true, если глубина больше 5 м и для работы нужен сертифицированный водолаз.  <br /></td></tr>
+<tr class="memitem:af065e35cfa942a0ca4abc8a3132fc7a6" id="r_af065e35cfa942a0ca4abc8a3132fc7a6"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af065e35cfa942a0ca4abc8a3132fc7a6">predatorCount</a> () const</td></tr>
+<tr class="memdesc:af065e35cfa942a0ca4abc8a3132fc7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число хищников среди обитателей.  <br /></td></tr>
+<tr class="inherit_header pub_methods_classocean_1_1_tank"><td colspan="2">Открытые члены унаследованные от <a class="el" href="classocean_1_1_tank.html">ocean::Tank</a></td></tr>
+<tr class="memitem:aec504309332b0405a3df010db429ff2a pub_methods_classocean_1_1_tank" id="r_aec504309332b0405a3df010db429ff2a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#aec504309332b0405a3df010db429ff2a">Tank</a> (int id, std::string name, double volumeLiters, <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> water, <a class="el" href="classocean_1_1_location.html">Location</a> location, int maxAnimals)</td></tr>
+<tr class="memdesc:aec504309332b0405a3df010db429ff2a pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт аквариум.  <br /></td></tr>
+<tr class="memitem:ace7783e97f86d3add614652d790d5239 pub_methods_classocean_1_1_tank" id="r_ace7783e97f86d3add614652d790d5239"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ace7783e97f86d3add614652d790d5239">~Tank</a> ()=default</td></tr>
+<tr class="memdesc:ace7783e97f86d3add614652d790d5239 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виртуальный деструктор для безопасного удаления через указатель на базовый класс.  <br /></td></tr>
+<tr class="memitem:a2622d6241ea7292b03f22ce2cd5621c2 pub_methods_classocean_1_1_tank" id="r_a2622d6241ea7292b03f22ce2cd5621c2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a2622d6241ea7292b03f22ce2cd5621c2">id</a> () const</td></tr>
+<tr class="memdesc:a2622d6241ea7292b03f22ce2cd5621c2 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор аквариума.  <br /></td></tr>
+<tr class="memitem:a7feb99e63cbe363879163e11d43a17e8 pub_methods_classocean_1_1_tank" id="r_a7feb99e63cbe363879163e11d43a17e8"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a7feb99e63cbe363879163e11d43a17e8">name</a> () const</td></tr>
+<tr class="memdesc:a7feb99e63cbe363879163e11d43a17e8 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название аквариума.  <br /></td></tr>
+<tr class="memitem:a3fdd4ad04781811633ac9e582bf66bd3 pub_methods_classocean_1_1_tank" id="r_a3fdd4ad04781811633ac9e582bf66bd3"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a3fdd4ad04781811633ac9e582bf66bd3">volumeLiters</a> () const</td></tr>
+<tr class="memdesc:a3fdd4ad04781811633ac9e582bf66bd3 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объём в литрах.  <br /></td></tr>
+<tr class="memitem:ad91497066a44451d483ea0b39a8676f0 pub_methods_classocean_1_1_tank" id="r_ad91497066a44451d483ea0b39a8676f0"><td class="memItemLeft"><a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ad91497066a44451d483ea0b39a8676f0">water</a> ()</td></tr>
+<tr class="memdesc:ad91497066a44451d483ea0b39a8676f0 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры воды (изменяемая ссылка).  <br /></td></tr>
+<tr class="memitem:a77bc36ec21a5310c480b76e9c4b795aa pub_methods_classocean_1_1_tank" id="r_a77bc36ec21a5310c480b76e9c4b795aa"><td class="memItemLeft">const <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a77bc36ec21a5310c480b76e9c4b795aa">water</a> () const</td></tr>
+<tr class="memdesc:a77bc36ec21a5310c480b76e9c4b795aa pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры воды (только чтение).  <br /></td></tr>
+<tr class="memitem:a6663c8ef8b627cfcdedf11d68d1eefcc pub_methods_classocean_1_1_tank" id="r_a6663c8ef8b627cfcdedf11d68d1eefcc"><td class="memItemLeft">const <a class="el" href="classocean_1_1_location.html">Location</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a6663c8ef8b627cfcdedf11d68d1eefcc">location</a> () const</td></tr>
+<tr class="memdesc:a6663c8ef8b627cfcdedf11d68d1eefcc pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расположение аквариума.  <br /></td></tr>
+<tr class="memitem:acb60d77f39f59802680054f07ff24a7c pub_methods_classocean_1_1_tank" id="r_acb60d77f39f59802680054f07ff24a7c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#acb60d77f39f59802680054f07ff24a7c">maxAnimals</a> () const</td></tr>
+<tr class="memdesc:acb60d77f39f59802680054f07ff24a7c pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное число обитателей.  <br /></td></tr>
+<tr class="memitem:a86ddd74ee19894b3c854aa62a38dd01d pub_methods_classocean_1_1_tank" id="r_a86ddd74ee19894b3c854aa62a38dd01d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a86ddd74ee19894b3c854aa62a38dd01d">isOpen</a> () const</td></tr>
+<tr class="memdesc:a86ddd74ee19894b3c854aa62a38dd01d pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыт ли аквариум для посетителей.  <br /></td></tr>
+<tr class="memitem:a00cca556447aa166c753e9f8947f3f0c pub_methods_classocean_1_1_tank" id="r_a00cca556447aa166c753e9f8947f3f0c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a00cca556447aa166c753e9f8947f3f0c">setOpen</a> (bool open)</td></tr>
+<tr class="memdesc:a00cca556447aa166c753e9f8947f3f0c pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открывает или закрывает аквариум для посетителей.  <br /></td></tr>
+<tr class="memitem:ad2a6d8d32dce3697106d56c5a4a8130b pub_methods_classocean_1_1_tank" id="r_ad2a6d8d32dce3697106d56c5a4a8130b"><td class="memItemLeft"><a class="el" href="classocean_1_1_filtration_system.html">FiltrationSystem</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ad2a6d8d32dce3697106d56c5a4a8130b">filtration</a> ()</td></tr>
+<tr class="memdesc:ad2a6d8d32dce3697106d56c5a4a8130b pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Система фильтрации аквариума.  <br /></td></tr>
+<tr class="memitem:a74dd345c52a8cb4c7033eadeaef8d9f5 pub_methods_classocean_1_1_tank" id="r_a74dd345c52a8cb4c7033eadeaef8d9f5"><td class="memItemLeft"><a class="el" href="classocean_1_1_heating_system.html">HeatingSystem</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a74dd345c52a8cb4c7033eadeaef8d9f5">heating</a> ()</td></tr>
+<tr class="memdesc:a74dd345c52a8cb4c7033eadeaef8d9f5 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Система нагрева аквариума.  <br /></td></tr>
+<tr class="memitem:ad640051cc9efdd9914963b4efdd49973 pub_methods_classocean_1_1_tank" id="r_ad640051cc9efdd9914963b4efdd49973"><td class="memItemLeft">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classocean_1_1_animal.html">Animal</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ad640051cc9efdd9914963b4efdd49973">animals</a> () const</td></tr>
+<tr class="memdesc:ad640051cc9efdd9914963b4efdd49973 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список обитателей.  <br /></td></tr>
+<tr class="memitem:ae99b797a1bf28014d3135f376e7a8601 pub_methods_classocean_1_1_tank" id="r_ae99b797a1bf28014d3135f376e7a8601"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ae99b797a1bf28014d3135f376e7a8601">canHost</a> (const <a class="el" href="classocean_1_1_animal.html">Animal</a> &amp;animal) const</td></tr>
+<tr class="memdesc:ae99b797a1bf28014d3135f376e7a8601 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ограничения конкретного типа аквариума на обитателей.  <br /></td></tr>
+<tr class="memitem:a38c344e30ae096a81184558f7b2a43b8 pub_methods_classocean_1_1_tank" id="r_a38c344e30ae096a81184558f7b2a43b8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a38c344e30ae096a81184558f7b2a43b8">addAnimal</a> (std::shared_ptr&lt; <a class="el" href="classocean_1_1_animal.html">Animal</a> &gt; animal)</td></tr>
+<tr class="memdesc:a38c344e30ae096a81184558f7b2a43b8 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заселяет животное; проверяет вместимость, воду и совместимость.  <br /></td></tr>
+<tr class="memitem:a4800ad1e1d0ca2533363c5b9fbb5e24a pub_methods_classocean_1_1_tank" id="r_a4800ad1e1d0ca2533363c5b9fbb5e24a"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="classocean_1_1_animal.html">Animal</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a4800ad1e1d0ca2533363c5b9fbb5e24a">removeAnimal</a> (int animalId)</td></tr>
+<tr class="memdesc:a4800ad1e1d0ca2533363c5b9fbb5e24a pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Убирает животное из аквариума.  <br /></td></tr>
+<tr class="memitem:a004f05d807c5d889c62440561ad00e01 pub_methods_classocean_1_1_tank" id="r_a004f05d807c5d889c62440561ad00e01"><td class="memItemLeft"><a class="el" href="classocean_1_1_animal.html">Animal</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a004f05d807c5d889c62440561ad00e01">findAnimal</a> (int animalId) const</td></tr>
+<tr class="memdesc:a004f05d807c5d889c62440561ad00e01 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ищет животное по идентификатору.  <br /></td></tr>
+<tr class="memitem:ae57084b5684733268d9fb06dbb28ccad pub_methods_classocean_1_1_tank" id="r_ae57084b5684733268d9fb06dbb28ccad"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ae57084b5684733268d9fb06dbb28ccad">hasAnimal</a> (int animalId) const</td></tr>
+<tr class="memdesc:ae57084b5684733268d9fb06dbb28ccad pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, живёт ли животное с данным идентификатором в аквариуме.  <br /></td></tr>
+<tr class="memitem:a0cdc05d9a8746bc3a9bb2589c1b321ae pub_methods_classocean_1_1_tank" id="r_a0cdc05d9a8746bc3a9bb2589c1b321ae"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a0cdc05d9a8746bc3a9bb2589c1b321ae">animalCount</a> () const</td></tr>
+<tr class="memdesc:a0cdc05d9a8746bc3a9bb2589c1b321ae pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число обитателей.  <br /></td></tr>
+<tr class="memitem:a328663ca4332d26b5a5792116da69995 pub_methods_classocean_1_1_tank" id="r_a328663ca4332d26b5a5792116da69995"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a328663ca4332d26b5a5792116da69995">totalBiomass</a> () const</td></tr>
+<tr class="memdesc:a328663ca4332d26b5a5792116da69995 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Суммарная масса обитателей, кг.  <br /></td></tr>
+<tr class="memitem:a0ebe75e00e1d12801762b0d39f3982a9 pub_methods_classocean_1_1_tank" id="r_a0ebe75e00e1d12801762b0d39f3982a9"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a0ebe75e00e1d12801762b0d39f3982a9">stockingDensity</a> () const</td></tr>
+<tr class="memdesc:a0ebe75e00e1d12801762b0d39f3982a9 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Биомасса, кг на 1000 литров.  <br /></td></tr>
+<tr class="memitem:ab69411c1c4b8dfdf835421f9ad82b953 pub_methods_classocean_1_1_tank" id="r_ab69411c1c4b8dfdf835421f9ad82b953"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ab69411c1c4b8dfdf835421f9ad82b953">dailyFoodRequirement</a> () const</td></tr>
+<tr class="memdesc:ab69411c1c4b8dfdf835421f9ad82b953 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Суммарная суточная потребность в корме, кг.  <br /></td></tr>
+<tr class="memitem:a58efd12a1b74b0a43c02ab5a7b5b5182 pub_methods_classocean_1_1_tank" id="r_a58efd12a1b74b0a43c02ab5a7b5b5182"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a58efd12a1b74b0a43c02ab5a7b5b5182">speciesCount</a> () const</td></tr>
+<tr class="memdesc:a58efd12a1b74b0a43c02ab5a7b5b5182 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число различных видов среди обитателей.  <br /></td></tr>
+<tr class="memitem:a9f595a351a334918e9d3949f3c8ed546 pub_methods_classocean_1_1_tank" id="r_a9f595a351a334918e9d3949f3c8ed546"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a9f595a351a334918e9d3949f3c8ed546">hungryAnimals</a> () const</td></tr>
+<tr class="memdesc:a9f595a351a334918e9d3949f3c8ed546 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число голодных животных.  <br /></td></tr>
+<tr class="memitem:ad0bd74c693403b05de5d92256a3efbee pub_methods_classocean_1_1_tank" id="r_ad0bd74c693403b05de5d92256a3efbee"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ad0bd74c693403b05de5d92256a3efbee">performWaterChange</a> (double fraction)</td></tr>
+<tr class="memdesc:ad0bd74c693403b05de5d92256a3efbee pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Частичная замена воды на свежую (с нулевым аммиаком).  <br /></td></tr>
+<tr class="memitem:a5e2c3f7e063214a2f3cbfb5d45cae428 pub_methods_classocean_1_1_tank" id="r_a5e2c3f7e063214a2f3cbfb5d45cae428"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a5e2c3f7e063214a2f3cbfb5d45cae428">runLifeSupport</a> (double hours)</td></tr>
+<tr class="memdesc:a5e2c3f7e063214a2f3cbfb5d45cae428 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Работа систем жизнеобеспечения в течение hours часов.  <br /></td></tr>
+<tr class="memitem:a51eaafd160b7b8025abf092d6ca57a9b pub_methods_classocean_1_1_tank" id="r_a51eaafd160b7b8025abf092d6ca57a9b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a51eaafd160b7b8025abf092d6ca57a9b">needsCleaning</a> () const</td></tr>
+<tr class="memdesc:a51eaafd160b7b8025abf092d6ca57a9b pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нужна ли чистка (аммиак не ниже 0.2).  <br /></td></tr>
+<tr class="memitem:a942ba8f40c660376310ce1426b6e6985 pub_methods_classocean_1_1_tank" id="r_a942ba8f40c660376310ce1426b6e6985"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a942ba8f40c660376310ce1426b6e6985">isHealthy</a> () const</td></tr>
+<tr class="memdesc:a942ba8f40c660376310ce1426b6e6985 pub_methods_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">true, если вода подходит всем обитателям.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a1b2863de1fd4db64c5c32241b7d6c3c0" id="r_a1b2863de1fd4db64c5c32241b7d6c3c0"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a1b2863de1fd4db64c5c32241b7d6c3c0">depthM_</a></td></tr>
+<tr class="memdesc:a1b2863de1fd4db64c5c32241b7d6c3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глубина, м.  <br /></td></tr>
+<tr class="memitem:afb507f330dbc3a85b4d690e6acfa5510" id="r_afb507f330dbc3a85b4d690e6acfa5510"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#afb507f330dbc3a85b4d690e6acfa5510">tunnelLengthM_</a></td></tr>
+<tr class="memdesc:afb507f330dbc3a85b4d690e6acfa5510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина тоннеля, м.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_attribs_classocean_1_1_tank"><td colspan="2">Защищенные данные унаследованные от <a class="el" href="classocean_1_1_tank.html">ocean::Tank</a></td></tr>
+<tr class="memitem:a47cce258bd15cc034d8e0b3e205a3851 pro_attribs_classocean_1_1_tank" id="r_a47cce258bd15cc034d8e0b3e205a3851"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a47cce258bd15cc034d8e0b3e205a3851">id_</a></td></tr>
+<tr class="memdesc:a47cce258bd15cc034d8e0b3e205a3851 pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор.  <br /></td></tr>
+<tr class="memitem:adf6126c6049aebbf7d7e5690f5f47f18 pro_attribs_classocean_1_1_tank" id="r_adf6126c6049aebbf7d7e5690f5f47f18"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#adf6126c6049aebbf7d7e5690f5f47f18">name_</a></td></tr>
+<tr class="memdesc:adf6126c6049aebbf7d7e5690f5f47f18 pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название.  <br /></td></tr>
+<tr class="memitem:a3f8a28192aae5bbe3b6f6c4b2d067cb5 pro_attribs_classocean_1_1_tank" id="r_a3f8a28192aae5bbe3b6f6c4b2d067cb5"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a3f8a28192aae5bbe3b6f6c4b2d067cb5">volumeLiters_</a></td></tr>
+<tr class="memdesc:a3f8a28192aae5bbe3b6f6c4b2d067cb5 pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объём, л.  <br /></td></tr>
+<tr class="memitem:a9ecf82c9cfdb52121be838ca924cfcc9 pro_attribs_classocean_1_1_tank" id="r_a9ecf82c9cfdb52121be838ca924cfcc9"><td class="memItemLeft"><a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a>&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a9ecf82c9cfdb52121be838ca924cfcc9">water_</a></td></tr>
+<tr class="memdesc:a9ecf82c9cfdb52121be838ca924cfcc9 pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущие параметры воды.  <br /></td></tr>
+<tr class="memitem:a592aff6b18c14e77c032f2e9cc45fd3b pro_attribs_classocean_1_1_tank" id="r_a592aff6b18c14e77c032f2e9cc45fd3b"><td class="memItemLeft"><a class="el" href="classocean_1_1_location.html">Location</a>&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a592aff6b18c14e77c032f2e9cc45fd3b">location_</a></td></tr>
+<tr class="memdesc:a592aff6b18c14e77c032f2e9cc45fd3b pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расположение.  <br /></td></tr>
+<tr class="memitem:a100119c42d44081c2bacbcff3dc63d4e pro_attribs_classocean_1_1_tank" id="r_a100119c42d44081c2bacbcff3dc63d4e"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a100119c42d44081c2bacbcff3dc63d4e">maxAnimals_</a></td></tr>
+<tr class="memdesc:a100119c42d44081c2bacbcff3dc63d4e pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимум обитателей.  <br /></td></tr>
+<tr class="memitem:a3bd1c1d2cd32cb16c5d144f775393bdf pro_attribs_classocean_1_1_tank" id="r_a3bd1c1d2cd32cb16c5d144f775393bdf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a3bd1c1d2cd32cb16c5d144f775393bdf">open_</a></td></tr>
+<tr class="memdesc:a3bd1c1d2cd32cb16c5d144f775393bdf pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыт ли для посетителей.  <br /></td></tr>
+<tr class="memitem:aadc546ff37c8c3a83875b472ba3342bf pro_attribs_classocean_1_1_tank" id="r_aadc546ff37c8c3a83875b472ba3342bf"><td class="memItemLeft">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classocean_1_1_animal.html">Animal</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#aadc546ff37c8c3a83875b472ba3342bf">animals_</a></td></tr>
+<tr class="memdesc:aadc546ff37c8c3a83875b472ba3342bf pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обитатели.  <br /></td></tr>
+<tr class="memitem:a705433276f6488d977583de2ca58e7f3 pro_attribs_classocean_1_1_tank" id="r_a705433276f6488d977583de2ca58e7f3"><td class="memItemLeft"><a class="el" href="classocean_1_1_filtration_system.html">FiltrationSystem</a>&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#a705433276f6488d977583de2ca58e7f3">filtration_</a></td></tr>
+<tr class="memdesc:a705433276f6488d977583de2ca58e7f3 pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Система фильтрации.  <br /></td></tr>
+<tr class="memitem:ae94babc4ce46b2d3069dd1e8b5b19d3a pro_attribs_classocean_1_1_tank" id="r_ae94babc4ce46b2d3069dd1e8b5b19d3a"><td class="memItemLeft"><a class="el" href="classocean_1_1_heating_system.html">HeatingSystem</a>&#160;</td><td class="memItemRight"><a class="el" href="classocean_1_1_tank.html#ae94babc4ce46b2d3069dd1e8b5b19d3a">heating_</a></td></tr>
+<tr class="memdesc:ae94babc4ce46b2d3069dd1e8b5b19d3a pro_attribs_classocean_1_1_tank"><td class="mdescLeft">&#160;</td><td class="mdescRight">Система нагрева.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Большой аквариум «Открытый океан» с подводным тоннелем. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00194">194</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a4c32bca7b9bfaa0db525bcdde3da3312" name="a4c32bca7b9bfaa0db525bcdde3da3312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c32bca7b9bfaa0db525bcdde3da3312">&#9670;&#160;</a></span>OpenOceanTank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::OpenOceanTank::OpenOceanTank </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>volumeLiters</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a></td>          <td class="paramname"><span class="paramname"><em>water</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_location.html">Location</a></td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxAnimals</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>depthM</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>tunnelLengthM</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт аквариум «Открытый океан». </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор. </td></tr>
+    <tr><td class="paramname">name</td><td>Название. </td></tr>
+    <tr><td class="paramname">volumeLiters</td><td>Объём, л. </td></tr>
+    <tr><td class="paramname">water</td><td>Параметры воды. </td></tr>
+    <tr><td class="paramname">location</td><td>Расположение. </td></tr>
+    <tr><td class="paramname">maxAnimals</td><td>Максимум обитателей. </td></tr>
+    <tr><td class="paramname">depthM</td><td>Глубина, м (&gt; 0). </td></tr>
+    <tr><td class="paramname">tunnelLengthM</td><td>Длина тоннеля, м (&gt;= 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>при некорректных базовых параметрах, неположительной глубине или отрицательной длине тоннеля. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00196">196</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="aa1fb1c7a38c459f8158b70107fc0420f" name="aa1fb1c7a38c459f8158b70107fc0420f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1fb1c7a38c459f8158b70107fc0420f">&#9670;&#160;</a></span>depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::OpenOceanTank::depth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Глубина, м. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00213">213</a></p>
+
+</div>
+</div>
+<a id="a8630cb07fdad6dbc6a5f03ccbe6cb6dd" name="a8630cb07fdad6dbc6a5f03ccbe6cb6dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8630cb07fdad6dbc6a5f03ccbe6cb6dd">&#9670;&#160;</a></span>hasTunnel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::OpenOceanTank::hasTunnel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Есть ли подводный тоннель. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00206">206</a></p>
+
+</div>
+</div>
+<a id="af065e35cfa942a0ca4abc8a3132fc7a6" name="af065e35cfa942a0ca4abc8a3132fc7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af065e35cfa942a0ca4abc8a3132fc7a6">&#9670;&#160;</a></span>predatorCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::OpenOceanTank::predatorCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Число хищников среди обитателей. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00218">218</a></p>
+
+</div>
+</div>
+<a id="a66ce44e85cee6e5a072e70d1532c1171" name="a66ce44e85cee6e5a072e70d1532c1171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ce44e85cee6e5a072e70d1532c1171">&#9670;&#160;</a></span>requiresDiverCertification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::OpenOceanTank::requiresDiverCertification </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true, если глубина больше 5 м и для работы нужен сертифицированный водолаз. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00214">214</a></p>
+
+</div>
+</div>
+<a id="a6c67a0e63ce6f16a5af1b19058f12970" name="a6c67a0e63ce6f16a5af1b19058f12970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c67a0e63ce6f16a5af1b19058f12970">&#9670;&#160;</a></span>tunnelLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::OpenOceanTank::tunnelLength </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина тоннеля, м. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00215">215</a></p>
+
+</div>
+</div>
+<a id="ac3eec84b8f826b44c06f82484e67712b" name="ac3eec84b8f826b44c06f82484e67712b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3eec84b8f826b44c06f82484e67712b">&#9670;&#160;</a></span>tunnelVisitorCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::OpenOceanTank::tunnelVisitorCapacity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вместимость тоннеля по числу посетителей (3 человека на метр). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a> строка <a class="el" href="_tanks_8cpp_source.html#l00210">210</a></p>
+
+</div>
+</div>
+<a id="a13ceded702573bfef60144de1a7a2f3e" name="a13ceded702573bfef60144de1a7a2f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ceded702573bfef60144de1a7a2f3e">&#9670;&#160;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::OpenOceanTank::type </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название типа аквариума. </p>
+
+<p>Переопределяет метод предка <a class="el" href="classocean_1_1_tank.html#aa477699021fcfcc7ad934e482329669a">ocean::Tank</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00218">218</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a1b2863de1fd4db64c5c32241b7d6c3c0" name="a1b2863de1fd4db64c5c32241b7d6c3c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2863de1fd4db64c5c32241b7d6c3c0">&#9670;&#160;</a></span>depthM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::OpenOceanTank::depthM_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Глубина, м. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00229">229</a></p>
+
+</div>
+</div>
+<a id="afb507f330dbc3a85b4d690e6acfa5510" name="afb507f330dbc3a85b4d690e6acfa5510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb507f330dbc3a85b4d690e6acfa5510">&#9670;&#160;</a></span>tunnelLengthM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::OpenOceanTank::tunnelLengthM_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина тоннеля, м. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_tanks_8h_source.html">Tanks.h</a> строка <a class="el" href="_tanks_8h_source.html#l00230">230</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_tanks_8h_source.html">Tanks.h</a></li>
+<li>src/<a class="el" href="_tanks_8cpp_source.html">Tanks.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_open_ocean_tank.html">OpenOceanTank</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

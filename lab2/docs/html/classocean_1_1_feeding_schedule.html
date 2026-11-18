@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::FeedingSchedule</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_feeding_schedule.html','','classocean_1_1_feeding_schedule-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::FeedingSchedule</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Суточное расписание кормлений.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_feeding_8h_source.html">Feeding.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::FeedingSchedule:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_feeding_schedule__coll__graph.png" border="0" usemap="#aocean_1_1_feeding_schedule_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa7e0fe6180b59aefaf18f88efa7a21cb" id="r_aa7e0fe6180b59aefaf18f88efa7a21cb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa7e0fe6180b59aefaf18f88efa7a21cb">FeedingSchedule</a> ()</td></tr>
+<tr class="memdesc:aa7e0fe6180b59aefaf18f88efa7a21cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт пустое расписание.  <br /></td></tr>
+<tr class="memitem:a5c0a2402673fb48f2904c964b92b3866" id="r_a5c0a2402673fb48f2904c964b92b3866"><td class="memItemLeft">const std::vector&lt; <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a5c0a2402673fb48f2904c964b92b3866">entries</a> () const</td></tr>
+<tr class="memdesc:a5c0a2402673fb48f2904c964b92b3866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Все записи расписания.  <br /></td></tr>
+<tr class="memitem:a21dad536bf7c234480a36e95374c62e9" id="r_a21dad536bf7c234480a36e95374c62e9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a21dad536bf7c234480a36e95374c62e9">executedCount</a> () const</td></tr>
+<tr class="memdesc:a21dad536bf7c234480a36e95374c62e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сколько кормлений проведено с момента создания расписания.  <br /></td></tr>
+<tr class="memitem:acbf3eb6efdecb055240668b6aad86d26" id="r_acbf3eb6efdecb055240668b6aad86d26"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acbf3eb6efdecb055240668b6aad86d26">addEntry</a> (const <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &amp;entry)</td></tr>
+<tr class="memdesc:acbf3eb6efdecb055240668b6aad86d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет запись в расписание.  <br /></td></tr>
+<tr class="memitem:aaef201f6a412ed4438b7c8bd76e7402e" id="r_aaef201f6a412ed4438b7c8bd76e7402e"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aaef201f6a412ed4438b7c8bd76e7402e">entriesFor</a> (int animalId) const</td></tr>
+<tr class="memdesc:aaef201f6a412ed4438b7c8bd76e7402e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записи для одного животного.  <br /></td></tr>
+<tr class="memitem:a9b98441afdf76f5b438a2918c5ef8157" id="r_a9b98441afdf76f5b438a2918c5ef8157"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a9b98441afdf76f5b438a2918c5ef8157">dueAt</a> (int minute) const</td></tr>
+<tr class="memdesc:a9b98441afdf76f5b438a2918c5ef8157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записи, которые пора выполнять.  <br /></td></tr>
+<tr class="memitem:ac37915c691afc8a24ce580e2ecb81286" id="r_ac37915c691afc8a24ce580e2ecb81286"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ac37915c691afc8a24ce580e2ecb81286">dailyAmount</a> (const std::string &amp;foodName) const</td></tr>
+<tr class="memdesc:ac37915c691afc8a24ce580e2ecb81286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Суточное количество корма.  <br /></td></tr>
+<tr class="memitem:ac50f7e2526ea6386d8ec706db04b2ca1" id="r_ac50f7e2526ea6386d8ec706db04b2ca1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac50f7e2526ea6386d8ec706db04b2ca1">execute</a> (int minute, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classocean_1_1_animal.html">Animal</a> &gt; &gt; &amp;animals, <a class="el" href="classocean_1_1_food_storage.html">FoodStorage</a> &amp;storage, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today)</td></tr>
+<tr class="memdesc:ac50f7e2526ea6386d8ec706db04b2ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проводит кормления, назначенные на minute.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:aa651ebb168c7f371c49a2ef220273ff9" id="r_aa651ebb168c7f371c49a2ef220273ff9"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa651ebb168c7f371c49a2ef220273ff9">entries_</a></td></tr>
+<tr class="memdesc:aa651ebb168c7f371c49a2ef220273ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записи расписания.  <br /></td></tr>
+<tr class="memitem:ab3b1eee8c4ffbab7a05935af09fefbd5" id="r_ab3b1eee8c4ffbab7a05935af09fefbd5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab3b1eee8c4ffbab7a05935af09fefbd5">executedCount_</a></td></tr>
+<tr class="memdesc:ab3b1eee8c4ffbab7a05935af09fefbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Счётчик проведённых кормлений.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Суточное расписание кормлений. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00059">59</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="aa7e0fe6180b59aefaf18f88efa7a21cb" name="aa7e0fe6180b59aefaf18f88efa7a21cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e0fe6180b59aefaf18f88efa7a21cb">&#9670;&#160;</a></span>FeedingSchedule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::FeedingSchedule::FeedingSchedule </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт пустое расписание. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="acbf3eb6efdecb055240668b6aad86d26" name="acbf3eb6efdecb055240668b6aad86d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf3eb6efdecb055240668b6aad86d26">&#9670;&#160;</a></span>addEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::FeedingSchedule::addEntry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>entry</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет запись в расписание. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entry</td><td>Новая запись. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_schedule_conflict_exception.html" title="Пересечение смен, кормлений и т.">ScheduleConflictException</a></td><td>если кормления одного животного ближе часа. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00031">31</a></p>
+
+</div>
+</div>
+<a id="ac37915c691afc8a24ce580e2ecb81286" name="ac37915c691afc8a24ce580e2ecb81286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37915c691afc8a24ce580e2ecb81286">&#9670;&#160;</a></span>dailyAmount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FeedingSchedule::dailyAmount </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>foodName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Суточное количество корма. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foodName</td><td>Название корма. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Суммарное количество этого корма во всех записях, кг. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00062">62</a></p>
+
+</div>
+</div>
+<a id="a9b98441afdf76f5b438a2918c5ef8157" name="a9b98441afdf76f5b438a2918c5ef8157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b98441afdf76f5b438a2918c5ef8157">&#9670;&#160;</a></span>dueAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &gt; ocean::FeedingSchedule::dueAt </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minute</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Записи, которые пора выполнять. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minute</td><td>Текущая минута суток. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Записи, для которых isDueAt(minute) истинно. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00052">52</a></p>
+
+</div>
+</div>
+<a id="a5c0a2402673fb48f2904c964b92b3866" name="a5c0a2402673fb48f2904c964b92b3866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0a2402673fb48f2904c964b92b3866">&#9670;&#160;</a></span>entries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &gt; &amp; ocean::FeedingSchedule::entries </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Все записи расписания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00065">65</a></p>
+
+</div>
+</div>
+<a id="aaef201f6a412ed4438b7c8bd76e7402e" name="aaef201f6a412ed4438b7c8bd76e7402e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef201f6a412ed4438b7c8bd76e7402e">&#9670;&#160;</a></span>entriesFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a> &gt; ocean::FeedingSchedule::entriesFor </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>animalId</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Записи для одного животного. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animalId</td><td>Идентификатор животного. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список его записей. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00042">42</a></p>
+
+</div>
+</div>
+<a id="ac50f7e2526ea6386d8ec706db04b2ca1" name="ac50f7e2526ea6386d8ec706db04b2ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50f7e2526ea6386d8ec706db04b2ca1">&#9670;&#160;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::FeedingSchedule::execute </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minute</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classocean_1_1_animal.html">Animal</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>animals</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_food_storage.html">FoodStorage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>storage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>today</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проводит кормления, назначенные на minute. </p>
+<p>Исключения, выбрасываемые при поиске корма на складе и кормлении животного, передаются вызывающему коду. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minute</td><td>Текущая минута суток. </td></tr>
+    <tr><td class="paramname">animals</td><td>Животные, которых можно кормить. </td></tr>
+    <tr><td class="paramname">storage</td><td>Склад корма. </td></tr>
+    <tr><td class="paramname">today</td><td>Текущая дата. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число накормленных животных. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00072">72</a></p>
+
+</div>
+</div>
+<a id="a21dad536bf7c234480a36e95374c62e9" name="a21dad536bf7c234480a36e95374c62e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21dad536bf7c234480a36e95374c62e9">&#9670;&#160;</a></span>executedCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::FeedingSchedule::executedCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сколько кормлений проведено с момента создания расписания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00067">67</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="aa651ebb168c7f371c49a2ef220273ff9" name="aa651ebb168c7f371c49a2ef220273ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa651ebb168c7f371c49a2ef220273ff9">&#9670;&#160;</a></span>entries_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classocean_1_1_feeding_entry.html">FeedingEntry</a>&gt; ocean::FeedingSchedule::entries_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Записи расписания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00107">107</a></p>
+
+</div>
+</div>
+<a id="ab3b1eee8c4ffbab7a05935af09fefbd5" name="ab3b1eee8c4ffbab7a05935af09fefbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b1eee8c4ffbab7a05935af09fefbd5">&#9670;&#160;</a></span>executedCount_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::FeedingSchedule::executedCount_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Счётчик проведённых кормлений. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00108">108</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_feeding_8h_source.html">Feeding.h</a></li>
+<li>src/<a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_feeding_schedule.html">FeedingSchedule</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

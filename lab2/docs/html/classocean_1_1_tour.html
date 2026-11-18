@@ -1,0 +1,794 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::Tour</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_tour.html','','classocean_1_1_tour-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::Tour</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Экскурсия по аквариумам.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_visitors_8h_source.html">Visitors.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::Tour:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_tour__coll__graph.png" border="0" usemap="#aocean_1_1_tour_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a1e6db010fe813027a9faa4411e18a963" id="r_a1e6db010fe813027a9faa4411e18a963"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1e6db010fe813027a9faa4411e18a963">Tour</a> (int id, const <a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> &amp;slot, int maxGroupSize)</td></tr>
+<tr class="memdesc:a1e6db010fe813027a9faa4411e18a963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт экскурсию.  <br /></td></tr>
+<tr class="memitem:adcc6d37893e3c149e5537fdc904f5cad" id="r_adcc6d37893e3c149e5537fdc904f5cad"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#adcc6d37893e3c149e5537fdc904f5cad">id</a> () const</td></tr>
+<tr class="memdesc:adcc6d37893e3c149e5537fdc904f5cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор экскурсии.  <br /></td></tr>
+<tr class="memitem:a956db340b713c634b11696cbc8425e62" id="r_a956db340b713c634b11696cbc8425e62"><td class="memItemLeft">const <a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a956db340b713c634b11696cbc8425e62">slot</a> () const</td></tr>
+<tr class="memdesc:a956db340b713c634b11696cbc8425e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Временной интервал.  <br /></td></tr>
+<tr class="memitem:a6233e04aba539f050f290122bcef037c" id="r_a6233e04aba539f050f290122bcef037c"><td class="memItemLeft"><a class="el" href="classocean_1_1_guide.html">Guide</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a6233e04aba539f050f290122bcef037c">guide</a> () const</td></tr>
+<tr class="memdesc:a6233e04aba539f050f290122bcef037c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Назначенный гид (nullptr, если не назначен).  <br /></td></tr>
+<tr class="memitem:a395767c52d3d23491523413bd41b37c7" id="r_a395767c52d3d23491523413bd41b37c7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a395767c52d3d23491523413bd41b37c7">isCompleted</a> () const</td></tr>
+<tr class="memdesc:a395767c52d3d23491523413bd41b37c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проведена ли экскурсия.  <br /></td></tr>
+<tr class="memitem:a4c2b500ccf46e786fca52fb4e6a3797a" id="r_a4c2b500ccf46e786fca52fb4e6a3797a"><td class="memItemLeft">const std::vector&lt; <a class="el" href="classocean_1_1_tank.html">Tank</a> * &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a4c2b500ccf46e786fca52fb4e6a3797a">route</a> () const</td></tr>
+<tr class="memdesc:a4c2b500ccf46e786fca52fb4e6a3797a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Маршрут — список аквариумов.  <br /></td></tr>
+<tr class="memitem:af3379744b8efa941c9e80a1d06820d7e" id="r_af3379744b8efa941c9e80a1d06820d7e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af3379744b8efa941c9e80a1d06820d7e">assignGuide</a> (<a class="el" href="classocean_1_1_guide.html">Guide</a> *guide)</td></tr>
+<tr class="memdesc:af3379744b8efa941c9e80a1d06820d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Назначает гида (без передачи владения).  <br /></td></tr>
+<tr class="memitem:aa17f96d91b80f5ff832ef973aa149de1" id="r_aa17f96d91b80f5ff832ef973aa149de1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa17f96d91b80f5ff832ef973aa149de1">addVisitor</a> (<a class="el" href="classocean_1_1_visitor.html">Visitor</a> &amp;visitor)</td></tr>
+<tr class="memdesc:aa17f96d91b80f5ff832ef973aa149de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записывает посетителя в группу.  <br /></td></tr>
+<tr class="memitem:a91271915c20590db5c313ad96771b37e" id="r_a91271915c20590db5c313ad96771b37e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a91271915c20590db5c313ad96771b37e">removeVisitor</a> (int visitorId)</td></tr>
+<tr class="memdesc:a91271915c20590db5c313ad96771b37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключает посетителя из группы.  <br /></td></tr>
+<tr class="memitem:a48cdf7ae7de06030e28f8cadf85e2191" id="r_a48cdf7ae7de06030e28f8cadf85e2191"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a48cdf7ae7de06030e28f8cadf85e2191">addStop</a> (<a class="el" href="classocean_1_1_tank.html">Tank</a> *tank)</td></tr>
+<tr class="memdesc:a48cdf7ae7de06030e28f8cadf85e2191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет остановку в маршрут.  <br /></td></tr>
+<tr class="memitem:a1604fe53e670d93765c452a19fa6c6b7" id="r_a1604fe53e670d93765c452a19fa6c6b7"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a1604fe53e670d93765c452a19fa6c6b7">groupSize</a> () const</td></tr>
+<tr class="memdesc:a1604fe53e670d93765c452a19fa6c6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий размер группы.  <br /></td></tr>
+<tr class="memitem:acf668be5cfc6d84ae5d3550c18af6ba1" id="r_acf668be5cfc6d84ae5d3550c18af6ba1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#acf668be5cfc6d84ae5d3550c18af6ba1">estimatedDurationMinutes</a> () const</td></tr>
+<tr class="memdesc:acf668be5cfc6d84ae5d3550c18af6ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оценка длительности: 15 минут на остановку.  <br /></td></tr>
+<tr class="memitem:a2b8d4403a9bcac7e29f8cc37c6419fd7" id="r_a2b8d4403a9bcac7e29f8cc37c6419fd7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2b8d4403a9bcac7e29f8cc37c6419fd7">fitsInSlot</a> () const</td></tr>
+<tr class="memdesc:a2b8d4403a9bcac7e29f8cc37c6419fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">true, если маршрут укладывается во временной интервал.  <br /></td></tr>
+<tr class="memitem:a933f72d3cba3fe8e2a4a61b640951295" id="r_a933f72d3cba3fe8e2a4a61b640951295"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a933f72d3cba3fe8e2a4a61b640951295">complete</a> ()</td></tr>
+<tr class="memdesc:a933f72d3cba3fe8e2a4a61b640951295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Завершает экскурсию.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a945620b686ff7299bfe51418a322c051" id="r_a945620b686ff7299bfe51418a322c051"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a945620b686ff7299bfe51418a322c051">id_</a></td></tr>
+<tr class="memdesc:a945620b686ff7299bfe51418a322c051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор.  <br /></td></tr>
+<tr class="memitem:a5387a272194b3df4435c05153c5affc7" id="r_a5387a272194b3df4435c05153c5affc7"><td class="memItemLeft"><a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5387a272194b3df4435c05153c5affc7">slot_</a></td></tr>
+<tr class="memdesc:a5387a272194b3df4435c05153c5affc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Временной интервал.  <br /></td></tr>
+<tr class="memitem:a8a46ea0051894142601bcf0b29c8a7c3" id="r_a8a46ea0051894142601bcf0b29c8a7c3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8a46ea0051894142601bcf0b29c8a7c3">maxGroupSize_</a></td></tr>
+<tr class="memdesc:a8a46ea0051894142601bcf0b29c8a7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальный размер группы.  <br /></td></tr>
+<tr class="memitem:afb546b05dd5d466aff53eb597282b3a0" id="r_afb546b05dd5d466aff53eb597282b3a0"><td class="memItemLeft"><a class="el" href="classocean_1_1_guide.html">Guide</a> *&#160;</td><td class="memItemRight"><a class="el" href="#afb546b05dd5d466aff53eb597282b3a0">guide_</a></td></tr>
+<tr class="memdesc:afb546b05dd5d466aff53eb597282b3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Гид (не владеет).  <br /></td></tr>
+<tr class="memitem:a578147f92ac7a40c7520da4e3b1ae3ba" id="r_a578147f92ac7a40c7520da4e3b1ae3ba"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_visitor.html">Visitor</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a578147f92ac7a40c7520da4e3b1ae3ba">visitors_</a></td></tr>
+<tr class="memdesc:a578147f92ac7a40c7520da4e3b1ae3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Группа (не владеет).  <br /></td></tr>
+<tr class="memitem:a5833d059bef0934022841a1f71ba6a76" id="r_a5833d059bef0934022841a1f71ba6a76"><td class="memItemLeft">std::vector&lt; <a class="el" href="classocean_1_1_tank.html">Tank</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5833d059bef0934022841a1f71ba6a76">route_</a></td></tr>
+<tr class="memdesc:a5833d059bef0934022841a1f71ba6a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Маршрут (не владеет).  <br /></td></tr>
+<tr class="memitem:aa3c354109d7343a394efc3a1338824db" id="r_aa3c354109d7343a394efc3a1338824db"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa3c354109d7343a394efc3a1338824db">completed_</a></td></tr>
+<tr class="memdesc:aa3c354109d7343a394efc3a1338824db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проведена ли экскурсия.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Экскурсия по аквариумам. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00407">407</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a1e6db010fe813027a9faa4411e18a963" name="a1e6db010fe813027a9faa4411e18a963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6db010fe813027a9faa4411e18a963">&#9670;&#160;</a></span>Tour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::Tour::Tour </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>slot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxGroupSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт экскурсию. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор. </td></tr>
+    <tr><td class="paramname">slot</td><td>Временной интервал. </td></tr>
+    <tr><td class="paramname">maxGroupSize</td><td>Максимальный размер группы (&gt; 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если размер группы не положителен. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00355">355</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a48cdf7ae7de06030e28f8cadf85e2191" name="a48cdf7ae7de06030e28f8cadf85e2191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48cdf7ae7de06030e28f8cadf85e2191">&#9670;&#160;</a></span>addStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Tour::addStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_tank.html">Tank</a> *</td>          <td class="paramname"><span class="paramname"><em>tank</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет остановку в маршрут. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tank</td><td>Аквариум. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если указатель пуст или аквариум закрыт для посетителей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00394">394</a></p>
+
+</div>
+</div>
+<a id="aa17f96d91b80f5ff832ef973aa149de1" name="aa17f96d91b80f5ff832ef973aa149de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17f96d91b80f5ff832ef973aa149de1">&#9670;&#160;</a></span>addVisitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Tour::addVisitor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_visitor.html">Visitor</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>visitor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Записывает посетителя в группу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visitor</td><td>Посетитель. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если экскурсия уже проведена или посетитель уже в группе. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_event_full_exception.html" title="Нет мест на экскурсию или шоу.">EventFullException</a></td><td>если группа заполнена. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00369">369</a></p>
+
+</div>
+</div>
+<a id="af3379744b8efa941c9e80a1d06820d7e" name="af3379744b8efa941c9e80a1d06820d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3379744b8efa941c9e80a1d06820d7e">&#9670;&#160;</a></span>assignGuide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Tour::assignGuide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classocean_1_1_guide.html">Guide</a> *</td>          <td class="paramname"><span class="paramname"><em>guide</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Назначает гида (без передачи владения). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guide</td><td>Гид. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если указатель пуст. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00362">362</a></p>
+
+</div>
+</div>
+<a id="a933f72d3cba3fe8e2a4a61b640951295" name="a933f72d3cba3fe8e2a4a61b640951295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933f72d3cba3fe8e2a4a61b640951295">&#9670;&#160;</a></span>complete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Tour::complete </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Завершает экскурсию. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если не назначен гид или в маршруте нет остановок. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00416">416</a></p>
+
+</div>
+</div>
+<a id="acf668be5cfc6d84ae5d3550c18af6ba1" name="acf668be5cfc6d84ae5d3550c18af6ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf668be5cfc6d84ae5d3550c18af6ba1">&#9670;&#160;</a></span>estimatedDurationMinutes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Tour::estimatedDurationMinutes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оценка длительности: 15 минут на остановку. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00408">408</a></p>
+
+</div>
+</div>
+<a id="a2b8d4403a9bcac7e29f8cc37c6419fd7" name="a2b8d4403a9bcac7e29f8cc37c6419fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b8d4403a9bcac7e29f8cc37c6419fd7">&#9670;&#160;</a></span>fitsInSlot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Tour::fitsInSlot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true, если маршрут укладывается во временной интервал. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00412">412</a></p>
+
+</div>
+</div>
+<a id="a1604fe53e670d93765c452a19fa6c6b7" name="a1604fe53e670d93765c452a19fa6c6b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1604fe53e670d93765c452a19fa6c6b7">&#9670;&#160;</a></span>groupSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Tour::groupSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Текущий размер группы. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00404">404</a></p>
+
+</div>
+</div>
+<a id="a6233e04aba539f050f290122bcef037c" name="a6233e04aba539f050f290122bcef037c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6233e04aba539f050f290122bcef037c">&#9670;&#160;</a></span>guide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_guide.html">Guide</a> * ocean::Tour::guide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Назначенный гид (nullptr, если не назначен). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00423">423</a></p>
+
+</div>
+</div>
+<a id="adcc6d37893e3c149e5537fdc904f5cad" name="adcc6d37893e3c149e5537fdc904f5cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc6d37893e3c149e5537fdc904f5cad">&#9670;&#160;</a></span>id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Tour::id </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Идентификатор экскурсии. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00419">419</a></p>
+
+</div>
+</div>
+<a id="a395767c52d3d23491523413bd41b37c7" name="a395767c52d3d23491523413bd41b37c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a395767c52d3d23491523413bd41b37c7">&#9670;&#160;</a></span>isCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Tour::isCompleted </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проведена ли экскурсия. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00425">425</a></p>
+
+</div>
+</div>
+<a id="a91271915c20590db5c313ad96771b37e" name="a91271915c20590db5c313ad96771b37e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91271915c20590db5c313ad96771b37e">&#9670;&#160;</a></span>removeVisitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Tour::removeVisitor </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>visitorId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Исключает посетителя из группы. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visitorId</td><td>Идентификатор посетителя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если посетитель был в группе. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00384">384</a></p>
+
+</div>
+</div>
+<a id="a4c2b500ccf46e786fca52fb4e6a3797a" name="a4c2b500ccf46e786fca52fb4e6a3797a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2b500ccf46e786fca52fb4e6a3797a">&#9670;&#160;</a></span>route()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="classocean_1_1_tank.html">Tank</a> * &gt; &amp; ocean::Tour::route </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Маршрут — список аквариумов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00427">427</a></p>
+
+</div>
+</div>
+<a id="a956db340b713c634b11696cbc8425e62" name="a956db340b713c634b11696cbc8425e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956db340b713c634b11696cbc8425e62">&#9670;&#160;</a></span>slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> &amp; ocean::Tour::slot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Временной интервал. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00421">421</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="aa3c354109d7343a394efc3a1338824db" name="aa3c354109d7343a394efc3a1338824db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3c354109d7343a394efc3a1338824db">&#9670;&#160;</a></span>completed_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Tour::completed_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проведена ли экскурсия. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00471">471</a></p>
+
+</div>
+</div>
+<a id="afb546b05dd5d466aff53eb597282b3a0" name="afb546b05dd5d466aff53eb597282b3a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb546b05dd5d466aff53eb597282b3a0">&#9670;&#160;</a></span>guide_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_guide.html">Guide</a>* ocean::Tour::guide_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Гид (не владеет). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00468">468</a></p>
+
+</div>
+</div>
+<a id="a945620b686ff7299bfe51418a322c051" name="a945620b686ff7299bfe51418a322c051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945620b686ff7299bfe51418a322c051">&#9670;&#160;</a></span>id_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Tour::id_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Идентификатор. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00465">465</a></p>
+
+</div>
+</div>
+<a id="a8a46ea0051894142601bcf0b29c8a7c3" name="a8a46ea0051894142601bcf0b29c8a7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a46ea0051894142601bcf0b29c8a7c3">&#9670;&#160;</a></span>maxGroupSize_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Tour::maxGroupSize_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимальный размер группы. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00467">467</a></p>
+
+</div>
+</div>
+<a id="a5833d059bef0934022841a1f71ba6a76" name="a5833d059bef0934022841a1f71ba6a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5833d059bef0934022841a1f71ba6a76">&#9670;&#160;</a></span>route_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classocean_1_1_tank.html">Tank</a>*&gt; ocean::Tour::route_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Маршрут (не владеет). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00470">470</a></p>
+
+</div>
+</div>
+<a id="a5387a272194b3df4435c05153c5affc7" name="a5387a272194b3df4435c05153c5affc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5387a272194b3df4435c05153c5affc7">&#9670;&#160;</a></span>slot_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> ocean::Tour::slot_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Временной интервал. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00466">466</a></p>
+
+</div>
+</div>
+<a id="a578147f92ac7a40c7520da4e3b1ae3ba" name="a578147f92ac7a40c7520da4e3b1ae3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578147f92ac7a40c7520da4e3b1ae3ba">&#9670;&#160;</a></span>visitors_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classocean_1_1_visitor.html">Visitor</a>*&gt; ocean::Tour::visitors_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Группа (не владеет). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00469">469</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_visitors_8h_source.html">Visitors.h</a></li>
+<li>src/<a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_tour.html">Tour</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

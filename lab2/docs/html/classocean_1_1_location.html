@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::Location</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_location.html','','classocean_1_1_location-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::Location</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Расположение объекта на территории океанариума.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_common_8h_source.html">Common.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::Location:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_location__coll__graph.png" border="0" usemap="#aocean_1_1_location_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a359df0b17eee9375024b11e86a40bf70" id="r_a359df0b17eee9375024b11e86a40bf70"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a359df0b17eee9375024b11e86a40bf70">Location</a> (std::string zone, std::string building, int floor)</td></tr>
+<tr class="memdesc:a359df0b17eee9375024b11e86a40bf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт расположение.  <br /></td></tr>
+<tr class="memitem:abf6582826ddbf7ea8cebbdd249f89691" id="r_abf6582826ddbf7ea8cebbdd249f89691"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abf6582826ddbf7ea8cebbdd249f89691">zone</a> () const</td></tr>
+<tr class="memdesc:abf6582826ddbf7ea8cebbdd249f89691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название зоны.  <br /></td></tr>
+<tr class="memitem:afd32e2f8fc3c82dc5f53b493d86fc716" id="r_afd32e2f8fc3c82dc5f53b493d86fc716"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#afd32e2f8fc3c82dc5f53b493d86fc716">building</a> () const</td></tr>
+<tr class="memdesc:afd32e2f8fc3c82dc5f53b493d86fc716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название здания.  <br /></td></tr>
+<tr class="memitem:a82cbb3fe165ee0a07b5bf922cf137007" id="r_a82cbb3fe165ee0a07b5bf922cf137007"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a82cbb3fe165ee0a07b5bf922cf137007">floor</a> () const</td></tr>
+<tr class="memdesc:a82cbb3fe165ee0a07b5bf922cf137007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Номер этажа.  <br /></td></tr>
+<tr class="memitem:ad762a55d9ab3decfcf895e55065b851d" id="r_ad762a55d9ab3decfcf895e55065b851d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad762a55d9ab3decfcf895e55065b851d">sameBuilding</a> (const <a class="el" href="#a359df0b17eee9375024b11e86a40bf70">Location</a> &amp;other) const</td></tr>
+<tr class="memdesc:ad762a55d9ab3decfcf895e55065b851d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, находятся ли объекты в одном здании.  <br /></td></tr>
+<tr class="memitem:af7d05d4b9582488fcf82ff2a33547087" id="r_af7d05d4b9582488fcf82ff2a33547087"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af7d05d4b9582488fcf82ff2a33547087">floorsBetween</a> (const <a class="el" href="#a359df0b17eee9375024b11e86a40bf70">Location</a> &amp;other) const</td></tr>
+<tr class="memdesc:af7d05d4b9582488fcf82ff2a33547087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число этажей между расположениями.  <br /></td></tr>
+<tr class="memitem:a6d53e286bba43358a145d2ba59b99c79" id="r_a6d53e286bba43358a145d2ba59b99c79"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a6d53e286bba43358a145d2ba59b99c79">toString</a> () const</td></tr>
+<tr class="memdesc:a6d53e286bba43358a145d2ba59b99c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовое представление расположения.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a3b18697e1556fe169680d93ea70b5284" id="r_a3b18697e1556fe169680d93ea70b5284"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a3b18697e1556fe169680d93ea70b5284">zone_</a></td></tr>
+<tr class="memdesc:a3b18697e1556fe169680d93ea70b5284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название зоны.  <br /></td></tr>
+<tr class="memitem:a246a9eb34beddd6e17ed18feecdde17c" id="r_a246a9eb34beddd6e17ed18feecdde17c"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a246a9eb34beddd6e17ed18feecdde17c">building_</a></td></tr>
+<tr class="memdesc:a246a9eb34beddd6e17ed18feecdde17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название здания.  <br /></td></tr>
+<tr class="memitem:a8454abde9338b91dac133ad95730ea99" id="r_a8454abde9338b91dac133ad95730ea99"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8454abde9338b91dac133ad95730ea99">floor_</a></td></tr>
+<tr class="memdesc:a8454abde9338b91dac133ad95730ea99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Номер этажа.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Расположение объекта на территории океанариума. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00153">153</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a359df0b17eee9375024b11e86a40bf70" name="a359df0b17eee9375024b11e86a40bf70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359df0b17eee9375024b11e86a40bf70">&#9670;&#160;</a></span>Location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::Location::Location </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>zone</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>building</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>floor</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт расположение. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zone</td><td>Название зоны. </td></tr>
+    <tr><td class="paramname">building</td><td>Название здания. </td></tr>
+    <tr><td class="paramname">floor</td><td>Номер этажа. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если зона или здание пусты. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00115">115</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="afd32e2f8fc3c82dc5f53b493d86fc716" name="afd32e2f8fc3c82dc5f53b493d86fc716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd32e2f8fc3c82dc5f53b493d86fc716">&#9670;&#160;</a></span>building()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::Location::building </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название здания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00167">167</a></p>
+
+</div>
+</div>
+<a id="a82cbb3fe165ee0a07b5bf922cf137007" name="a82cbb3fe165ee0a07b5bf922cf137007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82cbb3fe165ee0a07b5bf922cf137007">&#9670;&#160;</a></span>floor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Location::floor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Номер этажа. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00169">169</a></p>
+
+</div>
+</div>
+<a id="af7d05d4b9582488fcf82ff2a33547087" name="af7d05d4b9582488fcf82ff2a33547087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d05d4b9582488fcf82ff2a33547087">&#9670;&#160;</a></span>floorsBetween()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Location::floorsBetween </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a359df0b17eee9375024b11e86a40bf70">Location</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Число этажей между расположениями. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Другое расположение. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Модуль разности номеров этажей. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="ad762a55d9ab3decfcf895e55065b851d" name="ad762a55d9ab3decfcf895e55065b851d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad762a55d9ab3decfcf895e55065b851d">&#9670;&#160;</a></span>sameBuilding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Location::sameBuilding </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a359df0b17eee9375024b11e86a40bf70">Location</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, находятся ли объекты в одном здании. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Другое расположение. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если названия зданий совпадают. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00122">122</a></p>
+
+</div>
+</div>
+<a id="a6d53e286bba43358a145d2ba59b99c79" name="a6d53e286bba43358a145d2ba59b99c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d53e286bba43358a145d2ba59b99c79">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Location::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Текстовое представление расположения. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка «зона, здание, floor N». </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a id="abf6582826ddbf7ea8cebbdd249f89691" name="abf6582826ddbf7ea8cebbdd249f89691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6582826ddbf7ea8cebbdd249f89691">&#9670;&#160;</a></span>zone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::Location::zone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название зоны. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00165">165</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a246a9eb34beddd6e17ed18feecdde17c" name="a246a9eb34beddd6e17ed18feecdde17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246a9eb34beddd6e17ed18feecdde17c">&#9670;&#160;</a></span>building_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Location::building_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название здания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00191">191</a></p>
+
+</div>
+</div>
+<a id="a8454abde9338b91dac133ad95730ea99" name="a8454abde9338b91dac133ad95730ea99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8454abde9338b91dac133ad95730ea99">&#9670;&#160;</a></span>floor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Location::floor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Номер этажа. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00192">192</a></p>
+
+</div>
+</div>
+<a id="a3b18697e1556fe169680d93ea70b5284" name="a3b18697e1556fe169680d93ea70b5284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b18697e1556fe169680d93ea70b5284">&#9670;&#160;</a></span>zone_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Location::zone_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название зоны. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00190">190</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_common_8h_source.html">Common.h</a></li>
+<li>src/<a class="el" href="_common_8cpp_source.html">Common.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_location.html">Location</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

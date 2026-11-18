@@ -1,0 +1,689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::FoodItem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_food_item.html','','classocean_1_1_food_item-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::FoodItem</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Партия корма определённого вида.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_food_8h_source.html">Food.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::FoodItem:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_food_item__coll__graph.png" border="0" usemap="#aocean_1_1_food_item_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a9fe7ef92fe35107d4bb268df7ae47b96" id="r_a9fe7ef92fe35107d4bb268df7ae47b96"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9fe7ef92fe35107d4bb268df7ae47b96">FoodItem</a> (std::string name, double caloriesPerKg, double stockKg, double pricePerKg, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;expiry)</td></tr>
+<tr class="memdesc:a9fe7ef92fe35107d4bb268df7ae47b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт партию корма.  <br /></td></tr>
+<tr class="memitem:a0108f51bdaef0e114b339ccc21c8b032" id="r_a0108f51bdaef0e114b339ccc21c8b032"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0108f51bdaef0e114b339ccc21c8b032">name</a> () const</td></tr>
+<tr class="memdesc:a0108f51bdaef0e114b339ccc21c8b032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название корма.  <br /></td></tr>
+<tr class="memitem:a18487a633f36b068127d2d0893c9b93c" id="r_a18487a633f36b068127d2d0893c9b93c"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a18487a633f36b068127d2d0893c9b93c">caloriesPerKg</a> () const</td></tr>
+<tr class="memdesc:a18487a633f36b068127d2d0893c9b93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Калорийность, ккал на кг.  <br /></td></tr>
+<tr class="memitem:a78b6a79ae2de2a7aff7fcf1dbab6090d" id="r_a78b6a79ae2de2a7aff7fcf1dbab6090d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a78b6a79ae2de2a7aff7fcf1dbab6090d">stockKg</a> () const</td></tr>
+<tr class="memdesc:a78b6a79ae2de2a7aff7fcf1dbab6090d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Остаток на складе, кг.  <br /></td></tr>
+<tr class="memitem:ab26b3a909ed9e30902b5fbd6d5eab062" id="r_ab26b3a909ed9e30902b5fbd6d5eab062"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab26b3a909ed9e30902b5fbd6d5eab062">pricePerKg</a> () const</td></tr>
+<tr class="memdesc:ab26b3a909ed9e30902b5fbd6d5eab062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цена за килограмм.  <br /></td></tr>
+<tr class="memitem:a58f98b1bb30aed10f037c5003414d767" id="r_a58f98b1bb30aed10f037c5003414d767"><td class="memItemLeft">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a58f98b1bb30aed10f037c5003414d767">expiry</a> () const</td></tr>
+<tr class="memdesc:a58f98b1bb30aed10f037c5003414d767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дата окончания срока годности.  <br /></td></tr>
+<tr class="memitem:a17784ed08215106d2c34922bd4eaca38" id="r_a17784ed08215106d2c34922bd4eaca38"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a17784ed08215106d2c34922bd4eaca38">consume</a> (double kg, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today)</td></tr>
+<tr class="memdesc:a17784ed08215106d2c34922bd4eaca38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Списывает корм; проверяет срок годности и остаток.  <br /></td></tr>
+<tr class="memitem:a717dab4c2c8aba43e6c24fb81b34e1c8" id="r_a717dab4c2c8aba43e6c24fb81b34e1c8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a717dab4c2c8aba43e6c24fb81b34e1c8">isExpired</a> (const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today) const</td></tr>
+<tr class="memdesc:a717dab4c2c8aba43e6c24fb81b34e1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, просрочена ли партия.  <br /></td></tr>
+<tr class="memitem:ac22608b20c671b8acabb6cbdedf1734b" id="r_ac22608b20c671b8acabb6cbdedf1734b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac22608b20c671b8acabb6cbdedf1734b">daysUntilExpiry</a> (const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today) const</td></tr>
+<tr class="memdesc:ac22608b20c671b8acabb6cbdedf1734b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сколько дней осталось до конца срока годности.  <br /></td></tr>
+<tr class="memitem:a61cc35285ad86088694b696b05a82f21" id="r_a61cc35285ad86088694b696b05a82f21"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a61cc35285ad86088694b696b05a82f21">cost</a> (double kg) const</td></tr>
+<tr class="memdesc:a61cc35285ad86088694b696b05a82f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стоимость заданного количества корма.  <br /></td></tr>
+<tr class="memitem:a844ebdd197cba44270dfa3ffd00c38cf" id="r_a844ebdd197cba44270dfa3ffd00c38cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a844ebdd197cba44270dfa3ffd00c38cf">addStock</a> (double kg)</td></tr>
+<tr class="memdesc:a844ebdd197cba44270dfa3ffd00c38cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличивает остаток.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a7d9e755d727e7a7c13d655994a8fb770" id="r_a7d9e755d727e7a7c13d655994a8fb770"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a7d9e755d727e7a7c13d655994a8fb770">name_</a></td></tr>
+<tr class="memdesc:a7d9e755d727e7a7c13d655994a8fb770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название корма.  <br /></td></tr>
+<tr class="memitem:a4843b8e1c1e2ff1c9e5114554b8b44a0" id="r_a4843b8e1c1e2ff1c9e5114554b8b44a0"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a4843b8e1c1e2ff1c9e5114554b8b44a0">caloriesPerKg_</a></td></tr>
+<tr class="memdesc:a4843b8e1c1e2ff1c9e5114554b8b44a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Калорийность, ккал на кг.  <br /></td></tr>
+<tr class="memitem:a28cd0509d00e9f100351d87c4df60bb3" id="r_a28cd0509d00e9f100351d87c4df60bb3"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a28cd0509d00e9f100351d87c4df60bb3">stockKg_</a></td></tr>
+<tr class="memdesc:a28cd0509d00e9f100351d87c4df60bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Остаток, кг.  <br /></td></tr>
+<tr class="memitem:a5663095e9ca58986894b852751d9e2c0" id="r_a5663095e9ca58986894b852751d9e2c0"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a5663095e9ca58986894b852751d9e2c0">pricePerKg_</a></td></tr>
+<tr class="memdesc:a5663095e9ca58986894b852751d9e2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цена за кг.  <br /></td></tr>
+<tr class="memitem:a14bde6ffb3bbcc6817ef1cbcc32e0cf4" id="r_a14bde6ffb3bbcc6817ef1cbcc32e0cf4"><td class="memItemLeft"><a class="el" href="classocean_1_1_date.html">Date</a>&#160;</td><td class="memItemRight"><a class="el" href="#a14bde6ffb3bbcc6817ef1cbcc32e0cf4">expiry_</a></td></tr>
+<tr class="memdesc:a14bde6ffb3bbcc6817ef1cbcc32e0cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дата окончания срока годности.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Партия корма определённого вида. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00017">17</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a9fe7ef92fe35107d4bb268df7ae47b96" name="a9fe7ef92fe35107d4bb268df7ae47b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe7ef92fe35107d4bb268df7ae47b96">&#9670;&#160;</a></span>FoodItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::FoodItem::FoodItem </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>caloriesPerKg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>stockKg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>pricePerKg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expiry</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт партию корма. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Название корма. </td></tr>
+    <tr><td class="paramname">caloriesPerKg</td><td>Калорийность, ккал на кг (&gt; 0). </td></tr>
+    <tr><td class="paramname">stockKg</td><td>Остаток, кг (&gt;= 0). </td></tr>
+    <tr><td class="paramname">pricePerKg</td><td>Цена за кг (&gt;= 0). </td></tr>
+    <tr><td class="paramname">expiry</td><td>Дата окончания срока годности. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если название пусто или числовые значения некорректны. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8cpp_source.html">Food.cpp</a> строка <a class="el" href="_food_8cpp_source.html#l00012">12</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a844ebdd197cba44270dfa3ffd00c38cf" name="a844ebdd197cba44270dfa3ffd00c38cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844ebdd197cba44270dfa3ffd00c38cf">&#9670;&#160;</a></span>addStock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::FoodItem::addStock </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>kg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Увеличивает остаток. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kg</td><td>Добавляемое количество, кг (&gt; 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если kg &lt;= 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8cpp_source.html">Food.cpp</a> строка <a class="el" href="_food_8cpp_source.html#l00053">53</a></p>
+
+</div>
+</div>
+<a id="a18487a633f36b068127d2d0893c9b93c" name="a18487a633f36b068127d2d0893c9b93c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18487a633f36b068127d2d0893c9b93c">&#9670;&#160;</a></span>caloriesPerKg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FoodItem::caloriesPerKg </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Калорийность, ккал на кг. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<a id="a17784ed08215106d2c34922bd4eaca38" name="a17784ed08215106d2c34922bd4eaca38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17784ed08215106d2c34922bd4eaca38">&#9670;&#160;</a></span>consume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::FoodItem::consume </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>kg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>today</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Списывает корм; проверяет срок годности и остаток. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kg</td><td>Количество, кг (&gt; 0). </td></tr>
+    <tr><td class="paramname">today</td><td>Текущая дата. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если kg &lt;= 0. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_expired_product_exception.html" title="Срок годности корма или лекарства истёк.">ExpiredProductException</a></td><td>если срок годности истёк. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_insufficient_food_exception.html" title="Недостаточно корма на складе.">InsufficientFoodException</a></td><td>если остатка меньше запрошенного. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8cpp_source.html">Food.cpp</a> строка <a class="el" href="_food_8cpp_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="a61cc35285ad86088694b696b05a82f21" name="a61cc35285ad86088694b696b05a82f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cc35285ad86088694b696b05a82f21">&#9670;&#160;</a></span>cost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FoodItem::cost </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>kg</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Стоимость заданного количества корма. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kg</td><td>Количество, кг (&gt;= 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>kg * цена за кг. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если kg &lt; 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8cpp_source.html">Food.cpp</a> строка <a class="el" href="_food_8cpp_source.html#l00046">46</a></p>
+
+</div>
+</div>
+<a id="ac22608b20c671b8acabb6cbdedf1734b" name="ac22608b20c671b8acabb6cbdedf1734b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac22608b20c671b8acabb6cbdedf1734b">&#9670;&#160;</a></span>daysUntilExpiry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::FoodItem::daysUntilExpiry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>today</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сколько дней осталось до конца срока годности. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">today</td><td>Текущая дата. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число дней (отрицательное, если срок истёк). </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8cpp_source.html">Food.cpp</a> строка <a class="el" href="_food_8cpp_source.html#l00042">42</a></p>
+
+</div>
+</div>
+<a id="a58f98b1bb30aed10f037c5003414d767" name="a58f98b1bb30aed10f037c5003414d767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f98b1bb30aed10f037c5003414d767">&#9670;&#160;</a></span>expiry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp; ocean::FoodItem::expiry </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дата окончания срока годности. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00040">40</a></p>
+
+</div>
+</div>
+<a id="a717dab4c2c8aba43e6c24fb81b34e1c8" name="a717dab4c2c8aba43e6c24fb81b34e1c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717dab4c2c8aba43e6c24fb81b34e1c8">&#9670;&#160;</a></span>isExpired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::FoodItem::isExpired </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>today</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, просрочена ли партия. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">today</td><td>Текущая дата. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если срок годности закончился раньше today. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8cpp_source.html">Food.cpp</a> строка <a class="el" href="_food_8cpp_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="a0108f51bdaef0e114b339ccc21c8b032" name="a0108f51bdaef0e114b339ccc21c8b032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0108f51bdaef0e114b339ccc21c8b032">&#9670;&#160;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::FoodItem::name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название корма. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00032">32</a></p>
+
+</div>
+</div>
+<a id="ab26b3a909ed9e30902b5fbd6d5eab062" name="ab26b3a909ed9e30902b5fbd6d5eab062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26b3a909ed9e30902b5fbd6d5eab062">&#9670;&#160;</a></span>pricePerKg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FoodItem::pricePerKg </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Цена за килограмм. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="a78b6a79ae2de2a7aff7fcf1dbab6090d" name="a78b6a79ae2de2a7aff7fcf1dbab6090d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b6a79ae2de2a7aff7fcf1dbab6090d">&#9670;&#160;</a></span>stockKg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FoodItem::stockKg </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Остаток на складе, кг. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00036">36</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a4843b8e1c1e2ff1c9e5114554b8b44a0" name="a4843b8e1c1e2ff1c9e5114554b8b44a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4843b8e1c1e2ff1c9e5114554b8b44a0">&#9670;&#160;</a></span>caloriesPerKg_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FoodItem::caloriesPerKg_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Калорийность, ккал на кг. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00079">79</a></p>
+
+</div>
+</div>
+<a id="a14bde6ffb3bbcc6817ef1cbcc32e0cf4" name="a14bde6ffb3bbcc6817ef1cbcc32e0cf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14bde6ffb3bbcc6817ef1cbcc32e0cf4">&#9670;&#160;</a></span>expiry_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_date.html">Date</a> ocean::FoodItem::expiry_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дата окончания срока годности. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00082">82</a></p>
+
+</div>
+</div>
+<a id="a7d9e755d727e7a7c13d655994a8fb770" name="a7d9e755d727e7a7c13d655994a8fb770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d9e755d727e7a7c13d655994a8fb770">&#9670;&#160;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::FoodItem::name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название корма. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00078">78</a></p>
+
+</div>
+</div>
+<a id="a5663095e9ca58986894b852751d9e2c0" name="a5663095e9ca58986894b852751d9e2c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5663095e9ca58986894b852751d9e2c0">&#9670;&#160;</a></span>pricePerKg_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FoodItem::pricePerKg_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Цена за кг. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00081">81</a></p>
+
+</div>
+</div>
+<a id="a28cd0509d00e9f100351d87c4df60bb3" name="a28cd0509d00e9f100351d87c4df60bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cd0509d00e9f100351d87c4df60bb3">&#9670;&#160;</a></span>stockKg_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::FoodItem::stockKg_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Остаток, кг. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_food_8h_source.html">Food.h</a> строка <a class="el" href="_food_8h_source.html#l00080">80</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_food_8h_source.html">Food.h</a></li>
+<li>src/<a class="el" href="_food_8cpp_source.html">Food.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_food_item.html">FoodItem</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

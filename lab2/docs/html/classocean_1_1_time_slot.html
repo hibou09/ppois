@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::TimeSlot</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_time_slot.html','','classocean_1_1_time_slot-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::TimeSlot</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Интервал времени внутри суток, в минутах от полуночи: [start, end).  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_common_8h_source.html">Common.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::TimeSlot:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_time_slot__coll__graph.png" border="0" usemap="#aocean_1_1_time_slot_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab0fb830aef2cc090fe29f3c10753c4b4" id="r_ab0fb830aef2cc090fe29f3c10753c4b4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab0fb830aef2cc090fe29f3c10753c4b4">TimeSlot</a> (int startMinute, int endMinute)</td></tr>
+<tr class="memdesc:ab0fb830aef2cc090fe29f3c10753c4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт интервал.  <br /></td></tr>
+<tr class="memitem:a6aa8f35668c9a3f8ac16280f4113a3ff" id="r_a6aa8f35668c9a3f8ac16280f4113a3ff"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6aa8f35668c9a3f8ac16280f4113a3ff">start</a> () const</td></tr>
+<tr class="memdesc:a6aa8f35668c9a3f8ac16280f4113a3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начало интервала в минутах от полуночи.  <br /></td></tr>
+<tr class="memitem:a534883ef29aa63b4a104763f9b33c4b7" id="r_a534883ef29aa63b4a104763f9b33c4b7"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a534883ef29aa63b4a104763f9b33c4b7">end</a> () const</td></tr>
+<tr class="memdesc:a534883ef29aa63b4a104763f9b33c4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конец интервала в минутах от полуночи (не включительно).  <br /></td></tr>
+<tr class="memitem:af77c571d02ae95ab81a4a5d5dfaea6ee" id="r_af77c571d02ae95ab81a4a5d5dfaea6ee"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af77c571d02ae95ab81a4a5d5dfaea6ee">durationMinutes</a> () const</td></tr>
+<tr class="memdesc:af77c571d02ae95ab81a4a5d5dfaea6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длительность интервала.  <br /></td></tr>
+<tr class="memitem:a01def1f41e6df26e09b17568b85328a8" id="r_a01def1f41e6df26e09b17568b85328a8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a01def1f41e6df26e09b17568b85328a8">overlaps</a> (const <a class="el" href="#ab0fb830aef2cc090fe29f3c10753c4b4">TimeSlot</a> &amp;other) const</td></tr>
+<tr class="memdesc:a01def1f41e6df26e09b17568b85328a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет пересечение с другим интервалом.  <br /></td></tr>
+<tr class="memitem:a372a4e89321fe0f76cc388a9f6609fb3" id="r_a372a4e89321fe0f76cc388a9f6609fb3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a372a4e89321fe0f76cc388a9f6609fb3">contains</a> (int minute) const</td></tr>
+<tr class="memdesc:a372a4e89321fe0f76cc388a9f6609fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, попадает ли момент времени в интервал.  <br /></td></tr>
+<tr class="memitem:a73718835f4a527f7d97b2dabf1c851f9" id="r_a73718835f4a527f7d97b2dabf1c851f9"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a73718835f4a527f7d97b2dabf1c851f9">toString</a> () const</td></tr>
+<tr class="memdesc:a73718835f4a527f7d97b2dabf1c851f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовое представление интервала.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a9a116f75e64f676070461c4e4f371a83" id="r_a9a116f75e64f676070461c4e4f371a83"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9a116f75e64f676070461c4e4f371a83">start_</a></td></tr>
+<tr class="memdesc:a9a116f75e64f676070461c4e4f371a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начало интервала, минуты от полуночи.  <br /></td></tr>
+<tr class="memitem:a6d8adf2a931894eb569f27dc19428601" id="r_a6d8adf2a931894eb569f27dc19428601"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6d8adf2a931894eb569f27dc19428601">end_</a></td></tr>
+<tr class="memdesc:a6d8adf2a931894eb569f27dc19428601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конец интервала, минуты от полуночи.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Интервал времени внутри суток, в минутах от полуночи: [start, end). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00107">107</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ab0fb830aef2cc090fe29f3c10753c4b4" name="ab0fb830aef2cc090fe29f3c10753c4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0fb830aef2cc090fe29f3c10753c4b4">&#9670;&#160;</a></span>TimeSlot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::TimeSlot::TimeSlot </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>startMinute</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>endMinute</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт интервал. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startMinute</td><td>Начало, минуты от полуночи (включительно). </td></tr>
+    <tr><td class="paramname">endMinute</td><td>Конец, минуты от полуночи (не включительно). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если не выполняется 0 &lt;= start &lt; end &lt;= 1440. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00088">88</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a372a4e89321fe0f76cc388a9f6609fb3" name="a372a4e89321fe0f76cc388a9f6609fb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372a4e89321fe0f76cc388a9f6609fb3">&#9670;&#160;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::TimeSlot::contains </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minute</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, попадает ли момент времени в интервал. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minute</td><td>Момент, минуты от полуночи. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если start &lt;= minute &lt; end. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00102">102</a></p>
+
+</div>
+</div>
+<a id="af77c571d02ae95ab81a4a5d5dfaea6ee" name="af77c571d02ae95ab81a4a5d5dfaea6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77c571d02ae95ab81a4a5d5dfaea6ee">&#9670;&#160;</a></span>durationMinutes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::TimeSlot::durationMinutes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Длительность интервала. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Длительность в минутах. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00094">94</a></p>
+
+</div>
+</div>
+<a id="a534883ef29aa63b4a104763f9b33c4b7" name="a534883ef29aa63b4a104763f9b33c4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534883ef29aa63b4a104763f9b33c4b7">&#9670;&#160;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::TimeSlot::end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конец интервала в минутах от полуночи (не включительно). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00120">120</a></p>
+
+</div>
+</div>
+<a id="a01def1f41e6df26e09b17568b85328a8" name="a01def1f41e6df26e09b17568b85328a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01def1f41e6df26e09b17568b85328a8">&#9670;&#160;</a></span>overlaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::TimeSlot::overlaps </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ab0fb830aef2cc090fe29f3c10753c4b4">TimeSlot</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет пересечение с другим интервалом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Другой интервал. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если интервалы имеют общую часть. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00098">98</a></p>
+
+</div>
+</div>
+<a id="a6aa8f35668c9a3f8ac16280f4113a3ff" name="a6aa8f35668c9a3f8ac16280f4113a3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa8f35668c9a3f8ac16280f4113a3ff">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::TimeSlot::start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Начало интервала в минутах от полуночи. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00118">118</a></p>
+
+</div>
+</div>
+<a id="a73718835f4a527f7d97b2dabf1c851f9" name="a73718835f4a527f7d97b2dabf1c851f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73718835f4a527f7d97b2dabf1c851f9">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::TimeSlot::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Текстовое представление интервала. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка формата ЧЧ:ММ-ЧЧ:ММ. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8cpp_source.html">Common.cpp</a> строка <a class="el" href="_common_8cpp_source.html#l00106">106</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a6d8adf2a931894eb569f27dc19428601" name="a6d8adf2a931894eb569f27dc19428601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8adf2a931894eb569f27dc19428601">&#9670;&#160;</a></span>end_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::TimeSlot::end_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конец интервала, минуты от полуночи. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00147">147</a></p>
+
+</div>
+</div>
+<a id="a9a116f75e64f676070461c4e4f371a83" name="a9a116f75e64f676070461c4e4f371a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a116f75e64f676070461c4e4f371a83">&#9670;&#160;</a></span>start_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::TimeSlot::start_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Начало интервала, минуты от полуночи. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_common_8h_source.html">Common.h</a> строка <a class="el" href="_common_8h_source.html#l00146">146</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_common_8h_source.html">Common.h</a></li>
+<li>src/<a class="el" href="_common_8cpp_source.html">Common.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_time_slot.html">TimeSlot</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

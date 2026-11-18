@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::WaterRequirements</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_water_requirements.html','','classocean_1_1_water_requirements-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::WaterRequirements</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Диапазоны параметров воды, допустимые для вида.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_water_8h_source.html">Water.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::WaterRequirements:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_water_requirements__coll__graph.png" border="0" usemap="#aocean_1_1_water_requirements_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a6f7ce9af1d4748cc779f2e5491465bb6" id="r_a6f7ce9af1d4748cc779f2e5491465bb6"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6f7ce9af1d4748cc779f2e5491465bb6">WaterRequirements</a> (double minTemp, double maxTemp, double minSalinity, double maxSalinity, double minPh, double maxPh, double minOxygen)</td></tr>
+<tr class="memdesc:a6f7ce9af1d4748cc779f2e5491465bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт требования вида к воде.  <br /></td></tr>
+<tr class="memitem:aabaaabefdafce2949491747b5c7fa252" id="r_aabaaabefdafce2949491747b5c7fa252"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aabaaabefdafce2949491747b5c7fa252">minTemp</a> () const</td></tr>
+<tr class="memdesc:aabaaabefdafce2949491747b5c7fa252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальная допустимая температура, °C.  <br /></td></tr>
+<tr class="memitem:a8c2be2845a52293fcbf37238d65dbcaa" id="r_a8c2be2845a52293fcbf37238d65dbcaa"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a8c2be2845a52293fcbf37238d65dbcaa">maxTemp</a> () const</td></tr>
+<tr class="memdesc:a8c2be2845a52293fcbf37238d65dbcaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная допустимая температура, °C.  <br /></td></tr>
+<tr class="memitem:ae6f41f9da33edf121255a03221b7071b" id="r_ae6f41f9da33edf121255a03221b7071b"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ae6f41f9da33edf121255a03221b7071b">minSalinity</a> () const</td></tr>
+<tr class="memdesc:ae6f41f9da33edf121255a03221b7071b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальная допустимая солёность, ppt.  <br /></td></tr>
+<tr class="memitem:a9d02140be3f610c768afd1e8d177eeff" id="r_a9d02140be3f610c768afd1e8d177eeff"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a9d02140be3f610c768afd1e8d177eeff">maxSalinity</a> () const</td></tr>
+<tr class="memdesc:a9d02140be3f610c768afd1e8d177eeff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная допустимая солёность, ppt.  <br /></td></tr>
+<tr class="memitem:a059d585361432641ca9a5a2209248006" id="r_a059d585361432641ca9a5a2209248006"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a059d585361432641ca9a5a2209248006">minPh</a> () const</td></tr>
+<tr class="memdesc:a059d585361432641ca9a5a2209248006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальный допустимый pH.  <br /></td></tr>
+<tr class="memitem:a567fec1bded910d71872cd496b82447e" id="r_a567fec1bded910d71872cd496b82447e"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a567fec1bded910d71872cd496b82447e">maxPh</a> () const</td></tr>
+<tr class="memdesc:a567fec1bded910d71872cd496b82447e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальный допустимый pH.  <br /></td></tr>
+<tr class="memitem:ae856cd1ed1bcfeda481b529f88a0eb9f" id="r_ae856cd1ed1bcfeda481b529f88a0eb9f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ae856cd1ed1bcfeda481b529f88a0eb9f">minOxygen</a> () const</td></tr>
+<tr class="memdesc:ae856cd1ed1bcfeda481b529f88a0eb9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимально необходимое содержание кислорода, мг/л.  <br /></td></tr>
+<tr class="memitem:a337796700744958b8c3403eaf542f46a" id="r_a337796700744958b8c3403eaf542f46a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a337796700744958b8c3403eaf542f46a">accepts</a> (const <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;water) const</td></tr>
+<tr class="memdesc:a337796700744958b8c3403eaf542f46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, подходит ли вода виду.  <br /></td></tr>
+<tr class="memitem:aacb3d0ee875980323960c7850a73bdac" id="r_aacb3d0ee875980323960c7850a73bdac"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aacb3d0ee875980323960c7850a73bdac">isSaltwater</a> () const</td></tr>
+<tr class="memdesc:aacb3d0ee875980323960c7850a73bdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет, нужна ли виду морская вода.  <br /></td></tr>
+<tr class="memitem:a0ab626dd55915b58312ff3fb043fdfa5" id="r_a0ab626dd55915b58312ff3fb043fdfa5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0ab626dd55915b58312ff3fb043fdfa5">overlaps</a> (const <a class="el" href="#a6f7ce9af1d4748cc779f2e5491465bb6">WaterRequirements</a> &amp;other) const</td></tr>
+<tr class="memdesc:a0ab626dd55915b58312ff3fb043fdfa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, пересекаются ли диапазоны температуры, солёности и pH.  <br /></td></tr>
+<tr class="memitem:a32d2eb48aa031767ea7b057209b3b82c" id="r_a32d2eb48aa031767ea7b057209b3b82c"><td class="memItemLeft"><a class="el" href="#a6f7ce9af1d4748cc779f2e5491465bb6">WaterRequirements</a>&#160;</td><td class="memItemRight"><a class="el" href="#a32d2eb48aa031767ea7b057209b3b82c">intersect</a> (const <a class="el" href="#a6f7ce9af1d4748cc779f2e5491465bb6">WaterRequirements</a> &amp;other) const</td></tr>
+<tr class="memdesc:a32d2eb48aa031767ea7b057209b3b82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересечение диапазонов двух видов.  <br /></td></tr>
+<tr class="memitem:aac87899d99467cb45f001a2dcabb8be0" id="r_aac87899d99467cb45f001a2dcabb8be0"><td class="memItemLeft"><a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a>&#160;</td><td class="memItemRight"><a class="el" href="#aac87899d99467cb45f001a2dcabb8be0">ideal</a> () const</td></tr>
+<tr class="memdesc:aac87899d99467cb45f001a2dcabb8be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идеальные параметры — середины диапазонов.  <br /></td></tr>
+<tr class="memitem:a54730fa312c67483a8b5ac92955e1974" id="r_a54730fa312c67483a8b5ac92955e1974"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a54730fa312c67483a8b5ac92955e1974">deviation</a> (const <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;water) const</td></tr>
+<tr class="memdesc:a54730fa312c67483a8b5ac92955e1974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Суммарное отклонение параметров от допустимых диапазонов.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a411ef210a2ea7da9a3bb98d298a3eee1" id="r_a411ef210a2ea7da9a3bb98d298a3eee1"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a411ef210a2ea7da9a3bb98d298a3eee1">minTemp_</a></td></tr>
+<tr class="memdesc:a411ef210a2ea7da9a3bb98d298a3eee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальная температура, °C.  <br /></td></tr>
+<tr class="memitem:a33acf3f4a02d098e407d5c7b15673fad" id="r_a33acf3f4a02d098e407d5c7b15673fad"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a33acf3f4a02d098e407d5c7b15673fad">maxTemp_</a></td></tr>
+<tr class="memdesc:a33acf3f4a02d098e407d5c7b15673fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная температура, °C.  <br /></td></tr>
+<tr class="memitem:ab09f103a2c47a200bb676e2d21242fbd" id="r_ab09f103a2c47a200bb676e2d21242fbd"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab09f103a2c47a200bb676e2d21242fbd">minSalinity_</a></td></tr>
+<tr class="memdesc:ab09f103a2c47a200bb676e2d21242fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальная солёность, ppt.  <br /></td></tr>
+<tr class="memitem:a0b4fc49ca93945eb70cedf074a140db3" id="r_a0b4fc49ca93945eb70cedf074a140db3"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a0b4fc49ca93945eb70cedf074a140db3">maxSalinity_</a></td></tr>
+<tr class="memdesc:a0b4fc49ca93945eb70cedf074a140db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная солёность, ppt.  <br /></td></tr>
+<tr class="memitem:ae7ad3ce9950373741110bae9998e7d3f" id="r_ae7ad3ce9950373741110bae9998e7d3f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ae7ad3ce9950373741110bae9998e7d3f">minPh_</a></td></tr>
+<tr class="memdesc:ae7ad3ce9950373741110bae9998e7d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальный pH.  <br /></td></tr>
+<tr class="memitem:a6bb5108eae94b79fef0549af82450dcc" id="r_a6bb5108eae94b79fef0549af82450dcc"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a6bb5108eae94b79fef0549af82450dcc">maxPh_</a></td></tr>
+<tr class="memdesc:a6bb5108eae94b79fef0549af82450dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальный pH.  <br /></td></tr>
+<tr class="memitem:a37bbe95eb46e45aac541c22ee1aac6b4" id="r_a37bbe95eb46e45aac541c22ee1aac6b4"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a37bbe95eb46e45aac541c22ee1aac6b4">minOxygen_</a></td></tr>
+<tr class="memdesc:a37bbe95eb46e45aac541c22ee1aac6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальное содержание кислорода, мг/л.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Диапазоны параметров воды, допустимые для вида. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00099">99</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a6f7ce9af1d4748cc779f2e5491465bb6" name="a6f7ce9af1d4748cc779f2e5491465bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7ce9af1d4748cc779f2e5491465bb6">&#9670;&#160;</a></span>WaterRequirements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::WaterRequirements::WaterRequirements </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>minTemp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxTemp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>minSalinity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxSalinity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>minPh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxPh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>minOxygen</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт требования вида к воде. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minTemp</td><td>Минимальная температура, °C. </td></tr>
+    <tr><td class="paramname">maxTemp</td><td>Максимальная температура, °C. </td></tr>
+    <tr><td class="paramname">minSalinity</td><td>Минимальная солёность, ppt. </td></tr>
+    <tr><td class="paramname">maxSalinity</td><td>Максимальная солёность, ppt. </td></tr>
+    <tr><td class="paramname">minPh</td><td>Минимальный pH. </td></tr>
+    <tr><td class="paramname">maxPh</td><td>Максимальный pH. </td></tr>
+    <tr><td class="paramname">minOxygen</td><td>Минимальное содержание кислорода, мг/л. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если минимум больше максимума или кислород отрицателен. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00087">87</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a337796700744958b8c3403eaf542f46a" name="a337796700744958b8c3403eaf542f46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337796700744958b8c3403eaf542f46a">&#9670;&#160;</a></span>accepts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::WaterRequirements::accepts </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>water</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, подходит ли вода виду. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">water</td><td>Проверяемые параметры воды. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если все параметры в диапазонах, кислорода достаточно и вода не токсична. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00100">100</a></p>
+
+</div>
+</div>
+<a id="a54730fa312c67483a8b5ac92955e1974" name="a54730fa312c67483a8b5ac92955e1974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54730fa312c67483a8b5ac92955e1974">&#9670;&#160;</a></span>deviation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::deviation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>water</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Суммарное отклонение параметров от допустимых диапазонов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">water</td><td>Проверяемые параметры воды. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сумма отклонений по температуре, солёности, pH и кислороду (0, если всё в норме). </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00131">131</a></p>
+
+</div>
+</div>
+<a id="aac87899d99467cb45f001a2dcabb8be0" name="aac87899d99467cb45f001a2dcabb8be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac87899d99467cb45f001a2dcabb8be0">&#9670;&#160;</a></span>ideal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_water_parameters.html">WaterParameters</a> ocean::WaterRequirements::ideal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Идеальные параметры — середины диапазонов. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Параметры воды; кислород берётся на 1 мг/л выше минимума, аммиак равен 0. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a32d2eb48aa031767ea7b057209b3b82c" name="a32d2eb48aa031767ea7b057209b3b82c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d2eb48aa031767ea7b057209b3b82c">&#9670;&#160;</a></span>intersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a6f7ce9af1d4748cc779f2e5491465bb6">WaterRequirements</a> ocean::WaterRequirements::intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a6f7ce9af1d4748cc779f2e5491465bb6">WaterRequirements</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пересечение диапазонов двух видов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Требования другого вида. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Требования, подходящие обоим видам. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_incompatible_species_exception.html" title="Виды не могут жить вместе (хищник/жертва, разные требования к воде).">IncompatibleSpeciesException</a></td><td>если диапазоны не пересекаются. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00116">116</a></p>
+
+</div>
+</div>
+<a id="aacb3d0ee875980323960c7850a73bdac" name="aacb3d0ee875980323960c7850a73bdac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb3d0ee875980323960c7850a73bdac">&#9670;&#160;</a></span>isSaltwater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::WaterRequirements::isSaltwater </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определяет, нужна ли виду морская вода. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если минимальная солёность не меньше 20 ppt. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00106">106</a></p>
+
+</div>
+</div>
+<a id="a567fec1bded910d71872cd496b82447e" name="a567fec1bded910d71872cd496b82447e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567fec1bded910d71872cd496b82447e">&#9670;&#160;</a></span>maxPh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::maxPh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимальный допустимый pH. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a9d02140be3f610c768afd1e8d177eeff" name="a9d02140be3f610c768afd1e8d177eeff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d02140be3f610c768afd1e8d177eeff">&#9670;&#160;</a></span>maxSalinity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::maxSalinity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимальная допустимая солёность, ppt. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00122">122</a></p>
+
+</div>
+</div>
+<a id="a8c2be2845a52293fcbf37238d65dbcaa" name="a8c2be2845a52293fcbf37238d65dbcaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2be2845a52293fcbf37238d65dbcaa">&#9670;&#160;</a></span>maxTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::maxTemp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимальная допустимая температура, °C. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00118">118</a></p>
+
+</div>
+</div>
+<a id="ae856cd1ed1bcfeda481b529f88a0eb9f" name="ae856cd1ed1bcfeda481b529f88a0eb9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae856cd1ed1bcfeda481b529f88a0eb9f">&#9670;&#160;</a></span>minOxygen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::minOxygen </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимально необходимое содержание кислорода, мг/л. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00128">128</a></p>
+
+</div>
+</div>
+<a id="a059d585361432641ca9a5a2209248006" name="a059d585361432641ca9a5a2209248006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059d585361432641ca9a5a2209248006">&#9670;&#160;</a></span>minPh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::minPh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимальный допустимый pH. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00124">124</a></p>
+
+</div>
+</div>
+<a id="ae6f41f9da33edf121255a03221b7071b" name="ae6f41f9da33edf121255a03221b7071b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f41f9da33edf121255a03221b7071b">&#9670;&#160;</a></span>minSalinity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::minSalinity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимальная допустимая солёность, ppt. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00120">120</a></p>
+
+</div>
+</div>
+<a id="aabaaabefdafce2949491747b5c7fa252" name="aabaaabefdafce2949491747b5c7fa252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabaaabefdafce2949491747b5c7fa252">&#9670;&#160;</a></span>minTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::minTemp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимальная допустимая температура, °C. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00116">116</a></p>
+
+</div>
+</div>
+<a id="a0ab626dd55915b58312ff3fb043fdfa5" name="a0ab626dd55915b58312ff3fb043fdfa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab626dd55915b58312ff3fb043fdfa5">&#9670;&#160;</a></span>overlaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::WaterRequirements::overlaps </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a6f7ce9af1d4748cc779f2e5491465bb6">WaterRequirements</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, пересекаются ли диапазоны температуры, солёности и pH. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Требования другого вида. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если у видов есть общие допустимые условия. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8cpp_source.html">Water.cpp</a> строка <a class="el" href="_water_8cpp_source.html#l00110">110</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a6bb5108eae94b79fef0549af82450dcc" name="a6bb5108eae94b79fef0549af82450dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb5108eae94b79fef0549af82450dcc">&#9670;&#160;</a></span>maxPh_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::maxPh_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимальный pH. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00172">172</a></p>
+
+</div>
+</div>
+<a id="a0b4fc49ca93945eb70cedf074a140db3" name="a0b4fc49ca93945eb70cedf074a140db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b4fc49ca93945eb70cedf074a140db3">&#9670;&#160;</a></span>maxSalinity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::maxSalinity_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимальная солёность, ppt. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00170">170</a></p>
+
+</div>
+</div>
+<a id="a33acf3f4a02d098e407d5c7b15673fad" name="a33acf3f4a02d098e407d5c7b15673fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33acf3f4a02d098e407d5c7b15673fad">&#9670;&#160;</a></span>maxTemp_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::maxTemp_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимальная температура, °C. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00168">168</a></p>
+
+</div>
+</div>
+<a id="a37bbe95eb46e45aac541c22ee1aac6b4" name="a37bbe95eb46e45aac541c22ee1aac6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37bbe95eb46e45aac541c22ee1aac6b4">&#9670;&#160;</a></span>minOxygen_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::minOxygen_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимальное содержание кислорода, мг/л. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00173">173</a></p>
+
+</div>
+</div>
+<a id="ae7ad3ce9950373741110bae9998e7d3f" name="ae7ad3ce9950373741110bae9998e7d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ad3ce9950373741110bae9998e7d3f">&#9670;&#160;</a></span>minPh_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::minPh_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимальный pH. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00171">171</a></p>
+
+</div>
+</div>
+<a id="ab09f103a2c47a200bb676e2d21242fbd" name="ab09f103a2c47a200bb676e2d21242fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09f103a2c47a200bb676e2d21242fbd">&#9670;&#160;</a></span>minSalinity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::minSalinity_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимальная солёность, ppt. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00169">169</a></p>
+
+</div>
+</div>
+<a id="a411ef210a2ea7da9a3bb98d298a3eee1" name="a411ef210a2ea7da9a3bb98d298a3eee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411ef210a2ea7da9a3bb98d298a3eee1">&#9670;&#160;</a></span>minTemp_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::WaterRequirements::minTemp_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимальная температура, °C. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_water_8h_source.html">Water.h</a> строка <a class="el" href="_water_8h_source.html#l00167">167</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_water_8h_source.html">Water.h</a></li>
+<li>src/<a class="el" href="_water_8cpp_source.html">Water.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_water_requirements.html">WaterRequirements</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

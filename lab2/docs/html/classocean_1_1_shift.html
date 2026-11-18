@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::Shift</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_shift.html','','classocean_1_1_shift-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::Shift</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Рабочая смена сотрудника.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_staff_8h_source.html">Staff.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::Shift:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_shift__coll__graph.png" border="0" usemap="#aocean_1_1_shift_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8fcfa269feff29fad5582b744ddb12a3" id="r_a8fcfa269feff29fad5582b744ddb12a3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8fcfa269feff29fad5582b744ddb12a3">Shift</a> (int employeeId, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;date, const <a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> &amp;slot)</td></tr>
+<tr class="memdesc:a8fcfa269feff29fad5582b744ddb12a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт смену.  <br /></td></tr>
+<tr class="memitem:aa2d77541839447600cfc26c5a67e8262" id="r_aa2d77541839447600cfc26c5a67e8262"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa2d77541839447600cfc26c5a67e8262">employeeId</a> () const</td></tr>
+<tr class="memdesc:aa2d77541839447600cfc26c5a67e8262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор сотрудника.  <br /></td></tr>
+<tr class="memitem:a072fc6eb837e28be7896ec6406802b48" id="r_a072fc6eb837e28be7896ec6406802b48"><td class="memItemLeft">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a072fc6eb837e28be7896ec6406802b48">date</a> () const</td></tr>
+<tr class="memdesc:a072fc6eb837e28be7896ec6406802b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дата смены.  <br /></td></tr>
+<tr class="memitem:ad899655ca125c51e1f60ff6ca5f9bb32" id="r_ad899655ca125c51e1f60ff6ca5f9bb32"><td class="memItemLeft">const <a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad899655ca125c51e1f60ff6ca5f9bb32">slot</a> () const</td></tr>
+<tr class="memdesc:ad899655ca125c51e1f60ff6ca5f9bb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Временной интервал смены.  <br /></td></tr>
+<tr class="memitem:a15dfc840f1ae19c2fecdf3b6313b45a7" id="r_a15dfc840f1ae19c2fecdf3b6313b45a7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a15dfc840f1ae19c2fecdf3b6313b45a7">overlaps</a> (const <a class="el" href="#a8fcfa269feff29fad5582b744ddb12a3">Shift</a> &amp;other) const</td></tr>
+<tr class="memdesc:a15dfc840f1ae19c2fecdf3b6313b45a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет пересечение с другой сменой того же сотрудника.  <br /></td></tr>
+<tr class="memitem:a9d9b5701d12d963d888eb28a3d1ee8d2" id="r_a9d9b5701d12d963d888eb28a3d1ee8d2"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a9d9b5701d12d963d888eb28a3d1ee8d2">hours</a> () const</td></tr>
+<tr class="memdesc:a9d9b5701d12d963d888eb28a3d1ee8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длительность смены.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:af9b8539d589e78b64023e186dcb4d83a" id="r_af9b8539d589e78b64023e186dcb4d83a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af9b8539d589e78b64023e186dcb4d83a">employeeId_</a></td></tr>
+<tr class="memdesc:af9b8539d589e78b64023e186dcb4d83a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор сотрудника.  <br /></td></tr>
+<tr class="memitem:aeed4d11b721f66997191be29bc996b67" id="r_aeed4d11b721f66997191be29bc996b67"><td class="memItemLeft"><a class="el" href="classocean_1_1_date.html">Date</a>&#160;</td><td class="memItemRight"><a class="el" href="#aeed4d11b721f66997191be29bc996b67">date_</a></td></tr>
+<tr class="memdesc:aeed4d11b721f66997191be29bc996b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дата смены.  <br /></td></tr>
+<tr class="memitem:a39dce89be02edf031a41f27dc31fa511" id="r_a39dce89be02edf031a41f27dc31fa511"><td class="memItemLeft"><a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39dce89be02edf031a41f27dc31fa511">slot_</a></td></tr>
+<tr class="memdesc:a39dce89be02edf031a41f27dc31fa511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Временной интервал.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Рабочая смена сотрудника. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8h_source.html">Staff.h</a> строка <a class="el" href="_staff_8h_source.html#l00445">445</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a8fcfa269feff29fad5582b744ddb12a3" name="a8fcfa269feff29fad5582b744ddb12a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fcfa269feff29fad5582b744ddb12a3">&#9670;&#160;</a></span>Shift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::Shift::Shift </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>employeeId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>date</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>slot</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт смену. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">employeeId</td><td>Идентификатор сотрудника. </td></tr>
+    <tr><td class="paramname">date</td><td>Дата смены. </td></tr>
+    <tr><td class="paramname">slot</td><td>Временной интервал смены. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8cpp_source.html">Staff.cpp</a> строка <a class="el" href="_staff_8cpp_source.html#l00291">291</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a072fc6eb837e28be7896ec6406802b48" name="a072fc6eb837e28be7896ec6406802b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072fc6eb837e28be7896ec6406802b48">&#9670;&#160;</a></span>date()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp; ocean::Shift::date </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дата смены. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8h_source.html">Staff.h</a> строка <a class="el" href="_staff_8h_source.html#l00458">458</a></p>
+
+</div>
+</div>
+<a id="aa2d77541839447600cfc26c5a67e8262" name="aa2d77541839447600cfc26c5a67e8262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d77541839447600cfc26c5a67e8262">&#9670;&#160;</a></span>employeeId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Shift::employeeId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Идентификатор сотрудника. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8h_source.html">Staff.h</a> строка <a class="el" href="_staff_8h_source.html#l00456">456</a></p>
+
+</div>
+</div>
+<a id="a9d9b5701d12d963d888eb28a3d1ee8d2" name="a9d9b5701d12d963d888eb28a3d1ee8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9b5701d12d963d888eb28a3d1ee8d2">&#9670;&#160;</a></span>hours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Shift::hours </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Длительность смены. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Длительность в часах. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8cpp_source.html">Staff.cpp</a> строка <a class="el" href="_staff_8cpp_source.html#l00298">298</a></p>
+
+</div>
+</div>
+<a id="a15dfc840f1ae19c2fecdf3b6313b45a7" name="a15dfc840f1ae19c2fecdf3b6313b45a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15dfc840f1ae19c2fecdf3b6313b45a7">&#9670;&#160;</a></span>overlaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::Shift::overlaps </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a8fcfa269feff29fad5582b744ddb12a3">Shift</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет пересечение с другой сменой того же сотрудника. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Другая смена. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если сотрудник, дата совпадают и интервалы пересекаются. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8cpp_source.html">Staff.cpp</a> строка <a class="el" href="_staff_8cpp_source.html#l00294">294</a></p>
+
+</div>
+</div>
+<a id="ad899655ca125c51e1f60ff6ca5f9bb32" name="ad899655ca125c51e1f60ff6ca5f9bb32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad899655ca125c51e1f60ff6ca5f9bb32">&#9670;&#160;</a></span>slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> &amp; ocean::Shift::slot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Временной интервал смены. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8h_source.html">Staff.h</a> строка <a class="el" href="_staff_8h_source.html#l00460">460</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="aeed4d11b721f66997191be29bc996b67" name="aeed4d11b721f66997191be29bc996b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed4d11b721f66997191be29bc996b67">&#9670;&#160;</a></span>date_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_date.html">Date</a> ocean::Shift::date_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дата смены. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8h_source.html">Staff.h</a> строка <a class="el" href="_staff_8h_source.html#l00476">476</a></p>
+
+</div>
+</div>
+<a id="af9b8539d589e78b64023e186dcb4d83a" name="af9b8539d589e78b64023e186dcb4d83a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b8539d589e78b64023e186dcb4d83a">&#9670;&#160;</a></span>employeeId_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Shift::employeeId_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Идентификатор сотрудника. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8h_source.html">Staff.h</a> строка <a class="el" href="_staff_8h_source.html#l00475">475</a></p>
+
+</div>
+</div>
+<a id="a39dce89be02edf031a41f27dc31fa511" name="a39dce89be02edf031a41f27dc31fa511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39dce89be02edf031a41f27dc31fa511">&#9670;&#160;</a></span>slot_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_time_slot.html">TimeSlot</a> ocean::Shift::slot_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Временной интервал. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_staff_8h_source.html">Staff.h</a> строка <a class="el" href="_staff_8h_source.html#l00477">477</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_staff_8h_source.html">Staff.h</a></li>
+<li>src/<a class="el" href="_staff_8cpp_source.html">Staff.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_shift.html">Shift</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

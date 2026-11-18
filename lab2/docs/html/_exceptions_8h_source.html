@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Исходный файл include/Exceptions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_exceptions_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Exceptions.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_exceptions_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceocean.html">ocean</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classocean_1_1_oceanarium_exception.html">   15</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> : <span class="keyword">public</span> std::runtime_error {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">   21</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        : std::runtime_error(message) {}</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_date_exception.html">   28</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_invalid_date_exception.html#a0dbd636604c4a62027a63a0319dd0c64">InvalidDateException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_date_exception.html#a0dbd636604c4a62027a63a0319dd0c64">   34</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_invalid_date_exception.html#a0dbd636604c4a62027a63a0319dd0c64">InvalidDateException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Invalid date: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_parameter_exception.html">   41</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_invalid_parameter_exception.html#a4e10f0af714e8aa9aeb0eae83d0e399c">InvalidParameterException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_parameter_exception.html#a4e10f0af714e8aa9aeb0eae83d0e399c">   47</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_invalid_parameter_exception.html#a4e10f0af714e8aa9aeb0eae83d0e399c">InvalidParameterException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Invalid parameter: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_water_parameters_exception.html">   54</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_invalid_water_parameters_exception.html#a670ac3c4406d40e6ea7f568acc6696bd">InvalidWaterParametersException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_water_parameters_exception.html#a670ac3c4406d40e6ea7f568acc6696bd">   60</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_invalid_water_parameters_exception.html#a670ac3c4406d40e6ea7f568acc6696bd">InvalidWaterParametersException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Invalid water parameters: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="};">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classocean_1_1_tank_capacity_exceeded_exception.html">   67</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_tank_capacity_exceeded_exception.html#ac60730413b9960bc2443c8edd05b9dd7">TankCapacityExceededException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classocean_1_1_tank_capacity_exceeded_exception.html#ac60730413b9960bc2443c8edd05b9dd7">   73</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_tank_capacity_exceeded_exception.html#ac60730413b9960bc2443c8edd05b9dd7">TankCapacityExceededException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Tank capacity exceeded: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classocean_1_1_incompatible_species_exception.html">   80</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_incompatible_species_exception.html#a190b57cb3b2bc0d52151bb9c7d681519">IncompatibleSpeciesException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classocean_1_1_incompatible_species_exception.html#a190b57cb3b2bc0d52151bb9c7d681519">   86</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_incompatible_species_exception.html#a190b57cb3b2bc0d52151bb9c7d681519">IncompatibleSpeciesException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Incompatible species: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="};">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classocean_1_1_animal_not_found_exception.html">   93</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_animal_not_found_exception.html#a9d1a2edfbdc3e26a79bfc8977395e604">AnimalNotFoundException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classocean_1_1_animal_not_found_exception.html#a9d1a2edfbdc3e26a79bfc8977395e604">   99</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_animal_not_found_exception.html#a9d1a2edfbdc3e26a79bfc8977395e604">AnimalNotFoundException</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Animal not found: #&quot;</span> + std::to_string(id)) {}</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="};">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classocean_1_1_tank_not_found_exception.html">  106</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_tank_not_found_exception.html#a120c4a50e6806a35b5fbb838dd60db09">TankNotFoundException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classocean_1_1_tank_not_found_exception.html#a120c4a50e6806a35b5fbb838dd60db09">  112</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_tank_not_found_exception.html#a120c4a50e6806a35b5fbb838dd60db09">TankNotFoundException</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Tank not found: #&quot;</span> + std::to_string(id)) {}</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span></div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="};">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classocean_1_1_employee_not_found_exception.html">  119</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_employee_not_found_exception.html#a4c2b59cfc4cd969fcc83036ba7b3657d">EmployeeNotFoundException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classocean_1_1_employee_not_found_exception.html#a4c2b59cfc4cd969fcc83036ba7b3657d">  125</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_employee_not_found_exception.html#a4c2b59cfc4cd969fcc83036ba7b3657d">EmployeeNotFoundException</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Employee not found: #&quot;</span> + std::to_string(id)) {}</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>};</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
+<div class="foldopen" id="foldopen00132" data-start="{" data-end="};">
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classocean_1_1_insufficient_food_exception.html">  132</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_insufficient_food_exception.html#a9ae8d2b5d5f9779e3ce734e4c2e4bf5b">InsufficientFoodException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classocean_1_1_insufficient_food_exception.html#a9ae8d2b5d5f9779e3ce734e4c2e4bf5b">  138</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_insufficient_food_exception.html#a9ae8d2b5d5f9779e3ce734e4c2e4bf5b">InsufficientFoodException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Insufficient food: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>};</div>
+</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span></div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="};">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classocean_1_1_expired_product_exception.html">  145</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_expired_product_exception.html#a5b311045816420364a59ff077c7a19b5">ExpiredProductException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classocean_1_1_expired_product_exception.html#a5b311045816420364a59ff077c7a19b5">  151</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_expired_product_exception.html#a5b311045816420364a59ff077c7a19b5">ExpiredProductException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Expired product: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
+</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span></div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="};">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classocean_1_1_out_of_stock_exception.html">  158</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_out_of_stock_exception.html#ac4f7a3c74bf15488ad0fe2e2693758e4">OutOfStockException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classocean_1_1_out_of_stock_exception.html#ac4f7a3c74bf15488ad0fe2e2693758e4">  164</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_out_of_stock_exception.html#ac4f7a3c74bf15488ad0fe2e2693758e4">OutOfStockException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Out of stock: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>};</div>
+</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span></div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="};">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="classocean_1_1_storage_full_exception.html">  171</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_storage_full_exception.html#a5e89235925bdfdc2a17e2d6b3b97f2d5">StorageFullException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classocean_1_1_storage_full_exception.html#a5e89235925bdfdc2a17e2d6b3b97f2d5">  177</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_storage_full_exception.html#a5e89235925bdfdc2a17e2d6b3b97f2d5">StorageFullException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Storage full: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>};</div>
+</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span></div>
+<div class="foldopen" id="foldopen00184" data-start="{" data-end="};">
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_ticket_exception.html">  184</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_invalid_ticket_exception.html#a4663f2cc8f00efa45c4804b5a47f6642">InvalidTicketException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00190" data-start="{" data-end="}">
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_ticket_exception.html#a4663f2cc8f00efa45c4804b5a47f6642">  190</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_invalid_ticket_exception.html#a4663f2cc8f00efa45c4804b5a47f6642">InvalidTicketException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Invalid ticket: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>};</div>
+</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span></div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="};">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classocean_1_1_ticket_sold_out_exception.html">  197</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_ticket_sold_out_exception.html#a26f8abb553add7164f27a2e11f024f12">TicketSoldOutException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00203" data-start="{" data-end="}">
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classocean_1_1_ticket_sold_out_exception.html#a26f8abb553add7164f27a2e11f024f12">  203</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_ticket_sold_out_exception.html#a26f8abb553add7164f27a2e11f024f12">TicketSoldOutException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Tickets sold out: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>};</div>
+</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span></div>
+<div class="foldopen" id="foldopen00210" data-start="{" data-end="};">
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_promo_code_exception.html">  210</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_invalid_promo_code_exception.html#abba7f83065b0072d2d8284bbd79f152a">InvalidPromoCodeException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00216" data-start="{" data-end="}">
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classocean_1_1_invalid_promo_code_exception.html#abba7f83065b0072d2d8284bbd79f152a">  216</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_invalid_promo_code_exception.html#abba7f83065b0072d2d8284bbd79f152a">InvalidPromoCodeException</a>(<span class="keyword">const</span> std::string&amp; code)</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Invalid promo code: &quot;</span> + code) {}</div>
+</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>};</div>
+</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span></div>
+<div class="foldopen" id="foldopen00223" data-start="{" data-end="};">
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="classocean_1_1_insufficient_funds_exception.html">  223</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_insufficient_funds_exception.html#a7f5abc13be96029fe4f3270b30e4e6ca">InsufficientFundsException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classocean_1_1_insufficient_funds_exception.html#a7f5abc13be96029fe4f3270b30e4e6ca">  230</a></span>    <a class="code hl_function" href="classocean_1_1_insufficient_funds_exception.html#a7f5abc13be96029fe4f3270b30e4e6ca">InsufficientFundsException</a>(<span class="keywordtype">double</span> required, <span class="keywordtype">double</span> available)</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Insufficient funds: required &quot;</span> +</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                              std::to_string(required) + <span class="stringliteral">&quot;, available &quot;</span> +</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                              std::to_string(available)) {}</div>
+</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>};</div>
+</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span></div>
+<div class="foldopen" id="foldopen00239" data-start="{" data-end="};">
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="classocean_1_1_budget_exceeded_exception.html">  239</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_budget_exceeded_exception.html#ac3093a7c18b98b4fcf35117b7edf0558">BudgetExceededException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00245" data-start="{" data-end="}">
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="classocean_1_1_budget_exceeded_exception.html#ac3093a7c18b98b4fcf35117b7edf0558">  245</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_budget_exceeded_exception.html#ac3093a7c18b98b4fcf35117b7edf0558">BudgetExceededException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Budget exceeded: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>};</div>
+</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span></div>
+<div class="foldopen" id="foldopen00252" data-start="{" data-end="};">
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="classocean_1_1_schedule_conflict_exception.html">  252</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_schedule_conflict_exception.html#a16fbcd9f5bc6b347441ffc6ec2c5d6c6">ScheduleConflictException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00258" data-start="{" data-end="}">
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="classocean_1_1_schedule_conflict_exception.html#a16fbcd9f5bc6b347441ffc6ec2c5d6c6">  258</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_schedule_conflict_exception.html#a16fbcd9f5bc6b347441ffc6ec2c5d6c6">ScheduleConflictException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Schedule conflict: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>};</div>
+</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span></div>
+<div class="foldopen" id="foldopen00265" data-start="{" data-end="};">
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classocean_1_1_license_expired_exception.html">  265</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_license_expired_exception.html#af1d819a1aac392c31d9787418df9a17a">LicenseExpiredException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00271" data-start="{" data-end="}">
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="classocean_1_1_license_expired_exception.html#af1d819a1aac392c31d9787418df9a17a">  271</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_license_expired_exception.html#af1d819a1aac392c31d9787418df9a17a">LicenseExpiredException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;License expired: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>};</div>
+</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span></div>
+<div class="foldopen" id="foldopen00278" data-start="{" data-end="};">
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="classocean_1_1_employee_not_qualified_exception.html">  278</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_employee_not_qualified_exception.html#a2d2c99e5f5d98596045b8826779d4a01">EmployeeNotQualifiedException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00284" data-start="{" data-end="}">
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="classocean_1_1_employee_not_qualified_exception.html#a2d2c99e5f5d98596045b8826779d4a01">  284</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_employee_not_qualified_exception.html#a2d2c99e5f5d98596045b8826779d4a01">EmployeeNotQualifiedException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Employee not qualified: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>};</div>
+</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span></div>
+<div class="foldopen" id="foldopen00291" data-start="{" data-end="};">
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="classocean_1_1_equipment_failure_exception.html">  291</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_equipment_failure_exception.html#a01f50b7a2a63014c1ac5f53445176d30">EquipmentFailureException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00297" data-start="{" data-end="}">
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="classocean_1_1_equipment_failure_exception.html#a01f50b7a2a63014c1ac5f53445176d30">  297</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_equipment_failure_exception.html#a01f50b7a2a63014c1ac5f53445176d30">EquipmentFailureException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Equipment failure: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>};</div>
+</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span></div>
+<div class="foldopen" id="foldopen00304" data-start="{" data-end="};">
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="classocean_1_1_sensor_not_calibrated_exception.html">  304</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_sensor_not_calibrated_exception.html#a499e002fec8269346c7b0cb3f5b20b4f">SensorNotCalibratedException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00310" data-start="{" data-end="}">
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="classocean_1_1_sensor_not_calibrated_exception.html#a499e002fec8269346c7b0cb3f5b20b4f">  310</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_sensor_not_calibrated_exception.html#a499e002fec8269346c7b0cb3f5b20b4f">SensorNotCalibratedException</a>(<span class="keyword">const</span> std::string&amp; sensorId)</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Sensor not calibrated: &quot;</span> + sensorId) {}</div>
+</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>};</div>
+</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span></div>
+<div class="foldopen" id="foldopen00317" data-start="{" data-end="};">
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="classocean_1_1_event_full_exception.html">  317</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_event_full_exception.html#aba84c8c928fe49dc78f2ff1e5d430daf">EventFullException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00323" data-start="{" data-end="}">
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="classocean_1_1_event_full_exception.html#aba84c8c928fe49dc78f2ff1e5d430daf">  323</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_event_full_exception.html#aba84c8c928fe49dc78f2ff1e5d430daf">EventFullException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Event full: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>};</div>
+</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span></div>
+<div class="foldopen" id="foldopen00330" data-start="{" data-end="};">
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="classocean_1_1_task_not_found_exception.html">  330</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_task_not_found_exception.html#a3837b8eb483b40953077d1eb7a24fe51">TaskNotFoundException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00336" data-start="{" data-end="}">
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="classocean_1_1_task_not_found_exception.html#a3837b8eb483b40953077d1eb7a24fe51">  336</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_task_not_found_exception.html#a3837b8eb483b40953077d1eb7a24fe51">TaskNotFoundException</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Maintenance task not found: #&quot;</span> + std::to_string(id)) {}</div>
+</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>};</div>
+</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span></div>
+<div class="foldopen" id="foldopen00343" data-start="{" data-end="};">
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="classocean_1_1_quarantine_violation_exception.html">  343</a></span><span class="keyword">class </span><a class="code hl_function" href="classocean_1_1_quarantine_violation_exception.html#a7a4ff32d4ea8b7180f943490e77bfecf">QuarantineViolationException</a> : <span class="keyword">public</span> <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a> {</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00349" data-start="{" data-end="}">
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="classocean_1_1_quarantine_violation_exception.html#a7a4ff32d4ea8b7180f943490e77bfecf">  349</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classocean_1_1_quarantine_violation_exception.html#a7a4ff32d4ea8b7180f943490e77bfecf">QuarantineViolationException</a>(<span class="keyword">const</span> std::string&amp; message)</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        : <a class="code hl_function" href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">OceanariumException</a>(<span class="stringliteral">&quot;Quarantine violation: &quot;</span> + message) {}</div>
+</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>};</div>
+</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>}  <span class="comment">// namespace ocean</span></div>
+<div class="ttc" id="aclassocean_1_1_animal_not_found_exception_html_a9d1a2edfbdc3e26a79bfc8977395e604"><div class="ttname"><a href="classocean_1_1_animal_not_found_exception.html#a9d1a2edfbdc3e26a79bfc8977395e604">ocean::AnimalNotFoundException::AnimalNotFoundException</a></div><div class="ttdeci">AnimalNotFoundException(int id)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00099">Exceptions.h:99</a></div></div>
+<div class="ttc" id="aclassocean_1_1_budget_exceeded_exception_html_ac3093a7c18b98b4fcf35117b7edf0558"><div class="ttname"><a href="classocean_1_1_budget_exceeded_exception.html#ac3093a7c18b98b4fcf35117b7edf0558">ocean::BudgetExceededException::BudgetExceededException</a></div><div class="ttdeci">BudgetExceededException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00245">Exceptions.h:245</a></div></div>
+<div class="ttc" id="aclassocean_1_1_employee_not_found_exception_html_a4c2b59cfc4cd969fcc83036ba7b3657d"><div class="ttname"><a href="classocean_1_1_employee_not_found_exception.html#a4c2b59cfc4cd969fcc83036ba7b3657d">ocean::EmployeeNotFoundException::EmployeeNotFoundException</a></div><div class="ttdeci">EmployeeNotFoundException(int id)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00125">Exceptions.h:125</a></div></div>
+<div class="ttc" id="aclassocean_1_1_employee_not_qualified_exception_html_a2d2c99e5f5d98596045b8826779d4a01"><div class="ttname"><a href="classocean_1_1_employee_not_qualified_exception.html#a2d2c99e5f5d98596045b8826779d4a01">ocean::EmployeeNotQualifiedException::EmployeeNotQualifiedException</a></div><div class="ttdeci">EmployeeNotQualifiedException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00284">Exceptions.h:284</a></div></div>
+<div class="ttc" id="aclassocean_1_1_equipment_failure_exception_html_a01f50b7a2a63014c1ac5f53445176d30"><div class="ttname"><a href="classocean_1_1_equipment_failure_exception.html#a01f50b7a2a63014c1ac5f53445176d30">ocean::EquipmentFailureException::EquipmentFailureException</a></div><div class="ttdeci">EquipmentFailureException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00297">Exceptions.h:297</a></div></div>
+<div class="ttc" id="aclassocean_1_1_event_full_exception_html_aba84c8c928fe49dc78f2ff1e5d430daf"><div class="ttname"><a href="classocean_1_1_event_full_exception.html#aba84c8c928fe49dc78f2ff1e5d430daf">ocean::EventFullException::EventFullException</a></div><div class="ttdeci">EventFullException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00323">Exceptions.h:323</a></div></div>
+<div class="ttc" id="aclassocean_1_1_expired_product_exception_html_a5b311045816420364a59ff077c7a19b5"><div class="ttname"><a href="classocean_1_1_expired_product_exception.html#a5b311045816420364a59ff077c7a19b5">ocean::ExpiredProductException::ExpiredProductException</a></div><div class="ttdeci">ExpiredProductException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00151">Exceptions.h:151</a></div></div>
+<div class="ttc" id="aclassocean_1_1_incompatible_species_exception_html_a190b57cb3b2bc0d52151bb9c7d681519"><div class="ttname"><a href="classocean_1_1_incompatible_species_exception.html#a190b57cb3b2bc0d52151bb9c7d681519">ocean::IncompatibleSpeciesException::IncompatibleSpeciesException</a></div><div class="ttdeci">IncompatibleSpeciesException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00086">Exceptions.h:86</a></div></div>
+<div class="ttc" id="aclassocean_1_1_insufficient_food_exception_html_a9ae8d2b5d5f9779e3ce734e4c2e4bf5b"><div class="ttname"><a href="classocean_1_1_insufficient_food_exception.html#a9ae8d2b5d5f9779e3ce734e4c2e4bf5b">ocean::InsufficientFoodException::InsufficientFoodException</a></div><div class="ttdeci">InsufficientFoodException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00138">Exceptions.h:138</a></div></div>
+<div class="ttc" id="aclassocean_1_1_insufficient_funds_exception_html_a7f5abc13be96029fe4f3270b30e4e6ca"><div class="ttname"><a href="classocean_1_1_insufficient_funds_exception.html#a7f5abc13be96029fe4f3270b30e4e6ca">ocean::InsufficientFundsException::InsufficientFundsException</a></div><div class="ttdeci">InsufficientFundsException(double required, double available)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00230">Exceptions.h:230</a></div></div>
+<div class="ttc" id="aclassocean_1_1_invalid_date_exception_html_a0dbd636604c4a62027a63a0319dd0c64"><div class="ttname"><a href="classocean_1_1_invalid_date_exception.html#a0dbd636604c4a62027a63a0319dd0c64">ocean::InvalidDateException::InvalidDateException</a></div><div class="ttdeci">InvalidDateException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00034">Exceptions.h:34</a></div></div>
+<div class="ttc" id="aclassocean_1_1_invalid_parameter_exception_html_a4e10f0af714e8aa9aeb0eae83d0e399c"><div class="ttname"><a href="classocean_1_1_invalid_parameter_exception.html#a4e10f0af714e8aa9aeb0eae83d0e399c">ocean::InvalidParameterException::InvalidParameterException</a></div><div class="ttdeci">InvalidParameterException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00047">Exceptions.h:47</a></div></div>
+<div class="ttc" id="aclassocean_1_1_invalid_promo_code_exception_html_abba7f83065b0072d2d8284bbd79f152a"><div class="ttname"><a href="classocean_1_1_invalid_promo_code_exception.html#abba7f83065b0072d2d8284bbd79f152a">ocean::InvalidPromoCodeException::InvalidPromoCodeException</a></div><div class="ttdeci">InvalidPromoCodeException(const std::string &amp;code)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00216">Exceptions.h:216</a></div></div>
+<div class="ttc" id="aclassocean_1_1_invalid_ticket_exception_html_a4663f2cc8f00efa45c4804b5a47f6642"><div class="ttname"><a href="classocean_1_1_invalid_ticket_exception.html#a4663f2cc8f00efa45c4804b5a47f6642">ocean::InvalidTicketException::InvalidTicketException</a></div><div class="ttdeci">InvalidTicketException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00190">Exceptions.h:190</a></div></div>
+<div class="ttc" id="aclassocean_1_1_invalid_water_parameters_exception_html_a670ac3c4406d40e6ea7f568acc6696bd"><div class="ttname"><a href="classocean_1_1_invalid_water_parameters_exception.html#a670ac3c4406d40e6ea7f568acc6696bd">ocean::InvalidWaterParametersException::InvalidWaterParametersException</a></div><div class="ttdeci">InvalidWaterParametersException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00060">Exceptions.h:60</a></div></div>
+<div class="ttc" id="aclassocean_1_1_license_expired_exception_html_af1d819a1aac392c31d9787418df9a17a"><div class="ttname"><a href="classocean_1_1_license_expired_exception.html#af1d819a1aac392c31d9787418df9a17a">ocean::LicenseExpiredException::LicenseExpiredException</a></div><div class="ttdeci">LicenseExpiredException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00271">Exceptions.h:271</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_exception_html_a5eb902bb42333023ae76e0dec3b0d4b5"><div class="ttname"><a href="classocean_1_1_oceanarium_exception.html#a5eb902bb42333023ae76e0dec3b0d4b5">ocean::OceanariumException::OceanariumException</a></div><div class="ttdeci">OceanariumException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00021">Exceptions.h:21</a></div></div>
+<div class="ttc" id="aclassocean_1_1_out_of_stock_exception_html_ac4f7a3c74bf15488ad0fe2e2693758e4"><div class="ttname"><a href="classocean_1_1_out_of_stock_exception.html#ac4f7a3c74bf15488ad0fe2e2693758e4">ocean::OutOfStockException::OutOfStockException</a></div><div class="ttdeci">OutOfStockException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00164">Exceptions.h:164</a></div></div>
+<div class="ttc" id="aclassocean_1_1_quarantine_violation_exception_html_a7a4ff32d4ea8b7180f943490e77bfecf"><div class="ttname"><a href="classocean_1_1_quarantine_violation_exception.html#a7a4ff32d4ea8b7180f943490e77bfecf">ocean::QuarantineViolationException::QuarantineViolationException</a></div><div class="ttdeci">QuarantineViolationException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00349">Exceptions.h:349</a></div></div>
+<div class="ttc" id="aclassocean_1_1_schedule_conflict_exception_html_a16fbcd9f5bc6b347441ffc6ec2c5d6c6"><div class="ttname"><a href="classocean_1_1_schedule_conflict_exception.html#a16fbcd9f5bc6b347441ffc6ec2c5d6c6">ocean::ScheduleConflictException::ScheduleConflictException</a></div><div class="ttdeci">ScheduleConflictException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00258">Exceptions.h:258</a></div></div>
+<div class="ttc" id="aclassocean_1_1_sensor_not_calibrated_exception_html_a499e002fec8269346c7b0cb3f5b20b4f"><div class="ttname"><a href="classocean_1_1_sensor_not_calibrated_exception.html#a499e002fec8269346c7b0cb3f5b20b4f">ocean::SensorNotCalibratedException::SensorNotCalibratedException</a></div><div class="ttdeci">SensorNotCalibratedException(const std::string &amp;sensorId)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00310">Exceptions.h:310</a></div></div>
+<div class="ttc" id="aclassocean_1_1_storage_full_exception_html_a5e89235925bdfdc2a17e2d6b3b97f2d5"><div class="ttname"><a href="classocean_1_1_storage_full_exception.html#a5e89235925bdfdc2a17e2d6b3b97f2d5">ocean::StorageFullException::StorageFullException</a></div><div class="ttdeci">StorageFullException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00177">Exceptions.h:177</a></div></div>
+<div class="ttc" id="aclassocean_1_1_tank_capacity_exceeded_exception_html_ac60730413b9960bc2443c8edd05b9dd7"><div class="ttname"><a href="classocean_1_1_tank_capacity_exceeded_exception.html#ac60730413b9960bc2443c8edd05b9dd7">ocean::TankCapacityExceededException::TankCapacityExceededException</a></div><div class="ttdeci">TankCapacityExceededException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00073">Exceptions.h:73</a></div></div>
+<div class="ttc" id="aclassocean_1_1_tank_not_found_exception_html_a120c4a50e6806a35b5fbb838dd60db09"><div class="ttname"><a href="classocean_1_1_tank_not_found_exception.html#a120c4a50e6806a35b5fbb838dd60db09">ocean::TankNotFoundException::TankNotFoundException</a></div><div class="ttdeci">TankNotFoundException(int id)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00112">Exceptions.h:112</a></div></div>
+<div class="ttc" id="aclassocean_1_1_task_not_found_exception_html_a3837b8eb483b40953077d1eb7a24fe51"><div class="ttname"><a href="classocean_1_1_task_not_found_exception.html#a3837b8eb483b40953077d1eb7a24fe51">ocean::TaskNotFoundException::TaskNotFoundException</a></div><div class="ttdeci">TaskNotFoundException(int id)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00336">Exceptions.h:336</a></div></div>
+<div class="ttc" id="aclassocean_1_1_ticket_sold_out_exception_html_a26f8abb553add7164f27a2e11f024f12"><div class="ttname"><a href="classocean_1_1_ticket_sold_out_exception.html#a26f8abb553add7164f27a2e11f024f12">ocean::TicketSoldOutException::TicketSoldOutException</a></div><div class="ttdeci">TicketSoldOutException(const std::string &amp;message)</div><div class="ttdoc">Создаёт исключение.</div><div class="ttdef"><b>Определения</b> <a href="#l00203">Exceptions.h:203</a></div></div>
+<div class="ttc" id="anamespaceocean_html"><div class="ttname"><a href="namespaceocean.html">ocean</a></div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00015">Animals.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="_exceptions_8h.html">Exceptions.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

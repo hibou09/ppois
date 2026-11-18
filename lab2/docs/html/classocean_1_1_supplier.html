@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::Supplier</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_supplier.html','','classocean_1_1_supplier-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::Supplier</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Поставщик корма.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_feeding_8h_source.html">Feeding.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::Supplier:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_supplier__coll__graph.png" border="0" usemap="#aocean_1_1_supplier_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a7cc0e2e1f4e18a5c49295dab785bdf7c" id="r_a7cc0e2e1f4e18a5c49295dab785bdf7c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7cc0e2e1f4e18a5c49295dab785bdf7c">Supplier</a> (std::string name, int deliveryDays, double discountPercent)</td></tr>
+<tr class="memdesc:a7cc0e2e1f4e18a5c49295dab785bdf7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт поставщика.  <br /></td></tr>
+<tr class="memitem:aab340a85aa6a5e0c68352926a290ea6f" id="r_aab340a85aa6a5e0c68352926a290ea6f"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aab340a85aa6a5e0c68352926a290ea6f">name</a> () const</td></tr>
+<tr class="memdesc:aab340a85aa6a5e0c68352926a290ea6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название поставщика.  <br /></td></tr>
+<tr class="memitem:a3c8b090134c62bc13c54bbd323c58371" id="r_a3c8b090134c62bc13c54bbd323c58371"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3c8b090134c62bc13c54bbd323c58371">deliveryDays</a> () const</td></tr>
+<tr class="memdesc:a3c8b090134c62bc13c54bbd323c58371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Срок доставки, дней.  <br /></td></tr>
+<tr class="memitem:a42720d1bb3a51ea50fd46c0ba8001e30" id="r_a42720d1bb3a51ea50fd46c0ba8001e30"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a42720d1bb3a51ea50fd46c0ba8001e30">rating</a> () const</td></tr>
+<tr class="memdesc:a42720d1bb3a51ea50fd46c0ba8001e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Средний рейтинг (0, если оценок ещё нет).  <br /></td></tr>
+<tr class="memitem:a472d4fe94f0d2afac977fa87ee4540bf" id="r_a472d4fe94f0d2afac977fa87ee4540bf"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a472d4fe94f0d2afac977fa87ee4540bf">quote</a> (double kg, double pricePerKg) const</td></tr>
+<tr class="memdesc:a472d4fe94f0d2afac977fa87ee4540bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стоимость партии с учётом скидки.  <br /></td></tr>
+<tr class="memitem:aa2ec5b41af8fdb9e9ed075ae517e6f25" id="r_aa2ec5b41af8fdb9e9ed075ae517e6f25"><td class="memItemLeft"><a class="el" href="classocean_1_1_date.html">Date</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa2ec5b41af8fdb9e9ed075ae517e6f25">deliveryDate</a> (const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;orderDate) const</td></tr>
+<tr class="memdesc:aa2ec5b41af8fdb9e9ed075ae517e6f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дата доставки заказа.  <br /></td></tr>
+<tr class="memitem:af32924d691fdee8cb3d16af5848f1def" id="r_af32924d691fdee8cb3d16af5848f1def"><td class="memItemLeft"><a class="el" href="classocean_1_1_food_item.html">FoodItem</a>&#160;</td><td class="memItemRight"><a class="el" href="#af32924d691fdee8cb3d16af5848f1def">deliver</a> (const std::string &amp;foodName, double kg, double pricePerKg, double caloriesPerKg, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;orderDate, int shelfLifeDays) const</td></tr>
+<tr class="memdesc:af32924d691fdee8cb3d16af5848f1def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поставляет партию корма; срок годности отсчитывается от даты доставки.  <br /></td></tr>
+<tr class="memitem:a867d1e5017e9fa5294d49df8cd00cc69" id="r_a867d1e5017e9fa5294d49df8cd00cc69"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a867d1e5017e9fa5294d49df8cd00cc69">rate</a> (int score)</td></tr>
+<tr class="memdesc:a867d1e5017e9fa5294d49df8cd00cc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оценивает поставщика по шкале 1..5; рейтинг — среднее оценок.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:aab6a86942b3b679d269a96f41dcefccc" id="r_aab6a86942b3b679d269a96f41dcefccc"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aab6a86942b3b679d269a96f41dcefccc">name_</a></td></tr>
+<tr class="memdesc:aab6a86942b3b679d269a96f41dcefccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название поставщика.  <br /></td></tr>
+<tr class="memitem:a0d00e16ffb0c13a0af6d5e04765f0690" id="r_a0d00e16ffb0c13a0af6d5e04765f0690"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0d00e16ffb0c13a0af6d5e04765f0690">deliveryDays_</a></td></tr>
+<tr class="memdesc:a0d00e16ffb0c13a0af6d5e04765f0690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Срок доставки, дней.  <br /></td></tr>
+<tr class="memitem:a90ae6c72f8cc3b92cc80d035c53d8781" id="r_a90ae6c72f8cc3b92cc80d035c53d8781"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a90ae6c72f8cc3b92cc80d035c53d8781">discountPercent_</a></td></tr>
+<tr class="memdesc:a90ae6c72f8cc3b92cc80d035c53d8781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скидка, %.  <br /></td></tr>
+<tr class="memitem:a9b2f6a90349449016287f4d203358277" id="r_a9b2f6a90349449016287f4d203358277"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a9b2f6a90349449016287f4d203358277">rating_</a></td></tr>
+<tr class="memdesc:a9b2f6a90349449016287f4d203358277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Средний рейтинг.  <br /></td></tr>
+<tr class="memitem:a97de12673b376bb2c09f7689059618e5" id="r_a97de12673b376bb2c09f7689059618e5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a97de12673b376bb2c09f7689059618e5">ratingsCount_</a></td></tr>
+<tr class="memdesc:a97de12673b376bb2c09f7689059618e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число полученных оценок.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Поставщик корма. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00114">114</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a7cc0e2e1f4e18a5c49295dab785bdf7c" name="a7cc0e2e1f4e18a5c49295dab785bdf7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc0e2e1f4e18a5c49295dab785bdf7c">&#9670;&#160;</a></span>Supplier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::Supplier::Supplier </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>deliveryDays</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>discountPercent</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт поставщика. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Название (непустое). </td></tr>
+    <tr><td class="paramname">deliveryDays</td><td>Срок доставки, дней (неотрицательный). </td></tr>
+    <tr><td class="paramname">discountPercent</td><td>Скидка, % (от 0 до 100, не включая 100). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если название пусто, срок отрицателен или скидка вне [0, 100). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00089">89</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="af32924d691fdee8cb3d16af5848f1def" name="af32924d691fdee8cb3d16af5848f1def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32924d691fdee8cb3d16af5848f1def">&#9670;&#160;</a></span>deliver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_food_item.html">FoodItem</a> ocean::Supplier::deliver </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>foodName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>kg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>pricePerKg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>caloriesPerKg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>orderDate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>shelfLifeDays</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поставляет партию корма; срок годности отсчитывается от даты доставки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foodName</td><td>Название корма. </td></tr>
+    <tr><td class="paramname">kg</td><td>Количество, кг. </td></tr>
+    <tr><td class="paramname">pricePerKg</td><td>Цена за кг без скидки. </td></tr>
+    <tr><td class="paramname">caloriesPerKg</td><td>Калорийность, ккал/кг. </td></tr>
+    <tr><td class="paramname">orderDate</td><td>Дата заказа. </td></tr>
+    <tr><td class="paramname">shelfLifeDays</td><td>Срок годности, дней (положительный). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Партия корма с ценой за кг со скидкой. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если срок годности не положителен, а также при недопустимых количестве и цене. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00108">108</a></p>
+
+</div>
+</div>
+<a id="aa2ec5b41af8fdb9e9ed075ae517e6f25" name="aa2ec5b41af8fdb9e9ed075ae517e6f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ec5b41af8fdb9e9ed075ae517e6f25">&#9670;&#160;</a></span>deliveryDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_date.html">Date</a> ocean::Supplier::deliveryDate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>orderDate</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дата доставки заказа. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orderDate</td><td>Дата заказа. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Дата заказа плюс срок доставки. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00104">104</a></p>
+
+</div>
+</div>
+<a id="a3c8b090134c62bc13c54bbd323c58371" name="a3c8b090134c62bc13c54bbd323c58371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8b090134c62bc13c54bbd323c58371">&#9670;&#160;</a></span>deliveryDays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Supplier::deliveryDays </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Срок доставки, дней. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00128">128</a></p>
+
+</div>
+</div>
+<a id="aab340a85aa6a5e0c68352926a290ea6f" name="aab340a85aa6a5e0c68352926a290ea6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab340a85aa6a5e0c68352926a290ea6f">&#9670;&#160;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::Supplier::name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название поставщика. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a472d4fe94f0d2afac977fa87ee4540bf" name="a472d4fe94f0d2afac977fa87ee4540bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472d4fe94f0d2afac977fa87ee4540bf">&#9670;&#160;</a></span>quote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Supplier::quote </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>kg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>pricePerKg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Стоимость партии с учётом скидки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kg</td><td>Количество, кг (положительное). </td></tr>
+    <tr><td class="paramname">pricePerKg</td><td>Цена за кг (неотрицательная). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Итоговая стоимость. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если количество не положительно или цена отрицательна. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00097">97</a></p>
+
+</div>
+</div>
+<a id="a867d1e5017e9fa5294d49df8cd00cc69" name="a867d1e5017e9fa5294d49df8cd00cc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867d1e5017e9fa5294d49df8cd00cc69">&#9670;&#160;</a></span>rate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ocean::Supplier::rate </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>score</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оценивает поставщика по шкале 1..5; рейтинг — среднее оценок. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">score</td><td>Оценка от 1 до 5. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если оценка вне диапазона [1, 5]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a> строка <a class="el" href="_feeding_8cpp_source.html#l00118">118</a></p>
+
+</div>
+</div>
+<a id="a42720d1bb3a51ea50fd46c0ba8001e30" name="a42720d1bb3a51ea50fd46c0ba8001e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42720d1bb3a51ea50fd46c0ba8001e30">&#9670;&#160;</a></span>rating()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Supplier::rating </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Средний рейтинг (0, если оценок ещё нет). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a0d00e16ffb0c13a0af6d5e04765f0690" name="a0d00e16ffb0c13a0af6d5e04765f0690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d00e16ffb0c13a0af6d5e04765f0690">&#9670;&#160;</a></span>deliveryDays_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Supplier::deliveryDays_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Срок доставки, дней. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00169">169</a></p>
+
+</div>
+</div>
+<a id="a90ae6c72f8cc3b92cc80d035c53d8781" name="a90ae6c72f8cc3b92cc80d035c53d8781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90ae6c72f8cc3b92cc80d035c53d8781">&#9670;&#160;</a></span>discountPercent_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Supplier::discountPercent_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Скидка, %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00170">170</a></p>
+
+</div>
+</div>
+<a id="aab6a86942b3b679d269a96f41dcefccc" name="aab6a86942b3b679d269a96f41dcefccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6a86942b3b679d269a96f41dcefccc">&#9670;&#160;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::Supplier::name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название поставщика. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00168">168</a></p>
+
+</div>
+</div>
+<a id="a9b2f6a90349449016287f4d203358277" name="a9b2f6a90349449016287f4d203358277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2f6a90349449016287f4d203358277">&#9670;&#160;</a></span>rating_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::Supplier::rating_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Средний рейтинг. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00171">171</a></p>
+
+</div>
+</div>
+<a id="a97de12673b376bb2c09f7689059618e5" name="a97de12673b376bb2c09f7689059618e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97de12673b376bb2c09f7689059618e5">&#9670;&#160;</a></span>ratingsCount_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::Supplier::ratingsCount_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Число полученных оценок. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_feeding_8h_source.html">Feeding.h</a> строка <a class="el" href="_feeding_8h_source.html#l00172">172</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_feeding_8h_source.html">Feeding.h</a></li>
+<li>src/<a class="el" href="_feeding_8cpp_source.html">Feeding.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_supplier.html">Supplier</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

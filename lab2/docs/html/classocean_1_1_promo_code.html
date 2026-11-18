@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Класс ocean::PromoCode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('classocean_1_1_promo_code.html','','classocean_1_1_promo_code-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ocean::PromoCode</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Промокод на скидку.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_visitors_8h_source.html">Visitors.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса ocean::PromoCode:</div>
+<div class="dyncontent">
+<div class="center"><img src="classocean_1_1_promo_code__coll__graph.png" border="0" usemap="#aocean_1_1_promo_code_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab76779492a4bbbc48041edaa35113b4a" id="r_ab76779492a4bbbc48041edaa35113b4a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab76779492a4bbbc48041edaa35113b4a">PromoCode</a> (std::string code, double percent, int usesLeft, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;expiry)</td></tr>
+<tr class="memdesc:ab76779492a4bbbc48041edaa35113b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт промокод.  <br /></td></tr>
+<tr class="memitem:a323b771a0d9911bb6ff8db454c401849" id="r_a323b771a0d9911bb6ff8db454c401849"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a323b771a0d9911bb6ff8db454c401849">code</a> () const</td></tr>
+<tr class="memdesc:a323b771a0d9911bb6ff8db454c401849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текст промокода.  <br /></td></tr>
+<tr class="memitem:a7c989f9babf889ae356993fdea46f549" id="r_a7c989f9babf889ae356993fdea46f549"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a7c989f9babf889ae356993fdea46f549">percent</a> () const</td></tr>
+<tr class="memdesc:a7c989f9babf889ae356993fdea46f549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер скидки, %.  <br /></td></tr>
+<tr class="memitem:a5629be4c20241eef67ccf5ad03717280" id="r_a5629be4c20241eef67ccf5ad03717280"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a5629be4c20241eef67ccf5ad03717280">usesLeft</a> () const</td></tr>
+<tr class="memdesc:a5629be4c20241eef67ccf5ad03717280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сколько использований осталось.  <br /></td></tr>
+<tr class="memitem:af9528d1dc280b5befc67982e8bed1aa6" id="r_af9528d1dc280b5befc67982e8bed1aa6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af9528d1dc280b5befc67982e8bed1aa6">isValid</a> (const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today) const</td></tr>
+<tr class="memdesc:af9528d1dc280b5befc67982e8bed1aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Действует ли промокод: остались использования и срок не истёк.  <br /></td></tr>
+<tr class="memitem:ad3de080e5beca126dfaec78226c7bdb0" id="r_ad3de080e5beca126dfaec78226c7bdb0"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ad3de080e5beca126dfaec78226c7bdb0">discounted</a> (double price) const</td></tr>
+<tr class="memdesc:ad3de080e5beca126dfaec78226c7bdb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цена после скидки (без расхода использования).  <br /></td></tr>
+<tr class="memitem:a5e8476c1beadb347c039ee03d9c74e3d" id="r_a5e8476c1beadb347c039ee03d9c74e3d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a5e8476c1beadb347c039ee03d9c74e3d">apply</a> (double price, const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;today)</td></tr>
+<tr class="memdesc:a5e8476c1beadb347c039ee03d9c74e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применить промокод (расходует одно использование).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a3c7d60ade31f190e38f0590ea15a53fa" id="r_a3c7d60ade31f190e38f0590ea15a53fa"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a3c7d60ade31f190e38f0590ea15a53fa">code_</a></td></tr>
+<tr class="memdesc:a3c7d60ade31f190e38f0590ea15a53fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код.  <br /></td></tr>
+<tr class="memitem:a09b55e34708d0ba77455c6c3cb081167" id="r_a09b55e34708d0ba77455c6c3cb081167"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a09b55e34708d0ba77455c6c3cb081167">percent_</a></td></tr>
+<tr class="memdesc:a09b55e34708d0ba77455c6c3cb081167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скидка, %.  <br /></td></tr>
+<tr class="memitem:a45d3be20c1b68ff238cd28762072ee53" id="r_a45d3be20c1b68ff238cd28762072ee53"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a45d3be20c1b68ff238cd28762072ee53">usesLeft_</a></td></tr>
+<tr class="memdesc:a45d3be20c1b68ff238cd28762072ee53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оставшиеся использования.  <br /></td></tr>
+<tr class="memitem:a3f322532f0b6581375381637a898f26e" id="r_a3f322532f0b6581375381637a898f26e"><td class="memItemLeft"><a class="el" href="classocean_1_1_date.html">Date</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3f322532f0b6581375381637a898f26e">expiry_</a></td></tr>
+<tr class="memdesc:a3f322532f0b6581375381637a898f26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Последний день действия.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Промокод на скидку. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00135">135</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ab76779492a4bbbc48041edaa35113b4a" name="ab76779492a4bbbc48041edaa35113b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76779492a4bbbc48041edaa35113b4a">&#9670;&#160;</a></span>PromoCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ocean::PromoCode::PromoCode </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>percent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>usesLeft</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expiry</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт промокод. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Непустой код. </td></tr>
+    <tr><td class="paramname">percent</td><td>Размер скидки в процентах, (0; 90]. </td></tr>
+    <tr><td class="paramname">usesLeft</td><td>Сколько использований осталось (&gt;= 0). </td></tr>
+    <tr><td class="paramname">expiry</td><td>Последний день действия. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_parameter_exception.html" title="Некорректный аргумент (отрицательный вес, пустое имя и т.">InvalidParameterException</a></td><td>если код пуст, скидка вне (0; 90] или usesLeft отрицательно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00097">97</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a5e8476c1beadb347c039ee03d9c74e3d" name="a5e8476c1beadb347c039ee03d9c74e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8476c1beadb347c039ee03d9c74e3d">&#9670;&#160;</a></span>apply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::PromoCode::apply </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>price</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>today</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Применить промокод (расходует одно использование). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">price</td><td>Исходная цена. </td></tr>
+    <tr><td class="paramname">today</td><td>Текущая дата. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цена со скидкой. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classocean_1_1_invalid_promo_code_exception.html" title="Промокод недействителен или исчерпан.">InvalidPromoCodeException</a></td><td>если промокод недействителен. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00112">112</a></p>
+
+</div>
+</div>
+<a id="a323b771a0d9911bb6ff8db454c401849" name="a323b771a0d9911bb6ff8db454c401849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323b771a0d9911bb6ff8db454c401849">&#9670;&#160;</a></span>code()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; ocean::PromoCode::code </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текст промокода. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00148">148</a></p>
+
+</div>
+</div>
+<a id="ad3de080e5beca126dfaec78226c7bdb0" name="ad3de080e5beca126dfaec78226c7bdb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3de080e5beca126dfaec78226c7bdb0">&#9670;&#160;</a></span>discounted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::PromoCode::discounted </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>price</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Цена после скидки (без расхода использования). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">price</td><td>Исходная цена. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00108">108</a></p>
+
+</div>
+</div>
+<a id="af9528d1dc280b5befc67982e8bed1aa6" name="af9528d1dc280b5befc67982e8bed1aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9528d1dc280b5befc67982e8bed1aa6">&#9670;&#160;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocean::PromoCode::isValid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classocean_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>today</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Действует ли промокод: остались использования и срок не истёк. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">today</td><td>Текущая дата. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a> строка <a class="el" href="_visitors_8cpp_source.html#l00104">104</a></p>
+
+</div>
+</div>
+<a id="a7c989f9babf889ae356993fdea46f549" name="a7c989f9babf889ae356993fdea46f549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c989f9babf889ae356993fdea46f549">&#9670;&#160;</a></span>percent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::PromoCode::percent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Размер скидки, %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00150">150</a></p>
+
+</div>
+</div>
+<a id="a5629be4c20241eef67ccf5ad03717280" name="a5629be4c20241eef67ccf5ad03717280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5629be4c20241eef67ccf5ad03717280">&#9670;&#160;</a></span>usesLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::PromoCode::usesLeft </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сколько использований осталось. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00152">152</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a3c7d60ade31f190e38f0590ea15a53fa" name="a3c7d60ade31f190e38f0590ea15a53fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7d60ade31f190e38f0590ea15a53fa">&#9670;&#160;</a></span>code_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ocean::PromoCode::code_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Код. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00170">170</a></p>
+
+</div>
+</div>
+<a id="a3f322532f0b6581375381637a898f26e" name="a3f322532f0b6581375381637a898f26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f322532f0b6581375381637a898f26e">&#9670;&#160;</a></span>expiry_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classocean_1_1_date.html">Date</a> ocean::PromoCode::expiry_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Последний день действия. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00173">173</a></p>
+
+</div>
+</div>
+<a id="a09b55e34708d0ba77455c6c3cb081167" name="a09b55e34708d0ba77455c6c3cb081167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b55e34708d0ba77455c6c3cb081167">&#9670;&#160;</a></span>percent_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ocean::PromoCode::percent_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Скидка, %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00171">171</a></p>
+
+</div>
+</div>
+<a id="a45d3be20c1b68ff238cd28762072ee53" name="a45d3be20c1b68ff238cd28762072ee53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d3be20c1b68ff238cd28762072ee53">&#9670;&#160;</a></span>usesLeft_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ocean::PromoCode::usesLeft_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оставшиеся использования. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_visitors_8h_source.html">Visitors.h</a> строка <a class="el" href="_visitors_8h_source.html#l00172">172</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="_visitors_8h_source.html">Visitors.h</a></li>
+<li>src/<a class="el" href="_visitors_8cpp_source.html">Visitors.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceocean.html">ocean</a></li><li class="navelem"><a href="classocean_1_1_promo_code.html">PromoCode</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

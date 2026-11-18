@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oceanarium: Исходный файл src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Oceanarium
+   </div>
+   <div id="projectbrief">Лабораторная работа №2 — модель океанариума</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('main_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_exceptions_8h.html">Exceptions.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_management_8h.html">Management.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceocean.html">ocean</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   13</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_date.html">Date</a> today(11, 11, 2026);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classocean_1_1_oceanarium.html">Oceanarium</a> oceanarium(<span class="stringliteral">&quot;Blue Planet&quot;</span>, <span class="stringliteral">&quot;Minsk&quot;</span>, 1&#39;000&#39;000.0, 25.0);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="classocean_1_1_water_requirements.html">WaterRequirements</a> tropical(23.0, 28.0, 30.0, 37.0, 7.8, 8.5, 5.0);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="classocean_1_1_species.html">Species</a> clownfish(<span class="stringliteral">&quot;Clownfish&quot;</span>, <span class="stringliteral">&quot;Amphiprion ocellaris&quot;</span>, <a class="code hl_enumvalue" href="namespaceocean.html#a08ade552a27db1cc7bea08ce1d1bd94aae9f4d610be858d0fd9975e71e37c55f8">Diet::Omnivore</a>, tropical, <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                      <a class="code hl_enumvalue" href="namespaceocean.html#a7945b093dde3736bb1fd79b25cba34aea835f40c7f2a9236ce1ef2c204c2d23d0">ConservationStatus::LeastConcern</a>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="classocean_1_1_species.html">Species</a> blacktip(<span class="stringliteral">&quot;Blacktip reef shark&quot;</span>, <span class="stringliteral">&quot;Carcharhinus melanopterus&quot;</span>, <a class="code hl_enumvalue" href="namespaceocean.html#a08ade552a27db1cc7bea08ce1d1bd94aa60231c3f0a2eefe9ad7286cced8902ee">Diet::Carnivore</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                     tropical, <span class="keyword">true</span>, <a class="code hl_enumvalue" href="namespaceocean.html#a7945b093dde3736bb1fd79b25cba34aea4087a25b73f2f60500661bbe4560e9ab">ConservationStatus::Vulnerable</a>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="classocean_1_1_species.html">Species</a> greenTurtle(<span class="stringliteral">&quot;Green sea turtle&quot;</span>, <span class="stringliteral">&quot;Chelonia mydas&quot;</span>, <a class="code hl_enumvalue" href="namespaceocean.html#a08ade552a27db1cc7bea08ce1d1bd94aa8d89a418a17b60461661a7e2f1b46ef0">Diet::Herbivore</a>, tropical, <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                        <a class="code hl_enumvalue" href="namespaceocean.html#a7945b093dde3736bb1fd79b25cba34aeae8ffc938d2592b28a666523cc1c80a5a">ConservationStatus::Endangered</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classocean_1_1_water_parameters.html">WaterParameters</a> seaWater(25.0, 35.0, 8.2, 7.0);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="classocean_1_1_location.html">Location</a> hall(<span class="stringliteral">&quot;Tropics&quot;</span>, <span class="stringliteral">&quot;Main building&quot;</span>, 1);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">auto</span>&amp; reef = oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#a06345e5fb72760f8f67313326a394837">addTank</a>(</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        std::make_unique&lt;CoralReefTank&gt;(1, <span class="stringliteral">&quot;Coral Garden&quot;</span>, 50&#39;000.0, seaWater, hall, 30, 4.0));</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">auto</span>&amp; <a class="code hl_namespace" href="namespaceocean.html">ocean</a> = oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#a06345e5fb72760f8f67313326a394837">addTank</a>(std::make_unique&lt;OpenOceanTank&gt;(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        2, <span class="stringliteral">&quot;Open Ocean&quot;</span>, 2&#39;000&#39;000.0, seaWater, hall, 20, 8.0, 40.0));</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    reef.<a class="code hl_function" href="classocean_1_1_tank.html#a38c344e30ae096a81184558f7b2a43b8">addAnimal</a>(std::make_shared&lt;Fish&gt;(1, <span class="stringliteral">&quot;Nemo&quot;</span>, clownfish, 2, 0.25, 9.0, <span class="keyword">true</span>));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    reef.addAnimal(std::make_shared&lt;Turtle&gt;(2, <span class="stringliteral">&quot;Tortilla&quot;</span>, greenTurtle, 30, 120.0, 90.0));</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_namespace" href="namespaceocean.html">ocean</a>.addAnimal(std::make_shared&lt;Shark&gt;(3, <span class="stringliteral">&quot;Bruce&quot;</span>, blacktip, 10, 25.0, 160.0, 1300.0));</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// Акулу нельзя подселить к рыбе-клоуну.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        reef.addAnimal(std::make_shared&lt;Shark&gt;(4, <span class="stringliteral">&quot;Jaws&quot;</span>, blacktip, 5, 20.0, 140.0, 1100.0));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classocean_1_1_incompatible_species_exception.html">IncompatibleSpeciesException</a>&amp; e) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Expected error: &quot;</span> &lt;&lt; e.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#a43b64df6a4886a4f4ae922f8ef23fffd">foodStorage</a>().<a class="code hl_function" href="classocean_1_1_food_storage.html#a4408365d321dd3e6c1ef2c4073570a83">addItem</a>(<a class="code hl_function" href="classocean_1_1_food_item.html#a9fe7ef92fe35107d4bb268df7ae47b96">FoodItem</a>(<span class="stringliteral">&quot;Krill&quot;</span>, 900.0, 100.0, 12.0, <a class="code hl_function" href="classocean_1_1_date.html#a20aeef71fb43b776a98811b0d89d051f">Date</a>(1, 2, 2027)));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#a5dbae72ecc2897b4ee137a3323b338ee">feeding</a>().<a class="code hl_function" href="classocean_1_1_feeding_schedule.html#acbf3eb6efdecb055240668b6aad86d26">addEntry</a>(<a class="code hl_function" href="classocean_1_1_feeding_entry.html#aca0cd509dc279417c34222a53a9495e6">FeedingEntry</a>(1, <span class="stringliteral">&quot;Krill&quot;</span>, 0.01, 9 * 60));</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Animals fed at 09:00: &quot;</span> &lt;&lt; oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#ac3639384e7e960d93e2a19732bd4b939">feedAnimals</a>(9 * 60, today) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="classocean_1_1_visitor.html">Visitor</a> anna(1, <span class="stringliteral">&quot;Anna&quot;</span>, 30, <span class="stringliteral">&quot;anna@example.com&quot;</span>, 100.0);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_class" href="classocean_1_1_ticket.html">Ticket</a> ticket = oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#aff93a2aa64c11ae263bd548450c69b99">ticketOffice</a>().<a class="code hl_function" href="classocean_1_1_ticket_office.html#aa0b0f9b21c137b8510d5032766ec0d83">sell</a>(anna, <a class="code hl_enumvalue" href="namespaceocean.html#a4cbb501117ecd9f86f6b62ddc14cf2b3a5a600f5b88f416c470991c6831add13a">TicketType::Adult</a>, today);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    ticket.<a class="code hl_function" href="classocean_1_1_ticket.html#ad43f52bcb01e8c8d7c25da50108e3e59">use</a>(today);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Ticket #&quot;</span> &lt;&lt; ticket.<a class="code hl_function" href="classocean_1_1_ticket.html#a61f35a3c989267929729af1958e797ec">id</a>() &lt;&lt; <span class="stringliteral">&quot; sold for &quot;</span> &lt;&lt; ticket.<a class="code hl_function" href="classocean_1_1_ticket.html#a8f286230f76afdf73dd4e8567257c98c">price</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">int</span> tasks = oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#ae5b7ea88f68ac0cf95dda104ead0bc47">runDailyOperations</a>(today);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Maintenance tasks created: &quot;</span> &lt;&lt; tasks &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::cout &lt;&lt; oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#a869b573357713d12c686156131fc8188">summary</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Endangered animals: &quot;</span> &lt;&lt; oceanarium.<a class="code hl_function" href="classocean_1_1_oceanarium.html#aade72d1b7926ccd828d5d1a06d60f8e9">endangeredAnimals</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+</div>
+<div class="ttc" id="a_exceptions_8h_html"><div class="ttname"><a href="_exceptions_8h.html">Exceptions.h</a></div><div class="ttdoc">Собственные исключения предметной области «Океанариум».</div></div>
+<div class="ttc" id="a_management_8h_html"><div class="ttname"><a href="_management_8h.html">Management.h</a></div><div class="ttdoc">Обслуживание, финансы и класс-фасад Oceanarium.</div></div>
+<div class="ttc" id="aclassocean_1_1_date_html"><div class="ttname"><a href="classocean_1_1_date.html">ocean::Date</a></div><div class="ttdoc">Календарная дата (григорианский календарь).</div><div class="ttdef"><b>Определения</b> <a href="_common_8h_source.html#l00015">Common.h:15</a></div></div>
+<div class="ttc" id="aclassocean_1_1_date_html_a20aeef71fb43b776a98811b0d89d051f"><div class="ttname"><a href="classocean_1_1_date.html#a20aeef71fb43b776a98811b0d89d051f">ocean::Date::Date</a></div><div class="ttdeci">Date(int day, int month, int year)</div><div class="ttdoc">Создаёт дату с проверкой корректности.</div><div class="ttdef"><b>Определения</b> <a href="_common_8cpp_source.html#l00013">Common.cpp:13</a></div></div>
+<div class="ttc" id="aclassocean_1_1_feeding_entry_html_aca0cd509dc279417c34222a53a9495e6"><div class="ttname"><a href="classocean_1_1_feeding_entry.html#aca0cd509dc279417c34222a53a9495e6">ocean::FeedingEntry::FeedingEntry</a></div><div class="ttdeci">FeedingEntry(int animalId, std::string foodName, double amountKg, int minuteOfDay)</div><div class="ttdoc">Создаёт запись о кормлении.</div><div class="ttdef"><b>Определения</b> <a href="_feeding_8cpp_source.html#l00012">Feeding.cpp:12</a></div></div>
+<div class="ttc" id="aclassocean_1_1_feeding_schedule_html_acbf3eb6efdecb055240668b6aad86d26"><div class="ttname"><a href="classocean_1_1_feeding_schedule.html#acbf3eb6efdecb055240668b6aad86d26">ocean::FeedingSchedule::addEntry</a></div><div class="ttdeci">void addEntry(const FeedingEntry &amp;entry)</div><div class="ttdoc">Добавляет запись в расписание.</div><div class="ttdef"><b>Определения</b> <a href="_feeding_8cpp_source.html#l00031">Feeding.cpp:31</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_item_html_a9fe7ef92fe35107d4bb268df7ae47b96"><div class="ttname"><a href="classocean_1_1_food_item.html#a9fe7ef92fe35107d4bb268df7ae47b96">ocean::FoodItem::FoodItem</a></div><div class="ttdeci">FoodItem(std::string name, double caloriesPerKg, double stockKg, double pricePerKg, const Date &amp;expiry)</div><div class="ttdoc">Создаёт партию корма.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00012">Food.cpp:12</a></div></div>
+<div class="ttc" id="aclassocean_1_1_food_storage_html_a4408365d321dd3e6c1ef2c4073570a83"><div class="ttname"><a href="classocean_1_1_food_storage.html#a4408365d321dd3e6c1ef2c4073570a83">ocean::FoodStorage::addItem</a></div><div class="ttdeci">void addItem(const FoodItem &amp;item)</div><div class="ttdoc">Добавляет партию; одноимённые партии объединяются.</div><div class="ttdef"><b>Определения</b> <a href="_food_8cpp_source.html#l00068">Food.cpp:68</a></div></div>
+<div class="ttc" id="aclassocean_1_1_incompatible_species_exception_html"><div class="ttname"><a href="classocean_1_1_incompatible_species_exception.html">ocean::IncompatibleSpeciesException</a></div><div class="ttdoc">Виды не могут жить вместе (хищник/жертва, разные требования к воде).</div><div class="ttdef"><b>Определения</b> <a href="_exceptions_8h_source.html#l00080">Exceptions.h:80</a></div></div>
+<div class="ttc" id="aclassocean_1_1_location_html"><div class="ttname"><a href="classocean_1_1_location.html">ocean::Location</a></div><div class="ttdoc">Расположение объекта на территории океанариума.</div><div class="ttdef"><b>Определения</b> <a href="_common_8h_source.html#l00153">Common.h:153</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html"><div class="ttname"><a href="classocean_1_1_oceanarium.html">ocean::Oceanarium</a></div><div class="ttdoc">Океанариум — корневой объект модели.</div><div class="ttdef"><b>Определения</b> <a href="_management_8h_source.html#l00245">Management.h:245</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html_a06345e5fb72760f8f67313326a394837"><div class="ttname"><a href="classocean_1_1_oceanarium.html#a06345e5fb72760f8f67313326a394837">ocean::Oceanarium::addTank</a></div><div class="ttdeci">Tank &amp; addTank(std::unique_ptr&lt; Tank &gt; tank)</div><div class="ttdoc">Добавляет аквариум (океанариум становится его владельцем).</div><div class="ttdef"><b>Определения</b> <a href="_management_8cpp_source.html#l00184">Management.cpp:184</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html_a43b64df6a4886a4f4ae922f8ef23fffd"><div class="ttname"><a href="classocean_1_1_oceanarium.html#a43b64df6a4886a4f4ae922f8ef23fffd">ocean::Oceanarium::foodStorage</a></div><div class="ttdeci">FoodStorage &amp; foodStorage()</div><div class="ttdoc">Склад корма.</div><div class="ttdef"><b>Определения</b> <a href="_management_8h_source.html#l00264">Management.h:264</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html_a5dbae72ecc2897b4ee137a3323b338ee"><div class="ttname"><a href="classocean_1_1_oceanarium.html#a5dbae72ecc2897b4ee137a3323b338ee">ocean::Oceanarium::feeding</a></div><div class="ttdeci">FeedingSchedule &amp; feeding()</div><div class="ttdoc">Расписание кормлений.</div><div class="ttdef"><b>Определения</b> <a href="_management_8h_source.html#l00270">Management.h:270</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html_a869b573357713d12c686156131fc8188"><div class="ttname"><a href="classocean_1_1_oceanarium.html#a869b573357713d12c686156131fc8188">ocean::Oceanarium::summary</a></div><div class="ttdeci">std::string summary() const</div><div class="ttdoc">Краткая сводка: название, город, число аквариумов, животных и сотрудников.</div><div class="ttdef"><b>Определения</b> <a href="_management_8cpp_source.html#l00336">Management.cpp:336</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html_aade72d1b7926ccd828d5d1a06d60f8e9"><div class="ttname"><a href="classocean_1_1_oceanarium.html#aade72d1b7926ccd828d5d1a06d60f8e9">ocean::Oceanarium::endangeredAnimals</a></div><div class="ttdeci">int endangeredAnimals() const</div><div class="ttdoc">Число животных исчезающих видов.</div><div class="ttdef"><b>Определения</b> <a href="_management_8cpp_source.html#l00275">Management.cpp:275</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html_ac3639384e7e960d93e2a19732bd4b939"><div class="ttname"><a href="classocean_1_1_oceanarium.html#ac3639384e7e960d93e2a19732bd4b939">ocean::Oceanarium::feedAnimals</a></div><div class="ttdeci">int feedAnimals(int minute, const Date &amp;today)</div><div class="ttdoc">Проводит кормления, назначенные на указанную минуту.</div><div class="ttdef"><b>Определения</b> <a href="_management_8cpp_source.html#l00295">Management.cpp:295</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html_ae5b7ea88f68ac0cf95dda104ead0bc47"><div class="ttname"><a href="classocean_1_1_oceanarium.html#ae5b7ea88f68ac0cf95dda104ead0bc47">ocean::Oceanarium::runDailyOperations</a></div><div class="ttdeci">int runDailyOperations(const Date &amp;today)</div><div class="ttdoc">Суточный цикл: жизнеобеспечение, голод, задачи на уборку.</div><div class="ttdef"><b>Определения</b> <a href="_management_8cpp_source.html#l00303">Management.cpp:303</a></div></div>
+<div class="ttc" id="aclassocean_1_1_oceanarium_html_aff93a2aa64c11ae263bd548450c69b99"><div class="ttname"><a href="classocean_1_1_oceanarium.html#aff93a2aa64c11ae263bd548450c69b99">ocean::Oceanarium::ticketOffice</a></div><div class="ttdeci">TicketOffice &amp; ticketOffice()</div><div class="ttdoc">Билетная касса.</div><div class="ttdef"><b>Определения</b> <a href="_management_8h_source.html#l00262">Management.h:262</a></div></div>
+<div class="ttc" id="aclassocean_1_1_species_html"><div class="ttname"><a href="classocean_1_1_species.html">ocean::Species</a></div><div class="ttdoc">Биологический вид.</div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00041">Animals.h:41</a></div></div>
+<div class="ttc" id="aclassocean_1_1_tank_html_a38c344e30ae096a81184558f7b2a43b8"><div class="ttname"><a href="classocean_1_1_tank.html#a38c344e30ae096a81184558f7b2a43b8">ocean::Tank::addAnimal</a></div><div class="ttdeci">void addAnimal(std::shared_ptr&lt; Animal &gt; animal)</div><div class="ttdoc">Заселяет животное; проверяет вместимость, воду и совместимость.</div><div class="ttdef"><b>Определения</b> <a href="_tanks_8cpp_source.html#l00031">Tanks.cpp:31</a></div></div>
+<div class="ttc" id="aclassocean_1_1_ticket_html"><div class="ttname"><a href="classocean_1_1_ticket.html">ocean::Ticket</a></div><div class="ttdoc">Входной билет на конкретную дату.</div><div class="ttdef"><b>Определения</b> <a href="_visitors_8h_source.html#l00082">Visitors.h:82</a></div></div>
+<div class="ttc" id="aclassocean_1_1_ticket_html_a61f35a3c989267929729af1958e797ec"><div class="ttname"><a href="classocean_1_1_ticket.html#a61f35a3c989267929729af1958e797ec">ocean::Ticket::id</a></div><div class="ttdeci">int id() const</div><div class="ttdoc">Идентификатор билета.</div><div class="ttdef"><b>Определения</b> <a href="_visitors_8h_source.html#l00096">Visitors.h:96</a></div></div>
+<div class="ttc" id="aclassocean_1_1_ticket_html_a8f286230f76afdf73dd4e8567257c98c"><div class="ttname"><a href="classocean_1_1_ticket.html#a8f286230f76afdf73dd4e8567257c98c">ocean::Ticket::price</a></div><div class="ttdeci">double price() const</div><div class="ttdoc">Цена билета.</div><div class="ttdef"><b>Определения</b> <a href="_visitors_8h_source.html#l00100">Visitors.h:100</a></div></div>
+<div class="ttc" id="aclassocean_1_1_ticket_html_ad43f52bcb01e8c8d7c25da50108e3e59"><div class="ttname"><a href="classocean_1_1_ticket.html#ad43f52bcb01e8c8d7c25da50108e3e59">ocean::Ticket::use</a></div><div class="ttdeci">void use(const Date &amp;date)</div><div class="ttdoc">Пройти по билету; бросает InvalidTicketException.</div><div class="ttdef"><b>Определения</b> <a href="_visitors_8cpp_source.html#l00072">Visitors.cpp:72</a></div></div>
+<div class="ttc" id="aclassocean_1_1_ticket_office_html_aa0b0f9b21c137b8510d5032766ec0d83"><div class="ttname"><a href="classocean_1_1_ticket_office.html#aa0b0f9b21c137b8510d5032766ec0d83">ocean::TicketOffice::sell</a></div><div class="ttdeci">Ticket sell(Visitor &amp;visitor, TicketType type, const Date &amp;date, const Membership *membership=nullptr, PromoCode *promo=nullptr)</div><div class="ttdoc">Продать билет; учитывает абонемент и промокод.</div><div class="ttdef"><b>Определения</b> <a href="_visitors_8cpp_source.html#l00199">Visitors.cpp:199</a></div></div>
+<div class="ttc" id="aclassocean_1_1_visitor_html"><div class="ttname"><a href="classocean_1_1_visitor.html">ocean::Visitor</a></div><div class="ttdoc">Посетитель океанариума.</div><div class="ttdef"><b>Определения</b> <a href="_visitors_8h_source.html#l00020">Visitors.h:20</a></div></div>
+<div class="ttc" id="aclassocean_1_1_water_parameters_html"><div class="ttname"><a href="classocean_1_1_water_parameters.html">ocean::WaterParameters</a></div><div class="ttdoc">Текущие параметры воды в аквариуме.</div><div class="ttdef"><b>Определения</b> <a href="_water_8h_source.html#l00016">Water.h:16</a></div></div>
+<div class="ttc" id="aclassocean_1_1_water_requirements_html"><div class="ttname"><a href="classocean_1_1_water_requirements.html">ocean::WaterRequirements</a></div><div class="ttdoc">Диапазоны параметров воды, допустимые для вида.</div><div class="ttdef"><b>Определения</b> <a href="_water_8h_source.html#l00099">Water.h:99</a></div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Определения</b> <a href="#l00013">main.cpp:13</a></div></div>
+<div class="ttc" id="anamespaceocean_html"><div class="ttname"><a href="namespaceocean.html">ocean</a></div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00015">Animals.h:15</a></div></div>
+<div class="ttc" id="anamespaceocean_html_a08ade552a27db1cc7bea08ce1d1bd94aa60231c3f0a2eefe9ad7286cced8902ee"><div class="ttname"><a href="namespaceocean.html#a08ade552a27db1cc7bea08ce1d1bd94aa60231c3f0a2eefe9ad7286cced8902ee">ocean::Diet::Carnivore</a></div><div class="ttdeci">@ Carnivore</div><div class="ttdoc">Хищник, питается животной пищей.</div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00022">Animals.h:22</a></div></div>
+<div class="ttc" id="anamespaceocean_html_a08ade552a27db1cc7bea08ce1d1bd94aa8d89a418a17b60461661a7e2f1b46ef0"><div class="ttname"><a href="namespaceocean.html#a08ade552a27db1cc7bea08ce1d1bd94aa8d89a418a17b60461661a7e2f1b46ef0">ocean::Diet::Herbivore</a></div><div class="ttdeci">@ Herbivore</div><div class="ttdoc">Травоядное.</div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00021">Animals.h:21</a></div></div>
+<div class="ttc" id="anamespaceocean_html_a08ade552a27db1cc7bea08ce1d1bd94aae9f4d610be858d0fd9975e71e37c55f8"><div class="ttname"><a href="namespaceocean.html#a08ade552a27db1cc7bea08ce1d1bd94aae9f4d610be858d0fd9975e71e37c55f8">ocean::Diet::Omnivore</a></div><div class="ttdeci">@ Omnivore</div><div class="ttdoc">Всеядное.</div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00023">Animals.h:23</a></div></div>
+<div class="ttc" id="anamespaceocean_html_a4cbb501117ecd9f86f6b62ddc14cf2b3a5a600f5b88f416c470991c6831add13a"><div class="ttname"><a href="namespaceocean.html#a4cbb501117ecd9f86f6b62ddc14cf2b3a5a600f5b88f416c470991c6831add13a">ocean::TicketType::Adult</a></div><div class="ttdeci">@ Adult</div><div class="ttdoc">Взрослый.</div><div class="ttdef"><b>Определения</b> <a href="_visitors_8h_source.html#l00075">Visitors.h:75</a></div></div>
+<div class="ttc" id="anamespaceocean_html_a7945b093dde3736bb1fd79b25cba34aea4087a25b73f2f60500661bbe4560e9ab"><div class="ttname"><a href="namespaceocean.html#a7945b093dde3736bb1fd79b25cba34aea4087a25b73f2f60500661bbe4560e9ab">ocean::ConservationStatus::Vulnerable</a></div><div class="ttdeci">@ Vulnerable</div><div class="ttdoc">Уязвимый.</div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00033">Animals.h:33</a></div></div>
+<div class="ttc" id="anamespaceocean_html_a7945b093dde3736bb1fd79b25cba34aea835f40c7f2a9236ce1ef2c204c2d23d0"><div class="ttname"><a href="namespaceocean.html#a7945b093dde3736bb1fd79b25cba34aea835f40c7f2a9236ce1ef2c204c2d23d0">ocean::ConservationStatus::LeastConcern</a></div><div class="ttdeci">@ LeastConcern</div><div class="ttdoc">Вызывает наименьшие опасения.</div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00031">Animals.h:31</a></div></div>
+<div class="ttc" id="anamespaceocean_html_a7945b093dde3736bb1fd79b25cba34aeae8ffc938d2592b28a666523cc1c80a5a"><div class="ttname"><a href="namespaceocean.html#a7945b093dde3736bb1fd79b25cba34aeae8ffc938d2592b28a666523cc1c80a5a">ocean::ConservationStatus::Endangered</a></div><div class="ttdeci">@ Endangered</div><div class="ttdoc">Находится под угрозой исчезновения.</div><div class="ttdef"><b>Определения</b> <a href="_animals_8h_source.html#l00034">Animals.h:34</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
